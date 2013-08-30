@@ -1,0 +1,48 @@
+{% extends "myhome_base.html" %}
+{% load avatar_tags i18n winguhub_tags %}
+
+{% block sub_title %}{% trans "Messages" %}{% if total_unread > 0%}({{total_unread}}){%endif%} - {% endblock %}
+
+{% block title_panel %}
+
+<div class="tabnav">
+    <ul class="tabnav-tabs">
+        <li class="tabnav-tab tabnav-tab-cur">{% trans "Messages" %}</li>
+    </ul>
+</div>
+
+{% endblock %}
+
+
+{% block main_panel %}
+{% if msgs %}
+<table>
+    <tr>
+        <th width="5%"></th>
+        <th width="25%">{% trans "Email"%}</th>
+        <th width="50%">{% trans "Message"%}</th>
+        <th width="20%">{% trans "Time"%}</th>
+    </tr>
+    {% for key,value in msgs %}
+    {% with not_read=value.not_read %}
+    <tr data-href="{% url 'user_msg_list' key|id_or_email %}" class="{% if not_read > 0 %}bold{% endif %}">
+        <td class="icon-container">{% avatar key 20 %}</td>
+        <td>{{ key }}{% if not_read > 0%}({{not_read}}){% endif %}</td>
+        <td>{{ value.last_msg|truncatechars:60 }}</td>
+        <td>{{ value.last_time|translate_winguhub_time }}</td>
+    </tr>
+    {% endwith %}
+    {% endfor %}
+</table>
+{% endif %}
+{% endblock %}
+
+{% block extra_script %}
+<script type="text/javascript">
+$(function(){       
+    $('tr[data-href]').click(function() {
+        location.href = $(this).data('href');
+    });
+});
+</script>
+{% endblock %}

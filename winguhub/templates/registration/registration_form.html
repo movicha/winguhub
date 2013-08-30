@@ -1,0 +1,49 @@
+{% extends "myhome_base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Register" %}{% endblock %}
+{% block main_panel %}
+<div class="narrow-panel">
+{% if request.user.is_authenticated %}
+    <h2>{% trans "Welcome back, you are already signed in." %}</h2>
+{% else %}
+    <h2>{% trans "Signup" %}</h2>
+    <form action="" method="post">{% csrf_token %}
+        <label for="id_email">{% trans "Email" %}</label>
+        {{ form.email }}            {{ form.email.errors }}
+        <label for="id_password1">{% trans "Password" %}</label>
+        {{ form.password1 }}        {{ form.password1.errors }}
+        <label for="id_password2">{% trans "Confirm Password" %}</label>
+        {{ form.password2 }}        {{ form.password2.errors }}
+        <p class="error hide"></p>
+        <input type="submit" value="{% trans "Submit" %}" class="submit" />
+    </form>
+{% endif %}
+</div>
+{% endblock %}
+
+{% block extra_script %}
+<script type="text/javascript">
+$('form').submit(function(){
+    var email = $.trim($('input[name="email"]').val()),
+        pwd1 = $.trim($('input[name="password1"]').val()),
+        pwd2 = $.trim($('input[name="password2"]').val());
+
+        if (!email) {
+            $('.error').removeClass('hide').html("{% trans "Email cannot be blank" %}");
+            return false;
+        }
+        if (!pwd1) {
+            $('.error').removeClass('hide').html("{% trans "Password cannot be blank" %}");
+            return false;
+        }
+        if (!pwd2) {
+            $('.error').removeClass('hide').html("{% trans "Please enter the password again" %}");
+            return false;
+        }
+        if (pwd1 != pwd2) {
+            $('.error').removeClass('hide').html("{% trans "Passwords don't match" %}");
+            return false;
+        }
+   });
+</script>
+{% endblock %}

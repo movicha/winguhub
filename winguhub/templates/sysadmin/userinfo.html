@@ -1,0 +1,144 @@
+{% extends "admin_base.html" %}
+{% load i18n avatar_tags %}
+{% load url from future %}
+
+{% block nav_useradmin_class %}class="cur"{% endblock %}
+{% block left_panel %}
+
+<div class="info-item">
+    <h3 class="info-item-top">{% trans "Profile" %}</h3>
+    <div class="info-item-bottom home-profile ovhd">
+        {% avatar email 48 %}
+        <p class="txt fright">
+        {% if nickname %}
+        {{ nickname }}
+        {% endif %}
+        </p>
+    </div>
+</div>
+
+<div class="info-item">
+<div class="info-item-top">
+    <h3 class="inbl">{% trans "Space Used" %}</h3>
+</div>
+<div class="info-item-bottom">
+    {% if CALC_SHARE_USAGE %}
+    <p>{% trans "Total" %}: {{ quota_usage|filesizeformat }} {% if quota > 0 %}/ {{ quota|filesizeformat }} {% endif %}</p>
+    <p>{% trans "Used" %}: {{ my_usage|filesizeformat }}</p>
+    <p>{% trans "Sharing" %}: {{ share_usage|filesizeformat }}</p>
+    {% else %}
+    <p>{{ quota_usage|filesizeformat }} {% if quota > 0 %}/ {{ quota|filesizeformat }} {% endif %}</p>
+    {% endif %}
+    <a href="#" class="set-quota">{% trans "Set Quota" %}</a>
+</div>
+</div>
+
+{% endblock %}
+
+{% block right_panel %}
+<h3>{% trans "Owned" %}</h3>
+{% if owned_repos %}
+<table>
+    <tr>
+        <th width="4%"><!--icon--></th>
+        <th width="30%">{% trans "Name" %}</th>
+        <th width="46%">{% trans "Description" %}</th>
+        <th width="20%">{% trans "Operations" %}</th>
+    </tr>
+
+    {% for repo in owned_repos %}
+    <tr>
+        <td><img src="{{MEDIA_URL}}img/sync-folder-20.png" title="{% trans "Read-Write" %}" alt="{% trans "directory icon" %}" /></td>
+        <td><a href="{{ SITE_ROOT }}repo/{{ repo.props.id }}/">{{ repo.props.name }}</a></td>
+        <td>{{ repo.props.desc }}</td>
+        <td>
+        <a href="#" data-url="{{ SITE_ROOT }}repo/remove/{{ repo.props.id }}/?next={{ request.path }}" data-target="{{ repo.props.name }}" class="remove-user-repo op">{% trans "Delete" %}</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p>{% trans "Empty" %}</p>
+{% endif %}
+
+<h3>{% trans "Shared" %}</h3>
+{% if in_repos %}
+<table>
+    <tr>
+        <th width="4%"><!--icon--></th>
+        <th width="30%">{% trans "Name" %}</th>
+        <th width="26%">{% trans "Share From" %}</th>
+        <th width="40%">{% trans "Description" %}</th>
+    </tr>
+
+    {% for repo in in_repos %}
+    <tr>
+        <td><img src="{{MEDIA_URL}}img/sync-folder-20.png" title="{% trans "Read-Write" %}" alt="library icon" /></td>
+        <td><a href="{{ SITE_ROOT }}repo/{{ repo.props.id }}">{{ repo.props.repo_name }}</a></td>
+        <td>{{ repo.props.user }}</td>
+        <td>{{ repo.props.repo_desc }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p>{% trans "Empty" %}</p>
+{% endif %}
+
+<form id="set-quota-form" method="post" class="hide">{% csrf_token %}
+    <label>{% trans "Set user storage limit" %}</label><br />
+    <input type="hidden" name="email" value="{{ email }}" />
+    <input type="text" name="quota" /> MB <br />
+    <p class="tip">{% trans "Tip: 0 means default limit" %}</p>
+    <p class="error hide"></p>
+    <input type="submit" value="{% trans "Submit" %}" class="submit" />
+</form>
+
+{% endblock %}
+
+
+{% block extra_script %}
+<script type="text/javascript">
+
+$('.set-quota').click(function() {
+    $("#set-quota-form").modal({appendTo: "#main"});
+    return false;
+});
+
+$('#set-quota-form .submit').click(function() {
+    var self = $(this);
+    self.attr('disabled', 'disabled');
+    $.ajax({
+        url: '{% url 'user_info' email %}',
+        type: 'POST',
+        dataType: 'json',
+        cache: 'false',
+        beforeSend: prepareCSRFToken,
+        data: {
+            'email': $('#set-quota-form input[name="email"]').val(),
+            'quota': $('#set-quota-form input[name="quota"]').val()
+        },
+        success: function(data) {
+            if (data['success']) {
+                location.reload(true);
+            } else {
+                apply_form_error('set-quota-form', data['error']);
+                self.removeAttr('disabled');
+            }
+        },
+        error: function(data, textStatus, jqXHR) {
+            var errors = $.parseJSON(data.responseText);
+            $.each(errors, function(index, value) {
+                apply_form_error('set-quota-form', value[0]);
+            });
+            self.removeAttr('disabled');
+        }
+    });
+    return false;
+});
+
+addConfirmTo($('.remove-user-repo'), {
+        'title':'{% trans "Delete Library" %}',
+        'con':'{% trans "Are you sure you want to delete %s ?" %}'
+});
+</script>
+{% endblock %}

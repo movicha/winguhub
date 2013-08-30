@@ -1,0 +1,175 @@
+{% load winguhub_tags i18n %}
+{% load url from future %}
+<div id="tabs">
+<div class="ovhd">
+    <ul class="fleft" id="tabs-nav">
+        <li><a href="#my-own-repos">{% trans "Mine" %}</a></li>
+	{% if ENABLE_SUB_LIBRARY %}
+	<li><a href="#my-sub-repos">{% trans "Sub-libraries" %}</a></li>
+	{% endif %}
+        <li><a href="#repos-shared-to-me">{% trans "Shared" %}</a></li>
+        <li><a href="#starred-files">{% trans "Starred" %}</a></li>
+    </ul>
+    <button id="repo-create" class="add fright">{% trans "New Library" %}</button>
+</div>
+<div id="my-own-repos" class="hide">
+{% if owned_repos %}
+<table>
+    <tr>
+        <th width="4%"><!--icon--></th>
+        <th width="24%">{% trans "Name" %}</th>
+        <th width="43%">{% trans "Description" %}</th>
+        <th width="15%">{% trans "Last Update" %}</th>
+        <th width="14%">{% trans "Operations" %}</th>
+    </tr>
+    {% for repo in owned_repos %}
+    {% if not ENABLE_SUB_LIBRARY or not repo.is_virtual %}
+    <tr>
+        <td><img src="{{MEDIA_URL}}img/sync-folder-20.png" title="{% trans "Read-Write" %}" alt="{% trans "directory icon" %}" /></td>
+        <td><a href="{{ SITE_ROOT }}repo/{{ repo.props.id }}/">{{ repo.props.name }}</a></td>
+        <td>{{ repo.props.desc }}</td>
+        {% if repo.latest_modify %}
+        <td>{{ repo.latest_modify|translate_winguhub_time }}</td>
+        {% else %}
+        <td>--</td>
+        {% endif %}
+        <td>
+            <span data="{{ repo.props.id }}" class="icon-cloud-download download-btn op-icon vh" title="{% trans "Download and Sync" %}"></span>
+            <span data-id="{{ repo.props.id }}" data-name="{{ repo.props.name }}" class="sf-icon-share repo-share-btn op-icon vh" title="{% trans "Share" %}"></span>
+            <span data-url="{{ SITE_ROOT }}repo/remove/{{ repo.props.id }}/?next={{ request.path }}" data-target="{{ repo.props.name }}" class="icon-trash repo-delete-btn op-icon vh" title="{% trans "Delete" %}"></span>
+        </td>
+    </tr>
+    {% endif %}
+    {% endfor %}
+</table>
+{% else %}
+<div class="empty-tips">
+  <h2 class="center-contents">{% trans "You have not created any libraries" %}</h2>
+  <p>{% trans "You can create a library to organize your files. For example, you can create one for each of your projects. Each library can be synchronized and shared separately." %}</p>
+  <h3>{% trans "Synchronize libraries with PC client" %}</h3>
+  <p>{% trans "1. Download the library (make sure PC client is running)." %}</p>
+  <p>{% trans "2. Add files to the folder and they will be uploaded automatically." %}</p>
+</div>
+{% endif %}
+</div>
+
+{% if ENABLE_SUB_LIBRARY %}
+<div id="my-sub-repos" class="hide">
+{% if sub_repos %}
+<table>
+    <tr>
+        <th width="4%"><!--icon--></th>
+        <th width="24%">{% trans "Name" %}</th>
+        <th width="43%">{% trans "Origin" %}</th>
+        <th width="15%">{% trans "Last Update" %}</th>
+        <th width="14%">{% trans "Operations" %}</th>
+    </tr>
+    {% for repo in sub_repos %}
+    <tr>
+        <td>
+            {% if repo.virtual_perm == 'rw' %}
+            <img src="{{MEDIA_URL}}img/sync-folder-20.png" title="{% trans "Read-Write" %}" alt="{% trans "directory icon" %}" />
+            {% else %}
+            <img src="{{MEDIA_URL}}img/folder-no-write-20.png" title="{% trans "Read-Only" %}" alt="{% trans "directory icon" %}" />
+            {% endif %}
+        </td>
+        <td><a href="{{ SITE_ROOT }}repo/{{ repo.id }}/">{{ repo.name }}</a></td>
+        <td><a href="{{ SITE_ROOT }}repo/{{ repo.origin_repo_id}}/?p={{ repo.origin_path }}">{{ repo.abbrev_origin_path }}</a></td>
+        {% if repo.latest_modify %}
+        <td>{{ repo.latest_modify|translate_winguhub_time }}</td>
+        {% else %}
+        <td>--</td>
+        {% endif %}
+        <td>
+            <span data="{{ repo.props.id }}" class="icon-cloud-download download-btn op-icon vh" title="{% trans "Download and Sync" %}"></span>
+	    {% if repo.is_original_owner %}
+            <span data-id="{{ repo.props.id }}" data-name="{{ repo.props.name }}" class="sf-icon-share repo-share-btn op-icon vh" title="{% trans "Share" %}"></span>
+	    {% endif %}
+            <span data-url="{{ SITE_ROOT }}repo/remove/{{ repo.props.id }}/?next={{ request.path }}" data-target="{{ repo.props.name }}" class="icon-trash repo-delete-btn op-icon vh" title="{% trans "Delete" %}"></span>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<div class="empty-tips">
+  <h2 class="center-contents">{% trans "You have not created any sub-libraries" %}</h2>
+  <p>{% trans "You can create a sub-library from a directory inside a library. A sub-library can be independently synced and shared. Files in the sub-library will be automatically kept in sync with those in the directory of the origin library." %}</p>
+</div>
+{% endif %}
+</div>
+{% endif %}
+
+<div id="repos-shared-to-me" class="hide">
+{% if in_repos %}
+<table>
+    <tr>
+        <th width="4%"><!--icon--></th>
+        <th width="20%">{% trans "Name" %}</th>
+        <th width="33%">{% trans "Description" %}</th>
+        <th width="15%">{% trans "Last Update" %}</th>
+        <th width="15%">{% trans "Shared By" %}</th>
+        <th width="13%">{% trans "Operations" %}</th>
+    </tr>
+
+    {% for repo in in_repos %}
+    <tr>
+        <td>
+            {% if repo.user_perm == 'rw' %}
+            <img src="{{MEDIA_URL}}img/sync-folder-20.png" title="{% trans "Read-Write" %}" alt="{% trans "directory icon" %}" />
+            {% else %}
+            <img src="{{MEDIA_URL}}img/folder-no-write-20.png" title="{% trans "Read-Only" %}" alt="{% trans "directory icon" %}" />
+            {% endif %}
+        </td>
+        <td><a href="{{ SITE_ROOT }}repo/{{ repo.repo_id }}">{{ repo.repo_name }}</a></td>
+        <td>{{ repo.repo_desc }}</td>
+        {% if repo.last_modified %}
+        <td>{{ repo.last_modified|translate_winguhub_time }}</td>
+        {% else %}
+        <td>--</td>
+        {% endif %}
+        <td>{{ repo.user|email2nickname }}</td>
+        <td>
+            <span data="{{ repo.repo_id }}" class="icon-cloud-download download-btn op-icon vh" title="{% trans "Download and Sync" %}"></span>
+            {% if repo.share_type == 'personal' %}
+            <span data-url="{% url 'repo_remove_share' %}?repo_id={{ repo.repo_id }}&from={{ repo.user|urlencode }}&to={{ request.user.username|urlencode }}" data-target="{{repo.repo_name}}" class="icon-trash unshare-btn op-icon vh" title="{% trans "Leave Share" %}"></span>
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<div class="empty-tips">
+  <h2 class="center-contents">{% trans "No library is shared to you" %}</h2>
+  <p>{% trans "Libraries shared to you or shared to groups you joined will be listed here. Libraries shared as writable can be downloaded and synced. Read only libraries can only be downloaded, updates on local files will not be uploaded." %}</p>
+</div>
+{% endif %}
+</div>
+
+<div id="starred-files" class="hide">
+{% if starred_files %}
+<table>
+    <tr>
+        <th width="5%"></th>
+        <th width="45%">{% trans "File Name" %}</th>
+        <th width="30%">{% trans "Library" %}</th>
+        <th width="20%">{% trans "Last Update" %}</th>
+    </tr>
+    {% for sfile in starred_files %}
+    <tr>
+        <td class="icon-container"><img src="{{ MEDIA_URL }}img/file/{{ sfile.path|file_icon_filter }}" alt="{% trans "icon" %}" /></td>
+        <td>
+            <a href="{% url 'repo_view_file' sfile.repo.id %}?p={{ sfile.path|urlencode }}">{{ sfile.name }}</a>
+        </td>
+        <td>{{ sfile.repo.name }}</td>
+        <td>{{ sfile.last_modified|translate_winguhub_time }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<div class="empty-tips">
+  <h2 class="center-contents">{% trans "You don't have any starred files yet" %}</h2>
+  <p>{% blocktrans %}You can star important files by clicking the "Star" button on file viewing page, and they will be listed here.{% endblocktrans %}</p>
+</div>
+{% endif %}
+</div>
+</div>

@@ -1,0 +1,10 @@
+{% load i18n %}{% autoescape off %}
+{% blocktrans %}You're receiving this e-mail because staff has reset your password at {{ site_name }}. {% endblocktrans %}
+
+{% blocktrans %}Your new password is {{ password }}, please modify your password as soon as possible.{% endblocktrans %}
+
+{% trans "Thanks for using our site!" %}
+
+{% blocktrans %}The {{ site_name }} team{% endblocktrans %}
+
+{% endautoescape %}

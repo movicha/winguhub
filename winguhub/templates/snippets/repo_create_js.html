@@ -1,0 +1,93 @@
+{% load i18n %}
+//repo-create-form
+$('#repo-create')
+.click(function() {
+    $('#repo-create-form').modal({appendTo: '#main', autoResize: true});
+})
+.hover(
+    function() {
+        $(this).css({'background-color': '#fff', 'cursor': 'pointer'});
+    },
+    function() {
+        $(this).css('background-color', '#f5f5f5');
+    }
+);
+$('#encrypt-switch').click(function () {
+    if ($(this).attr('checked')) {
+        $('#repo-create-form input[type="password"]').attr('disabled', false).removeClass('input-disabled');
+    } else {
+        $('#repo-create-form input[type="password"]').attr('disabled', true).addClass('input-disabled');
+    }
+});
+$('#repo-create-form').submit(function() {
+    var passwd = $(this).find('input[name="passwd"]'),
+        passwd_again = $(this).find('input[name="passwd_again"]');
+
+    var form = 'repo-create-form';
+    if (!$.trim($('#repo-name').val())) {
+        apply_form_error(form, "{% trans "Name can't be empty" %}");
+        return false;
+    }
+    if (!$.trim($('#repo-desc').val())) {
+        apply_form_error(form, "{% trans "Description can't be empty" %}");
+        return false;
+    }
+    if ($('#encrypt-switch').attr('checked')) {
+        if (!$.trim(passwd.val())) {
+            apply_form_error(form, "{% trans "Please enter password" %}");
+            return false;
+        }
+        if ($.trim(passwd.val()).length < 3) {
+            apply_form_error(form, "{% trans "Password is too short (minimum is 3 characters)" %}");
+            return false;
+        }
+        if ($.trim(passwd.val()).length > 30) {
+            apply_form_error(form, "{% trans "Password is too long (maximum is 30 characters)" %}");
+            return false;
+        }
+        if (!$.trim(passwd_again.val())) {
+            apply_form_error(form, "{% trans "Please enter the password again" %}");
+            return false;
+        }
+        if ($.trim(passwd.val()) != $.trim(passwd_again.val())) {
+            apply_form_error(form, "{% trans "Passwords don't match" %}");
+            return false;
+        }
+    }
+
+    var submit_btn = $(this).find('input[type="submit"]');
+    disable(submit_btn);
+    $.ajax({
+        url: '{{ post_url }}',
+        type: 'POST',
+        dataType: 'json',
+        beforeSend: prepareCSRFToken,
+        data: {
+            'repo_name': $('#repo-name').val(),
+            'repo_desc': $('#repo-desc').val(),
+            {% if create_shared_repo %}
+            'permission': $('#repo-create-form select[name="permission"]').val(),
+            {% endif %}
+            'encryption': $('#encrypt-switch').attr('checked') ? 1 : 0,
+            'passwd': passwd.val(),
+            'passwd_again': passwd_again.val()
+        },
+        success: function(data) {
+            if (data['success']) {
+                location.reload(true);
+            } else {
+                apply_form_error('repo-create-form', data['error']);
+                enable(submit_btn);
+            }
+        },
+        error: function(data, textStatus, jqXHR) {
+            var errors = $.parseJSON(data.responseText);
+            $.each(errors, function(index, value) {
+                apply_form_error('repo-create-form', value[0]);
+            });
+            enable(submit_btn);
+        }
+    });
+
+    return false;
+});

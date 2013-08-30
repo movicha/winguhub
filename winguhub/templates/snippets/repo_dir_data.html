@@ -1,0 +1,44 @@
+{% load winguhub_tags i18n %}
+<div class="repo-file-list-topbar ovhd">
+    <p class="path fleft">
+    {% trans "Current path: "%}
+    {% for name, link in zipped %}
+    {% if not forloop.last %}
+    <a href="{{ SITE_ROOT }}repo/{{ repo.id }}/?p={{ link|urlencode }}" class="dir-link">{{ name }}</a> /    
+    {% else %}
+    <span id="cur-dir-name">{{ name }}</span>
+    {% endif %}
+    {% endfor %}
+    </p>
+    <div class="repo-op fright">
+        {% if user_perm == 'rw' %}
+        <button data="{{ SITE_ROOT }}repo/upload_file/{{repo.id}}/?p={{ path|urlencode }}" id="upload-file" class="op-btn"><span class="icon-upload-alt"></span>{% trans "Upload"%}</button>
+        <button id="add-new-dir" class="op-btn"><span class="icon-plus-sign-alt"></span>{% trans "New Directory"%}</button>
+        <button id="add-new-file" class="op-btn"><span class="icon-plus-sign-alt"></span>{% trans "New File"%}</button>
+        {% endif %}
+
+        {% if path != '/' %}
+        {% if not repo.encrypted %}
+        <button data-url="{% url 'get_shared_link' %}?repo_id={{ repo.id }}&p={{ path|urlencode }}&type=d" data-link="{{ dir_shared_link }}" data-token="{{fileshare.token}}" class="op-btn" id="share-cur-dir"><span class="sf-icon-share"></span>{% trans "Share"%}</button>
+        {% endif %}
+        {% endif %}
+    </div>
+</div>
+
+<table class="repo-file-list">
+    <tr>
+        <th class="select">
+            <span class="checkbox"><input type="checkbox" class="checkbox-orig" /></span>
+        </th>
+        <th class="star"></th>
+        <th class="dirent-icon"></th>
+        <th><span class="dirent-name">{% trans "Name"%} <span id="name-up" class="tri-bg tri-up-order-bg"></span> <span id="name-down" class="tri-bg tri-down-order-bg"></span></span></th>
+        <th class="dirent-size">{% trans "Size"%}</th>
+        <th class="dirent-update">{% trans "Last Update" %} <span id="time-up" class="tri-bg tri-up-order-bg"></span> <span id="time-down" class="tri-bg tri-down-order-bg"></span></th>
+        <th class="dirent-op">{% trans "Operations"%}</th>
+    </tr>
+    {% include 'snippets/repo_dirents.html' %}
+</table>
+{% if dirent_more %}
+<img class="dirent-more loading-tip" src="{{MEDIA_URL}}img/loading-icon.gif" alt="{% trans 'Loading...' %}" data-start="{{more_start}}" />
+{% endif %}

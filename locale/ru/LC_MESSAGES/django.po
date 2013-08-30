@@ -1,0 +1,5042 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013 CLOUIDIO
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-13 20:04-0700\n"
+"PO-Revision-Date: 2013-06-14 10:00+0400\n"
+"Last-Translator: Michael Polikashev <admin@scherkhan.net>\n"
+"Language-Team: NET.ScherkhanLab <admin@scherkhan.net>\n"
+"Language: ru-RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: winguhub/forms.py:26 winguhub/base/accounts.py:390
+msgid "A user with this email already"
+msgstr "Пользователь с таким E-mail уже существует"
+
+#: winguhub/forms.py:40 winguhub/auth/forms.py:124 winguhub/auth/forms.py:166
+#: winguhub/base/accounts.py:407
+msgid "The two password fields didn't match."
+msgstr "Пароли не совпадают."
+
+#: winguhub/forms.py:49 winguhub/group/forms.py:56
+#: winguhub/templates/snippets/repo_create_js.html:28 winguhub/wiki/forms.py:16
+msgid "Name can't be empty"
+msgstr "Поле с именем не может быть пустым"
+
+#: winguhub/forms.py:50 winguhub/group/forms.py:57 winguhub/wiki/forms.py:17
+msgid "Name is too long (maximum is 255 characters)"
+msgstr "Слишком длинное имя (максимум 255 символов) "
+
+#: winguhub/forms.py:53 winguhub/group/forms.py:60
+#: winguhub/templates/snippets/repo_create_js.html:32 winguhub/wiki/forms.py:20
+msgid "Description can't be empty"
+msgstr "Поле с описанием не может быть пустым"
+
+#: winguhub/forms.py:54 winguhub/group/forms.py:61 winguhub/wiki/forms.py:21
+msgid "Description is too long (maximum is 100 characters)"
+msgstr "Слишком длинное описание (максимум 100 символов)"
+
+#: winguhub/forms.py:59 winguhub/forms.py:64
+#: winguhub/templates/snippets/repo_create_js.html:41
+msgid "Password is too short (minimum is 3 characters)"
+msgstr "Пароль слишком короткий (минимум 3 символа)"
+
+#: winguhub/forms.py:60 winguhub/forms.py:65
+#: winguhub/templates/snippets/repo_create_js.html:45
+msgid "Password is too long (maximum is 30 characters)"
+msgstr "Пароль слишком длинный (максимум 30 символов)"
+
+#: winguhub/forms.py:71
+#, python-format
+msgid "Name %s is not valid"
+msgstr "Имя %s недействительно"
+
+#: winguhub/forms.py:93 winguhub/templates/registration/registration_form.html:44
+#: winguhub/templates/snippets/repo_create_js.html:53
+#: winguhub/templates/sysadmin/sys_useradmin.html:135
+msgid "Passwords don't match"
+msgstr "Пароли не совпадают"
+
+#: winguhub/forms.py:106
+msgid "Oldname is required"
+msgstr "Требуестся старое имя"
+
+#: winguhub/forms.py:109 winguhub/forms.py:130
+msgid "It's too long."
+msgstr ""
+
+#: winguhub/forms.py:110 winguhub/forms.py:131
+#, fuzzy
+msgid "It's required."
+msgstr "Требуется Email."
+
+#: winguhub/forms.py:117 winguhub/forms.py:138
+#, fuzzy, python-format
+msgid "Name \"%s\" is not valid"
+msgstr "Имя %s недействительно"
+
+#: winguhub/forms.py:149 winguhub/forms.py:186
+msgid "Repo id is required"
+msgstr "Требуется Repo ID"
+
+#: winguhub/forms.py:150
+msgid "Username is required"
+msgstr "Требуется имя пользователя"
+
+#: winguhub/forms.py:151
+msgid "Password can't be empty"
+msgstr "Пароль не может быть пустым"
+
+#: winguhub/forms.py:162
+msgid "Bad url format"
+msgstr "Неверный формат URL"
+
+#: winguhub/forms.py:167
+msgid "Wrong password"
+msgstr "Неверный пароль"
+
+#: winguhub/forms.py:169
+msgid "Inernal server error"
+msgstr "Внутренняя ошибка сервера"
+
+#: winguhub/forms.py:171
+msgid "Decrypt library error"
+msgstr "Ошибка расшифровки библиотеки"
+
+#: winguhub/forms.py:177 winguhub/share/forms.py:19
+msgid "Email is required"
+msgstr "Требуется Email"
+
+#: winguhub/forms.py:179
+msgid "Quota can't be empty"
+msgstr "Значение квоты не может быть пустым"
+
+#: winguhub/forms.py:180
+msgid "Quota is too low (minimum value is 0)"
+msgstr "Квота слишком мала (минимальное значение 0)"
+
+#: winguhub/forms.py:187
+msgid "Library name is required"
+msgstr "Требуется название библиотеки"
+
+#: winguhub/forms.py:188
+msgid "Library description is required"
+msgstr "Требуется описание библиотеки"
+
+#: winguhub/forms.py:190
+msgid "Please enter a number"
+msgstr "Пожалуйста, введите число"
+
+#: winguhub/settings.py:132
+msgid "Deutsch"
+msgstr ""
+
+#: winguhub/settings.py:133
+msgid "English"
+msgstr ""
+
+#: winguhub/settings.py:134
+msgid "Español"
+msgstr ""
+
+#: winguhub/settings.py:135
+msgid "Français"
+msgstr ""
+
+#: winguhub/settings.py:136
+msgid "Italiano"
+msgstr ""
+
+#: winguhub/settings.py:137
+msgid "Magyar"
+msgstr ""
+
+#: winguhub/settings.py:138
+msgid "Русский"
+msgstr ""
+
+#: winguhub/settings.py:139
+msgid "简体中文"
+msgstr ""
+
+#: winguhub/settings.py:140
+msgid "繁體中文"
+msgstr ""
+
+#: winguhub/api2/views.py:1366 winguhub/api2/views.py:1422
+#: winguhub/group/views.py:1145 winguhub/views/__init__.py:447
+#: winguhub/views/file.py:301 winguhub/views/file.py:591 winguhub/views/file.py:679
+msgid "File does not exist"
+msgstr "Файл не существует"
+
+#: winguhub/api2/views.py:1411
+#, fuzzy
+msgid "the libray does not exist"
+msgstr "Библиотека не существует."
+
+#: winguhub/api2/views.py:1473 winguhub/views/ajax.py:131 winguhub/views/ajax.py:238
+#: winguhub/views/ajax.py:324 winguhub/views/ajax.py:424 winguhub/views/ajax.py:448
+#: winguhub/views/file.py:745
+msgid "Permission denied"
+msgstr "Доступ запрещен"
+
+#: winguhub/api2/views.py:1477 winguhub/views/__init__.py:644
+#: winguhub/views/__init__.py:737 winguhub/views/__init__.py:1303
+#: winguhub/views/__init__.py:1638
+msgid "Library does not exist"
+msgstr "Библиотека не существует"
+
+#: winguhub/api2/views.py:1480
+#, fuzzy
+msgid "Library is encrypted"
+msgstr "Библиотека зашифрована."
+
+#: winguhub/api2/views.py:1484
+#, fuzzy
+msgid "Invalid argument"
+msgstr "Недопустимые аргументы"
+
+#: winguhub/api2/views.py:1495 winguhub/base/templatetags/winguhub_tags.py:115
+#: winguhub/views/__init__.py:715
+msgid "Changed library name or description"
+msgstr "Изменено названий или описаний библиотки"
+
+#: winguhub/api2/views.py:1498 winguhub/views/__init__.py:718
+msgid "No conflict in the merge."
+msgstr "Нет конфликта при слиянии."
+
+#: winguhub/api2/templates/api2/base.html:8 winguhub/templates/base.html:9
+msgid "File Collaboration Team Organization"
+msgstr "Совместный файл сообщества"
+
+#: winguhub/api2/templates/api2/discussion.html:6
+#: winguhub/group/templates/group/group_discuss.html:16
+#: winguhub/group/templates/group/group_info.html:17
+#: winguhub/group/templates/group/group_info_for_pub.html:17
+#: winguhub/group/templates/group/group_manage.html:15
+#: winguhub/group/templates/group/group_members.html:17
+#: winguhub/group/templates/group/group_wiki.html:17
+#: winguhub/group/templates/group/group_wiki_pages.html:16
+msgid "Discussion"
+msgstr "Обсуждение"
+
+#: winguhub/api2/templates/api2/discussion.html:26
+#: winguhub/api2/templates/api2/discussion.html:42
+#: winguhub/api2/templates/api2/discussion_posted.html:19
+#: winguhub/api2/templates/api2/discussion_posted.html:35
+#: winguhub/api2/templates/api2/discussions_body.html:21
+#: winguhub/api2/templates/api2/discussions_body.html:37
+#: winguhub/api2/templates/api2/new_msg_reply.html:27
+#: winguhub/api2/templates/api2/new_msg_reply.html:43
+#: winguhub/group/templates/group/group_discuss.html:95
+#: winguhub/group/templates/group/group_discuss.html:111
+#: winguhub/group/templates/group/new_msg_reply.html:26
+#: winguhub/group/templates/group/new_msg_reply.html:35
+#: winguhub/message/templates/message/user_msg_list.html:70
+#: winguhub/share/templates/repo/priv_shared_files.html:38
+#: winguhub/share/templates/repo/priv_shared_files.html:66
+#: winguhub/share/templates/repo/shared_links.html:31
+#: winguhub/templates/repo_history_view.html:66
+#: winguhub/templates/repo_recycle_view.html:78
+#: winguhub/templates/view_shared_dir.html:57
+#: winguhub/templates/snippets/group_recommend_form.html:28
+#: winguhub/templates/snippets/repo_dir_data.html:86
+msgid "File"
+msgstr "Файл"
+
+#: winguhub/api2/templates/api2/discussion.html:36
+#: winguhub/api2/templates/api2/discussion_posted.html:29
+#: winguhub/api2/templates/api2/discussions_body.html:31
+#: winguhub/api2/templates/api2/new_msg_reply.html:37
+#: winguhub/group/templates/group/group_discuss.html:105
+#: winguhub/group/templates/group/new_msg_reply.html:29
+#: winguhub/share/templates/repo/priv_shared_files.html:41
+#: winguhub/share/templates/repo/priv_shared_files.html:69
+#: winguhub/share/templates/repo/shared_links.html:34
+#: winguhub/templates/pubrepo.html:34 winguhub/templates/pubrepo.html.py:36
+#: winguhub/templates/view_shared_dir.html:39
+#: winguhub/templates/snippets/group_recommend_form.html:22
+#: winguhub/templates/snippets/repo_dir_data.html:40
+msgid "Directory icon"
+msgstr "Значок каталога"
+
+#: winguhub/api2/templates/api2/discussion_posted.html:46
+#: winguhub/api2/templates/api2/discussions_body.html:48
+#: winguhub/group/templates/group/discussion_list.html:17
+#: winguhub/group/templates/group/group_discuss.html:121
+#: winguhub/group/templates/group/new_msg_reply.html:45
+#, python-format
+msgid "%(amount)s replies"
+msgstr "%(amount)s ответов"
+
+#: winguhub/api2/templates/api2/discussions.html:24
+#, fuzzy
+msgid "No discussions."
+msgstr "обсуждение"
+
+#: winguhub/api2/templates/api2/discussions.html:29
+#: winguhub/api2/templates/api2/events.html:13 winguhub/templates/repo.html:432
+#: winguhub/templates/snippets/events.html:5
+#: winguhub/templates/snippets/list_commit_detail.html:3
+msgid "Loading..."
+msgstr "Загрузка..."
+
+#: winguhub/api2/templates/api2/discussions.html:75
+#: winguhub/api2/templates/api2/events_js.html:34
+#: winguhub/contacts/templates/contacts/contact_list.html:108
+#: winguhub/contacts/templates/contacts/contact_list.html:160
+#: winguhub/group/templates/group/msg_js.html:155 winguhub/templates/base.html:225
+#: winguhub/templates/base.html.py:345 winguhub/templates/file_edit.html:515
+#: winguhub/templates/repo.html:306 winguhub/templates/repo.html.py:476
+#: winguhub/templates/repo.html:626 winguhub/templates/repo.html.py:773
+#: winguhub/templates/repo.html:989 winguhub/templates/view_file_base.html:166
+#: winguhub/templates/snippets/bottom_bar.html:109
+#: winguhub/templates/snippets/events_js.html:56
+#: winguhub/templates/snippets/office_convert_js.html:172
+#: winguhub/templates/snippets/office_convert_js.html:197
+#: winguhub/templates/snippets/repo_decrypt_js.html:35
+#: winguhub/templates/snippets/shared_link_js.html:158
+#: winguhub/templates/snippets/shared_link_js.html:193
+#: winguhub/templates/snippets/shared_link_js.html:217
+#: winguhub/templates/sysadmin/sys_useradmin.html:159
+msgid "Failed. Please check the network."
+msgstr "Не удалось. Пожалуйста, проверьте сеть."
+
+#: winguhub/api2/templates/api2/event_details.html:8
+#: winguhub/api2/templates/api2/event_details.html:40
+#, fuzzy, python-format
+msgid "Added %(file)s"
+msgstr "Добавить файл"
+
+#: winguhub/api2/templates/api2/event_details.html:16
+#: winguhub/api2/templates/api2/event_details.html:48
+#, fuzzy, python-format
+msgid "Deleted %(file)s"
+msgstr "Удаленные файлы"
+
+#: winguhub/api2/templates/api2/event_details.html:24
+#, fuzzy, python-format
+msgid "Renamed or Moved %(file)s"
+msgstr "переименованные или перемещённые файлы"
+
+#: winguhub/api2/templates/api2/event_details.html:32
+#, fuzzy, python-format
+msgid "Modified %(file)s"
+msgstr "Измененные файлы"
+
+#: winguhub/api2/templates/api2/events.html:19
+msgid "No activity now or the function is not supported."
+msgstr ""
+
+#: winguhub/api2/templates/api2/events_body.html:17
+#: winguhub/templates/snippets/events_body.html:29
+msgid "Created library"
+msgstr "Библиотека создана"
+
+#: winguhub/api2/templates/api2/events_body.html:21
+#: winguhub/templates/snippets/events_body.html:33
+#, python-format
+msgid "Deleted library %(library_name)s"
+msgstr "Библиотека %(library_name)s удалена"
+
+#: winguhub/api2/templates/api2/events_js.html:83
+#, fuzzy
+msgid "Please check the network."
+msgstr "Не удалось. Пожалуйста, проверьте сеть."
+
+#: winguhub/api2/templates/api2/new_msg_reply.html:6
+#, fuzzy
+msgid "New Replies"
+msgstr "Новый файл"
+
+#: winguhub/auth/admin.py:29
+msgid "Personal info"
+msgstr "Личная информация"
+
+#: winguhub/auth/admin.py:30
+msgid "Permissions"
+msgstr "Доступ"
+
+#: winguhub/auth/admin.py:31
+msgid "Important dates"
+msgstr "Ключевые даты"
+
+#: winguhub/auth/admin.py:32 winguhub/group/templates/group/groups.html:5
+#: winguhub/templates/admin_base.html:14 winguhub/templates/myhome_base.html:11
+#: winguhub/templates/org_admin_base.html:14 winguhub/templates/org_base.html:15
+#: winguhub/templates/pubgrp.html:15 winguhub/templates/pubrepo.html:16
+#: winguhub/templates/pubuser.html:15
+#: winguhub/templates/snippets/repo_share_form.html:7
+msgid "Groups"
+msgstr "Группы"
+
+#: winguhub/auth/admin.py:114
+msgid "Password changed successfully."
+msgstr "Пароль успешно изменен"
+
+#: winguhub/auth/admin.py:124
+#, python-format
+msgid "Change password: %s"
+msgstr "Изменить пароль: %s"
+
+#: winguhub/auth/forms.py:17 winguhub/base/accounts.py:376
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: winguhub/auth/forms.py:18 winguhub/auth/forms.py:154
+#: winguhub/base/accounts.py:380 winguhub/templates/registration/login.html:10
+#: winguhub/templates/registration/registration_form.html:13
+#: winguhub/templates/snippets/repo_create_form.html:20
+#: winguhub/templates/sysadmin/sys_useradmin.html:14
+msgid "Password"
+msgstr "Пароль"
+
+#: winguhub/auth/forms.py:38
+msgid ""
+"Please enter a correct username and password. Note that both fields are case-"
+"sensitive."
+msgstr ""
+"Пожалуйста, введите правильное имя пользователя и пароль.Обратите внимание, "
+"что оба поля чувствительны к регистру."
+
+#: winguhub/auth/forms.py:40
+msgid "This account is inactive."
+msgstr "Эта учетная запись является неактивной."
+
+#: winguhub/auth/forms.py:45
+msgid ""
+"Your Web browser doesn't appear to have cookies enabled. Cookies are "
+"required for logging in."
+msgstr ""
+"В вашем веб-браузере не активирована функция cookies.Cookies, необходимые "
+"для входа в учетную запись"
+
+#: winguhub/auth/forms.py:58
+msgid "E-mail"
+msgstr ""
+
+#: winguhub/auth/forms.py:65
+msgid ""
+"Failed to send email, email service is not properly configured, please "
+"contact administrator."
+msgstr ""
+"Не удалось отправить email, пожалуйста свяжитесь с администратором сервера."
+
+#: winguhub/auth/forms.py:73
+msgid ""
+"That e-mail address doesn't have an associated user account. Are you sure "
+"you've registered?"
+msgstr ""
+"Этот адрес электронной почты не имеет учетной записи пользователя.Вы "
+"зарегистрировались?"
+
+#: winguhub/auth/forms.py:103
+#, python-format
+msgid "Password reset on %s"
+msgstr "Пароль изменен на %s"
+
+#: winguhub/auth/forms.py:111
+msgid "New password"
+msgstr "Новый пароль: "
+
+#: winguhub/auth/forms.py:112
+msgid "New password confirmation"
+msgstr "Подтверждение нового пароля"
+
+#: winguhub/auth/forms.py:138
+msgid "Old password"
+msgstr "Старый пароль"
+
+#: winguhub/auth/forms.py:146
+msgid "Your old password was entered incorrectly. Please enter it again."
+msgstr ""
+"Ваш старый пароль был введен неправильно. Пожалуйста, введите его снова."
+
+#: winguhub/auth/forms.py:155 winguhub/base/accounts.py:382
+msgid "Password (again)"
+msgstr "Пароль (еще раз)"
+
+#: winguhub/auth/views.py:90
+msgid "Logged out"
+msgstr "Выйти"
+
+#: winguhub/auth/views.py:138
+msgid "Failed to send email, please contact administrator."
+msgstr ""
+"Невозможно отправить сообщение, пожалуйста, обратитесь к администратору."
+
+#: winguhub/auth/management/commands/createsuperuser.py:24
+#: winguhub/base/management/commands/createsuperuser.py:25
+msgid "Enter a valid e-mail address."
+msgstr "Введите действительный адрес электронной почты."
+
+#: winguhub/avatar/forms.py:34 winguhub/avatar/forms.py:57
+#, python-format
+msgid ""
+"%(ext)s is an invalid file extension. Authorized extensions are : "
+"%(valid_exts_list)s"
+msgstr ""
+"%(ext)s является недопустимым расширением файла. Допустимые расширения:"
+"%(valid_exts_list)s"
+
+#: winguhub/avatar/forms.py:38 winguhub/avatar/forms.py:61
+#, python-format
+msgid ""
+"Your file is too big (%(size)s), the maximum allowed size is "
+"%(max_valid_size)s"
+msgstr ""
+"Ваш файл слишком велик (%(size)s), максимально допустимый размер "
+"%(max_valid_size)s"
+
+#: winguhub/avatar/forms.py:44
+#, python-format
+msgid ""
+"You already have %(nb_avatars)d avatars, and the maximum allowed is "
+"%(nb_max_avatars)d."
+msgstr ""
+"У вас уже есть %(nb_avatars)d аватар, максимально разрешено "
+"%(nb_max_avatars)d."
+
+#: winguhub/avatar/models.py:136 winguhub/avatar/models.py:161
+#, python-format
+msgid "Avatar for %s"
+msgstr "Аватар для %s"
+
+#: winguhub/avatar/views.py:78
+msgid "Successfully uploaded a new avatar."
+msgstr "Новый аватар успешно загружен."
+
+#: winguhub/avatar/views.py:128
+msgid "Successfully uploaded a new group avatar."
+msgstr "Новый аватар для группы успешно загружен."
+
+#: winguhub/avatar/views.py:166
+msgid "Successfully updated your avatar."
+msgstr "Ваш аватар успешно загружен."
+
+#: winguhub/avatar/views.py:208
+msgid "Successfully deleted the requested avatars."
+msgstr "Аватар успешно удалён."
+
+#: winguhub/avatar/templates/avatar/add.html:6
+msgid "Upload Avatar"
+msgstr "Загрузить аватар"
+
+#: winguhub/avatar/templates/avatar/add.html:7
+#: winguhub/avatar/templates/avatar/change.html:8
+msgid "Your current avatar: "
+msgstr "Ваш текущий аватар:"
+
+#: winguhub/avatar/templates/avatar/add.html:9
+#: winguhub/avatar/templates/avatar/set_avatar.html:12
+msgid "Upload New Avatar: "
+msgstr "Загрузить новый аватар:"
+
+#: winguhub/avatar/templates/avatar/add.html:13
+#: winguhub/avatar/templates/avatar/change.html:30
+msgid "Upload New Image"
+msgstr "Загрузить новое изображение"
+
+#: winguhub/avatar/templates/avatar/confirm_delete.html:6
+msgid "Please select the avatars that you would like to delete."
+msgstr "Пожалуйста, выберите аватары, которые вы хотели бы удалить."
+
+#: winguhub/avatar/templates/avatar/confirm_delete.html:11
+#, python-format
+msgid ""
+"You have no avatars to delete. Please <a href=\"%(avatar_change_url)s"
+"\">upload one</a> now."
+msgstr ""
+"У вас нет аватара. Пожалуйста <a href=\"%(avatar_change_url)s\">загрузите</"
+"a> прямо сейчас."
+
+#: winguhub/avatar/templates/avatar/confirm_delete.html:18
+msgid "Delete These"
+msgstr "Удалить"
+
+#: winguhub/avatar/templates/avatar/set_avatar.html:8
+msgid "Avatar Change"
+msgstr "Изменить аватар"
+
+#: winguhub/avatar/templates/avatar/set_avatar.html:9
+msgid "Current avatar: "
+msgstr "Текущий аватар:"
+
+#: winguhub/avatar/templates/avatar/set_avatar.html:16
+#: winguhub/contacts/templates/contacts/contact_list.html:54
+#: winguhub/contacts/templates/contacts/contact_list.html:63
+#: winguhub/group/templates/group/discussion_list.html:42
+#: winguhub/group/templates/group/group_discuss.html:66
+#: winguhub/group/templates/group/group_discuss.html:148
+#: winguhub/group/templates/group/group_info.html:177
+#: winguhub/group/templates/group/group_pubinfo.html:24
+#: winguhub/group/templates/group/group_wiki.html:50
+#: winguhub/group/templates/group/group_wiki.html:82
+#: winguhub/group/templates/group/group_wiki_pages.html:54
+#: winguhub/group/templates/group/groups_right_panel.html:30
+#: winguhub/group/templates/group/grpmember_add_form.html:12
+#: winguhub/group/templates/group/grpmember_add_form.html:19
+#: winguhub/group/templates/group/new_msg_reply.html:65
+#: winguhub/message/templates/message/user_msg_list.html:43
+#: winguhub/notifications/templates/notifications/add_notification_form.html:11
+#: winguhub/profile/templates/profile/set_profile.html:29
+#: winguhub/profile/templates/profile/user_profile.html:38
+#: winguhub/templates/base.html:76 winguhub/templates/base.html.py:149
+#: winguhub/templates/decrypt_repo_form.html:14
+#: winguhub/templates/file_edit.html:97 winguhub/templates/file_edit.html:263
+#: winguhub/templates/repo.html:126 winguhub/templates/repo.html.py:136
+#: winguhub/templates/repo.html:160 winguhub/templates/repo.html.py:177
+#: winguhub/templates/repo.html:186 winguhub/templates/shared_file_view.html:50
+#: winguhub/templates/registration/login.html:18
+#: winguhub/templates/registration/password_change_form.html:18
+#: winguhub/templates/registration/password_reset_confirm.html:19
+#: winguhub/templates/registration/password_reset_form.html:13
+#: winguhub/templates/registration/registration_form.html:18
+#: winguhub/templates/snippets/add_to_contacts_form.html:9
+#: winguhub/templates/snippets/events.html:15
+#: winguhub/templates/snippets/file_share_popup.html:20
+#: winguhub/templates/snippets/file_share_popup.html:35
+#: winguhub/templates/snippets/group_recommend_form.html:19
+#: winguhub/templates/snippets/repo_create_form.html:26
+#: winguhub/templates/snippets/repo_share_form.html:52
+#: winguhub/templates/snippets/user_profile_html.html:34
+#: winguhub/templates/sysadmin/sys_useradmin.html:19
+#: winguhub/templates/sysadmin/userinfo.html:93
+#: winguhub/templates/wiki/personal_wiki.html:36
+#: winguhub/templates/wiki/personal_wiki.html:66
+#: winguhub/templates/wiki/personal_wiki_pages.html:42
+msgid "Submit"
+msgstr "ОК"
+
+#: winguhub/avatar/templates/notification/avatar_friend_updated/notice.html:2
+#, python-format
+msgid ""
+"<a href=\"%(user_url)s\">%(avatar_creator)s</a> has updated their avatar <a "
+"href=\"%(avatar_url)s\">%(avatar)s</a>."
+msgstr ""
+"<a href=\"%(user_url)s\">%(avatar_creator)s</a> обновил свой аватар <a href="
+"\"%(avatar_url)s\">%(avatar)s</a>."
+
+#: winguhub/avatar/templates/notification/avatar_updated/notice.html:2
+#, python-format
+msgid "You have updated your avatar <a href=\"%(avatar_url)s\">%(avatar)s</a>."
+msgstr "Вы обновили свой аватар <a href=\"%(avatar_url)s\">%(avatar)s</a>."
+
+#: winguhub/avatar/templatetags/avatar_tags.py:46
+msgid "Default Avatar"
+msgstr "Аватар по умолчанию"
+
+#: winguhub/base/accounts.py:371
+msgid "Email address"
+msgstr "Email адрес"
+
+#: winguhub/base/accounts.py:377
+msgid "This value must be of length 40"
+msgstr "Это значение должно иметь длину 40"
+
+#: winguhub/base/accounts.py:394
+msgid "Invalid user id."
+msgstr "Неверный идентификатор пользователя"
+
+#: winguhub/base/templatetags/winguhub_tags.py:82
+msgid "Added"
+msgstr "Добавлено"
+
+#: winguhub/base/templatetags/winguhub_tags.py:83
+msgid "Deleted"
+msgstr "Удалено"
+
+#: winguhub/base/templatetags/winguhub_tags.py:84
+msgid "Removed"
+msgstr "Исключено"
+
+#: winguhub/base/templatetags/winguhub_tags.py:85
+msgid "Modified"
+msgstr "Модифицировано"
+
+#: winguhub/base/templatetags/winguhub_tags.py:86
+msgid "Renamed"
+msgstr "Переименовано"
+
+#: winguhub/base/templatetags/winguhub_tags.py:87
+msgid "Moved"
+msgstr "Перемещено"
+
+#: winguhub/base/templatetags/winguhub_tags.py:88
+msgid "Added directory"
+msgstr "Добавлено каталоговг"
+
+#: winguhub/base/templatetags/winguhub_tags.py:89
+msgid "Removed directory"
+msgstr "Исключено каталогов"
+
+#: winguhub/base/templatetags/winguhub_tags.py:90
+msgid "Renamed directory"
+msgstr "Переименовано каталогов"
+
+#: winguhub/base/templatetags/winguhub_tags.py:91
+msgid "Moved directory"
+msgstr "Перемещено каталогов"
+
+#: winguhub/base/templatetags/winguhub_tags.py:106
+msgid "Reverted library to status at"
+msgstr "Библиотека восстановлена в статусе"
+
+#: winguhub/base/templatetags/winguhub_tags.py:109
+#, python-format
+msgid "Reverted file \"%(file)s\" to status at %(time)s."
+msgstr "Статус файла восстановлен \"%(file)s\" в %(time)s."
+
+#: winguhub/base/templatetags/winguhub_tags.py:113
+msgid "Recovered deleted directory"
+msgstr "Восстановленно удаленных файлов"
+
+#: winguhub/base/templatetags/winguhub_tags.py:117
+msgid "Auto merge by wingufile system"
+msgstr "Автоматическое слияние системой wingufile"
+
+#: winguhub/base/templatetags/winguhub_tags.py:174
+#: winguhub/base/templatetags/winguhub_tags.py:208 winguhub/templates/repo.html:911
+msgid "Just now"
+msgstr "Прямо сейчас"
+
+#: winguhub/base/templatetags/winguhub_tags.py:183
+#, python-format
+msgid "%(days)d day ago"
+msgid_plural "%(days)d days ago"
+msgstr[0] "%(days)d день назад"
+msgstr[1] "%(days)d дней назад"
+
+#: winguhub/base/templatetags/winguhub_tags.py:190
+#, python-format
+msgid "%(hours)d hour ago"
+msgid_plural "%(hours)d hours ago"
+msgstr[0] "%(hours)d час назад"
+msgstr[1] "%(hours)d часов назад"
+
+#: winguhub/base/templatetags/winguhub_tags.py:197
+#, python-format
+msgid "%(minutes)d minute ago"
+msgid_plural "%(minutes)d minutes ago"
+msgstr[0] "%(minutes)d минуту назад"
+msgstr[1] "%(minutes)d минут назад"
+
+#: winguhub/base/templatetags/winguhub_tags.py:203
+#, python-format
+msgid "%(seconds)d second ago"
+msgid_plural "%(seconds)d seconds ago"
+msgstr[0] "(seconds)d секунду назад"
+msgstr[1] "(seconds)d секунд назад"
+
+#: winguhub/base/templatetags/winguhub_tags.py:302
+#: winguhub/group/templates/group/group_info.html:89
+#: winguhub/group/templates/group/group_info_for_pub.html:56
+#: winguhub/share/views.py:353
+#: winguhub/share/templates/repo/share_out_repos.html:31
+#: winguhub/share/templates/repo/share_out_repos.html:44
+#: winguhub/share/templates/repo/user_share_list.html:42
+#: winguhub/templates/pubrepo.html:34
+#: winguhub/templates/snippets/my_owned_repos.html:28
+#: winguhub/templates/snippets/my_owned_repos.html:71
+#: winguhub/templates/snippets/my_owned_repos.html:118
+#: winguhub/templates/snippets/repo_create_form.html:11
+#: winguhub/templates/snippets/repo_share_form.html:47
+#: winguhub/templates/sysadmin/userinfo.html:51
+#: winguhub/templates/sysadmin/userinfo.html:76
+msgid "Read-Write"
+msgstr "Чтение-запись"
+
+#: winguhub/base/templatetags/winguhub_tags.py:304
+#: winguhub/group/templates/group/group_info.html:91
+#: winguhub/group/templates/group/group_info_for_pub.html:58
+#: winguhub/share/views.py:355
+#: winguhub/share/templates/repo/share_out_repos.html:42
+#: winguhub/share/templates/repo/user_share_list.html:44
+#: winguhub/templates/pubrepo.html:36 winguhub/templates/repo.html:19
+#: winguhub/templates/snippets/my_owned_repos.html:73
+#: winguhub/templates/snippets/my_owned_repos.html:120
+#: winguhub/templates/snippets/repo_create_form.html:12
+#: winguhub/templates/snippets/repo_share_form.html:48
+msgid "Read-Only"
+msgstr "Только чтение"
+
+#: winguhub/contacts/models.py:56
+#: winguhub/contacts/templates/contacts/contact_list.html:126
+msgid "Email is required."
+msgstr "Требуется Email."
+
+#: winguhub/contacts/models.py:61
+#: winguhub/contacts/templates/contacts/contact_list.html:130
+msgid "You can't add yourself."
+msgstr "Вы не можете добавить себя."
+
+#: winguhub/contacts/models.py:64
+msgid "It is already your contact."
+msgstr "Это уже ваш контакт."
+
+#: winguhub/contacts/views.py:67 winguhub/contacts/views.py:92
+#, python-format
+msgid "Successfully added %s to contacts."
+msgstr "Успешно добавлен %s в список контактов."
+
+#: winguhub/contacts/views.py:94
+#, python-format
+msgid "Failed to add %s to contacts."
+msgstr "Не удалось добавить %s в список контактов."
+
+#: winguhub/contacts/views.py:119
+#, python-format
+msgid "Successfully edited %s."
+msgstr "Успешно изменено %s."
+
+#: winguhub/contacts/views.py:132
+#, python-format
+msgid "Successfully Deleted %s"
+msgstr "Успешно удалено %s"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:4
+#: winguhub/contacts/templates/contacts/contact_list.html:16
+#: winguhub/templates/myhome_base.html:17
+#: winguhub/templates/snippets/repo_share_form.html:8
+msgid "Contacts"
+msgstr "Контакты"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:9
+#: winguhub/group/templates/group/groups_left_panel.html:3
+msgid "Tips"
+msgstr "Советы"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:10
+msgid ""
+"When you share libraries or file links to a friend, his/her email will be "
+"added to contacts."
+msgstr ""
+"При совместном использовании библиотек или файлов адреса ваших email(ов)"
+"будут добавлены в ваши списки контактов."
+
+#: winguhub/contacts/templates/contacts/contact_list.html:17
+#: winguhub/contacts/templates/contacts/contact_list.html:48
+msgid "Add Contacts"
+msgstr "Добавить контакты"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:22
+msgid "Email "
+msgstr ""
+
+#: winguhub/contacts/templates/contacts/contact_list.html:23
+#: winguhub/group/templates/group/group_info.html:78
+#: winguhub/group/templates/group/group_info_for_pub.html:45
+#: winguhub/group/templates/group/group_wiki.html:45
+#: winguhub/group/templates/group/group_wiki.html:79
+#: winguhub/group/templates/group/group_wiki_pages.html:51
+#: winguhub/share/templates/repo/priv_shared_files.html:29
+#: winguhub/share/templates/repo/priv_shared_files.html:57
+#: winguhub/share/templates/repo/share_out_repos.html:23
+#: winguhub/share/templates/repo/shared_links.html:23
+#: winguhub/share/templates/repo/user_share_list.html:33
+#: winguhub/templates/pubrepo.html:24 winguhub/templates/repo.html:114
+#: winguhub/templates/repo_history_view.html:52
+#: winguhub/templates/repo_recycle_view.html:53
+#: winguhub/templates/view_shared_dir.html:32
+#: winguhub/templates/snippets/my_owned_repos.html:20
+#: winguhub/templates/snippets/my_owned_repos.html:62
+#: winguhub/templates/snippets/my_owned_repos.html:107
+#: winguhub/templates/snippets/repo_create_form.html:4
+#: winguhub/templates/snippets/repo_dir_data.html:32
+#: winguhub/templates/sysadmin/sys_group_admin.html:12
+#: winguhub/templates/sysadmin/sys_org_admin.html:11
+#: winguhub/templates/sysadmin/sys_publink_admin.html:10
+#: winguhub/templates/sysadmin/sys_repo_admin.html:10
+#: winguhub/templates/sysadmin/userinfo.html:44
+#: winguhub/templates/sysadmin/userinfo.html:69
+#: winguhub/templates/wiki/personal_wiki.html:31
+#: winguhub/templates/wiki/personal_wiki.html:63
+#: winguhub/templates/wiki/personal_wiki_pages.html:39
+msgid "Name"
+msgstr "Имя"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:24
+msgid "Note"
+msgstr "Примечание"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:25
+#: winguhub/group/templates/group/group_info.html:82
+#: winguhub/group/templates/group/group_info_for_pub.html:49
+#: winguhub/group/templates/group/group_manage.html:39
+#: winguhub/group/templates/group/group_manage.html:59
+#: winguhub/group/templates/group/group_manage.html:83
+#: winguhub/notifications/templates/notifications/notification_list.html:7
+#: winguhub/notifications/templates/notifications/notification_list.html:20
+#: winguhub/share/templates/repo/priv_shared_files.html:32
+#: winguhub/share/templates/repo/priv_shared_files.html:60
+#: winguhub/share/templates/repo/share_out_repos.html:27
+#: winguhub/share/templates/repo/shared_links.html:26
+#: winguhub/share/templates/repo/user_share_list.html:36
+#: winguhub/templates/client_mgmt.html:30
+#: winguhub/templates/file_revisions.html:28 winguhub/templates/pubrepo.html:28
+#: winguhub/templates/repo_recycle_view.html:56
+#: winguhub/templates/repo_view_snapshot.html:18
+#: winguhub/templates/view_shared_dir.html:34
+#: winguhub/templates/snippets/my_owned_repos.html:23
+#: winguhub/templates/snippets/my_owned_repos.html:65
+#: winguhub/templates/snippets/my_owned_repos.html:111
+#: winguhub/templates/snippets/repo_dir_data.html:35
+#: winguhub/templates/sysadmin/sys_group_admin.html:15
+#: winguhub/templates/sysadmin/sys_org_admin.html:15
+#: winguhub/templates/sysadmin/sys_publink_admin.html:14
+#: winguhub/templates/sysadmin/sys_repo_admin.html:14
+#: winguhub/templates/sysadmin/sys_useradmin.html:28
+#: winguhub/templates/sysadmin/userinfo.html:46
+msgid "Operations"
+msgstr "Операции"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:34
+#: winguhub/share/templates/repo/share_out_repos.html:37
+#: winguhub/templates/file_edit.html:80
+#: winguhub/templates/view_file_markdown.html:13
+#: winguhub/templates/view_file_sf.html:8
+#: winguhub/templates/view_file_text.html:24
+msgid "Edit"
+msgstr "Редактировать"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:35
+#: winguhub/group/templates/group/group_discuss.html:83
+#: winguhub/group/templates/group/group_manage.html:68
+#: winguhub/group/templates/group/group_manage.html:92
+#: winguhub/notifications/templates/notifications/notification_list.html:32
+#: winguhub/templates/repo.html:238
+#: winguhub/templates/snippets/file_share_popup.html:28
+#: winguhub/templates/snippets/my_owned_repos.html:39
+#: winguhub/templates/snippets/my_owned_repos.html:88
+#: winguhub/templates/snippets/repo_dir_data.html:67
+#: winguhub/templates/snippets/repo_dir_data.html:113
+#: winguhub/templates/sysadmin/sys_group_admin.html:22
+#: winguhub/templates/sysadmin/sys_org_admin.html:23
+#: winguhub/templates/sysadmin/sys_repo_admin.html:22
+#: winguhub/templates/sysadmin/sys_useradmin.html:49
+#: winguhub/templates/sysadmin/userinfo.html:55
+msgid "Delete"
+msgstr "Удалить"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:42
+msgid "You don't have any contacts"
+msgstr "У вас нет ни одного контакта"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:43
+msgid ""
+"Add your contacts so you can quickly share libraries and send file shared "
+"link."
+msgstr ""
+"Добавить ваши контакты, чтобы вы могли быстро обмениваться библиотеками и "
+"отправлять ссылки на общие файлы."
+
+#: winguhub/contacts/templates/contacts/contact_list.html:49
+#: winguhub/contacts/templates/contacts/contact_list.html:58
+#: winguhub/group/templates/group/group_manage.html:58
+#: winguhub/group/templates/group/group_manage.html:82
+#: winguhub/message/templates/message/all_msg_list.html:22
+#: winguhub/templates/registration/login.html:8
+#: winguhub/templates/registration/registration_form.html:11
+#: winguhub/templates/snippets/add_to_contacts_form.html:3
+#: winguhub/templates/snippets/user_profile_html.html:28
+#: winguhub/templates/sysadmin/sys_useradmin.html:12
+#: winguhub/templates/sysadmin/sys_useradmin.html:24
+msgid "Email"
+msgstr ""
+
+#: winguhub/contacts/templates/contacts/contact_list.html:51
+#: winguhub/contacts/templates/contacts/contact_list.html:60
+#: winguhub/templates/snippets/add_to_contacts_form.html:5
+#: winguhub/templates/snippets/user_profile_html.html:30
+msgid "Name(optional)"
+msgstr "Имя (необязательно)"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:52
+#: winguhub/contacts/templates/contacts/contact_list.html:61
+#: winguhub/templates/snippets/add_to_contacts_form.html:7
+#: winguhub/templates/snippets/user_profile_html.html:32
+msgid "Note(optional)"
+msgstr "Примечание (необязательно)"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:57
+msgid "Edit Contact"
+msgstr "Радактировать контакт"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:116
+msgid "Delete Contact"
+msgstr "Удалить контакт"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:116
+#: winguhub/notifications/templates/notifications/notification_list.html:72
+#: winguhub/templates/snippets/myhome_extra_script.html:52
+#: winguhub/templates/sysadmin/sys_group_admin.html:63
+#: winguhub/templates/sysadmin/sys_org_admin.html:63
+#: winguhub/templates/sysadmin/sys_repo_admin.html:63
+#: winguhub/templates/sysadmin/sys_useradmin.html:96
+#: winguhub/templates/sysadmin/userinfo.html:141
+#, fuzzy, python-format
+msgid "Are you sure you want to delete %s ?"
+msgstr "Вы уверены, что хотите удалить %s ?"
+
+#: winguhub/group/error_msg.py:7
+msgid "The group has already created"
+msgstr "Группа уже создана"
+
+#: winguhub/group/error_msg.py:8
+msgid "Failed to create group"
+msgstr "Не удалось создать группу"
+
+#: winguhub/group/error_msg.py:11
+msgid "The group has already created in this org."
+msgstr "Общественная группа уже создана."
+
+#: winguhub/group/error_msg.py:12
+msgid "Failed to create org group."
+msgstr "Не удалось создать общественную группу"
+
+#: winguhub/group/error_msg.py:15
+msgid "Permission error: only group staff can add member"
+msgstr "Ошибка доступа: только руководители группы могут добавлять членов"
+
+#: winguhub/group/error_msg.py:16 winguhub/group/error_msg.py:22
+msgid "Group does not exist"
+msgstr "Группа не существует"
+
+#: winguhub/group/error_msg.py:17
+msgid "Group is full"
+msgstr "Группа переполненна"
+
+#: winguhub/group/error_msg.py:18
+msgid "Failed to add member to group"
+msgstr "Не удалось добавить членов в группу"
+
+#: winguhub/group/error_msg.py:21
+msgid "Only group staff can remove member"
+msgstr "Только руководители группы могут исключить члена"
+
+#: winguhub/group/error_msg.py:23
+msgid "Can not remove myself"
+msgstr "Не удается исключить себя"
+
+#: winguhub/group/forms.py:30 winguhub/templates/snippets/group_add_js.html:8
+msgid "Group name can't be empty"
+msgstr "Название группы не может быть пустым"
+
+#: winguhub/group/forms.py:31
+msgid "Group name is too long (maximum is 255 characters)"
+msgstr "Название группы слишком длинное (максимум 255 символов)"
+
+#: winguhub/group/forms.py:36
+msgid "Group name can only contain letters, numbers or underline"
+msgstr "Имя группы может содержать только буквы, цифры или подчеркивания"
+
+#: winguhub/group/forms.py:46
+msgid "Verification message can't be empty"
+msgstr "Проверочное сообщение не может быть пустым"
+
+#: winguhub/group/forms.py:47
+msgid "Verification message is too long (maximun is 255 characters)"
+msgstr "Проверочное сообщение слишком длинное (максимум 255 символов)"
+
+#: winguhub/group/forms.py:67 winguhub/wiki/forms.py:27
+#, python-format
+msgid "\"%s\" is not a valid name"
+msgstr "\"%s\" не допустимое имя"
+
+#: winguhub/group/views.py:138
+#, python-format
+msgid ""
+"You can only create %d groups.<a href=\"http://wingufile.com/\">Upgrade "
+"account.</a>"
+msgstr ""
+"Вы можете создать %d групп.<a href=\"http://wingufile.com/\">Обновите аккаунт."
+"</a>"
+
+#: winguhub/group/views.py:153
+msgid "There is already a group with that name."
+msgstr "Группа с таким именем уже существует"
+
+#: winguhub/group/views.py:251 winguhub/group/views.py:273
+msgid "Only administrators can make the group public"
+msgstr "Только администраторы могут сделать группу общественной"
+
+#: winguhub/group/views.py:319
+msgid "The message doesn't exist"
+msgstr "Сообщение, не существует"
+
+#: winguhub/group/views.py:329
+msgid "You don't have the permission."
+msgstr "У вас нет доступа."
+
+#: winguhub/group/views.py:540 winguhub/group/views.py:671
+#, python-format
+msgid ""
+"You can only invite %d members.<a href=\"http://wingufile.com/\">Upgrade "
+"account.</a>"
+msgstr ""
+"Вы можете пригласить %d членов.<a href=\"http://wingufile.com/\">Обновите "
+"аккаунт.</a>"
+
+#: winguhub/group/views.py:562
+msgid "Your friend added you to a group at Seafile."
+msgstr "Ваш друг добавил вас в группу на Seafile."
+
+#: winguhub/group/views.py:585
+#, python-format
+msgid "Failed to add, %s is not registerd."
+msgstr "Не удалось добавить, %s не зарегистрирован."
+
+#: winguhub/group/views.py:599
+#, python-format
+msgid "Successfully added. An email has been sent."
+msgid_plural "Successfully added. %(count)s emails have been sent."
+msgstr[0] "Успешно добавлен. Сообщение было отправлено."
+msgstr[1] "Успешно добавлены. %(count)s сообщений было отправлено."
+
+#: winguhub/group/views.py:607
+msgid "Successfully added."
+msgstr "Успешно добавлен."
+
+#: winguhub/group/views.py:652
+#, python-format
+msgid "Failed to add, %s is not registrated."
+msgstr "Не удалось добавить, %s не зарегистрирован."
+
+#: winguhub/group/views.py:684 winguhub/group/views.py:697
+#: winguhub/group/views.py:724
+msgid "Operation succeeded."
+msgstr "Операция выполнена успешно."
+
+#: winguhub/group/views.py:726
+#, python-format
+msgid "Failed：%s"
+msgstr "Не удалось: %s"
+
+#: winguhub/group/views.py:751
+msgid "Failed to unshare: the group doesn't exist."
+msgstr "Не удалось запретить общий доступ: группа не существует."
+
+#: winguhub/group/views.py:756
+msgid ""
+"Operation failed: only administrators and the owner of the library can "
+"unshare it."
+msgstr ""
+"Операция не удалась: только администраторы или владельцы библиотек могут "
+"запретить их совместное использование."
+
+#: winguhub/group/views.py:759
+msgid "Failed to unshare: internal error."
+msgstr "Не удалось запретить совместное использование: внутренняя ошибка."
+
+#: winguhub/group/views.py:788
+msgid "Error: wrong group id"
+msgstr "Ошибка: неверный идентификатор группы"
+
+#: winguhub/group/views.py:793
+msgid "Error: the group does not exist."
+msgstr "Ошибка: группа не существует."
+
+#: winguhub/group/views.py:825
+#, python-format
+msgid "Successfully posted to %(groups)s."
+msgstr "Успешно размещен в %(groups)s."
+
+#: winguhub/group/views.py:828
+#, python-format
+msgid "Error: you are not in group %s."
+msgstr "Ошибка: вы не участник группы %s. "
+
+#: winguhub/group/views.py:840
+msgid "Error: the library does not exist."
+msgstr "Ошиька: библиотека не существует."
+
+#: winguhub/group/views.py:843
+msgid "Error: no path."
+msgstr "Ошибка: не верный путь."
+
+#: winguhub/group/views.py:881
+msgid "Failed to create: the group does not exist."
+msgstr "Не возможно создать: группа не существует."
+
+#: winguhub/group/views.py:885
+msgid "Failed to create: you are not in the group."
+msgstr "Не возможно создать: вы не в группе."
+
+#: winguhub/group/views.py:907 winguhub/group/views.py:930
+#: winguhub/group/views.py:1261 winguhub/views/wiki.py:124
+msgid "Failed to create"
+msgstr "Не возможно создать"
+
+#: winguhub/group/views.py:921 winguhub/group/views.py:943
+#: winguhub/group/views.py:1270
+msgid "Failed to create: internal error."
+msgstr "Не возможно создать: внутренняя ошибка."
+
+#: winguhub/group/views.py:970
+msgid "You are already in the group."
+msgstr "Вы уже в группе."
+
+#: winguhub/group/views.py:989
+msgid "apply to join the group"
+msgstr "подать заявку на вступление в группу"
+
+#: winguhub/group/views.py:991
+msgid "Sent successfully, the group admin will handle it."
+msgstr "Успешно отправлено, на рассмотрение администрации."
+
+#: winguhub/group/views.py:995
+msgid "Failed to send. You can try it again later."
+msgstr "Не удалось отправить. Вы можете попробовать еще раз позже."
+
+#: winguhub/group/views.py:1185 winguhub/group/views.py:1308
+#: winguhub/views/wiki.py:53 winguhub/views/wiki.py:158
+msgid "Failed to create wiki page. Please retry later."
+msgstr "Не удалось создать wiki-страницу. Повторите попытку позже."
+
+#: winguhub/group/views.py:1221 winguhub/views/__init__.py:441
+#: winguhub/views/wiki.py:87
+msgid "Internal Server Error"
+msgstr "Внутренняя ошибка сервера"
+
+#: winguhub/group/views.py:1223 winguhub/views/wiki.py:89
+msgid "Wiki does not exists."
+msgstr "Файл wiki не существует"
+
+#: winguhub/group/views.py:1277 winguhub/views/wiki.py:131
+msgid "Failed to create home page. Please retry later"
+msgstr "Не удалось создать домашнюю страницу. Повторите попытку позже."
+
+#: winguhub/group/views.py:1298 winguhub/group/views.py:1324
+#: winguhub/group/views.py:1342 winguhub/views/wiki.py:148
+#: winguhub/views/wiki.py:171 winguhub/views/wiki.py:186
+msgid "Wiki is not found."
+msgstr "Wiki не найден."
+
+#: winguhub/group/views.py:1305 winguhub/views/wiki.py:155
+#, python-format
+msgid "Page \"%s\" already exists."
+msgstr "Страница \"%s\" уже существует."
+
+#: winguhub/group/templates/group/add_member_email.html:2
+#, python-format
+msgid ""
+"%(email)s invite you to join group %(group.group_name)s. Please go to the "
+"following page and sign up:"
+msgstr ""
+"%(email)s приглашаем Вас присоединиться к группе %(group.group_name)s. "
+"Пожалуйста, перейдите на следующую страницу и зарегистрируйтесь:"
+
+#: winguhub/group/templates/group/add_member_email.html:5
+#: winguhub/group/templates/group/group_join_email.html:6
+#: winguhub/templates/shared_link_email.html:7
+#: winguhub/templates/registration/password_reset_email.html:10
+#: winguhub/templates/sysadmin/user_add_email.html:14
+#: winguhub/templates/sysadmin/user_reset_email.html:6
+msgid "Thanks for using our site!"
+msgstr "Спасибо за использование нашего сайта!"
+
+#: winguhub/group/templates/group/add_member_email.html:7
+#: winguhub/group/templates/group/group_join_email.html:8
+#: winguhub/templates/shared_link_email.html:9
+#: winguhub/templates/registration/password_reset_email.html:12
+#: winguhub/templates/sysadmin/user_add_email.html:16
+#: winguhub/templates/sysadmin/user_reset_email.html:8
+#, python-format
+msgid "The %(site_name)s team"
+msgstr "Команда %(site_name)s"
+
+#: winguhub/group/templates/group/discussion_list.html:18
+#: winguhub/group/templates/group/group_discuss.html:122
+#: winguhub/group/templates/group/new_msg_reply.html:46
+msgid "Hide replies"
+msgstr "Скрыть ответы"
+
+#: winguhub/group/templates/group/discussion_list.html:31
+#: winguhub/group/templates/group/group_discuss.html:136
+#: winguhub/group/templates/group/group_reply_list.html:11
+#: winguhub/group/templates/group/new_msg_reply.html:56
+msgid "Reply"
+msgstr "Ответ"
+
+#: winguhub/group/templates/group/discussion_list.html:40
+#: winguhub/group/templates/group/group_discuss.html:146
+#: winguhub/group/templates/group/new_msg_reply.html:63
+msgid "Add a reply..."
+msgstr "Добавить ответ ..."
+
+#: winguhub/group/templates/group/discussion_list.html:41
+#: winguhub/group/templates/group/group_discuss.html:147
+#: winguhub/group/templates/group/new_msg_reply.html:64
+#, fuzzy
+msgid "It can not be blank and should be no more than 2048 characters."
+msgstr "Значение не может быть пустым и должно быть не более 150 символов."
+
+#: winguhub/group/templates/group/discussion_list.html:43
+#: winguhub/group/templates/group/group_discuss.html:67
+#: winguhub/group/templates/group/group_discuss.html:149
+#: winguhub/group/templates/group/group_info.html:178
+#: winguhub/group/templates/group/new_msg_reply.html:66
+#: winguhub/message/templates/message/user_msg_list.html:44
+#: winguhub/templates/base.html:77 winguhub/templates/file_edit.html:98
+#: winguhub/templates/file_edit.html:264 winguhub/templates/repo.html:127
+#: winguhub/templates/repo.html.py:137 winguhub/templates/repo.html:161
+#: winguhub/templates/repo.html.py:178 winguhub/templates/repo.html:187
+#: winguhub/templates/repo.html.py:237 winguhub/templates/shared_file_view.html:51
+#: winguhub/templates/snippets/events.html:16
+#: winguhub/templates/snippets/file_share_popup.html:36
+msgid "Cancel"
+msgstr "Выход"
+
+#: winguhub/group/templates/group/group_discuss.html:15
+#: winguhub/group/templates/group/group_info.html:16
+#: winguhub/group/templates/group/group_info.html:68
+#: winguhub/group/templates/group/group_info_for_pub.html:16
+#: winguhub/group/templates/group/group_manage.html:14
+#: winguhub/group/templates/group/group_members.html:16
+#: winguhub/group/templates/group/group_wiki.html:16
+#: winguhub/group/templates/group/group_wiki_pages.html:15
+#: winguhub/share/templates/repo/priv_shared_files.html:11
+#: winguhub/share/templates/repo/share_out_repos.html:11
+#: winguhub/share/templates/repo/shared_links.html:11
+#: winguhub/templates/admin_base.html:8 winguhub/templates/client_mgmt.html:13
+#: winguhub/templates/myhome.html:13 winguhub/templates/org_admin_base.html:11
+#: winguhub/templates/pubgrp.html:14 winguhub/templates/pubrepo.html:15
+#: winguhub/templates/pubuser.html:14
+#: winguhub/templates/wiki/personal_wiki.html:13
+#: winguhub/templates/wiki/personal_wiki_pages.html:13
+msgid "Libraries"
+msgstr "Библиотеки"
+
+#: winguhub/group/templates/group/group_discuss.html:17
+#: winguhub/group/templates/group/group_info.html:18
+#: winguhub/group/templates/group/group_info_for_pub.html:18
+#: winguhub/group/templates/group/group_manage.html:16
+#: winguhub/group/templates/group/group_members.html:18
+#: winguhub/group/templates/group/group_wiki.html:18
+#: winguhub/group/templates/group/group_wiki_pages.html:17
+msgid "Wiki"
+msgstr ""
+
+#: winguhub/group/templates/group/group_discuss.html:19
+#: winguhub/group/templates/group/group_info.html:20
+#: winguhub/group/templates/group/group_info_for_pub.html:20
+#: winguhub/group/templates/group/group_manage.html:18
+#: winguhub/group/templates/group/group_members.html:20
+#: winguhub/group/templates/group/group_wiki.html:20
+#: winguhub/group/templates/group/group_wiki_pages.html:19
+msgid "Files"
+msgstr "Файлы"
+
+#: winguhub/group/templates/group/group_discuss.html:22
+#: winguhub/group/templates/group/group_discuss.html:33
+#: winguhub/group/templates/group/group_info.html:22
+#: winguhub/group/templates/group/group_info.html:46
+#: winguhub/group/templates/group/group_manage.html:20
+#: winguhub/group/templates/group/group_manage.html:52
+#: winguhub/group/templates/group/group_members.html:22
+#: winguhub/group/templates/group/group_wiki.html:23
+#: winguhub/group/templates/group/group_wiki_pages.html:22
+msgid "Members"
+msgstr "Участники"
+
+#: winguhub/group/templates/group/group_discuss.html:25
+#: winguhub/group/templates/group/group_info.html:24
+#: winguhub/group/templates/group/group_manage.html:21
+#: winguhub/group/templates/group/group_members.html:24
+#: winguhub/group/templates/group/group_wiki.html:26
+#: winguhub/group/templates/group/group_wiki_pages.html:25
+msgid "Admin"
+msgstr "Админитратор"
+
+#: winguhub/group/templates/group/group_discuss.html:48
+msgid "No members"
+msgstr "Нет участников"
+
+#: winguhub/group/templates/group/group_discuss.html:62
+msgid "Add a discussion..."
+msgstr "Добавить обсуждение"
+
+#: winguhub/group/templates/group/group_discuss.html:71
+#: winguhub/message/templates/message/user_msg_list.html:108
+msgid "After login, you can post discussions and add replies."
+msgstr "После авторизации, Вы можете участвовать в обсуждениях."
+
+#: winguhub/group/templates/group/group_discuss.html:162
+#: winguhub/message/templates/message/user_msg_list.html:88
+#: winguhub/templates/pubuser.html:38 winguhub/templates/repo_history.html:52
+#: winguhub/templates/repo_view_snapshot.html:50
+#: winguhub/templates/view_file_pdf.html:30
+#: winguhub/templates/snippets/file_content_js.html:62
+#: winguhub/templates/sysadmin/sys_group_admin.html:29
+#: winguhub/templates/sysadmin/sys_publink_admin.html:30
+#: winguhub/templates/sysadmin/sys_repo_admin.html:29
+#: winguhub/templates/sysadmin/sys_useradmin.html:64
+msgid "Previous"
+msgstr "Предыдущий"
+
+#: winguhub/group/templates/group/group_discuss.html:172
+#: winguhub/message/templates/message/user_msg_list.html:98
+#: winguhub/templates/pubuser.html:48 winguhub/templates/repo_history.html:55
+#: winguhub/templates/repo_view_snapshot.html:53
+#: winguhub/templates/view_file_pdf.html:30
+#: winguhub/templates/snippets/file_content_js.html:62
+#: winguhub/templates/sysadmin/sys_group_admin.html:32
+#: winguhub/templates/sysadmin/sys_publink_admin.html:33
+#: winguhub/templates/sysadmin/sys_repo_admin.html:32
+#: winguhub/templates/sysadmin/sys_useradmin.html:67
+msgid "Next"
+msgstr "Следующий"
+
+#: winguhub/group/templates/group/group_discuss.html:178
+#: winguhub/message/templates/message/user_msg_list.html:104
+msgid "↑Top"
+msgstr "↑Вверх"
+
+#: winguhub/group/templates/group/group_discuss.html:229
+msgid "Really want to delete this discussion?"
+msgstr "Вы действительно хотите удалить это обсуждение?"
+
+#: winguhub/group/templates/group/group_discuss.html:229
+#: winguhub/templates/base.html:180
+msgid "Yes"
+msgstr "Да"
+
+#: winguhub/group/templates/group/group_discuss.html:229
+#: winguhub/templates/base.html:181
+msgid "No"
+msgstr "Нет"
+
+#: winguhub/group/templates/group/group_discuss.html:244
+msgid "Successfully deleted"
+msgstr "Успешно удалено"
+
+#: winguhub/group/templates/group/group_discuss.html:246
+msgid "Failed to delete: "
+msgstr "Не удалось удалить:"
+
+#: winguhub/group/templates/group/group_discuss.html:250
+msgid "Failed."
+msgstr "Не удачно."
+
+#: winguhub/group/templates/group/group_info.html:33
+#: winguhub/group/templates/group/group_info_for_pub.html:29
+#: winguhub/message/templates/message/user_msg_list.html:8
+#: winguhub/share/templates/repo/user_share_list.html:8
+#: winguhub/templates/org_admin_base.html:8
+msgid "Basic Info"
+msgstr "Базовая информация"
+
+#: winguhub/group/templates/group/group_info.html:33
+#: winguhub/group/templates/group/group_info_for_pub.html:29
+msgid "This group is public."
+msgstr "Это публичная группа"
+
+#: winguhub/group/templates/group/group_info.html:37
+#: winguhub/group/templates/group/group_info_for_pub.html:33
+msgid "created at"
+msgstr "создана"
+
+#: winguhub/group/templates/group/group_info.html:39
+#: winguhub/group/templates/group/group_info.html:191
+msgid "Quit Group"
+msgstr "Выйти из группы"
+
+#: winguhub/group/templates/group/group_info.html:69
+msgid "Recent Changes"
+msgstr "Недавние изменения"
+
+#: winguhub/group/templates/group/group_info.html:71
+#: winguhub/templates/pubrepo.html:13
+#: winguhub/templates/snippets/my_owned_repos.html:13
+#: winguhub/templates/snippets/repo_create_form.html:3
+msgid "New Library"
+msgstr "Новая библиотека"
+
+#: winguhub/group/templates/group/group_info.html:79
+#: winguhub/group/templates/group/group_info.html:128
+#: winguhub/group/templates/group/group_info_for_pub.html:46
+#: winguhub/group/templates/group/group_wiki.html:47
+#: winguhub/share/templates/repo/share_out_repos.html:26
+#: winguhub/share/templates/repo/user_share_list.html:34
+#: winguhub/templates/pubrepo.html:25 winguhub/templates/repo.html:116
+#: winguhub/templates/repo_history.html:23
+#: winguhub/templates/snippets/my_owned_repos.html:21
+#: winguhub/templates/snippets/my_owned_repos.html:108
+#: winguhub/templates/snippets/repo_create_form.html:6
+#: winguhub/templates/sysadmin/sys_repo_admin.html:13
+#: winguhub/templates/sysadmin/userinfo.html:45
+#: winguhub/templates/sysadmin/userinfo.html:71
+#: winguhub/templates/wiki/personal_wiki.html:33
+msgid "Description"
+msgstr "Описание"
+
+#: winguhub/group/templates/group/group_info.html:80
+#: winguhub/group/templates/group/group_info_for_pub.html:47
+#: winguhub/share/templates/repo/user_share_list.html:35
+#: winguhub/templates/pubrepo.html:26
+#: winguhub/templates/snippets/my_owned_repos.html:22
+#: winguhub/templates/snippets/my_owned_repos.html:64
+#: winguhub/templates/snippets/my_owned_repos.html:109
+#: winguhub/templates/snippets/my_owned_repos.html:155
+#: winguhub/templates/snippets/repo_dir_data.html:34
+msgid "Last Update"
+msgstr "Последнее обновление"
+
+#: winguhub/group/templates/group/group_info.html:81
+#: winguhub/group/templates/group/group_info_for_pub.html:48
+#: winguhub/templates/snippets/my_owned_repos.html:110
+msgid "Shared By"
+msgstr "Доступно для"
+
+#: winguhub/group/templates/group/group_info.html:89
+#: winguhub/group/templates/group/group_info.html:91
+#: winguhub/group/templates/group/group_info_for_pub.html:56
+#: winguhub/group/templates/group/group_info_for_pub.html:58
+#: winguhub/share/templates/repo/share_out_repos.html:31
+#: winguhub/share/templates/repo/user_share_list.html:42
+#: winguhub/share/templates/repo/user_share_list.html:44
+#: winguhub/templates/snippets/my_owned_repos.html:28
+#: winguhub/templates/snippets/my_owned_repos.html:71
+#: winguhub/templates/snippets/my_owned_repos.html:73
+#: winguhub/templates/snippets/my_owned_repos.html:118
+#: winguhub/templates/snippets/my_owned_repos.html:120
+#: winguhub/templates/sysadmin/userinfo.html:51
+msgid "directory icon"
+msgstr "Значёк каталога"
+
+#: winguhub/group/templates/group/group_info.html:105
+#: winguhub/share/templates/repo/user_share_list.html:55
+#: winguhub/templates/pubrepo.html:44
+#: winguhub/templates/snippets/my_owned_repos.html:37
+#: winguhub/templates/snippets/my_owned_repos.html:84
+#: winguhub/templates/snippets/my_owned_repos.html:132
+msgid "Download and Sync"
+msgstr "Скачать и синхронизировать"
+
+#: winguhub/group/templates/group/group_info.html:107
+#: winguhub/share/templates/repo/share_out_repos.html:51
+#: winguhub/share/templates/repo/share_out_repos.html:54
+#: winguhub/share/templates/repo/share_out_repos.html:58
+#: winguhub/share/templates/repo/share_out_repos.html:60
+#: winguhub/share/templates/repo/user_share_list.html:59
+msgid "Unshare"
+msgstr "Закрыть доступ"
+
+#: winguhub/group/templates/group/group_info.html:115
+msgid "No library is sharing to this group"
+msgstr "Нет ни одной библиотеки в общем доступе в этой группе"
+
+#: winguhub/group/templates/group/group_info.html:116
+msgid ""
+"You can share libraries by clicking the \"New Library\" button above or the "
+"\"Share\" icon on your libraries list."
+msgstr ""
+"Вы можете дать общий доступ библиотеки, нажав кнопку \"Новая библиотека\" "
+"вверху или кнопку \"Доступ\" в вашем списке библиотек."
+
+#: winguhub/group/templates/group/group_info.html:117
+msgid ""
+"Libraries shared as writable can be downloaded and synced by other group "
+"members. Read only libraries can only be downloaded, updates by others will "
+"not be uploaded."
+msgstr ""
+"Библиотеки с общим доступом и с правом на запись могут быть загружены и "
+"синхронизированы другими  членами группы. Библиотеки с меткой 'Только Для "
+"Чтения' могут загружаться членами группы, но не могут обновляться ими на "
+"сервере."
+
+#: winguhub/group/templates/group/group_info.html:127
+#: winguhub/group/templates/group/group_info.html:171
+#: winguhub/share/templates/repo/priv_shared_files.html:30
+#: winguhub/share/templates/repo/priv_shared_files.html:58
+#: winguhub/share/templates/repo/shared_links.html:24
+#: winguhub/templates/client_mgmt.html:26 winguhub/templates/file_edit.html:258
+#: winguhub/templates/snippets/events.html:9
+#: winguhub/templates/snippets/my_owned_repos.html:154
+msgid "Library"
+msgstr "Библиотека"
+
+#: winguhub/group/templates/group/group_info.html:129
+msgid "Modified at"
+msgstr "Изменено"
+
+#: winguhub/group/templates/group/group_info.html:130
+#: winguhub/templates/repo_history.html:22
+msgid "Modifier"
+msgstr "Изменил"
+
+#: winguhub/group/templates/group/group_info.html:150
+#: winguhub/group/templates/group/group_info.html:152
+#: winguhub/templates/repo.html:146 winguhub/templates/repo.html.py:148
+#: winguhub/templates/repo.html:152 winguhub/templates/repo.html.py:154
+#: winguhub/templates/repo_history.html:44
+#: winguhub/templates/repo_view_snapshot.html:38
+#: winguhub/templates/snippets/current_commit.html:4
+#: winguhub/templates/snippets/events_body.html:18
+#: winguhub/templates/snippets/events_body.html:20
+msgid "Details"
+msgstr "Детали"
+
+#: winguhub/group/templates/group/group_info.html:159
+#: winguhub/group/templates/group/new_msg_reply.html:74
+#: winguhub/templates/pubuser.html:53 winguhub/templates/repo_history.html:35
+#: winguhub/templates/repo_view_snapshot.html:29
+msgid "None"
+msgstr "Нет"
+
+#: winguhub/group/templates/group/group_info.html:164
+#: winguhub/templates/client_mgmt.html:39 winguhub/templates/client_mgmt.html:46
+#: winguhub/templates/client_mgmt.html:53 winguhub/templates/client_mgmt.html:56
+#: winguhub/templates/file_revisions.html:45
+#: winguhub/templates/repo_history.html:38
+#: winguhub/templates/repo_history_view.html:21
+#: winguhub/templates/repo_view_snapshot.html:32
+#: winguhub/templates/snippets/current_commit.html:15
+msgid "Unknown"
+msgstr "Не определено"
+
+#: winguhub/group/templates/group/group_info.html:171
+#: winguhub/templates/file_edit.html:258 winguhub/templates/snippets/events.html:9
+msgid "is encrypted"
+msgstr "зашифровано"
+
+#: winguhub/group/templates/group/group_info.html:173
+#: winguhub/templates/file_edit.html:259
+#: winguhub/templates/snippets/events.html:11
+msgid "Password："
+msgstr "Пароль:"
+
+#: winguhub/group/templates/group/group_info.html:175
+#: winguhub/templates/file_edit.html:261
+#: winguhub/templates/snippets/events.html:13
+msgid "The password will be kept in the server for only 1 hour."
+msgstr "Пароль будет храниться на сервере только в течение 1 часа."
+
+#: winguhub/group/templates/group/group_info.html:192
+msgid "Are you sure you want to quit this group?"
+msgstr "Вы уверенны что хотите выйти из группы?"
+
+#: winguhub/group/templates/group/group_info.html:195
+msgid "Unshare Library"
+msgstr "Отменить общий доступ к библиотеке"
+
+#: winguhub/group/templates/group/group_info.html:196
+#, fuzzy, python-format
+msgid "Are you sure you want to unshare %s ?"
+msgstr "Вы уверены, что хотите запретить достут к %s ?"
+
+#: winguhub/group/templates/group/group_info_for_pub.html:78
+msgid "No public library is in this group"
+msgstr "Нет общедоступных библиотек в этой группе"
+
+#: winguhub/group/templates/group/group_info_for_pub.html:79
+msgid "A library can be made public in its settings page.(Not implemented yet)"
+msgstr ""
+"Библиотека может быть обнародована на своей странице настроек. (Не "
+"реализовано)"
+
+#: winguhub/group/templates/group/group_join_email.html:2
+#, python-format
+msgid ""
+"%(user)s want to join to Group \"%(group_name)s\", here is the verification "
+"message: "
+msgstr ""
+"%(user)s хочет вступить в группу \"%(group_name)s\", это проверочное "
+"сообщение: "
+
+#: winguhub/group/templates/group/group_manage.html:28
+msgid "Group Avatar"
+msgstr "Аватар группы"
+
+#: winguhub/group/templates/group/group_manage.html:32
+#: winguhub/profile/templates/profile/set_profile.html:12
+msgid "Change"
+msgstr "Изменить"
+
+#: winguhub/group/templates/group/group_manage.html:41
+msgid "Dismiss"
+msgstr "Исключить"
+
+#: winguhub/group/templates/group/group_manage.html:43
+msgid "Revoke Public"
+msgstr "Снять с публикации"
+
+#: winguhub/group/templates/group/group_manage.html:45
+msgid "Make Public"
+msgstr "Опубликовать"
+
+#: winguhub/group/templates/group/group_manage.html:53
+msgid "Add Members"
+msgstr "Добавть участника"
+
+#: winguhub/group/templates/group/group_manage.html:76
+msgid "Administrators"
+msgstr "Администраторы"
+
+#: winguhub/group/templates/group/group_manage.html:77
+msgid "Add Administrators"
+msgstr "Добавить Админостраторов"
+
+#: winguhub/group/templates/group/group_manage.html:109
+msgid "Dismiss Group"
+msgstr "Исключить группу"
+
+#: winguhub/group/templates/group/group_manage.html:110
+msgid "Really want to dismiss this group?"
+msgstr "Вы действительно хотите удалить эту группу?"
+
+#: winguhub/group/templates/group/group_manage.html:113
+msgid "Delete Member"
+msgstr "Удалить участника"
+
+#: winguhub/group/templates/group/group_manage.html:114
+#, fuzzy, python-format
+msgid "Really want to delete %s ?"
+msgstr "Действительно хотите удалить %s ?"
+
+#: winguhub/group/templates/group/group_members.html:44
+#: winguhub/templates/pubuser.html:29
+msgid "Add to Contacts"
+msgstr "Добавить в контакты"
+
+#: winguhub/group/templates/group/group_pubinfo.html:9
+msgid "Join Group"
+msgstr "Присоединиться к группе"
+
+#: winguhub/group/templates/group/group_pubinfo.html:13
+msgid "Name: "
+msgstr "Имя"
+
+#: winguhub/group/templates/group/group_pubinfo.html:14
+#: winguhub/group/templates/group/groups_right_panel.html:13
+#: winguhub/templates/pubgrp.html:26
+msgid "Creator: "
+msgstr "Создатель: "
+
+#: winguhub/group/templates/group/group_pubinfo.html:15
+msgid "Create at: "
+msgstr "Создано: "
+
+#: winguhub/group/templates/group/group_pubinfo.html:16
+msgid "Members: "
+msgstr "Пользователи: "
+
+#: winguhub/group/templates/group/group_pubinfo.html:21
+msgid "Verification Message"
+msgstr "Проверочное сообщение"
+
+#: winguhub/group/templates/group/group_wiki.html:37
+msgid "This group currently has no wiki"
+msgstr "Для этой группы в настоящее время нет wiki"
+
+#: winguhub/group/templates/group/group_wiki.html:38
+#: winguhub/templates/wiki/personal_wiki.html:26
+msgid ""
+"Seafile Wiki enables you to organize your knowledge in a simple way. The "
+"contents of wiki is stored in a normal library with pre-defined file/folder "
+"structure. This enables you to edit your wiki in your desktop and then sync "
+"back to the server."
+msgstr ""
+"Seafile wiki позволяет вам организовать базу знаний. Содержание wiki "
+"хранится как обычная библиотека в структуре предопределенного файла или "
+"папки. Это позволяет редактировать wiki на рабочем столе, а затем "
+"синхронизировать с сервером. "
+
+#: winguhub/group/templates/group/group_wiki.html:40
+#: winguhub/templates/wiki/personal_wiki.html:27
+msgid "Create Wiki Now"
+msgstr "Создать Wiki сейчас"
+
+#: winguhub/group/templates/group/group_wiki.html:44
+#: winguhub/templates/wiki/personal_wiki.html:30
+msgid "Create Wiki"
+msgstr "Создать Wiki"
+
+#: winguhub/group/templates/group/group_wiki.html:48
+msgid "Wiki Pages"
+msgstr "Wiki страницы"
+
+#: winguhub/group/templates/group/group_wiki.html:56
+#: winguhub/group/templates/group/group_wiki_pages.html:32
+#: winguhub/templates/wiki/personal_wiki.html:42
+#: winguhub/templates/wiki/personal_wiki_pages.html:24
+msgid "Home"
+msgstr "Главная"
+
+#: winguhub/group/templates/group/group_wiki.html:57
+#: winguhub/group/templates/group/group_wiki_pages.html:33
+#: winguhub/templates/wiki/personal_wiki.html:43
+#: winguhub/templates/wiki/personal_wiki_pages.html:25
+msgid "Pages"
+msgstr "Страницы"
+
+#: winguhub/group/templates/group/group_wiki.html:59
+#: winguhub/group/templates/group/group_wiki_pages.html:35
+#: winguhub/templates/wiki/personal_wiki.html:45
+#: winguhub/templates/wiki/personal_wiki_pages.html:26
+msgid "Wiki History"
+msgstr "Wiki история"
+
+#: winguhub/group/templates/group/group_wiki.html:64
+#: winguhub/group/templates/group/group_wiki.html:78
+#: winguhub/group/templates/group/group_wiki_pages.html:39
+#: winguhub/group/templates/group/group_wiki_pages.html:50
+#: winguhub/templates/wiki/personal_wiki.html:49
+#: winguhub/templates/wiki/personal_wiki.html:62
+#: winguhub/templates/wiki/personal_wiki_pages.html:28
+#: winguhub/templates/wiki/personal_wiki_pages.html:38
+msgid "New Page"
+msgstr "Новая страница"
+
+#: winguhub/group/templates/group/group_wiki.html:65
+#: winguhub/templates/wiki/personal_wiki.html:50
+msgid "Delete Page"
+msgstr "Удалить страницу"
+
+#: winguhub/group/templates/group/group_wiki.html:66
+#: winguhub/templates/wiki/personal_wiki.html:51
+msgid "Edit Page"
+msgstr "Редактировать страницу"
+
+#: winguhub/group/templates/group/group_wiki.html:67
+#: winguhub/templates/wiki/personal_wiki.html:52
+msgid "Page History"
+msgstr "Страница истории"
+
+#: winguhub/group/templates/group/group_wiki.html:74
+#: winguhub/templates/wiki/personal_wiki.html:58
+#, python-format
+msgid "Last modified by %(modifier)s, %(modify_time)s"
+msgstr "Последнее изменение: %(modifier)s, %(modify_time)s"
+
+#: winguhub/group/templates/group/group_wiki.html:131
+#: winguhub/templates/wiki/personal_wiki.html:115
+msgid "Name and description can not be blank."
+msgstr "Название и описание не может быть пустым."
+
+#: winguhub/group/templates/group/groups_left_panel.html:5
+msgid ""
+"After creating a group, you can add members and share libraries into it."
+msgstr ""
+"После создания группы, вы можете добавить участников для совместного "
+"использования библиотек."
+
+#: winguhub/group/templates/group/groups_left_panel.html:7
+msgid "You can also share libraries into groups that you're not in."
+msgstr ""
+"Вы так же можете открыть общий доступ к библиотекам для групп в которых вы "
+"не состоите."
+
+#: winguhub/group/templates/group/groups_right_panel.html:4
+#: winguhub/templates/snippets/my_groups.html:4
+msgid "My Groups"
+msgstr "Мои группы"
+
+#: winguhub/group/templates/group/groups_right_panel.html:5
+#: winguhub/group/templates/group/groups_right_panel.html:26
+msgid "New Group"
+msgstr "Новая группа"
+
+#: winguhub/group/templates/group/groups_right_panel.html:14
+#: winguhub/templates/pubgrp.html:27
+msgid "Time: "
+msgstr "Время:"
+
+#: winguhub/group/templates/group/groups_right_panel.html:21
+msgid "You are not in any groups"
+msgstr "Вас нет ни в одной группе"
+
+#: winguhub/group/templates/group/groups_right_panel.html:22
+msgid ""
+"You can create a group by clicking \"New Group\" button. Group is a place "
+"for you and your friends leaving messages and collaborating on libraries."
+msgstr ""
+"Вы можете создать группу, нажав на \"Создать группу\". Группа будет являться "
+"местом общения для вас и ваших друзей. В ней вы можете оставлять сообщения и "
+"совместно использовать библиотеки."
+
+#: winguhub/group/templates/group/groups_right_panel.html:27
+msgid "Group Name"
+msgstr "Имя группы"
+
+#: winguhub/group/templates/group/grpadmin_add_js.html:19
+#: winguhub/group/templates/group/grpmember_add_js.html:19
+msgid "It can not be blank."
+msgstr "Значение не может быть пустым."
+
+#: winguhub/group/templates/group/grpmember_add_form.html:3
+msgid "Add members"
+msgstr "Добавить пользователей"
+
+#: winguhub/group/templates/group/grpmember_add_form.html:4
+msgid "emails, separated by ','"
+msgstr "email(ы), разделённые ','"
+
+#: winguhub/group/templates/group/grpmember_add_form.html:7
+msgid "Tip: an invitation will be sent if the email is not registered."
+msgstr ""
+"Учтите: приглашение будет отправлено, даже если e-mail не зарегистрирован."
+
+#: winguhub/group/templates/group/grpmember_add_form.html:9
+msgid "Tip: the emails should be already registered."
+msgstr "Учтите: email должен быть уже зарегистрирован."
+
+#: winguhub/group/templates/group/grpmember_add_form.html:15
+msgid "Add administrators"
+msgstr "Добавить Администраторов"
+
+#: winguhub/group/templates/group/grpmember_add_form.html:16
+msgid "emails, separated by ',' "
+msgstr "email(ы), разделённые ','"
+
+#: winguhub/group/templates/group/new_msg_reply.html:18
+msgid "Group: "
+msgstr "Группа: "
+
+#: winguhub/message/models.py:103
+#, python-format
+msgid ""
+"(System) %(user)s have shared a library <a href='%(href)s'>%(repo_name)s</a> "
+"to you."
+msgstr ""
+"(System) %(user)s открыл для вас общий доступ к библиотеке <a "
+"href='%(href)s'>%(repo_name)s</a>. "
+
+#: winguhub/message/models.py:117
+#, fuzzy, python-format
+msgid ""
+"(System) %(user)s have shared a file <a href='%(href)s'>%(file_name)s</a> to "
+"you."
+msgstr ""
+"(System) %(user)s открыл для вас общий доступ к библиотеке <a "
+"href='%(href)s'>%(repo_name)s</a>. "
+
+#: winguhub/message/views.py:127 winguhub/templates/base.html:363
+msgid "message is required"
+msgstr "требуется сообщение"
+
+#: winguhub/message/views.py:130 winguhub/templates/base.html:367
+msgid "contact is required"
+msgstr "требуестся контакт"
+
+#: winguhub/message/views.py:150
+msgid "You can not send message to yourself."
+msgstr "Вы не можете посылать сообщения самому себе."
+
+#: winguhub/message/views.py:154
+#, python-format
+msgid "Failed to send message to %s, user not found."
+msgstr "Невозможно отправить сообщение для %s, пользователь не найден."
+
+#: winguhub/message/views.py:169
+msgid "Message sent successfully."
+msgstr "Сообщение успешно отправлено."
+
+#: winguhub/message/templates/message/all_msg_list.html:4
+#: winguhub/message/templates/message/all_msg_list.html:10
+#: winguhub/message/templates/message/user_msg_list.html:4
+#: winguhub/message/templates/message/user_msg_list.html:27
+#: winguhub/share/templates/repo/user_share_list.html:24
+msgid "Messages"
+msgstr "Сообщения"
+
+#: winguhub/message/templates/message/all_msg_list.html:23
+msgid "Message"
+msgstr "Сообщение"
+
+#: winguhub/message/templates/message/all_msg_list.html:24
+#: winguhub/templates/file_revisions.html:25
+#: winguhub/templates/repo_history.html:21
+msgid "Time"
+msgstr "Время"
+
+#: winguhub/message/templates/message/user_msg_list.html:12
+#: winguhub/share/templates/repo/user_share_list.html:12
+#: winguhub/templates/myhome.html:28
+msgid "No Nickname"
+msgstr "Нет имени пользователя"
+
+#: winguhub/message/templates/message/user_msg_list.html:14
+#: winguhub/profile/templates/profile/user_profile.html:14
+#: winguhub/share/templates/repo/user_share_list.html:14
+#: winguhub/templates/snippets/user_profile_html.html:21
+msgid "Add to contacts"
+msgstr "Добавить в контакты"
+
+#: winguhub/message/templates/message/user_msg_list.html:28
+#: winguhub/share/templates/repo/user_share_list.html:4
+#: winguhub/share/templates/repo/user_share_list.html:25
+#: winguhub/templates/myhome_base.html:14
+msgid "Shares"
+msgstr "Общедоступно"
+
+#: winguhub/message/templates/message/user_msg_list.html:38
+msgid "Send a message..."
+msgstr "Отправить сообщение ..."
+
+#: winguhub/notifications/templates/notifications/add_notification_form.html:3
+#: winguhub/notifications/templates/notifications/add_notification_form.html:7
+#: winguhub/notifications/templates/notifications/notification_list.html:9
+msgid "Add new notification"
+msgstr "  Добавить новое уведомление"
+
+#: winguhub/notifications/templates/notifications/add_notification_form.html:9
+msgid "Notification"
+msgstr "Уведомление"
+
+#: winguhub/notifications/templates/notifications/notification_list.html:15
+msgid "All Notifications"
+msgstr "Все уведомления"
+
+#: winguhub/notifications/templates/notifications/notification_list.html:19
+msgid "Notification Detail"
+msgstr "Уведомление подробно"
+
+#: winguhub/notifications/templates/notifications/notification_list.html:26
+msgid "(current notification)"
+msgstr "(текущее уведомление)"
+
+#: winguhub/notifications/templates/notifications/notification_list.html:30
+msgid "Set to current"
+msgstr "Установить как текущее"
+
+#: winguhub/notifications/templates/notifications/notification_list.html:64
+#: winguhub/templates/sysadmin/sys_group_admin.html:55
+#: winguhub/templates/sysadmin/sys_org_admin.html:55
+#: winguhub/templates/sysadmin/sys_publink_admin.html:56
+#: winguhub/templates/sysadmin/sys_repo_admin.html:55
+#: winguhub/templates/sysadmin/userinfo.html:61
+#: winguhub/templates/sysadmin/userinfo.html:84
+msgid "Empty"
+msgstr "Пусто"
+
+#: winguhub/notifications/templates/notifications/notification_list.html:71
+msgid "Delete Notification"
+msgstr "Удалить Уведомление"
+
+#: winguhub/profile/views.py:41
+msgid "Successfully edited profile."
+msgstr "Профиль успешно изменнен."
+
+#: winguhub/profile/views.py:47
+msgid "Failed to edit profile"
+msgstr "Ошибка редактирования профиля"
+
+#: winguhub/profile/views.py:94 winguhub/profile/views.py:125
+msgid "Has not accepted invitation yet"
+msgstr "Не принял приглашение еще"
+
+#: winguhub/profile/templates/profile/profile_base.html:4
+#: winguhub/profile/templates/profile/set_profile.html:5
+#: winguhub/profile/templates/profile/set_profile.html:8
+#: winguhub/templates/base.html:45
+msgid "Profile Setting"
+msgstr "Настройки профиля"
+
+#: winguhub/profile/templates/profile/set_profile.html:10
+msgid "Avatar:"
+msgstr "Аватар:"
+
+#: winguhub/profile/templates/profile/set_profile.html:18
+msgid "Password:"
+msgstr "Пароль:"
+
+#: winguhub/profile/templates/profile/set_profile.html:18
+#: winguhub/templates/snippets/repo_dir_data.html:104
+msgid "Update"
+msgstr "Обновить"
+
+#: winguhub/profile/templates/profile/set_profile.html:19
+msgid "Nickname:"
+msgstr "Имя пользователя"
+
+#: winguhub/profile/templates/profile/set_profile.html:24
+msgid "About me:"
+msgstr "Обо мне:"
+
+#: winguhub/profile/templates/profile/user_profile.html:32
+msgid "Email: "
+msgstr ""
+
+#: winguhub/profile/templates/profile/user_profile.html:34
+msgid "Name(optional): "
+msgstr "Имя (необязательно):"
+
+#: winguhub/profile/templates/profile/user_profile.html:36
+msgid "Note(optional): "
+msgstr "Примечание (необязательно): "
+
+#: winguhub/share/forms.py:20
+msgid "Email is not longer than 512 characters"
+msgstr "E-mail не длиннее 512 символов"
+
+#: winguhub/share/views.py:58
+msgid "Failed to share to all members, please try again later."
+msgstr ""
+"Не возможно открыть общий доступ для всех членов, повторите попытку позже."
+
+#: winguhub/share/views.py:60
+#, python-format
+msgid ""
+"Shared to all members successfully, go check it at <a href=\"%s\">Shares</a>."
+msgstr ""
+"Успешно предоставлен общий доступ для всех участников, для проверки "
+"перейдите к <a href=\"%s\">доступу</a>."
+
+#: winguhub/share/views.py:72
+#, python-format
+msgid ""
+"\"%(repo)s\" is already in group %(group)s. <a href=\"%(href)s\">View</a>"
+msgstr ""
+"\"%(repo)s\" уже в группе %(group)s. <a href=\"%(href)s\">Посмотреть</a>"
+
+#: winguhub/share/views.py:82
+#, python-format
+msgid "Failed to share %(repo)s to %(group)s, please try again later."
+msgstr ""
+"Общий доступ не предоставлен %(repo)s в %(group)s, повторите попытку позднее."
+
+#: winguhub/share/views.py:86
+#, python-format
+msgid ""
+"Shared to %(group)s successfully，go check it at <a href=\"%(share)s"
+"\">Shares</a>."
+msgstr ""
+"Общий доступ успешно предоставлен для %(group)s，для проверки перейдите к <a "
+"href=\"%(share)s\">Доступу</a>."
+
+#: winguhub/share/views.py:96
+msgid "You can not share libray to yourself."
+msgstr "Вы не можете открыть общий доступ самому себе"
+
+#: winguhub/share/views.py:105
+#, python-format
+msgid "Failed to share to %s, please try again later."
+msgstr ""
+"Не удалось открыть общий доступ %s, пожалуйста, повторите попытку позже."
+
+#: winguhub/share/views.py:112
+#, python-format
+msgid ""
+"Shared to %(email)s successfully，go check it at <a href=\"%(share)s"
+"\">Shares</a>."
+msgstr ""
+"Общий доступ %(email)s успешно предоставлен， для проверки перейдите к <a "
+"href=\"%(share)s\">Доступу</a>."
+
+#: winguhub/share/views.py:116
+#, python-format
+msgid "Failed to share to %s, as the email is not registered."
+msgstr "Не удалось открыть общий доступ %s, такой email не зарегистрирован."
+
+#: winguhub/share/views.py:175
+msgid "Only the owner of the library has permission to share it."
+msgstr "Только владелец библиотеки имеет право дать общий доступ к ней."
+
+#: winguhub/share/views.py:205
+#, python-format
+msgid ""
+"Failed to share \"%s\", no enough quota. <a href=\"http://wingufile.com/"
+"\">Upgrade account.</a>"
+msgstr ""
+"Общий доступ к \"%s\" не возможен, т.к. ограничен квотой. <a href=\"http://"
+"wingufile.com/\">Обновите аккаунт.</a>"
+
+#: winguhub/share/views.py:236 winguhub/share/views.py:246
+msgid "Failed to remove share"
+msgstr "Не удалось исключить общий доступ"
+
+#: winguhub/share/views.py:242
+msgid "group id is not valid"
+msgstr "идентификатор группы не является действительным"
+
+#: winguhub/share/views.py:255
+msgid "Successfully removed share"
+msgstr "Общий доступ успешно исключен"
+
+#: winguhub/share/views.py:347
+msgid "all members"
+msgstr "все участники"
+
+#: winguhub/share/views.py:549 winguhub/views/__init__.py:642
+#: winguhub/views/__init__.py:1363 winguhub/views/__init__.py:1398
+#: winguhub/views/ajax.py:571 winguhub/views/ajax.py:588 winguhub/views/file.py:760
+msgid "Invalid arguments"
+msgstr "Недопустимые аргументы"
+
+#: winguhub/share/views.py:558
+msgid "You cannot share the library in this way."
+msgstr "У вас нет доступа к этой библиотеке"
+
+#: winguhub/share/views.py:583
+msgid "Failed to get the link, please retry later."
+msgstr "Таким образом вы не можете поделиться библиотекой."
+
+#: winguhub/share/views.py:605
+msgid "Removed successfully"
+msgstr "Успешно исключено"
+
+#: winguhub/share/views.py:613 winguhub/views/ajax.py:254 winguhub/views/ajax.py:345
+#: winguhub/views/ajax.py:436 winguhub/views/ajax.py:665 winguhub/views/ajax.py:697
+msgid "Argument missing"
+msgstr ""
+
+#: winguhub/share/views.py:622
+#, fuzzy
+msgid "The link doesn't exist"
+msgstr "Группа не существует"
+
+#: winguhub/share/views.py:636
+msgid ""
+"Sending shared link failed. Email service is not properly configured, please "
+"contact administrator."
+msgstr ""
+"Отправка ссылки общего доступа не удалось. Услуги электронной почты не "
+"настроены должным образом, пожалуйста, свяжитесь с администрацией."
+
+#: winguhub/share/views.py:661
+msgid "Your friend shared a file to you on Seafile"
+msgstr "Ваш друг дал вам общий доступ к файу на Seafile"
+
+#: winguhub/share/views.py:666
+msgid "Internal server error. Send failed."
+msgstr "Внутренняя ошибка сервера. Отправить не удалось."
+
+#: winguhub/share/views.py:669
+msgid "Successfully sent."
+msgstr "Успешно отправлено."
+
+#: winguhub/share/views.py:698 winguhub/share/views.py:792
+#, fuzzy
+msgid "Successfully saved."
+msgstr "Успешно добавлен."
+
+#: winguhub/share/views.py:717
+#, fuzzy, python-format
+msgid "Failed to share to \"%s\", user not found."
+msgstr "Невозможно отправить сообщение для %s, пользователь не найден."
+
+#: winguhub/share/views.py:731
+#, fuzzy, python-format
+msgid "Successfully shared %s."
+msgstr "Успешно изменено %s."
+
+#: winguhub/share/views.py:757
+#, fuzzy, python-format
+msgid "Successfully unshared \"%s\"."
+msgstr "Успешно изменено %s."
+
+#: winguhub/share/views.py:759
+#, fuzzy, python-format
+msgid "You don't have permission to unshared %s."
+msgstr "У вас нет разрешения на доступ к библиотеке."
+
+#: winguhub/share/views.py:795
+#, fuzzy, python-format
+msgid "You don't have permission to save %s."
+msgstr "У вас нет разрешения на доступ к библиотеке."
+
+#: winguhub/share/templates/repo/priv_shared_files.html:5
+#: winguhub/share/templates/repo/share_out_repos.html:5
+#: winguhub/share/templates/repo/shared_links.html:5
+#: winguhub/templates/org_base.html:18 winguhub/templates/view_file_base.html:33
+#: winguhub/templates/snippets/file_share_popup.html:48
+#: winguhub/templates/snippets/my_owned_repos.html:38
+#: winguhub/templates/snippets/my_owned_repos.html:86
+#: winguhub/templates/snippets/repo_dir_data.html:22
+#: winguhub/templates/snippets/repo_dir_data.html:58
+#: winguhub/templates/snippets/repo_dir_data.html:106
+msgid "Share"
+msgstr "Доступ"
+
+#: winguhub/share/templates/repo/priv_shared_files.html:12
+#: winguhub/share/templates/repo/share_out_repos.html:12
+#: winguhub/share/templates/repo/shared_links.html:12
+#: winguhub/templates/admin_base.html:20
+#, fuzzy
+msgid "Links"
+msgstr "Ссылка"
+
+#: winguhub/share/templates/repo/priv_shared_files.html:13
+#: winguhub/share/templates/repo/share_out_repos.html:13
+#: winguhub/share/templates/repo/shared_links.html:13
+#, fuzzy
+msgid "Private Shares"
+msgstr "Оставить общий доступ"
+
+#: winguhub/share/templates/repo/priv_shared_files.html:22
+msgid "From Others"
+msgstr ""
+
+#: winguhub/share/templates/repo/priv_shared_files.html:23
+msgid "To Others"
+msgstr ""
+
+#: winguhub/share/templates/repo/priv_shared_files.html:31
+msgid "From"
+msgstr ""
+
+#: winguhub/share/templates/repo/priv_shared_files.html:59
+msgid "To"
+msgstr ""
+
+#: winguhub/share/templates/repo/priv_shared_files.html:83
+#, fuzzy
+msgid "You don't have any private shared files"
+msgstr "Вы пока не отметили ни одного файла"
+
+#: winguhub/share/templates/repo/priv_shared_files.html:84
+msgid ""
+"You can share a single file with a registered user if you don't want to "
+"share a whole library."
+msgstr ""
+
+#: winguhub/share/templates/repo/share_out_repos.html:24
+msgid "Share To"
+msgstr "Доступно для"
+
+#: winguhub/share/templates/repo/share_out_repos.html:25
+msgid "Permission"
+msgstr "Доступ"
+
+#: winguhub/share/templates/repo/share_out_repos.html:69
+msgid "You have not shared any library"
+msgstr "Вы не поделились ни одной библиотекой."
+
+#: winguhub/share/templates/repo/share_out_repos.html:70
+msgid ""
+"You can share libraries to your friends and colleagues by clicking the share "
+"icon of your own libraries in your home page or creating a new library in "
+"groups you are in."
+msgstr ""
+"Вы можете поделиться библиотеками с вашими друзьями и коллегами, кликнув "
+"кнопку общего доступа в собственных библиотеках на вашей домашней странице "
+"или при создании новой библиотеки."
+
+#: winguhub/share/templates/repo/share_out_repos.html:114
+msgid "Edit succeeded"
+msgstr "Редактирование удалось."
+
+#: winguhub/share/templates/repo/share_out_repos.html:121
+msgid "Edit failed."
+msgstr "Редактирование не удалось."
+
+#: winguhub/share/templates/repo/shared_links.html:25
+msgid "Visits"
+msgstr "Посещения"
+
+#: winguhub/share/templates/repo/shared_links.html:40
+#: winguhub/templates/file_revisions.html:53
+#: winguhub/templates/repo_view_snapshot.html:42
+msgid "View"
+msgstr "Простотры"
+
+#: winguhub/share/templates/repo/shared_links.html:41
+#: winguhub/templates/sysadmin/sys_publink_admin.html:22
+msgid "Remove"
+msgstr "Исключено"
+
+#: winguhub/share/templates/repo/shared_links.html:49
+msgid "You don't have any shared link"
+msgstr "Вы не имеете совместно используемых ссылок"
+
+#: winguhub/share/templates/repo/shared_links.html:50
+msgid ""
+"You can share a folder or a file when you view a library, or share a file "
+"when you view it."
+msgstr ""
+"Вы можете дать общий доступ к папке при просмотре библиотеки  или поделиться "
+"файлом при его просмотре."
+
+#: winguhub/share/templates/repo/user_share_list.html:57
+#: winguhub/templates/snippets/my_owned_repos.html:134
+msgid "Leave Share"
+msgstr "Оставить общий доступ"
+
+#: winguhub/share/templates/repo/user_share_list.html:67
+#, python-format
+msgid "You have no library sharing with %(to_email)s."
+msgstr "Вы не используете совместно ни одной библиотеки с %(to_email)s."
+
+#: winguhub/templates/404.html:6
+msgid "Sorry, but the requested page could not be found."
+msgstr "Извините, но запрошенная страница не может быть найдена."
+
+#: winguhub/templates/admin_base.html:11 winguhub/templates/pubgrp.html:16
+#: winguhub/templates/pubrepo.html:17 winguhub/templates/pubuser.html:16
+msgid "Users"
+msgstr "Пользователи"
+
+#: winguhub/templates/admin_base.html:17
+msgid "Notifications"
+msgstr "Уведомления"
+
+#: winguhub/templates/base.html:38
+msgid "System Admin"
+msgstr "Системный администратор"
+
+#: winguhub/templates/base.html:39
+msgid "Workspace"
+msgstr "Рабочее пространство"
+
+#: winguhub/templates/base.html:46
+msgid "send a message"
+msgstr "отправить сообщение"
+
+#: winguhub/templates/base.html:47
+msgid "unread messages"
+msgstr "непрочитанные сообщения"
+
+#: winguhub/templates/base.html:49 winguhub/templates/registration/login.html:3
+#: winguhub/templates/registration/login.html:6
+#: winguhub/templates/registration/password_reset_complete.html:8
+msgid "Log In"
+msgstr "Вход"
+
+#: winguhub/templates/base.html:51
+#: winguhub/templates/registration/registration_form.html:9
+msgid "Signup"
+msgstr "Регистрация"
+
+#: winguhub/templates/base.html:61
+msgid "Log out"
+msgstr "Выход"
+
+#: winguhub/templates/base.html:68
+msgid "message..."
+msgstr "Сообщение..."
+
+#: winguhub/templates/base.html:71
+msgid "Add files"
+msgstr "Добавить файл"
+
+#: winguhub/templates/base.html:96
+msgid "Search files in this wiki"
+msgstr "Поиск файлов в wiki"
+
+#: winguhub/templates/base.html:96
+msgid "Search files in this library"
+msgstr "Поиск файлов в библиотеке"
+
+#: winguhub/templates/base.html:99 winguhub/templates/base.html.py:105
+msgid "Search Files"
+msgstr "Поиск файлов"
+
+#: winguhub/templates/base.html:101
+msgid "advanced"
+msgstr "расширенный"
+
+#: winguhub/templates/base.html:109 winguhub/templates/base.html.py:113
+#: winguhub/templates/base.html:116
+msgid "In all libraries"
+msgstr "Во всех библиотеках"
+
+#: winguhub/templates/base.html:110
+msgid "In this wiki"
+msgstr "В Wiki"
+
+#: winguhub/templates/base.html:110
+msgid "In this library"
+msgstr "В библиотеке"
+
+#: winguhub/templates/base.html:114
+#, python-format
+msgid "in %(name)s"
+msgstr "в %(name)s"
+
+#: winguhub/templates/base.html:122 winguhub/templates/base.html.py:125
+msgid "All file types"
+msgstr "Все типы файлов"
+
+#: winguhub/templates/base.html:123 winguhub/templates/base.html.py:126
+msgid "Custom file types"
+msgstr "Выбрать тип файлов"
+
+#: winguhub/templates/base.html:135
+msgid "Text files"
+msgstr "Текстовые файлы"
+
+#: winguhub/templates/base.html:136 winguhub/templates/base.html.py:202
+msgid "Documents"
+msgstr "Документы"
+
+#: winguhub/templates/base.html:137
+msgid "Images"
+msgstr "Изображения"
+
+#: winguhub/templates/base.html:138
+msgid "Video"
+msgstr "Видео"
+
+#: winguhub/templates/base.html:139
+msgid "Audio"
+msgstr "Аудио"
+
+#: winguhub/templates/base.html:140
+msgid "svg"
+msgstr ""
+
+#: winguhub/templates/base.html:141
+msgid "pdf"
+msgstr ""
+
+#: winguhub/templates/base.html:142
+msgid "seaf"
+msgstr ""
+
+#: winguhub/templates/base.html:143
+msgid "markdown"
+msgstr "Отмеченные"
+
+#: winguhub/templates/base.html:145
+msgid "Input file extensions here, separate with ','"
+msgstr "Введите расширение файлов, разделяя их ','"
+
+#: winguhub/templates/base.html:146
+msgid "Please select at least 1 file type or input at least 1 file extension"
+msgstr ""
+"Пожалуйста, выберите по крайней мере, 1 тип файла или введите не менее 1 "
+"расширения файла"
+
+#: winguhub/templates/base.html:190
+msgid "Introduction"
+msgstr "О системе"
+
+#: winguhub/templates/base.html:192
+msgid "Forum"
+msgstr "Форум"
+
+#: winguhub/templates/base.html:196
+msgid "Client"
+msgstr "Программа-клиент"
+
+#: winguhub/templates/base.html:198
+msgid "Seafile for Windows, Mac and Linux"
+msgstr "Скачать для Windows, Mac или Linux"
+
+#: winguhub/templates/base.html:204
+msgid "Help"
+msgstr "Помощь"
+
+#: winguhub/templates/base.html:209
+msgid "Server Version: "
+msgstr "Версия сервера:"
+
+#: winguhub/templates/base.html:210
+msgid "Seafile"
+msgstr ""
+
+#: winguhub/templates/base.html:211
+msgid "Contact Us"
+msgstr "Обратная связь"
+
+#: winguhub/templates/base.html:298
+msgid "send to: click to select contacts"
+msgstr "Что бы отправить: кликните для выбора контактов"
+
+#: winguhub/templates/base.html:304
+msgid "please add contacts at first"
+msgstr "пожалуйста, вначале выберите контакты"
+
+#: winguhub/templates/base.html:308
+msgid "Failed to get your contacts for sending a message."
+msgstr "Невозможно получить ваши контакты для отправки сообщения."
+
+#: winguhub/templates/base.html:340
+#, fuzzy
+msgid "You don't have any library at present"
+msgstr "Вы пока не отметили ни одного файла"
+
+#: winguhub/templates/client_mgmt.html:6 winguhub/templates/client_mgmt.html:15
+#: winguhub/templates/myhome.html:15 winguhub/templates/wiki/personal_wiki.html:15
+msgid "Clients"
+msgstr "Клиенты"
+
+#: winguhub/templates/client_mgmt.html:14 winguhub/templates/myhome.html:14
+#: winguhub/templates/wiki/personal_wiki.html:6
+#: winguhub/templates/wiki/personal_wiki.html:14
+#: winguhub/templates/wiki/personal_wiki_pages.html:6
+#: winguhub/templates/wiki/personal_wiki_pages.html:14
+msgid "Personal Wiki"
+msgstr "Персональное Wiki"
+
+#: winguhub/templates/client_mgmt.html:27
+msgid "Client Name"
+msgstr "Клиент"
+
+#: winguhub/templates/client_mgmt.html:28
+msgid "IP"
+msgstr ""
+
+#: winguhub/templates/client_mgmt.html:29
+msgid "Last Sync"
+msgstr "Последняя синхронизация"
+
+#: winguhub/templates/client_mgmt.html:56
+msgid "Unsync"
+msgstr "Не синхронизировано"
+
+#: winguhub/templates/client_mgmt.html:62
+msgid "You do not have connected clients"
+msgstr "У вас нет ни одного подключенного клиента"
+
+#: winguhub/templates/client_mgmt.html:63
+msgid ""
+"The libraries synced to desktop clients are listed in this page. You can see "
+"the client's name and its IP address. You may unsync a client from a library "
+"if you no longer want to sync it."
+msgstr ""
+"Библиотеки синхронизированы с клиентами, перечисленными на этой странице. Вы "
+"можете видеть имя клиента и его IP-адрес. Вы можете отключить синхронизацию "
+"клиента с библиотекой, если вы больше не хотите синхронизировать."
+
+#: winguhub/templates/client_mgmt.html:72
+msgid "Unsync Client"
+msgstr "Рассинхронизировать клиента"
+
+#: winguhub/templates/client_mgmt.html:73
+#, fuzzy, python-format
+msgid "Are you sure to unsync client %s ?"
+msgstr "Вы уверены, что хотите рассинхронизировать %s ?"
+
+#: winguhub/templates/decrypt_repo_form.html:8
+msgid ""
+"This library is encrypted. Please input the password if you want to browse "
+"it online. And the password will be kept on the server for only 1 hour."
+msgstr ""
+"Эта библиотека зашифрована. Введите пароль, если вы хотите её просмотреть. "
+"Пароль будет храниться на сервере только в течение 1 часа."
+
+#: winguhub/templates/decrypt_repo_form.html:10
+msgid "Password: "
+msgstr "Пароль: "
+
+#: winguhub/templates/file_edit.html:83
+#: winguhub/templates/repo_history_view.html:38
+#: winguhub/templates/repo_recycle_view.html:16
+#: winguhub/templates/shared_file_view.html:17
+#: winguhub/templates/view_shared_dir.html:16
+#: winguhub/templates/snippets/repo_dir_data.html:4
+msgid "Current path: "
+msgstr "Текущий раздел:"
+
+#: winguhub/templates/file_edit.html:94
+msgid "Continue editing"
+msgstr "Продолжить редактирование"
+
+#: winguhub/templates/file_edit.html:95
+msgid "Preview"
+msgstr "Предпросмотр"
+
+#: winguhub/templates/file_edit.html:121
+msgid "Standard Syntax"
+msgstr "Стандартный синтаксис"
+
+#: winguhub/templates/file_edit.html:125
+msgid "Enter this"
+msgstr "Ввести это"
+
+#: winguhub/templates/file_edit.html:126
+msgid "To see this"
+msgstr "Чтобы увидеть это"
+
+#: winguhub/templates/file_edit.html:129 winguhub/templates/file_edit.html:130
+msgid "bold"
+msgstr "полужирный"
+
+#: winguhub/templates/file_edit.html:129 winguhub/templates/file_edit.html:130
+#: winguhub/templates/file_edit.html:133 winguhub/templates/file_edit.html:134
+msgid "text"
+msgstr "текст"
+
+#: winguhub/templates/file_edit.html:133 winguhub/templates/file_edit.html:134
+msgid "italics"
+msgstr "курсив"
+
+#: winguhub/templates/file_edit.html:137 winguhub/templates/file_edit.html:140
+msgid "Header"
+msgstr "Заголовок"
+
+#: winguhub/templates/file_edit.html:144 winguhub/templates/file_edit.html:146
+msgid "Smaller header"
+msgstr "Маленький заголовок"
+
+#: winguhub/templates/file_edit.html:149 winguhub/templates/file_edit.html:150
+msgid "Link something"
+msgstr "Ссылка"
+
+#: winguhub/templates/file_edit.html:153
+msgid "alt text"
+msgstr "alt текст"
+
+#: winguhub/templates/file_edit.html:157 winguhub/templates/file_edit.html:161
+msgid "unordered list"
+msgstr "неупорядоченный список"
+
+#: winguhub/templates/file_edit.html:158 winguhub/templates/file_edit.html:162
+msgid "leave empty lines around the list"
+msgstr "пропуск пустых строк в списке"
+
+#: winguhub/templates/file_edit.html:167 winguhub/templates/file_edit.html:171
+msgid "ordered list"
+msgstr "упорядоченный список"
+
+#: winguhub/templates/file_edit.html:168 winguhub/templates/file_edit.html:172
+msgid "leave empty lines"
+msgstr "пропуск пустых строк"
+
+#: winguhub/templates/file_edit.html:177
+msgid "Extended Syntax for Wiki"
+msgstr "Расширенный синтаксис для Wiki"
+
+#: winguhub/templates/file_edit.html:179
+msgid "or"
+msgstr "или"
+
+#: winguhub/templates/file_edit.html:179
+msgid "internal link to another wiki page."
+msgstr "внутренние ссылки на другие Wiki страницы."
+
+#: winguhub/templates/file_edit.html:180
+msgid "internal link to a picture at this-library/images/pic.jpg."
+msgstr "внутренняя ссылка на картину в this-library/images/pic.jpg."
+
+#: winguhub/templates/file_edit.html:181
+msgid "internal link to a file at this-library/folder/file.doc."
+msgstr "внутренние ссылки на файл в this-library/folder/file.doc."
+
+#: winguhub/templates/file_edit.html:189
+msgid "Font"
+msgstr "Шрифт"
+
+#: winguhub/templates/file_edit.html:193
+msgid "Font Size"
+msgstr "Размер шрифта"
+
+#: winguhub/templates/file_edit.html:195
+msgid "Huge"
+msgstr "Большой"
+
+#: winguhub/templates/file_edit.html:196
+msgid "Normal"
+msgstr "Нормальный"
+
+#: winguhub/templates/file_edit.html:197
+msgid "Small"
+msgstr "маленький"
+
+#: winguhub/templates/file_edit.html:201
+msgid "Font Color"
+msgstr "Цвет шрифта"
+
+#: winguhub/templates/file_edit.html:203
+msgid "defaut color"
+msgstr "цвет по умолчанию"
+
+#: winguhub/templates/file_edit.html:215
+msgid "Bold (Ctrl/Cmd+B)"
+msgstr "Полужирный (Ctrl/Cmd+B)"
+
+#: winguhub/templates/file_edit.html:216
+msgid "Italic (Ctrl/Cmd+I)"
+msgstr "Курсив (Ctrl/Cmd+I)"
+
+#: winguhub/templates/file_edit.html:217
+msgid "Strikethrough"
+msgstr "Зачеркнутый"
+
+#: winguhub/templates/file_edit.html:218
+msgid "Underline (Ctrl/Cmd+U)"
+msgstr "Подчеркнутый (Ctrl/Cmd+U)"
+
+#: winguhub/templates/file_edit.html:221
+msgid "Bullet list"
+msgstr "Маркированный список"
+
+#: winguhub/templates/file_edit.html:222
+msgid "Number list"
+msgstr "Пронумерованный список"
+
+#: winguhub/templates/file_edit.html:223
+msgid "Reduce indent (Shift+Tab)"
+msgstr "Уменьшить отступ (Shift+Tab)"
+
+#: winguhub/templates/file_edit.html:224
+msgid "Indent (Tab)"
+msgstr "Отступ (Tab)"
+
+#: winguhub/templates/file_edit.html:227
+msgid "Align Left (Ctrl/Cmd+L)"
+msgstr "Выровнять по левому краю (Ctrl/Cmd+L)"
+
+#: winguhub/templates/file_edit.html:228
+msgid "Center (Ctrl/Cmd+E)"
+msgstr "Выровнять по центру (Ctrl/Cmd+E)"
+
+#: winguhub/templates/file_edit.html:229
+msgid "Align Right (Ctrl/Cmd+R)"
+msgstr "Выровнять по правому краю (Ctrl/Cmd+R)"
+
+#: winguhub/templates/file_edit.html:230
+msgid "Justify (Ctrl/Cmd+J)"
+msgstr "Выровнять по ширине (Ctrl/Cmd+J)"
+
+#: winguhub/templates/file_edit.html:233
+msgid "Hyperlink"
+msgstr "Гиперссылка"
+
+#: winguhub/templates/file_edit.html:236
+msgid "Add"
+msgstr "Добавить"
+
+#: winguhub/templates/file_edit.html:238
+msgid "Remove Hyperlink"
+msgstr "Удалить гиперссылку"
+
+#: winguhub/templates/file_edit.html:242
+msgid "Insert picture (or just drag & drop)"
+msgstr "Вставить картинку (или просто перетащить)"
+
+#: winguhub/templates/file_edit.html:245
+msgid "Undo (Ctrl/Cmd+Z)"
+msgstr "Отменить (Ctrl/Cmd+Z)"
+
+#: winguhub/templates/file_edit.html:246
+msgid "Redo (Ctrl/Cmd+Y)"
+msgstr "Вернуть (Ctrl/Cmd+Y)"
+
+#: winguhub/templates/file_edit.html:346
+msgid "Strong <strong> Ctrl+B"
+msgstr "Жирный <strong> Ctrl+B"
+
+#: winguhub/templates/file_edit.html:347
+msgid "strong text"
+msgstr "жирный текст"
+
+#: winguhub/templates/file_edit.html:349
+msgid "Emphasis <em> Ctrl+I"
+msgstr "Выделить <em> Ctrl+I"
+
+#: winguhub/templates/file_edit.html:350
+msgid "emphasized text"
+msgstr "выделенный текст"
+
+#: winguhub/templates/file_edit.html:352
+msgid "Hyperlink <a> Ctrl+L"
+msgstr "Гиперссылка <a> Ctrl+L"
+
+#: winguhub/templates/file_edit.html:353
+msgid "enter link description here"
+msgstr "введите описание ссылки"
+
+#: winguhub/templates/file_edit.html:354
+msgid "Insert Hyperlink"
+msgstr "Вставить гиперссылку"
+
+#: winguhub/templates/file_edit.html:354 winguhub/templates/file_edit.html:364
+msgid "optional title"
+msgstr "дополнительное описание"
+
+#: winguhub/templates/file_edit.html:356
+msgid "Blockquote <blockquote> Ctrl+Q"
+msgstr "Цитата <blockquote> Ctrl+Q"
+
+#: winguhub/templates/file_edit.html:357
+msgid "Blockquote"
+msgstr "Цитата"
+
+#: winguhub/templates/file_edit.html:359
+msgid "Code Sample <pre><code> Ctrl+K"
+msgstr "Код <pre><code> Ctrl+K"
+
+#: winguhub/templates/file_edit.html:360
+msgid "enter code here"
+msgstr "введите код"
+
+#: winguhub/templates/file_edit.html:362
+msgid "Image <img> Ctrl+G"
+msgstr "Изображение <img> Ctrl+G"
+
+#: winguhub/templates/file_edit.html:363
+msgid "enter image description here"
+msgstr "введите описание изображения"
+
+#: winguhub/templates/file_edit.html:364
+msgid "Insert Image"
+msgstr "Вставить изображение"
+
+#: winguhub/templates/file_edit.html:366
+msgid "Numbered List <ol> Ctrl+O"
+msgstr "Нумерованный список <ol> Ctrl+O"
+
+#: winguhub/templates/file_edit.html:367
+msgid "Bulleted List <ul> Ctrl+U"
+msgstr "Маркированный список <ul> Ctrl+U"
+
+#: winguhub/templates/file_edit.html:368
+msgid "List item"
+msgstr "Список"
+
+#: winguhub/templates/file_edit.html:370
+msgid "Heading <h1>/<h2> Ctrl+H"
+msgstr "Заголовок <h1>/<h2> Ctrl+H"
+
+#: winguhub/templates/file_edit.html:371
+msgid "Heading"
+msgstr "Заголовок"
+
+#: winguhub/templates/file_edit.html:373
+msgid "Horizontal Rule <hr> Ctrl+R"
+msgstr "Горизонтальная линия <hr> Ctrl+R"
+
+#: winguhub/templates/file_edit.html:374
+msgid "Undo - Ctrl+Z"
+msgstr "Отменить - Ctrl+Z"
+
+#: winguhub/templates/file_edit.html:375
+msgid "Redo - Ctrl+Y"
+msgstr "Вернуть - Ctrl+Y "
+
+#: winguhub/templates/file_edit.html:376
+msgid "Redo - Ctrl+Shift+Z"
+msgstr "Вернуть - Ctrl+Shift+Z"
+
+#: winguhub/templates/file_edit.html:378
+msgid "Editing Help"
+msgstr "Помощь"
+
+#: winguhub/templates/file_edit.html:466
+msgid "Submit failed. Please check the network."
+msgstr "Отправить не удалось. Пожалуйста, проверьте работу сети."
+
+#: winguhub/templates/file_edit.html:484
+#: winguhub/templates/snippets/repo_decrypt_js.html:11
+msgid "Password is required."
+msgstr "Требуется пароль."
+
+#: winguhub/templates/file_edit.html:486
+msgid "Password should be 3 to 30 characters."
+msgstr "Пароль должен быть от 3 до 30 символов."
+
+#: winguhub/templates/file_revisions.html:5 winguhub/templates/repo.html:120
+#: winguhub/templates/repo_history.html:5
+#: winguhub/templates/view_file_base.html:66
+#: winguhub/templates/snippets/current_commit.html:19
+#: winguhub/templates/snippets/repo_dir_data.html:117
+msgid "History"
+msgstr "История"
+
+#: winguhub/templates/file_revisions.html:8
+msgid "'s Version History"
+msgstr "'s история версий"
+
+#: winguhub/templates/file_revisions.html:9
+msgid ""
+"Tip:a new version will be generated after each modification, and you can "
+"restore the file to a previous version."
+msgstr ""
+"Учтите: новая версия будет генерироваться после каждого изменения файлов, но "
+"вы можете восстановить файл из предыдущей версии."
+
+#: winguhub/templates/file_revisions.html:12 winguhub/templates/text_diff.html:10
+msgid "Current Path:"
+msgstr "Текущий раздел:"
+
+#: winguhub/templates/file_revisions.html:26
+#: winguhub/templates/repo_view_snapshot.html:16
+msgid "Last Modifier"
+msgstr "Последние изменения от "
+
+#: winguhub/templates/file_revisions.html:27
+#: winguhub/templates/repo_history_view.html:53
+#: winguhub/templates/repo_recycle_view.html:55
+#: winguhub/templates/view_shared_dir.html:33
+#: winguhub/templates/snippets/repo_dir_data.html:33
+msgid "Size"
+msgstr "Размер"
+
+#: winguhub/templates/file_revisions.html:35
+msgid "(current version)"
+msgstr "(текущая версия)"
+
+#: winguhub/templates/file_revisions.html:50
+#: winguhub/templates/repo_recycle_view.html:66
+#: winguhub/templates/repo_recycle_view.html:83
+#: winguhub/templates/repo_view_snapshot.html:43
+msgid "Restore"
+msgstr "Восстановить"
+
+#: winguhub/templates/file_revisions.html:52
+#: winguhub/templates/history_file_view.html:63 winguhub/templates/repo.html:21
+#: winguhub/templates/shared_file_view.html:35
+#: winguhub/templates/view_file_base.html:78
+#: winguhub/templates/view_history_file.html:34
+#: winguhub/templates/view_shared_dir.html:48
+#: winguhub/templates/view_shared_dir.html:66
+#: winguhub/templates/snippets/repo_dir_data.html:56
+#: winguhub/templates/snippets/repo_dir_data.html:102
+msgid "Download"
+msgstr "Скачать"
+
+#: winguhub/templates/file_revisions.html:55
+msgid "Diff"
+msgstr "Разница"
+
+#: winguhub/templates/history_file_view.html:16
+#: winguhub/templates/repo_view_snapshot.html:7
+#: winguhub/templates/view_snapshot_file.html:7
+msgid "snapshots"
+msgstr "снимки"
+
+#: winguhub/templates/history_file_view.html:23
+#: winguhub/templates/view_history_file.html:16
+msgid "history"
+msgstr "История"
+
+#: winguhub/templates/history_file_view.html:26
+#: winguhub/templates/text_diff.html:7
+#: winguhub/templates/view_history_file.html:19
+msgid "Back to file versions"
+msgstr "К предыдущей версиии файла"
+
+#: winguhub/templates/history_file_view.html:30
+#: winguhub/templates/history_file_view.html:41
+#: winguhub/templates/repo_recycle_view.html:8
+#: winguhub/templates/repo_recycle_view.html:17
+#: winguhub/templates/view_trash_file.html:6
+msgid "'s trash"
+msgstr "'s корзина "
+
+#: winguhub/templates/history_file_view.html:31
+#: winguhub/templates/repo_history.html:10
+#: winguhub/templates/repo_recycle_view.html:9
+#: winguhub/templates/view_trash_file.html:7
+msgid "Back to Library"
+msgstr "Назад в библиотеку"
+
+#: winguhub/templates/history_file_view.html:38
+#: winguhub/templates/view_file_base.html:21
+#: winguhub/templates/view_history_file.html:27
+#: winguhub/templates/view_snapshot_file.html:13
+#: winguhub/templates/view_trash_file.html:11
+msgid "Current Path: "
+msgstr "Текущий раздел: "
+
+#: winguhub/templates/myhome.html:5 winguhub/templates/myhome_base.html:8
+msgid "My Home"
+msgstr "Моя страница"
+
+#: winguhub/templates/myhome.html:24
+msgid "Account"
+msgstr "Профиль"
+
+#: winguhub/templates/myhome.html:26 winguhub/templates/myhome.html.py:29
+#: winguhub/templates/sysadmin/userinfo.html:9
+msgid "Profile"
+msgstr "Профиль"
+
+#: winguhub/templates/myhome.html:31
+msgid "Payment"
+msgstr "Оплата"
+
+#: winguhub/templates/myhome.html:39
+msgid "Reminding..."
+msgstr "Напоминание..."
+
+#: winguhub/templates/myhome.html:44
+msgid ""
+"\n"
+"        has new discussion\n"
+"        "
+msgid_plural ""
+"\n"
+"        have new discussions\n"
+"        "
+msgstr[0] ""
+"\n"
+"        появилось новое обсуждение\n"
+"        "
+msgstr[1] ""
+"\n"
+"        появились новые обсуждения\n"
+"        "
+
+#: winguhub/templates/myhome.html:53
+#, python-format
+msgid ""
+"\n"
+"        one group discussion has new reply\n"
+"        "
+msgid_plural ""
+"\n"
+"        %(counter)s group discussions have new replies\n"
+"        "
+msgstr[0] ""
+"\n"
+"        в одном групповом обсуждении появился новый ответ\n"
+"        "
+msgstr[1] ""
+"\n"
+"        %(counter)s групповых обсуждениях появились новые ответы\n"
+"        "
+
+#: winguhub/templates/myhome.html:65
+msgid "Space/Traffic Usage"
+msgstr "Использование Пространства/Трафика"
+
+#: winguhub/templates/myhome.html:68 winguhub/templates/sysadmin/userinfo.html:26
+msgid "Total"
+msgstr "Всего"
+
+#: winguhub/templates/myhome.html:70 winguhub/templates/myhome.html.py:72
+msgid "Self"
+msgstr "Мной"
+
+#: winguhub/templates/myhome.html:70 winguhub/templates/myhome.html.py:72
+#: winguhub/templates/sysadmin/userinfo.html:28
+msgid "Sharing"
+msgstr "В общем доступе"
+
+#: winguhub/templates/myhome.html:81
+msgid "Traffic this month:"
+msgstr "Трафик в этом месяце:"
+
+#: winguhub/templates/myhome_base.html:21
+msgid "Organization"
+msgstr "Сообщества"
+
+#: winguhub/templates/org_base.html:7
+msgid ""
+"Organization will be removed in next version, data will be merged into your "
+"current account."
+msgstr ""
+"Сообщества будут удалены в следующей версии, данные будут внесены в ваш "
+"текущий аккаунт."
+
+#: winguhub/templates/org_base.html:12
+msgid "Personal"
+msgstr "Личные"
+
+#: winguhub/templates/org_base.html:21
+msgid "Public Library"
+msgstr "Общие библиотеки"
+
+#: winguhub/templates/org_base.html:24
+msgid "Public Info"
+msgstr "Общая информация"
+
+#: winguhub/templates/pubgrp.html:34
+msgid "No one has created any groups yet"
+msgstr "Никто не создал ни одной группы"
+
+#: winguhub/templates/pubgrp.html:35
+msgid ""
+"You can click \"Add Group\" button under \"Group\" label to create a group. "
+msgstr ""
+"Чтобы создать группу, кликните \"Добавить группу\" в разделе \"Группы\". "
+
+#: winguhub/templates/pubrepo.html:27 winguhub/templates/sysadmin/userinfo.html:70
+msgid "Share From"
+msgstr "Общий доступ от"
+
+#: winguhub/templates/pubrepo.html:51
+msgid "No public library"
+msgstr "Нет публичных библиотек"
+
+#: winguhub/templates/pubrepo.html:52
+msgid ""
+"You can create a public library by clicking \"New Library\" button, others "
+"can view and download this library."
+msgstr ""
+"Вы можете создать публичную библиотеку нажав кнопку \"Новая библиотека\", "
+"другие пользователи смогут просматривать и загружать эту библиотеку."
+
+#: winguhub/templates/repo.html:23
+msgid "Settings"
+msgstr "Настройки"
+
+#: winguhub/templates/repo.html:26
+msgid "Trash"
+msgstr "Корзина"
+
+#: winguhub/templates/repo.html:33
+msgid "Size: "
+msgstr "Размер: "
+
+#: winguhub/templates/repo.html:48
+msgid "Upload Files"
+msgstr "Загрузить файл"
+
+#: winguhub/templates/repo.html:50 winguhub/templates/repo.html.py:89
+msgid "The owner of this library has ran out of space."
+msgstr "Владелец этой библиотеки превысил допустимый лимит."
+
+#: winguhub/templates/repo.html:58
+#, fuzzy
+msgid "Add Files"
+msgstr "Добавить файл"
+
+#: winguhub/templates/repo.html:63
+#, fuzzy
+msgid "Start All"
+msgstr "Отметить"
+
+#: winguhub/templates/repo.html:67
+#, fuzzy
+msgid "Cancel All"
+msgstr "Выход"
+
+#: winguhub/templates/repo.html:71
+msgid ""
+"Drag & Drop is supported for Chrome, Safari 5.0+, Firefox 4.0+, IE 10.0+"
+msgstr ""
+
+#: winguhub/templates/repo.html:72
+#, python-format
+msgid "Total size should be smaller than %(max_file_size)s"
+msgstr ""
+
+#: winguhub/templates/repo.html:87
+#, fuzzy, python-format
+msgid "Update %(file_name)s"
+msgstr "Обновить файл"
+
+#: winguhub/templates/repo.html:95
+msgid "Choose a file"
+msgstr ""
+
+#: winguhub/templates/repo.html:98
+#, python-format
+msgid "Smaller than %(max_file_size)s"
+msgstr ""
+
+#: winguhub/templates/repo.html:113
+msgid "Library Settings"
+msgstr "Настройка библиотеки"
+
+#: winguhub/templates/repo.html:121
+msgid "Keep full history"
+msgstr "Сохранять полную историю"
+
+#: winguhub/templates/repo.html:122
+msgid "Don't keep history"
+msgstr "Не сохранять историю"
+
+#: winguhub/templates/repo.html:123
+msgid "Only keep a period of history:"
+msgstr "Сохранить только период истории: "
+
+#: winguhub/templates/repo.html:123
+msgid "days"
+msgstr "дней"
+
+#: winguhub/templates/repo.html:132
+#: winguhub/templates/snippets/repo_dir_data.html:16
+msgid "New Directory"
+msgstr "Новый каталог"
+
+#: winguhub/templates/repo.html:133
+msgid "Directory Name"
+msgstr "Имя каталога"
+
+#: winguhub/templates/repo.html:141
+#: winguhub/templates/snippets/repo_dir_data.html:17
+msgid "New File"
+msgstr "Новый файл"
+
+#: winguhub/templates/repo.html:143
+msgid "Featured File Type"
+msgstr "Рекомендуемые типы файлов"
+
+#: winguhub/templates/repo.html:144 winguhub/templates/repo.html.py:150
+msgid "Click to choose"
+msgstr "Нажмите для выбора"
+
+#: winguhub/templates/repo.html:144
+msgid "online Rich Text format."
+msgstr "Онлайновый Rich Text формат."
+
+#: winguhub/templates/repo.html:150
+msgid "simple markup format."
+msgstr "формат простой разметки."
+
+#: winguhub/templates/repo.html:157
+#: winguhub/templates/snippets/my_owned_repos.html:153
+msgid "File Name"
+msgstr "Имя файла"
+
+#: winguhub/templates/repo.html:166
+msgid "Current Library"
+msgstr "Текущая библиотека"
+
+#: winguhub/templates/repo.html:168
+msgid "Other Libraries"
+msgstr "Другие библиотеки"
+
+#: winguhub/templates/repo.html:176 winguhub/templates/shared_file_view.html:49
+msgid "Please click and choose a directory."
+msgstr "Кликните для выбора каталога"
+
+#: winguhub/templates/repo.html:182
+#, fuzzy, python-format
+msgid "Rename %(name)s as:"
+msgstr "в %(name)s"
+
+#: winguhub/templates/repo.html:198
+#, fuzzy, python-format
+msgid "Sync %(dir_name)s"
+msgstr "в %(name)s"
+
+#: winguhub/templates/repo.html:199
+msgid "You need to create a sub-library from this directory to sync it."
+msgstr ""
+
+#: winguhub/templates/repo.html:200
+#: winguhub/templates/snippets/file_share_popup.html:45
+#, fuzzy
+msgid "Create"
+msgstr "Создать как"
+
+#: winguhub/templates/repo.html:202
+msgid "The sub-library used to sync this directory already exists."
+msgstr ""
+
+#: winguhub/templates/repo.html:203
+#: winguhub/templates/snippets/repo_dir_data.html:61
+#, fuzzy
+msgid "Sync"
+msgstr "Последняя синхронизация"
+
+#: winguhub/templates/repo.html:204
+#: winguhub/templates/snippets/file_share_popup.html:49
+msgid ""
+"A sub-library can be created from any folder. It can be independently synced "
+"and shared. Files in the sub-library will be automatically kept in sync with "
+"those in the directory of the origin library."
+msgstr ""
+
+#: winguhub/templates/repo.html:228
+#, fuzzy
+msgid "File is too big"
+msgstr "Имя файла слишком длинное"
+
+#: winguhub/templates/repo.html:229
+#, fuzzy
+msgid "File is too small"
+msgstr "Имя файла слишком длинное"
+
+#: winguhub/templates/repo.html:230
+msgid "Filetype not allowed"
+msgstr ""
+
+#: winguhub/templates/repo.html:231
+msgid "Max number of files exceeded"
+msgstr ""
+
+#: winguhub/templates/repo.html:232
+msgid "Uploaded bytes exceed file size"
+msgstr ""
+
+#: winguhub/templates/repo.html:233
+msgid "Empty file upload result"
+msgstr ""
+
+#: winguhub/templates/repo.html:235
+#, fuzzy
+msgid "Error"
+msgstr "ошибка: "
+
+#: winguhub/templates/repo.html:236
+#, fuzzy
+msgid "Start"
+msgstr "Отметить"
+
+#: winguhub/templates/repo.html:616
+#, fuzzy, python-format
+msgid "Successfully deleted %(name)s"
+msgstr "Успешно удалено %s"
+
+#: winguhub/templates/repo.html:644
+#, fuzzy
+msgid "Rename File"
+msgstr "Переименовать"
+
+#: winguhub/templates/repo.html:646
+#, fuzzy
+msgid "Rename Directory"
+msgstr "Переименовано каталогов"
+
+#: winguhub/templates/repo.html:664
+#, fuzzy
+msgid "Copy File"
+msgstr "Копировать "
+
+#: winguhub/templates/repo.html:666
+#, fuzzy
+msgid "Move File"
+msgstr "Переместить "
+
+#: winguhub/templates/repo.html:668
+#, fuzzy
+msgid "Copy Directory"
+msgstr "Каталог"
+
+#: winguhub/templates/repo.html:670
+#, fuzzy
+msgid "Move Directory"
+msgstr "Перемещено каталогов"
+
+#: winguhub/templates/repo.html:675
+#, fuzzy, python-format
+msgid "Copy %(name)s to:"
+msgstr "в %(name)s"
+
+#: winguhub/templates/repo.html:678
+#, fuzzy, python-format
+msgid "Move %(name)s to:"
+msgstr "в %(name)s"
+
+#: winguhub/templates/repo.html:763 winguhub/templates/repo.html.py:917
+#: winguhub/templates/snippets/repo_dir_data.html:83
+msgid "unstarred"
+msgstr "Снять отметку"
+
+#: winguhub/templates/repo.html:765
+#: winguhub/templates/snippets/repo_dir_data.html:81
+msgid "starred"
+msgstr "Отметить"
+
+#: winguhub/templates/repo.html:849 winguhub/templates/repo.html.py:890
+#, fuzzy
+msgid "It is required."
+msgstr "Требуется Email."
+
+#: winguhub/templates/repo.html:855
+msgid "Only an extension there, please input a name."
+msgstr "Здесь только расширение, пожалуйста, введите значение."
+
+#: winguhub/templates/repo.html:865
+#, fuzzy
+msgid "Creating..."
+msgstr "Извлечение ..."
+
+#: winguhub/templates/repo.html:894
+#, fuzzy
+msgid "You have not renamed it."
+msgstr "Вы еще не загрузили "
+
+#: winguhub/templates/repo.html:925
+#, fuzzy, python-format
+msgid "Successfully renamed %(old_name)s to %(new_name)s"
+msgstr "Успешное переименование %(old)s в %(new)s"
+
+#: winguhub/templates/repo.html:941
+#, fuzzy
+msgid "Invalid destination path"
+msgstr "Неправельная настройка сервера."
+
+#: winguhub/templates/repo.html:1018
+#, fuzzy
+msgid "Contacts is required."
+msgstr "требуестся контакт"
+
+#: winguhub/templates/repo.html:1066
+#, fuzzy
+msgid "Creating sub-library..."
+msgstr "Библиотека создана"
+
+#: winguhub/templates/repo.html:1080
+#, fuzzy
+msgid "Sub-library is created."
+msgstr "Библиотека зашифрована."
+
+#: winguhub/templates/repo.html:1099
+#, fuzzy
+msgid "Please select at least 1 group or 1 contact."
+msgstr "Пожалуйста, выберите по крайней мере, одну группу."
+
+#: winguhub/templates/repo_access_deny.html:8
+msgid "You can't access this library."
+msgstr "У вас нет доступа к этой библиотеке."
+
+#: winguhub/templates/repo_history.html:9
+msgid "modification history"
+msgstr "История обновлений"
+
+#: winguhub/templates/repo_history.html:14
+msgid ""
+"Tip: A snapshot will be generated after modification, which records the "
+"library state before this modification."
+msgstr ""
+"Учтите: снимок создаётся после модификации, и на нем будет зафиксирована "
+"основная библиотека до её изменения."
+
+#: winguhub/templates/repo_history.html:14
+msgid "View Snapshot"
+msgstr "Просмотр снимка"
+
+#: winguhub/templates/repo_history.html:60
+#: winguhub/templates/repo_view_snapshot.html:58
+#: winguhub/templates/sysadmin/sys_group_admin.html:37
+#: winguhub/templates/sysadmin/sys_publink_admin.html:38
+#: winguhub/templates/sysadmin/sys_repo_admin.html:37
+#: winguhub/templates/sysadmin/sys_useradmin.html:72
+msgid "Per page: "
+msgstr "На страницу: "
+
+#: winguhub/templates/repo_history_view.html:8
+msgid "snapshot"
+msgstr "Снимок"
+
+#: winguhub/templates/repo_history_view.html:9
+msgid "Back to snapshots"
+msgstr "Назад к снимкам"
+
+#: winguhub/templates/repo_history_view.html:33
+msgid "Can't view this library"
+msgstr "Не удается просмотреть эту библиотеку"
+
+#: winguhub/templates/repo_history_view.html:58
+#: winguhub/templates/repo_recycle_view.html:61
+msgid "Directory"
+msgstr "Каталог"
+
+#: winguhub/templates/repo_recycle_view.html:32
+#: winguhub/templates/repo_recycle_view.html:34
+msgid "a week"
+msgstr "за неделю"
+
+#: winguhub/templates/repo_recycle_view.html:37
+#: winguhub/templates/repo_recycle_view.html:39
+msgid "a month"
+msgstr "за месяц"
+
+#: winguhub/templates/repo_recycle_view.html:42
+#: winguhub/templates/repo_recycle_view.html:44
+msgid "all"
+msgstr "все"
+
+#: winguhub/templates/repo_recycle_view.html:54
+msgid "Delete Time"
+msgstr "Удалить время"
+
+#: winguhub/templates/repo_view_snapshot.html:8
+msgid "Back to modification history"
+msgstr "Назад к истории изменений"
+
+#: winguhub/templates/repo_view_snapshot.html:15
+msgid "Create Time"
+msgstr "Дата создания"
+
+#: winguhub/templates/repo_view_snapshot.html:17
+#: winguhub/templates/view_file_markdown.html:7
+#: winguhub/templates/view_file_text.html:18
+msgid "Detail"
+msgstr "Подробности"
+
+#: winguhub/templates/repo_view_snapshot.html:86
+msgid "Restore Library"
+msgstr "Восстановить библиотеку"
+
+#: winguhub/templates/repo_view_snapshot.html:87
+msgid "Are you sure you want to restore this library?"
+msgstr "Вы уверены, что хотите восстановить эту библиотеку?"
+
+#: winguhub/templates/wingufile_access_check.html:6
+msgid "Preparing, please wait..."
+msgstr "Подготовка, пожалуйста ожидайте..."
+
+#: winguhub/templates/wingufile_access_check.html:7
+msgid ""
+"No running Seafile client is detected. If you're sure Seafile client is "
+"running, click the following link to continue downloading:"
+msgstr ""
+"Не работает! Seafile клиент не обнаружен! Если вы уверены, что Seafile "
+"клиент работает, нажмите на следующую ссылку, чтобы продолжить загрузку:"
+
+#: winguhub/templates/wingufile_access_check.html:8
+msgid "Your Seafile client is out of date, please upgrade to latest version."
+msgstr ""
+"Ваш клиент Seafile устарел, пожалуйста, обновите его до последней версии."
+
+#: winguhub/templates/wingufile_access_check.html:8
+msgid "Click to download."
+msgstr "Кликните для скачивания"
+
+#: winguhub/templates/shared_file_view.html:26
+#: winguhub/templates/view_shared_dir.html:9
+msgid "Shared by: "
+msgstr "Общий доступ: "
+
+#: winguhub/templates/shared_file_view.html:32
+msgid "Save to..."
+msgstr ""
+
+#: winguhub/templates/shared_file_view.html:42
+#, fuzzy
+msgid "Save To:"
+msgstr "Доступно для"
+
+#: winguhub/templates/shared_link_email.html:2
+#, python-format
+msgid ""
+"You're receiving this e-mail because %(email)s is sharing a file to you on "
+"%(site_name)s."
+msgstr ""
+"Вы получили это письмо, потому что %(email)s предоставил вам общий доступ к "
+"файлу на %(site_name)s."
+
+#: winguhub/templates/shared_link_email.html:4
+msgid "Please go to the following page and view the file:"
+msgstr "Пожалуйста, перейдите на страницу и посмотрите файл:"
+
+#: winguhub/templates/text_diff.html:6
+msgid "modification details"
+msgstr "подробности изменений"
+
+#: winguhub/templates/text_diff.html:22
+msgid "It's a newly-created blank file."
+msgstr "Это вновь созданный чистый файл."
+
+#: winguhub/templates/text_diff.html:29
+msgid "before modification"
+msgstr "до внесения изменений"
+
+#: winguhub/templates/text_diff.html:31
+msgid "after modification"
+msgstr "после внесения изменений"
+
+#: winguhub/templates/update_file_error.html:6
+msgid "Update file "
+msgstr "Обновить файл"
+
+#: winguhub/templates/update_file_error.html:14
+#: winguhub/templates/upload_file_error.html:10
+msgid "error: "
+msgstr "ошибка: "
+
+#: winguhub/templates/upload_file_error.html:6
+msgid "Upload file"
+msgstr "Загрузить файл"
+
+#: winguhub/templates/upload_file_error.html:6
+msgid "to"
+msgstr "для"
+
+#: winguhub/templates/user_404.html:6
+msgid "Sorry, this user is not registered yet."
+msgstr "К сожалению, этот пользователь не зарегистрирован."
+
+#: winguhub/templates/view_file_base.html:36
+#: winguhub/templates/view_file_base.html:157
+msgid "Unstar"
+msgstr "Снять отметку"
+
+#: winguhub/templates/view_file_base.html:38
+#: winguhub/templates/view_file_base.html:153
+msgid "Star"
+msgstr "Отметить"
+
+#: winguhub/templates/view_file_base.html:55
+#: winguhub/templates/view_file_markdown.html:7
+#: winguhub/templates/view_file_text.html:18
+msgid "updated this file"
+msgstr "обновить этот файл"
+
+#: winguhub/templates/view_file_base.html:59
+#, python-format
+msgid "one contributor"
+msgid_plural " %(counter)s contributors "
+msgstr[0] "один участник"
+msgstr[1] " %(counter)s участника(ов) "
+
+#: winguhub/templates/view_file_base.html:71
+msgid "Open local file"
+msgstr "Открыть локальный файл"
+
+#: winguhub/templates/view_file_base.html:93
+msgid "Processing..."
+msgstr "Обработка ..."
+
+#: winguhub/templates/view_file_base.html:96
+msgid "You have not downloaded "
+msgstr "Вы еще не загрузили "
+
+#: winguhub/templates/view_file_base.html:96
+msgid "."
+msgstr ""
+
+#: winguhub/templates/view_file_base.html:97
+msgid "Click to download"
+msgstr "Кликните для скачивания"
+
+#: winguhub/templates/view_file_base.html:151
+msgid "Unstarred successfully"
+msgstr "Отметка успешно снята"
+
+#: winguhub/templates/view_file_base.html:155
+msgid "Starred successfully"
+msgstr "Успешно отмечено"
+
+#: winguhub/templates/view_file_base.html:196
+msgid ""
+"Failed to find an application to open the file. Seafile will open the folder."
+msgstr "Не удалось найти приложение для открытия файла. Seafile откроет папку."
+
+#: winguhub/templates/view_file_base.html:200
+msgid "The file is not synchronized, you can synchronize it manually."
+msgstr "Файл не синхронизирован, вы можете синхронизировать его вручную."
+
+#: winguhub/templates/view_file_base.html:202
+msgid "The file is not synchronized, please retry later."
+msgstr "Файл не синхронизирован, повторите попытку позже."
+
+#: winguhub/templates/view_file_base.html:206
+msgid "An error occurred when open the local file."
+msgstr "Произошла ошибка при открытии локального файла."
+
+#: winguhub/templates/view_file_base.html:234
+msgid ""
+"You are running an old version of Seafile client, please <a target=\"_blank"
+"\">upgrade</a> it."
+msgstr ""
+"Вы используете старую версию клиента Seafile, пожалуйста <a target=\"_blank"
+"\">обновитесь</a> it."
+
+#: winguhub/templates/view_file_base.html:248
+msgid ""
+"No running Seafile client is detected. If you are sure Seafile client is "
+"running, click the following link to open the local file:"
+msgstr ""
+"Не работает - Seafile клиент не обнаружен!  Если вы уверены, что Seafile "
+"клиент работает, перейдите по ссылке, чтобы открыть локальный файл:"
+
+#: winguhub/templates/view_file_image.html:15
+#: winguhub/templates/snippets/file_content_html.html:31
+msgid "you can also press ← "
+msgstr "Вы также можете нажать ← "
+
+#: winguhub/templates/view_file_image.html:15
+#: winguhub/templates/snippets/file_content_html.html:31
+msgid "prev"
+msgstr "Предыдущая"
+
+#: winguhub/templates/view_file_image.html:21
+#: winguhub/templates/snippets/file_content_html.html:37
+msgid "you can also press → "
+msgstr "Вы также можете нажать →"
+
+#: winguhub/templates/view_file_image.html:21
+#: winguhub/templates/snippets/file_content_html.html:37
+msgid "next"
+msgstr "Следующая"
+
+#: winguhub/templates/view_file_markdown.html:20
+#: winguhub/templates/view_file_sf.html:15
+#: winguhub/templates/view_file_text.html:31
+#: winguhub/templates/snippets/file_encoding.html:5
+msgid "Encoding:"
+msgstr "Кодирование:"
+
+#: winguhub/templates/view_file_markdown.html:23
+#: winguhub/templates/view_file_sf.html:18
+#: winguhub/templates/view_file_text.html:34
+#: winguhub/templates/snippets/file_encoding.html:8
+msgid "auto detect"
+msgstr "автоопределение"
+
+#: winguhub/templates/view_file_pdf.html:30
+#: winguhub/templates/snippets/file_content_js.html:62
+msgid ""
+"<span id=\"pdf-page\"><label for=\"page-number\">Page</label> <input type="
+"\"number\" id=\"page-number\" value=\"1\" min=\"1\"></input> / <span id="
+"\"page-nums\"></span></span>"
+msgstr ""
+"<span id=\"pdf-page\"><label for=\"page-number\">Страница</label> <input "
+"type=\"number\" id=\"page-number\" value=\"1\" min=\"1\"></input> / <span id="
+"\"page-nums\"></span></span>"
+
+#: winguhub/templates/view_file_pdf.html:30
+#: winguhub/templates/snippets/file_content_js.html:62
+msgid "Full Screen"
+msgstr "Полный экран"
+
+#: winguhub/templates/view_file_pdf.html:30
+#: winguhub/templates/snippets/file_content_js.html:62
+msgid "loading..."
+msgstr "Загрузка..."
+
+#: winguhub/templates/view_file_pdf.html:77
+#: winguhub/templates/snippets/file_content_js.html:109
+msgid ""
+"You can use IE 10 or other browsers, for example, firefox, to view it online."
+msgstr ""
+"Вы можете использовать IE 10 или другие браузеры, например, Firefox,для "
+"просмотра в режиме он-лайн."
+
+#: winguhub/templates/view_file_svg.html:7
+#: winguhub/templates/snippets/file_content_js.html:41
+msgid "To view it online, you can use firefox, chrome or IE 9."
+msgstr ""
+"Для просмотра в режиме он-лайн, вы можете использовать Firefox, Chrome или "
+"IE 9."
+
+#: winguhub/templates/view_file_unknown.html:6
+#: winguhub/templates/snippets/file_content_js.html:123
+msgid "This type of file cannot be viewed online."
+msgstr "Этот тип файла не может быть просмотрен в режиме он-лайн."
+
+#: winguhub/templates/view_shared_dir.html:26
+msgid "ZIP"
+msgstr ""
+
+#: winguhub/templates/registration/login.html:14
+msgid "Incorrect email or password"
+msgstr "Неправильный email или пароль"
+
+#: winguhub/templates/registration/login.html:19
+msgid "Forgot password?"
+msgstr "Забыли пароль?"
+
+#: winguhub/templates/registration/login.html:28
+#: winguhub/templates/registration/registration_form.html:32
+#: winguhub/templates/sysadmin/sys_useradmin.html:123
+msgid "Email cannot be blank"
+msgstr "E-mail не может быть пустым"
+
+#: winguhub/templates/registration/login.html:32
+#: winguhub/templates/registration/registration_form.html:36
+#: winguhub/templates/sysadmin/sys_useradmin.html:127
+msgid "Password cannot be blank"
+msgstr "Пароль не может быть пустым"
+
+#: winguhub/templates/registration/logout.html:4
+msgid "Log Out"
+msgstr "Выход"
+
+#: winguhub/templates/registration/logout.html:8
+msgid "Thanks for your participation! "
+msgstr "Спасибо за посещение! "
+
+#: winguhub/templates/registration/logout.html:8
+msgid "Log in again"
+msgstr "Снова войти в систему"
+
+#: winguhub/templates/registration/password_change_done.html:4
+msgid "Password Change Successfully"
+msgstr "Пароль успешно изменен"
+
+#: winguhub/templates/registration/password_change_done.html:9
+msgid "Your password has been changed successfully."
+msgstr "Ваш пароль был успешно изменен."
+
+#: winguhub/templates/registration/password_change_form.html:3
+#: winguhub/templates/registration/password_change_form.html:7
+msgid "Password Modification"
+msgstr "Изменение пароля"
+
+#: winguhub/templates/registration/password_change_form.html:9
+msgid "Current Password: "
+msgstr "Текущий пароль:"
+
+#: winguhub/templates/registration/password_change_form.html:11
+#: winguhub/templates/registration/password_reset_confirm.html:13
+msgid "New Password: "
+msgstr "Новый пароль: "
+
+#: winguhub/templates/registration/password_change_form.html:13
+#: winguhub/templates/registration/password_reset_confirm.html:16
+msgid "Confirm Password: "
+msgstr "Подтвердите пароль: "
+
+#: winguhub/templates/registration/password_reset_complete.html:4
+msgid "Successfully reset password"
+msgstr "Пароль успешно изменен"
+
+#: winguhub/templates/registration/password_reset_complete.html:8
+msgid "Successfully reset password."
+msgstr "Пароль успешно изменен."
+
+#: winguhub/templates/registration/password_reset_confirm.html:4
+#: winguhub/templates/registration/password_reset_form.html:4
+#: winguhub/templates/registration/password_reset_form.html:7
+#: winguhub/templates/sysadmin/sys_useradmin.html:99
+#: winguhub/views/sysadmin.py:250
+msgid "Password Reset"
+msgstr "Изменить пароль"
+
+#: winguhub/templates/registration/password_reset_confirm.html:11
+msgid "Input new password"
+msgstr "Введите новый пароль"
+
+#: winguhub/templates/registration/password_reset_confirm.html:26
+msgid "Failed to reset password: this link is no longer available."
+msgstr "Не удалось изменить пароль: эта ссылка уже не доступна."
+
+#: winguhub/templates/registration/password_reset_done.html:4
+msgid "Password Reset Successfully"
+msgstr "Пароль успешно изменен"
+
+#: winguhub/templates/registration/password_reset_done.html:8
+msgid "We've send a password reset email to your email."
+msgstr "Мы отправили письмо об изменении пароля на электронную почту."
+
+#: winguhub/templates/registration/password_reset_email.html:2
+#, python-format
+msgid ""
+"You're receiving this e-mail because you requested a password reset for your "
+"user account at %(site_name)s. "
+msgstr ""
+"Вы получили это письмо, потому что вы изменили свой пароль на сайте "
+"%(site_name)s. "
+
+#: winguhub/templates/registration/password_reset_email.html:4
+msgid "Please go to the following page and choose a new password:"
+msgstr "Пожалуйста, перейдите на следующую страницу и введите новый пароль:"
+
+#: winguhub/templates/registration/password_reset_email.html:8
+msgid "Your username, in case you've forgotten:"
+msgstr "Ваше имя пользователя, если вы забыли:"
+
+#: winguhub/templates/registration/password_reset_form.html:9
+msgid "Your email used in login: "
+msgstr "Ваш E-mail используется как логин:"
+
+#: winguhub/templates/registration/password_reset_form.html:12
+msgid "We will send you an email to set new password"
+msgstr "Мы выслали Вам на E-mail, новый пароль"
+
+#: winguhub/templates/registration/registration_complete.html:4
+#, fuzzy
+msgid "Registration complete"
+msgstr "Регистрационная информация Seafile"
+
+#: winguhub/templates/registration/registration_complete.html:9
+msgid ""
+"An activation email has been sent. Please check your email and click on the "
+"link to activate your account."
+msgstr ""
+
+#: winguhub/templates/registration/registration_complete.html:11
+msgid ""
+"Registration complete, please wait for administrator to activate your "
+"account."
+msgstr ""
+
+#: winguhub/templates/registration/registration_form.html:3
+msgid "Register"
+msgstr "Зарегестрироваться"
+
+#: winguhub/templates/registration/registration_form.html:7
+msgid "Welcome back, you are already signed in."
+msgstr "Добро пожаловать, вы уже зарегестрированны в системе."
+
+#: winguhub/templates/registration/registration_form.html:15
+#: winguhub/templates/sysadmin/sys_useradmin.html:16
+msgid "Confirm Password"
+msgstr "Изменить пароль"
+
+#: winguhub/templates/registration/registration_form.html:40
+#: winguhub/templates/snippets/repo_create_js.html:49
+#: winguhub/templates/sysadmin/sys_useradmin.html:131
+msgid "Please enter the password again"
+msgstr "Пожалуйста подтвердите пароль"
+
+#: winguhub/templates/snippets/avatar_upload_js.html:40
+msgid " is not supported. Please choose an image file."
+msgstr " не поддерживается. Пожалуйста, выберите файл изображения."
+
+#: winguhub/templates/snippets/avatar_upload_js.html:45
+msgid " is not supported. File extensions can only be "
+msgstr " не поддерживается. Расширения файлов может быть только "
+
+#: winguhub/templates/snippets/avatar_upload_js.html:52
+msgid " is too large. Allowed maximum size is 1MB."
+msgstr " слишком большой. Разрешенный максимальный размер - 1МБ."
+
+#: winguhub/templates/snippets/bottom_bar.html:3
+msgid "Discuss"
+msgstr "Обсуждения"
+
+#: winguhub/templates/snippets/bottom_bar.html:3
+msgid "Group"
+msgstr "Группа"
+
+#: winguhub/templates/snippets/bottom_bar.html:66
+msgid "Please select at least 1 group."
+msgstr "Пожалуйста, выберите по крайней мере, одну группу."
+
+#: winguhub/templates/snippets/bottom_bar.html:71
+msgid "Please input a discussion."
+msgstr "Пожалуйста, начните обсуждение."
+
+#: winguhub/templates/snippets/current_commit.html:12
+msgid "Generated by system"
+msgstr "Создано с помощью системы"
+
+#: winguhub/templates/snippets/events.html:3
+msgid "File Activities"
+msgstr "Активность файла"
+
+#: winguhub/templates/snippets/events.html:6
+msgid "More"
+msgstr "Подробнее"
+
+#: winguhub/templates/snippets/file_share_popup.html:3
+#, fuzzy, python-format
+msgid "Share %(name)s"
+msgstr "в %(name)s"
+
+#: winguhub/templates/snippets/file_share_popup.html:6
+#, fuzzy
+msgid "Private Share"
+msgstr "Оставить общий доступ"
+
+#: winguhub/templates/snippets/file_share_popup.html:7
+#, fuzzy
+msgid "Share Link"
+msgstr "Общедоступные ссылки"
+
+#: winguhub/templates/snippets/file_share_popup.html:9
+#, fuzzy
+msgid "Syncable Share"
+msgstr "Оставить общий доступ"
+
+#: winguhub/templates/snippets/file_share_popup.html:24
+msgid "Generate"
+msgstr ""
+
+#: winguhub/templates/snippets/file_share_popup.html:26
+msgid "Link: "
+msgstr "Ссылка"
+
+#: winguhub/templates/snippets/file_share_popup.html:27
+msgid "Send"
+msgstr "Отправить"
+
+#: winguhub/templates/snippets/file_share_popup.html:31
+msgid "Send to:"
+msgstr "Отправить:"
+
+#: winguhub/templates/snippets/file_share_popup.html:32
+msgid "Emails, Seperated by ','"
+msgstr "Email(ы), разделённые ','"
+
+#: winguhub/templates/snippets/file_share_popup.html:37
+msgid "Sending..."
+msgstr "Отправка ..."
+
+#: winguhub/templates/snippets/file_share_popup.html:44
+msgid ""
+"You need to create a sub-library from this directory to let others sync it."
+msgstr ""
+
+#: winguhub/templates/snippets/file_share_popup.html:47
+msgid "The sub-library used to share this directory already exists."
+msgstr ""
+
+#: winguhub/templates/snippets/group_recommend_form.html:5
+msgid "Post a discussion to group"
+msgstr "Пост в обсуждении группы"
+
+#: winguhub/templates/snippets/group_recommend_form.html:14
+msgid "discussion"
+msgstr "обсуждение"
+
+#: winguhub/templates/snippets/list_commit_detail.html:11
+msgid "Modification Details"
+msgstr "Подробности изменения"
+
+#: winguhub/templates/snippets/list_commit_detail.html:24
+msgid "New files"
+msgstr "Новый файл"
+
+#: winguhub/templates/snippets/list_commit_detail.html:25
+msgid "Deleted files"
+msgstr "Удаленные файлы"
+
+#: winguhub/templates/snippets/list_commit_detail.html:26
+msgid "Renamed or Moved files"
+msgstr "переименованные или перемещённые файлы"
+
+#: winguhub/templates/snippets/list_commit_detail.html:27
+msgid "Modified files"
+msgstr "Измененные файлы"
+
+#: winguhub/templates/snippets/list_commit_detail.html:28
+msgid "New directories"
+msgstr "Новые каталоги"
+
+#: winguhub/templates/snippets/list_commit_detail.html:29
+msgid "Deleted directories"
+msgstr "Удаленные каталоги"
+
+#: winguhub/templates/snippets/list_commit_detail.html:39
+msgid "Unknown error."
+msgstr "Неизвестная ошибка."
+
+#: winguhub/templates/snippets/my_groups.html:22
+msgid "Create a group now"
+msgstr "Создать группу сейчас"
+
+#: winguhub/templates/snippets/my_owned_repos.html:6
+msgid "Mine"
+msgstr "Мои"
+
+#: winguhub/templates/snippets/my_owned_repos.html:8
+#, fuzzy
+msgid "Sub-libraries"
+msgstr "Библиотеки"
+
+#: winguhub/templates/snippets/my_owned_repos.html:10
+#: winguhub/templates/sysadmin/userinfo.html:64
+msgid "Shared"
+msgstr "Доступные"
+
+#: winguhub/templates/snippets/my_owned_repos.html:11
+msgid "Starred"
+msgstr "Отмеченные"
+
+#: winguhub/templates/snippets/my_owned_repos.html:47
+msgid "You have not created any libraries"
+msgstr "Вы не создали ни одной библиотеки"
+
+#: winguhub/templates/snippets/my_owned_repos.html:48
+msgid ""
+"You can create a library to organize your files. For example, you can create "
+"one for each of your projects. Each library can be synchronized and shared "
+"separately."
+msgstr ""
+"Вы можете создавать библиотеки для организации работы с файлами. Например, "
+"вы создаёте библиотеки для каждого из ваших нескольких проектов, причем "
+"каждая из них может быть синхронизирована и дана в общий доступне зависимо "
+"друг от друга."
+
+#: winguhub/templates/snippets/my_owned_repos.html:49
+msgid "Synchronize libraries with PC client"
+msgstr "Синхронизация библиотеки с ПК клиента"
+
+#: winguhub/templates/snippets/my_owned_repos.html:50
+msgid "1. Download the library (make sure PC client is running)."
+msgstr "1. Скачайте библиотеку (убедитесь, что ПК клиент работает)."
+
+#: winguhub/templates/snippets/my_owned_repos.html:51
+msgid "2. Add files to the folder and they will be uploaded automatically."
+msgstr "2. Добавте файлы в папку и они будут загружены автоматически."
+
+#: winguhub/templates/snippets/my_owned_repos.html:63
+msgid "Origin"
+msgstr ""
+
+#: winguhub/templates/snippets/my_owned_repos.html:95
+#, fuzzy
+msgid "You have not created any sub-libraries"
+msgstr "Вы не создали ни одной библиотеки"
+
+#: winguhub/templates/snippets/my_owned_repos.html:96
+msgid ""
+"You can create a sub-library from a directory inside a library. A sub-"
+"library can be independently synced and shared. Files in the sub-library "
+"will be automatically kept in sync with those in the directory of the origin "
+"library."
+msgstr ""
+
+#: winguhub/templates/snippets/my_owned_repos.html:142
+msgid "No library is shared to you"
+msgstr "Ни одна библиотека не предоставлена вам в доступ"
+
+#: winguhub/templates/snippets/my_owned_repos.html:143
+msgid ""
+"Libraries shared to you or shared to groups you joined will be listed here. "
+"Libraries shared as writable can be downloaded and synced. Read only "
+"libraries can only be downloaded, updates on local files will not be "
+"uploaded."
+msgstr ""
+"Все библиотеки предоставленные вам в доступ будут перечислены здесь. Общие "
+"библиотеки с правом записи могут быть вами загружены и синхронизированы. "
+"Общие библиотеки предназначенные только для записи, могут быть вами только "
+"загружены, но обновление локальных файлов производиться не будет."
+
+#: winguhub/templates/snippets/my_owned_repos.html:159
+msgid "icon"
+msgstr "значек"
+
+#: winguhub/templates/snippets/my_owned_repos.html:170
+msgid "You don't have any starred files yet"
+msgstr "Вы пока не отметили ни одного файла"
+
+#: winguhub/templates/snippets/my_owned_repos.html:171
+msgid ""
+"You can star important files by clicking the \"Star\" button on file viewing "
+"page, and they will be listed here."
+msgstr ""
+"Можно отметить важные файлы, нажав кнопку \"Отметить\" на странице "
+"просмотра, и они будут здесь отображаться."
+
+#: winguhub/templates/snippets/myhome_extra_script.html:40
+msgid "Please enter emails or groups or select some at first."
+msgstr ""
+"Пожалуйста, введите E-Mail, или название группы,или что нибудь на первый "
+"взгляд."
+
+#: winguhub/templates/snippets/myhome_extra_script.html:51
+#: winguhub/templates/sysadmin/sys_repo_admin.html:62
+#: winguhub/templates/sysadmin/userinfo.html:140
+msgid "Delete Library"
+msgstr "Удалить библиотеку"
+
+#: winguhub/templates/snippets/office_convert_html.html:4
+msgid "The file is being processed, please wait..."
+msgstr "Файл обрабатывается, пожалуйста, подождите ..."
+
+#: winguhub/templates/snippets/office_convert_js.html:39
+msgid "hide outline"
+msgstr "скрыть контур"
+
+#: winguhub/templates/snippets/office_convert_js.html:40
+msgid "show outline"
+msgstr "показать контур"
+
+#: winguhub/templates/snippets/office_convert_js.html:163
+#: winguhub/templates/snippets/office_convert_js.html:170
+#: winguhub/templates/snippets/office_convert_js.html:195
+msgid "Document convertion failed."
+msgstr "Функция преобразования документов не удалось."
+
+#: winguhub/templates/snippets/pubinfo.html:3
+msgid "Organization Info"
+msgstr "Информация о сообществе"
+
+#: winguhub/templates/snippets/pubinfo.html:5
+msgid "<span class=\"obj\">Library"
+msgid_plural "<span class=\"obj\">Libraries"
+msgstr[0] "<span class=\"obj\">Библиотека"
+msgstr[1] "<span class=\"obj\">Библиотек(и)"
+
+#: winguhub/templates/snippets/pubinfo.html:7
+msgid "<span class=\"obj\">Group"
+msgid_plural "<span class=\"obj\">Groups"
+msgstr[0] "<span class=\"obj\">Группа"
+msgstr[1] "<span class=\"obj\">Групп(ы)"
+
+#: winguhub/templates/snippets/pubinfo.html:9
+msgid "User"
+msgid_plural "Users"
+msgstr[0] "Пользователь"
+msgstr[1] "Пользователя(ей)"
+
+#: winguhub/templates/snippets/repo_create_form.html:9
+msgid "Share Permission"
+msgstr "Общий доступ разрешен"
+
+#: winguhub/templates/snippets/repo_create_form.html:18
+msgid "Encrypt"
+msgstr "Шифровать"
+
+#: winguhub/templates/snippets/repo_create_form.html:20
+msgid "(at least 3 characters)"
+msgstr "(не менее 3 символов)"
+
+#: winguhub/templates/snippets/repo_create_form.html:22
+msgid "Password again"
+msgstr "Подтвердите пароль"
+
+#: winguhub/templates/snippets/repo_create_js.html:37
+msgid "Please enter password"
+msgstr "Пожалуйста введите пароль"
+
+#: winguhub/templates/snippets/repo_dir_data.html:15
+msgid "Upload"
+msgstr "Загрузить"
+
+#: winguhub/templates/snippets/repo_dir_data.html:50
+#: winguhub/templates/snippets/repo_dir_data.html:96
+msgid "Fetch failed"
+msgstr "Ошибка извлечения"
+
+#: winguhub/templates/snippets/repo_dir_data.html:65
+msgid "More operations"
+msgstr "Больше операций"
+
+#: winguhub/templates/snippets/repo_dir_data.html:68
+#: winguhub/templates/snippets/repo_dir_data.html:114
+msgid "Rename"
+msgstr "Переименовать"
+
+#: winguhub/templates/snippets/repo_dir_data.html:69
+#: winguhub/templates/snippets/repo_dir_data.html:115
+msgid "Move"
+msgstr "Переместить"
+
+#: winguhub/templates/snippets/repo_dir_data.html:70
+#: winguhub/templates/snippets/repo_dir_data.html:116
+msgid "Copy"
+msgstr "Копировать"
+
+#: winguhub/templates/snippets/repo_dir_data.html:111
+msgid "More Operations"
+msgstr "Больше операций"
+
+#: winguhub/templates/snippets/repo_share_form.html:3
+#, fuzzy
+msgid "Share <span class=\"op-target\"></span> "
+msgstr "Общий доступ <span class=\"op-target\"></span> для"
+
+#: winguhub/templates/snippets/repo_share_form.html:6
+msgid "Enter"
+msgstr "Ввод"
+
+#: winguhub/templates/snippets/repo_share_form.html:11
+msgid "Emails or Groups, Seperated by ','"
+msgstr "E-mail(ы) или группы, разделенные ','"
+
+#: winguhub/templates/snippets/repo_share_form.html:14
+msgid ""
+"Tip: must be organization members or organization groups, enter \"all\" to "
+"share to public library."
+msgstr ""
+"Учтите: вы должны быть членом сообщества или группы сообществ, введите \"все"
+"\", чтобы дать общий доступ к публичной библиотеке."
+
+#: winguhub/templates/snippets/repo_share_form.html:17
+msgid "Tip: enter \"all\" to share to public library."
+msgstr "Совет: введите \"все\", чтобы дать доступ к публичной библиотеке."
+
+#: winguhub/templates/snippets/shared_link_js.html:95
+#, fuzzy
+msgid "Select contacts"
+msgstr "Удалить контакт"
+
+#: winguhub/templates/snippets/shared_link_js.html:125
+msgid "Please input at least an email."
+msgstr "Пожалуйста, введите по крайней мере, E-mail."
+
+#: winguhub/templates/sysadmin/sys_group_admin.html:8
+msgid "All Groups"
+msgstr "Все группы"
+
+#: winguhub/templates/sysadmin/sys_group_admin.html:13
+#: winguhub/templates/sysadmin/sys_org_admin.html:13
+msgid "Creator"
+msgstr "Создатель "
+
+#: winguhub/templates/sysadmin/sys_group_admin.html:14
+#: winguhub/templates/sysadmin/sys_org_admin.html:14
+#: winguhub/templates/sysadmin/sys_publink_admin.html:12
+#: winguhub/templates/sysadmin/sys_useradmin.html:27
+msgid "Create At"
+msgstr "Создать как"
+
+#: winguhub/templates/sysadmin/sys_group_admin.html:62
+msgid "Delete Group"
+msgstr "Удалить группу"
+
+#: winguhub/templates/sysadmin/sys_org_admin.html:7
+msgid "All Organizations"
+msgstr "Все сообщества"
+
+#: winguhub/templates/sysadmin/sys_org_admin.html:12
+msgid "Url Prefix"
+msgstr "Префикс URL"
+
+#: winguhub/templates/sysadmin/sys_org_admin.html:62
+msgid "Delete Organization"
+msgstr "Удалить сообщество"
+
+#: winguhub/templates/sysadmin/sys_publink_admin.html:6
+#, fuzzy
+msgid "All Public Links"
+msgstr "Общие библиотеки"
+
+#: winguhub/templates/sysadmin/sys_publink_admin.html:11
+#: winguhub/templates/sysadmin/sys_repo_admin.html:12
+msgid "Owner"
+msgstr "Владелец"
+
+#: winguhub/templates/sysadmin/sys_publink_admin.html:13
+#, fuzzy
+msgid "Count"
+msgstr "Профиль"
+
+#: winguhub/templates/sysadmin/sys_repo_admin.html:6
+msgid "All Libraries"
+msgstr "Все библиотеки"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:8
+msgid "All Members"
+msgstr "Все участники"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:9
+#: winguhub/templates/sysadmin/sys_useradmin.html:11
+msgid "Add new user"
+msgstr "Добавить нового пользователя"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:25
+msgid "Status"
+msgstr "Статус"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:26
+#: winguhub/templates/sysadmin/userinfo.html:22
+msgid "Space Used"
+msgstr "Использованно пространства"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:35
+msgid "Activated"
+msgstr "Активен"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:37
+msgid "Active"
+msgstr "Активный"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:50
+msgid "ResetPwd"
+msgstr "Изменить пароль"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:52
+#: winguhub/templates/sysadmin/sys_useradmin.html:103
+msgid "Revoke Admin"
+msgstr "Отозвать Администратора"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:54
+#: winguhub/templates/sysadmin/sys_useradmin.html:107
+msgid "Set Admin"
+msgstr "Назначить администратора"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:95
+msgid "Delete User"
+msgstr "Удалить пользователя"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:100
+#, fuzzy, python-format
+msgid "Are you sure you want to reset the password of %s ?"
+msgstr "Вы уверены, что хотите изменить пароль %s ?"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:104
+#, fuzzy, python-format
+msgid "Are you sure you want to revoke the admin permission of %s ?"
+msgstr "Вы уверены, что хотите отозвать права администратора %s ?"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:108
+#, fuzzy, python-format
+msgid "Are you sure you want to set %s as admin?"
+msgstr "Вы уверены, что хотите назначить %s администратором?"
+
+#: winguhub/templates/sysadmin/user_add_email.html:3
+#, python-format
+msgid ""
+"You're receiving this e-mail because %(user)s added you to organization "
+"\"%(org.org_name)s\" on %(site_name)s."
+msgstr ""
+"Вы получили это письмо, потому что %(user)s добавил вас в сообщество "
+"\"%(org.org_name)s\" на сайте %(site_name)s."
+
+#: winguhub/templates/sysadmin/user_add_email.html:5
+#, python-format
+msgid ""
+"You're receiving this e-mail because %(user)s added you to %(site_name)s."
+msgstr ""
+"Вы получили это письмо, потому что %(user)s добавил вас на сайт "
+"%(site_name)s."
+
+#: winguhub/templates/sysadmin/user_add_email.html:7
+msgid "Following is your account information:"
+msgstr "Ниже приводится информации об учетной записи:"
+
+#: winguhub/templates/sysadmin/user_add_email.html:8
+#, python-format
+msgid "Email: %(email)s"
+msgstr "E-Mail: %(email)s"
+
+#: winguhub/templates/sysadmin/user_add_email.html:9
+#, python-format
+msgid "Password:  %(password)s"
+msgstr "Пароль:  %(password)s"
+
+#: winguhub/templates/sysadmin/user_add_email.html:11
+msgid "Please go to the following page and log in:"
+msgstr "Для входа, перейдите пожалуйста на страницу:"
+
+#: winguhub/templates/sysadmin/user_reset_email.html:2
+#, python-format
+msgid ""
+"You're receiving this e-mail because staff has reset your password at "
+"%(site_name)s. "
+msgstr ""
+"Вы получили это письмо, потому что штатно, в целях безопасности, был изменен "
+"ваш пароль на сайте %(site_name)s. "
+
+#: winguhub/templates/sysadmin/user_reset_email.html:4
+#, python-format
+msgid ""
+"Your new password is %(password)s, please modify your password as soon as "
+"possible."
+msgstr ""
+"Ваш новый пароль %(password)s, пожалуйста, измените пароль, как только у вас "
+"будет возможность."
+
+#: winguhub/templates/sysadmin/userinfo.html:27
+msgid "Used"
+msgstr "Используется"
+
+#: winguhub/templates/sysadmin/userinfo.html:32
+msgid "Set Quota"
+msgstr "Установить квоту"
+
+#: winguhub/templates/sysadmin/userinfo.html:39
+msgid "Owned"
+msgstr "Принадлежит"
+
+#: winguhub/templates/sysadmin/userinfo.html:88
+msgid "Set user storage limit"
+msgstr "Установите предел хранения пользовательских данных"
+
+#: winguhub/templates/sysadmin/userinfo.html:91
+msgid "Tip: 0 means default limit"
+msgstr "Учтите: по умолчанию 0 - без ограничений"
+
+#: winguhub/templates/wiki/personal_wiki.html:25
+msgid "You do not have personal wiki"
+msgstr "У вас нет личной Wiki"
+
+#: winguhub/templates/wiki/personal_wiki.html:32
+msgid "personal-wiki"
+msgstr "персональная wiki"
+
+#: winguhub/templates/wiki/personal_wiki.html:34
+msgid "Personal Wiki Pages"
+msgstr "Персональные Wiki страницы"
+
+#: winguhub/utils/__init__.py:95
+msgid "permission error"
+msgstr "ошибка доступа"
+
+#: winguhub/utils/__init__.py:110 winguhub/utils/__init__.py:1089
+msgid "Internal error"
+msgstr "Внутренняя ошибка"
+
+#: winguhub/views/__init__.py:379
+msgid "Unable to view recycle page"
+msgstr "Не удается просмотреть страницу"
+
+#: winguhub/views/__init__.py:404 winguhub/views/ajax.py:172
+#: winguhub/views/ajax.py:231 winguhub/views/ajax.py:318 winguhub/views/ajax.py:375
+#: winguhub/views/ajax.py:417 winguhub/views/ajax.py:621
+msgid "Library does not exist."
+msgstr "Библиотека не существует"
+
+#: winguhub/views/__init__.py:415
+msgid "You do not have permission to perform this action."
+msgstr "у вас нет разрешения на восстановление библиотеки"
+
+#: winguhub/views/__init__.py:422
+msgid "Failed to edit library information."
+msgstr "Не удается просмотреть библиотеку"
+
+#: winguhub/views/__init__.py:430
+msgid "Failed to save settings on server"
+msgstr "Не удалось сохранить настройки на сервере"
+
+#: winguhub/views/__init__.py:433
+msgid "Settings saved."
+msgstr "Настройки сохранены."
+
+#: winguhub/views/__init__.py:443
+msgid "Filename contains invalid character"
+msgstr "Имя файла содержит недопустимый символ"
+
+#: winguhub/views/__init__.py:445
+msgid "Duplicated filename"
+msgstr "Дубликат файла"
+
+#: winguhub/views/__init__.py:449
+msgid "File size surpasses the limit"
+msgstr "Размер файла превышает лимит"
+
+#: winguhub/views/__init__.py:451
+msgid "The space of owner is used up, upload failed"
+msgstr "Все пространство использованно, загрузить не удалось"
+
+#: winguhub/views/__init__.py:453
+msgid "An error occurs during file transfer"
+msgstr "Произошла ошибка во время передачи файлов"
+
+#: winguhub/views/__init__.py:465 winguhub/views/__init__.py:487
+msgid "Invalid url"
+msgstr "Неправильный URL"
+
+#: winguhub/views/__init__.py:507
+msgid "Unable to view library modification"
+msgstr "Не удается просмотреть библиотеку"
+
+#: winguhub/views/__init__.py:563
+msgid "Unable to view library snapshots"
+msgstr "Не удается просмотреть библиотек снимков"
+
+#: winguhub/views/__init__.py:620
+msgid "You have no permission to restore library"
+msgstr "у вас нет разрешения на восстановление библиотеки"
+
+#: winguhub/views/__init__.py:636
+msgid "Please specify history ID"
+msgstr "Пожалуйста создайте ID истории"
+
+#: winguhub/views/__init__.py:646
+msgid "History you specified does not exist"
+msgstr "Указанная история не существует"
+
+#: winguhub/views/__init__.py:648
+msgid "Unknown error"
+msgstr "неизвестная ошибка"
+
+#: winguhub/views/__init__.py:757 winguhub/views/__init__.py:774
+msgid ""
+"Failed to remove library. Only staff or owner can perform this operation."
+msgstr ""
+"Не удалось удалить библиотеку. Только администраторы или владелец может "
+"выполнить эту операцию."
+
+#: winguhub/views/__init__.py:772
+#, python-format
+msgid "Successfully deleted library \"%s\"."
+msgstr "Библиотека \"%s\" успешно удалена."
+
+#: winguhub/views/__init__.py:934
+#, python-format
+msgid "Successfully unsync client %s"
+msgstr "Клиент %s Успешно рассинхронизирован"
+
+#: winguhub/views/__init__.py:936
+msgid "Successfully unsync client"
+msgstr "Рассинхронизация клиента успешно завершена"
+
+#: winguhub/views/__init__.py:939
+#, python-format
+msgid "Failed to unsync client %s"
+msgstr "Не удалось рассинхронизировать клиента %s"
+
+#: winguhub/views/__init__.py:941
+msgid "Failed to unsync client"
+msgstr "Не удалось рассинхронизировать клиента"
+
+#: winguhub/views/__init__.py:1019 winguhub/views/__init__.py:1277
+msgid "Failed to create library"
+msgstr "Не удалось создать библиотеку"
+
+#: winguhub/views/__init__.py:1037
+msgid "Failed to unshare the library, as it does not exist."
+msgstr ""
+"Не удалось запретить совместное использование библиотек,так как они не "
+"существует."
+
+#: winguhub/views/__init__.py:1042
+#, python-format
+msgid "Unshare \"%s\" successfully."
+msgstr "Запрещено совместное использование \"%s\"."
+
+#: winguhub/views/__init__.py:1044
+#, python-format
+msgid "Failed to unshare \"%s\"."
+msgstr "Запрещение совместного использования \"%s\" не удалось."
+
+#: winguhub/views/__init__.py:1074
+msgid "Failed to delete file."
+msgstr "Не удалось удалить файл."
+
+#: winguhub/views/__init__.py:1081
+#, python-format
+msgid "%s successfully deleted."
+msgstr "%s Успешно удален."
+
+#: winguhub/views/__init__.py:1083 winguhub/views/ajax.py:401
+#, python-format
+msgid "Internal error. Failed to delete %s."
+msgstr "Внутренняя ошибка. Файл %s не удален."
+
+#: winguhub/views/__init__.py:1129
+msgid "Unable to access file"
+msgstr "Невозможно получить доступ к файлу."
+
+#: winguhub/views/__init__.py:1155
+msgid "Failed to download library, unable to find server"
+msgstr "Не удалось загрузить библиотеку, невозможно найти сервер."
+
+#: winguhub/views/__init__.py:1166
+msgid "Invalid server setting"
+msgstr "Неправельная настройка сервера."
+
+#: winguhub/views/__init__.py:1384
+#, python-format
+msgid ""
+"Successfully revert %(path)s to <a href=\"%(root)s\">root directory.</a>"
+msgstr ""
+"Успешно возвращено %(path)s в <a href=\"%(root)s\">основную директорию.</a>"
+
+#: winguhub/views/__init__.py:1388 winguhub/views/__init__.py:1414
+#, python-format
+msgid "Successfully revert <a href=\"%(url)s\">%(path)s</a>"
+msgstr "Успешно возвращено <a href=\"%(url)s\">%(path)s</a>"
+
+#: winguhub/views/__init__.py:1410
+#, python-format
+msgid "Successfully revert %(path)s to <a href=\"%(url)s\">root directory.</a>"
+msgstr ""
+"Успешно возвращено %(path)s в <a href=\"%(url)s\">основную директорию.</a>"
+
+#: winguhub/views/__init__.py:1674 winguhub/views/file.py:738
+msgid "Internal Error"
+msgstr "Внутренняя ошибка"
+
+#: winguhub/views/__init__.py:1677
+#, python-format
+msgid "Unable to download directory \"%s\": size is too large."
+msgstr "Не удается загрузить каталог \"%s\": размер слишком велик."
+
+#: winguhub/views/__init__.py:1692
+#, python-format
+msgid "Unable to download \"%s\""
+msgstr "Не удается загрузить \"%s\""
+
+#: winguhub/views/ajax.py:62
+msgid "You don't have permission to access the library."
+msgstr "У вас нет разрешения на доступ к библиотеке."
+
+#: winguhub/views/ajax.py:69
+msgid "No path."
+msgstr "No path."
+
+#: winguhub/views/ajax.py:125
+msgid "The group doesn't exist"
+msgstr "Группа не существует"
+
+#: winguhub/views/ajax.py:179 winguhub/views/ajax.py:382 winguhub/views/ajax.py:628
+#, fuzzy
+msgid "Permission denied."
+msgstr "Доступ запрещен"
+
+#: winguhub/views/ajax.py:184 winguhub/views/ajax.py:633
+#, fuzzy
+msgid "Library is encrypted."
+msgstr "Библиотека зашифрована."
+
+#: winguhub/views/ajax.py:190 winguhub/views/ajax.py:639
+#, fuzzy
+msgid "Error: no head commit id"
+msgstr "Ошибка: не верный путь."
+
+#: winguhub/views/ajax.py:390
+msgid "Argument missing."
+msgstr ""
+
+#: winguhub/views/ajax.py:442
+msgid "Destination path is too long."
+msgstr "Путь назначения слишком длинный."
+
+#: winguhub/views/ajax.py:471 winguhub/views/ajax.py:523
+#, fuzzy, python-format
+msgid "Successfully moved %(name)s <a href=\"%(url)s\">view</a>"
+msgstr "Успешное перемещение %(name)s <a href=\"%(url)s\">Посмотреть</a>"
+
+#: winguhub/views/ajax.py:493 winguhub/views/ajax.py:552
+#, fuzzy, python-format
+msgid "Successfully copied %(name)s <a href=\"%(url)s\">view</a>"
+msgstr "Успешное перемещение %(name)s <a href=\"%(url)s\">Посмотреть</a>"
+
+#: winguhub/views/ajax.py:511
+#, fuzzy, python-format
+msgid "Can not move directory %(src)s to its subdirectory %(des)s"
+msgstr "не существует %(op)s каталога %(src)s для подкаталога %(des)s"
+
+#: winguhub/views/ajax.py:541
+#, fuzzy, python-format
+msgid "Can not copy directory %(src)s to its subdirectory %(des)s"
+msgstr "не существует %(op)s каталога %(src)s для подкаталога %(des)s"
+
+#: winguhub/views/file.py:115
+msgid "HTTPError: failed to open file online"
+msgstr "HTTP ошибка: файл не может быть открыт в он-лайн режиме."
+
+#: winguhub/views/file.py:119
+msgid "URLError: failed to open file online"
+msgstr "URL ошибка: файл не может быть открыт в он-лайн режиме."
+
+#: winguhub/views/file.py:126
+msgid "The encoding you chose is not proper."
+msgstr "Выбранный режим кодирования не является правильным."
+
+#: winguhub/views/file.py:143 winguhub/views/file.py:146
+msgid "Unknown file encoding"
+msgstr "Неизвестная кодировка файла."
+
+#: winguhub/views/file.py:267 winguhub/views/file.py:274 winguhub/views/file.py:486
+#: winguhub/views/file.py:491
+#, python-format
+msgid "File size surpasses %s, can not be opened online."
+msgstr "Размер файла превышает %s, и не может быть открыт в он-лайн режиме."
+
+#: winguhub/views/file.py:313 winguhub/views/file.py:524 winguhub/views/file.py:539
+#: winguhub/views/file.py:561
+msgid "Unable to view file"
+msgstr "Не удается посмотреть файл"
+
+#: winguhub/views/file.py:749
+msgid "The library does not exist."
+msgstr "Библиотека не существует."
+
+#: winguhub/views/file.py:753
+msgid "The library is encrypted."
+msgstr "Библиотека зашифрована."
+
+#: winguhub/views/file.py:821
+msgid "Unable to edit file"
+msgstr "Невожможно отредактировать файл."
+
+#: winguhub/views/file.py:833
+msgid "The file does not exist."
+msgstr "Файл не существует."
+
+#: winguhub/views/file.py:861
+msgid "Edit online is not offered for this type of file."
+msgstr "Редактирование он-лайн не предполагается для этого типа файлов."
+
+#: winguhub/views/sysadmin.py:130
+msgid "Failed to set quota: internal error"
+msgstr "Не удалось установить квоту: внутренняя ошибка"
+
+#: winguhub/views/sysadmin.py:188
+#, python-format
+msgid "Successfully deleted %s"
+msgstr "Успешно удалено %s"
+
+#: winguhub/views/sysadmin.py:190
+msgid "Failed to delete: the user does not exist"
+msgstr "Не удалось удалить: Пользователь не существует"
+
+#: winguhub/views/sysadmin.py:202
+#, python-format
+msgid "Successfully set %s as admin"
+msgstr "%s успешно назначен администратором"
+
+#: winguhub/views/sysadmin.py:204
+msgid "Failed to set admin: the user does not exist"
+msgstr "Не удалось назначить администратора: Пользователь не существует"
+
+#: winguhub/views/sysadmin.py:216
+#, python-format
+msgid "Successfully revoke the admin permission of %s"
+msgstr "Права администратора %s успешно отозваны"
+
+#: winguhub/views/sysadmin.py:218
+msgid "Failed to revoke admin: the user does not exist"
+msgstr "Не удалось отозвать администратора: Пользователь не существует"
+
+#: winguhub/views/sysadmin.py:229
+#, fuzzy, python-format
+msgid "Successfully activated \"%s\"."
+msgstr "Успешно изменено %s."
+
+#: winguhub/views/sysadmin.py:231
+#, fuzzy
+msgid "Failed to activate: user does not exist."
+msgstr "Не возможно создать: группа не существует."
+
+#: winguhub/views/sysadmin.py:270
+#, python-format
+msgid ""
+"Successfully reset password to %(passwd)s, an email has been sent to "
+"%(user)s."
+msgstr ""
+"Пароль успешно изменён на %(passwd)s, сообщение было отправлено %(user)s."
+
+#: winguhub/views/sysadmin.py:275
+#, python-format
+msgid ""
+"Successfully reset password to %(passwd)s, but failed to send email to "
+"%(user)s, please check your email configuration."
+msgstr ""
+"Пароль успешно изменён на %(passwd)s, но сообщение не было отправлено "
+"%(user)s, пожалуйста, проверьте настройки электронной почты."
+
+#: winguhub/views/sysadmin.py:279
+#, python-format
+msgid "Successfully reset password to %(passwd)s for user %(user)s."
+msgstr "Пароль успешно изменён на %(passwd)s для пользователя %(user)s."
+
+#: winguhub/views/sysadmin.py:282
+#, python-format
+msgid ""
+"Successfully reset password to %(passwd)s for user %(user)s. But email "
+"notification can not be sent, because Email service is not properly "
+"configured."
+msgstr ""
+"Пароль успешно изменён на %(passwd)s для пользователя %(user)s. Но сообщение "
+"не было отправлено, потому что не правильно сконфигурирована почтовая служба."
+
+#: winguhub/views/sysadmin.py:285
+msgid "Failed to reset password: user does not exist"
+msgstr "Не удалось изменить пароль: пользователь не существует."
+
+#: winguhub/views/sysadmin.py:306
+msgid "Seafile Registration Information"
+msgstr "Регистрационная информация Seafile"
+
+#: winguhub/views/sysadmin.py:341
+#, python-format
+msgid "Successfully added user %s. An email notification has been sent."
+msgstr ""
+"Успешно добавлен пользователь %s. Уведомление было отправлено по электронной "
+"почте."
+
+#: winguhub/views/sysadmin.py:344
+#, python-format
+msgid ""
+"Successfully added user %s. An error accurs when sending email notification, "
+"please check your email configuration."
+msgstr ""
+"Успешно добавлен пользователь %s. Но произошла ошибка при отправке "
+"уведомления, пожалуйста, проверьте настройки электронной почты."
+
+#: winguhub/views/sysadmin.py:346
+#, python-format
+msgid "Successfully added user %s."
+msgstr "Успешно добавлен пользователь %s."
+
+#: winguhub/views/sysadmin.py:348
+#, python-format
+msgid ""
+"Successfully added user %s. But email notification can not be sent, because "
+"Email service is not properly configured."
+msgstr ""
+"Успешно добавлен пользователь %s. Но сообщение не было отправлено, потому "
+"что не правильно сконфигурирована почтовая служба."
+
+#, fuzzy
+#~ msgid "Created sub-library %%(name)s"
+#~ msgstr "Библиотека %(library_name)s удалена"
+
+#, fuzzy
+#~ msgid "Sub-library"
+#~ msgstr "Общие библиотеки"
+
+#, fuzzy
+#~ msgid "just now"
+#~ msgstr "Прямо сейчас"
+
+#~ msgid "Parent dir is required"
+#~ msgstr "Требуется родительский каталог"
+
+#~ msgid "File name can't be empty"
+#~ msgstr "Имя файла не может быть пустым"
+
+#~ msgid "File name \"%s\" is not valid"
+#~ msgstr "Файл \"%s\" недействительный"
+
+#~ msgid "Directory name is too long"
+#~ msgstr "Слишком длинное имя каталога"
+
+#~ msgid "Directory name can't be empty"
+#~ msgstr "Имя каталога не может быть пустым"
+
+#~ msgid "Directory name \"%s\" is not valid"
+#~ msgstr "Имя каталога \"%s\" недействительно"
+
+#~ msgid "Days can't be empty"
+#~ msgstr "Количество дней не может быть пустым"
+
+#~ msgid "Deleted successfully"
+#~ msgstr "Успешно удалено"
+
+#~ msgid ""
+#~ "If you don't want others to change the contents of your shared libraries, "
+#~ "you can set the share permission to \"read-only\" when sharing them."
+#~ msgstr ""
+#~ "Если вы не хотите, чтобы другие мененяли содержимое ваших общедоступных "
+#~ "библиотек, установите \"только для чтения\" ."
+
+#~ msgid "Shared Libraries"
+#~ msgstr "Общедоступные библиотеки"
+
+#~ msgid "File or Folder"
+#~ msgstr "Файл или папка"
+
+#~ msgid ""
+#~ "This page will be invalid shortly, you can join <a href=\"http://wingufile."
+#~ "com/\" target=\"_blank\">Seafile</a> to experience more."
+#~ msgstr ""
+#~ "Эта страница будет недоступна в ближайшее время, вы можете "
+#~ "зарегистрироваться в <a href=\"http://wingufile.com/\" target=\"_blank"
+#~ "\">Seafile</a> чтобы получить больше возможностей."
+
+#~ msgid "Share link"
+#~ msgstr "Поделиться ссылкой"
+
+#~ msgid ""
+#~ "This library is read-only, you can not modify the contents of this "
+#~ "library."
+#~ msgstr ""
+#~ "Эта библиотека предназначена 'только для чтения', и вы не сможете "
+#~ "модифицировать просматриваемые файлы."
+
+#~ msgid "smaller than"
+#~ msgstr "меньше, чем"
+
+#~ msgid "Uploaded:"
+#~ msgstr "Загружено: "
+
+#~ msgid "Fetching ..."
+#~ msgstr "Извлечение ..."
+
+#~ msgid "Update File"
+#~ msgstr "Обновить файл"
+
+#~ msgid "Smaller than"
+#~ msgstr "Меньше, чем"
+
+#~ msgid "Rename <span id=\"rename-type\"></span>"
+#~ msgstr "Переименовать <span id=\"rename-type\"></span>"
+
+#~ msgid "Rename <span id=\"rename-obj\" class=\"op-target\"></span> as: "
+#~ msgstr ""
+#~ "Переименовать <span id=\"rename-obj\" class=\"op-target\"></span> как:"
+
+#~ msgid "Click to remove"
+#~ msgstr "Кликните, чтобы удалить"
+
+#~ msgid "This file has already been selected:\\n$file!"
+#~ msgstr "Этот файл уже выбран:\\n$file!"
+
+#~ msgid "to:"
+#~ msgstr "в:"
+
+#~ msgid "It can't be blank."
+#~ msgstr "Значение не может быть пустым."
+
+#~ msgid "Send Link"
+#~ msgstr "Отправить ссылку"
+
+#~ msgid "Please choose a file at first."
+#~ msgstr "Пожалуйста, выберите файл в первую очередь."
+
+#~ msgid "File size surpasses the limit."
+#~ msgstr "Размер файла превышает предел."
+
+#~ msgid "Share Library"
+#~ msgstr "Общий доступ к библиотеке"
+
+#~ msgid "File size surpasses 10M, can not be previewed online."
+#~ msgstr "Размер файла превышает 10M и он не может быть просмотрен в он-лайн."
+
+#~ msgid "You can not modify that library."
+#~ msgstr "Вы не можете изменить эту библиотеку."
+
+#~ msgid "copy"
+#~ msgstr "копировать"
+
+#~ msgid "move"
+#~ msgstr "переместить"

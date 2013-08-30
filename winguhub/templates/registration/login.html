@@ -1,0 +1,37 @@
+{% extends "myhome_base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Log In" %}{% endblock %}
+{% block main_panel %}
+<div class="narrow-panel">
+<h2>{% trans "Log In" %}</h2>
+<form action="" method="post" class="login-form">{% csrf_token %}
+    <label for="username">{% trans "Email" %}</label>
+	<input type="text" id="id_email" name="username" value="" />
+	<label for="password">{% trans "Password" %}</label>
+	<input type="password" id="id_password" name="password" value="" />
+    <input type="hidden" name="next" value="{% if next %}{{ next|escape }}{% else %}{{ SITE_ROOT }}{% endif %}" />
+    {% if form.errors %}
+	<p class="error">{% trans "Incorrect email or password" %}</p>
+    {% else %}
+	<p class="error hide"></p>
+    {% endif %}
+	<input type="submit" value="{% trans "Submit" %}" class="submit" />
+	<a href="{{ SITE_ROOT }}accounts/password/reset/">{% trans "Forgot password?" %}</a>
+</form>
+</div>
+{% endblock %}
+
+{% block extra_script %}
+<script type="text/javascript">
+$('input[type="submit"]').click(function(){
+    if (!$.trim($('input[name="username"]').val())) {
+        $('.error').removeClass('hide').html("{% trans "Email cannot be blank" %}");
+        return false;
+    }
+    if (!$.trim($('input[name="password"]').val())) {
+        $('.error').removeClass('hide').html("{% trans "Password cannot be blank" %}");
+        return false;
+    }
+});
+</script>
+{% endblock %}

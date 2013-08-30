@@ -1,0 +1,52 @@
+{% extends "profile/profile_base.html" %}
+{% load avatar_tags i18n winguhub_tags %}
+
+{% block main_panel %}
+
+<div class="user-profile narrow-panel ovhd">
+    <div class="pic fleft">
+        {% if user %}
+        {% avatar user.username 80 %}
+        {% else %}
+        {% avatar "" 80 %}
+        {% endif %}
+        {% if add_to_contact %}
+        <button id="add">{% trans "Add to contacts" %}</button>
+        {% endif %}
+    </div>
+
+    <div class="txt fright">
+        {% if nickname %}
+        <p>{{ nickname }}</p>
+        {% endif %}
+
+        {% if intro %}
+        <p class="intro">{{ intro }}</p>
+        {% endif %}
+    </div>
+</div>
+
+{% if add_to_contact %}
+<form id="add-as-contact" class="hide" action="{{ SITE_ROOT }}contacts/add/" method="post">{% csrf_token %}
+    <input type="hidden" name="user_email" value="{{ request.user.username }}" id="id_user_email" />
+    <label>{% trans "Email: " %}</label><br />
+    <input id="id_contact_email" type="text" name="contact_email" maxlength="255" value="{{ email }}" /><br />
+    <label>{% trans "Name(optional): " %}</label><br />
+    <input id="id_contact_name" type="text" name="contact_name" maxlength="255" /><br />
+    <label>{% trans "Note(optional): " %}</label><br />
+    <input id="id_note" type="text" name="note" maxlength="255" /><br />
+    <input type="submit" value="{% trans "Submit" %}"  class="submit" />
+</form>
+{% endif %}
+
+{% endblock %}
+
+{% block extra_script %}
+{% if new_user %}
+<script type="text/javascript">
+$('#add').click(function() {
+    $('#add-as-contact').modal({appendTo: '#main'});
+});
+</script>
+{% endif %}
+{% endblock %}

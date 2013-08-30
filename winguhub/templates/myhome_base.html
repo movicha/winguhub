@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load i18n %}
+{% block top_bar_myaccount_class %} class="top-link cur"{% endblock %}
+{% block nav %}
+<ul class="nav">
+    <li>
+        <a href="{{ SITE_ROOT }}home/my/" {% block nav_myhome_class %}{% endblock %}>{% trans "My Home" %}</a>
+    </li>
+    <li>
+        <a href="{{ SITE_ROOT }}groups/" {% block nav_group_class %}{% endblock %}>{% trans "Groups" %}</a>
+    </li>
+    <li>
+        <a href="{{ SITE_ROOT }}share/" {% block nav_share_class %}{% endblock %}>{% trans "Shares" %}</a>
+    </li>
+    <li>
+        <a href="{{ SITE_ROOT }}contacts/" {% block nav_contacts_class %}{% endblock %}>{% trans "Contacts" %}</a>
+    </li>
+    {% if not cloud_mode %}
+    <li>
+        <a href="{% url 'pubrepo' %}" {% block nav_pubinfo_class %}{% endblock %}>{% trans "Organization" %}</a>
+    </li>
+    {% endif %}
+</ul>
+{% endblock %}

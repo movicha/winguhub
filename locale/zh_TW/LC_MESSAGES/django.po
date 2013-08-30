@@ -1,0 +1,4905 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013 CLOUIDIO
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-13 20:04-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: winguhub/forms.py:26 winguhub/base/accounts.py:390
+msgid "A user with this email already"
+msgstr "該郵箱已被註冊"
+
+#: winguhub/forms.py:40 winguhub/auth/forms.py:124 winguhub/auth/forms.py:166
+#: winguhub/base/accounts.py:407
+msgid "The two password fields didn't match."
+msgstr "兩次輸入的密碼不一致"
+
+#: winguhub/forms.py:49 winguhub/group/forms.py:56
+#: winguhub/templates/snippets/repo_create_js.html:28 winguhub/wiki/forms.py:16
+msgid "Name can't be empty"
+msgstr "名稱不能為空"
+
+#: winguhub/forms.py:50 winguhub/group/forms.py:57 winguhub/wiki/forms.py:17
+msgid "Name is too long (maximum is 255 characters)"
+msgstr "名稱太長（不超過255個漢字）"
+
+#: winguhub/forms.py:53 winguhub/group/forms.py:60
+#: winguhub/templates/snippets/repo_create_js.html:32 winguhub/wiki/forms.py:20
+msgid "Description can't be empty"
+msgstr "描述不能為空"
+
+#: winguhub/forms.py:54 winguhub/group/forms.py:61 winguhub/wiki/forms.py:21
+msgid "Description is too long (maximum is 100 characters)"
+msgstr "描述太長（不超過100個漢字）"
+
+#: winguhub/forms.py:59 winguhub/forms.py:64
+#: winguhub/templates/snippets/repo_create_js.html:41
+msgid "Password is too short (minimum is 3 characters)"
+msgstr "密碼太短（不少於3個字符）"
+
+#: winguhub/forms.py:60 winguhub/forms.py:65
+#: winguhub/templates/snippets/repo_create_js.html:45
+msgid "Password is too long (maximum is 30 characters)"
+msgstr "密碼太長（不超過30個字符）"
+
+#: winguhub/forms.py:71
+#, python-format
+msgid "Name %s is not valid"
+msgstr "名稱 %s 含有無效字符"
+
+#: winguhub/forms.py:93 winguhub/templates/registration/registration_form.html:44
+#: winguhub/templates/snippets/repo_create_js.html:53
+#: winguhub/templates/sysadmin/sys_useradmin.html:135
+msgid "Passwords don't match"
+msgstr "兩次輸入的密碼不一致"
+
+#: winguhub/forms.py:106
+msgid "Oldname is required"
+msgstr "需要 oldname"
+
+#: winguhub/forms.py:109 winguhub/forms.py:130
+msgid "It's too long."
+msgstr ""
+
+#: winguhub/forms.py:110 winguhub/forms.py:131
+#, fuzzy
+msgid "It's required."
+msgstr "郵箱為必填項。"
+
+#: winguhub/forms.py:117 winguhub/forms.py:138
+#, fuzzy, python-format
+msgid "Name \"%s\" is not valid"
+msgstr "名稱 %s 含有無效字符"
+
+#: winguhub/forms.py:149 winguhub/forms.py:186
+msgid "Repo id is required"
+msgstr "repo id 為必填項"
+
+#: winguhub/forms.py:150
+msgid "Username is required"
+msgstr "用戶名為必填項"
+
+#: winguhub/forms.py:151
+msgid "Password can't be empty"
+msgstr "密碼不能為空"
+
+#: winguhub/forms.py:162
+msgid "Bad url format"
+msgstr "錯誤的 url 格式"
+
+#: winguhub/forms.py:167
+msgid "Wrong password"
+msgstr "密碼錯誤"
+
+#: winguhub/forms.py:169
+msgid "Inernal server error"
+msgstr "服務器內部錯誤"
+
+#: winguhub/forms.py:171
+msgid "Decrypt library error"
+msgstr "解密資料庫出錯"
+
+#: winguhub/forms.py:177 winguhub/share/forms.py:19
+msgid "Email is required"
+msgstr "請輸入郵箱"
+
+#: winguhub/forms.py:179
+msgid "Quota can't be empty"
+msgstr "容量不能為空"
+
+#: winguhub/forms.py:180
+msgid "Quota is too low (minimum value is 0)"
+msgstr "容量太小（最小為0）"
+
+#: winguhub/forms.py:187
+msgid "Library name is required"
+msgstr "資料庫名稱為必填項"
+
+#: winguhub/forms.py:188
+msgid "Library description is required"
+msgstr "資料庫描述為必填項"
+
+#: winguhub/forms.py:190
+msgid "Please enter a number"
+msgstr "請輸入數字"
+
+#: winguhub/settings.py:132
+msgid "Deutsch"
+msgstr ""
+
+#: winguhub/settings.py:133
+msgid "English"
+msgstr ""
+
+#: winguhub/settings.py:134
+msgid "Español"
+msgstr ""
+
+#: winguhub/settings.py:135
+msgid "Français"
+msgstr ""
+
+#: winguhub/settings.py:136
+msgid "Italiano"
+msgstr ""
+
+#: winguhub/settings.py:137
+msgid "Magyar"
+msgstr ""
+
+#: winguhub/settings.py:138
+msgid "Русский"
+msgstr ""
+
+#: winguhub/settings.py:139
+msgid "简体中文"
+msgstr ""
+
+#: winguhub/settings.py:140
+msgid "繁體中文"
+msgstr ""
+
+#: winguhub/api2/views.py:1366 winguhub/api2/views.py:1422
+#: winguhub/group/views.py:1145 winguhub/views/__init__.py:447
+#: winguhub/views/file.py:301 winguhub/views/file.py:591 winguhub/views/file.py:679
+msgid "File does not exist"
+msgstr "文件不存在"
+
+#: winguhub/api2/views.py:1411
+#, fuzzy
+msgid "the libray does not exist"
+msgstr "資料庫不存在"
+
+#: winguhub/api2/views.py:1473 winguhub/views/ajax.py:131 winguhub/views/ajax.py:238
+#: winguhub/views/ajax.py:324 winguhub/views/ajax.py:424 winguhub/views/ajax.py:448
+#: winguhub/views/file.py:745
+msgid "Permission denied"
+msgstr "共享權限"
+
+#: winguhub/api2/views.py:1477 winguhub/views/__init__.py:644
+#: winguhub/views/__init__.py:737 winguhub/views/__init__.py:1303
+#: winguhub/views/__init__.py:1638
+msgid "Library does not exist"
+msgstr "資料庫不存在"
+
+#: winguhub/api2/views.py:1480
+#, fuzzy
+msgid "Library is encrypted"
+msgstr "該資料庫已加密"
+
+#: winguhub/api2/views.py:1484
+#, fuzzy
+msgid "Invalid argument"
+msgstr "非法參數"
+
+#: winguhub/api2/views.py:1495 winguhub/base/templatetags/winguhub_tags.py:115
+#: winguhub/views/__init__.py:715
+msgid "Changed library name or description"
+msgstr "修改了資料庫名稱或描述"
+
+#: winguhub/api2/views.py:1498 winguhub/views/__init__.py:718
+msgid "No conflict in the merge."
+msgstr "合並沒有沖突。"
+
+#: winguhub/api2/templates/api2/base.html:8 winguhub/templates/base.html:9
+msgid "File Collaboration Team Organization"
+msgstr "文件 合作 團隊 團體"
+
+#: winguhub/api2/templates/api2/discussion.html:6
+#: winguhub/group/templates/group/group_discuss.html:16
+#: winguhub/group/templates/group/group_info.html:17
+#: winguhub/group/templates/group/group_info_for_pub.html:17
+#: winguhub/group/templates/group/group_manage.html:15
+#: winguhub/group/templates/group/group_members.html:17
+#: winguhub/group/templates/group/group_wiki.html:17
+#: winguhub/group/templates/group/group_wiki_pages.html:16
+msgid "Discussion"
+msgstr "討論"
+
+#: winguhub/api2/templates/api2/discussion.html:26
+#: winguhub/api2/templates/api2/discussion.html:42
+#: winguhub/api2/templates/api2/discussion_posted.html:19
+#: winguhub/api2/templates/api2/discussion_posted.html:35
+#: winguhub/api2/templates/api2/discussions_body.html:21
+#: winguhub/api2/templates/api2/discussions_body.html:37
+#: winguhub/api2/templates/api2/new_msg_reply.html:27
+#: winguhub/api2/templates/api2/new_msg_reply.html:43
+#: winguhub/group/templates/group/group_discuss.html:95
+#: winguhub/group/templates/group/group_discuss.html:111
+#: winguhub/group/templates/group/new_msg_reply.html:26
+#: winguhub/group/templates/group/new_msg_reply.html:35
+#: winguhub/message/templates/message/user_msg_list.html:70
+#: winguhub/share/templates/repo/priv_shared_files.html:38
+#: winguhub/share/templates/repo/priv_shared_files.html:66
+#: winguhub/share/templates/repo/shared_links.html:31
+#: winguhub/templates/repo_history_view.html:66
+#: winguhub/templates/repo_recycle_view.html:78
+#: winguhub/templates/view_shared_dir.html:57
+#: winguhub/templates/snippets/group_recommend_form.html:28
+#: winguhub/templates/snippets/repo_dir_data.html:86
+msgid "File"
+msgstr "文件"
+
+#: winguhub/api2/templates/api2/discussion.html:36
+#: winguhub/api2/templates/api2/discussion_posted.html:29
+#: winguhub/api2/templates/api2/discussions_body.html:31
+#: winguhub/api2/templates/api2/new_msg_reply.html:37
+#: winguhub/group/templates/group/group_discuss.html:105
+#: winguhub/group/templates/group/new_msg_reply.html:29
+#: winguhub/share/templates/repo/priv_shared_files.html:41
+#: winguhub/share/templates/repo/priv_shared_files.html:69
+#: winguhub/share/templates/repo/shared_links.html:34
+#: winguhub/templates/pubrepo.html:34 winguhub/templates/pubrepo.html.py:36
+#: winguhub/templates/view_shared_dir.html:39
+#: winguhub/templates/snippets/group_recommend_form.html:22
+#: winguhub/templates/snippets/repo_dir_data.html:40
+msgid "Directory icon"
+msgstr "目錄圖標"
+
+#: winguhub/api2/templates/api2/discussion_posted.html:46
+#: winguhub/api2/templates/api2/discussions_body.html:48
+#: winguhub/group/templates/group/discussion_list.html:17
+#: winguhub/group/templates/group/group_discuss.html:121
+#: winguhub/group/templates/group/new_msg_reply.html:45
+#, python-format
+msgid "%(amount)s replies"
+msgstr "%(amount)s 個回復"
+
+#: winguhub/api2/templates/api2/discussions.html:24
+#, fuzzy
+msgid "No discussions."
+msgstr "討論"
+
+#: winguhub/api2/templates/api2/discussions.html:29
+#: winguhub/api2/templates/api2/events.html:13 winguhub/templates/repo.html:432
+#: winguhub/templates/snippets/events.html:5
+#: winguhub/templates/snippets/list_commit_detail.html:3
+msgid "Loading..."
+msgstr "加載中..."
+
+#: winguhub/api2/templates/api2/discussions.html:75
+#: winguhub/api2/templates/api2/events_js.html:34
+#: winguhub/contacts/templates/contacts/contact_list.html:108
+#: winguhub/contacts/templates/contacts/contact_list.html:160
+#: winguhub/group/templates/group/msg_js.html:155 winguhub/templates/base.html:225
+#: winguhub/templates/base.html.py:345 winguhub/templates/file_edit.html:515
+#: winguhub/templates/repo.html:306 winguhub/templates/repo.html.py:476
+#: winguhub/templates/repo.html:626 winguhub/templates/repo.html.py:773
+#: winguhub/templates/repo.html:989 winguhub/templates/view_file_base.html:166
+#: winguhub/templates/snippets/bottom_bar.html:109
+#: winguhub/templates/snippets/events_js.html:56
+#: winguhub/templates/snippets/office_convert_js.html:172
+#: winguhub/templates/snippets/office_convert_js.html:197
+#: winguhub/templates/snippets/repo_decrypt_js.html:35
+#: winguhub/templates/snippets/shared_link_js.html:158
+#: winguhub/templates/snippets/shared_link_js.html:193
+#: winguhub/templates/snippets/shared_link_js.html:217
+#: winguhub/templates/sysadmin/sys_useradmin.html:159
+msgid "Failed. Please check the network."
+msgstr "操作失敗。請檢查網絡是否已連接。"
+
+#: winguhub/api2/templates/api2/event_details.html:8
+#: winguhub/api2/templates/api2/event_details.html:40
+#, fuzzy, python-format
+msgid "Added %(file)s"
+msgstr "添加文件"
+
+#: winguhub/api2/templates/api2/event_details.html:16
+#: winguhub/api2/templates/api2/event_details.html:48
+#, fuzzy, python-format
+msgid "Deleted %(file)s"
+msgstr "刪除的文件"
+
+#: winguhub/api2/templates/api2/event_details.html:24
+#, fuzzy, python-format
+msgid "Renamed or Moved %(file)s"
+msgstr "重命名或移動的文件"
+
+#: winguhub/api2/templates/api2/event_details.html:32
+#, fuzzy, python-format
+msgid "Modified %(file)s"
+msgstr "修改了的文件"
+
+#: winguhub/api2/templates/api2/events.html:19
+msgid "No activity now or the function is not supported."
+msgstr ""
+
+#: winguhub/api2/templates/api2/events_body.html:17
+#: winguhub/templates/snippets/events_body.html:29
+msgid "Created library"
+msgstr "創建了資料庫"
+
+#: winguhub/api2/templates/api2/events_body.html:21
+#: winguhub/templates/snippets/events_body.html:33
+#, python-format
+msgid "Deleted library %(library_name)s"
+msgstr "刪除了資料庫 %(library_name)s"
+
+#: winguhub/api2/templates/api2/events_js.html:83
+#, fuzzy
+msgid "Please check the network."
+msgstr "操作失敗。請檢查網絡是否已連接。"
+
+#: winguhub/api2/templates/api2/new_msg_reply.html:6
+#, fuzzy
+msgid "New Replies"
+msgstr "新文件"
+
+#: winguhub/auth/admin.py:29
+msgid "Personal info"
+msgstr "個人信息"
+
+#: winguhub/auth/admin.py:30
+msgid "Permissions"
+msgstr "權限"
+
+#: winguhub/auth/admin.py:31
+msgid "Important dates"
+msgstr "重要日期"
+
+#: winguhub/auth/admin.py:32 winguhub/group/templates/group/groups.html:5
+#: winguhub/templates/admin_base.html:14 winguhub/templates/myhome_base.html:11
+#: winguhub/templates/org_admin_base.html:14 winguhub/templates/org_base.html:15
+#: winguhub/templates/pubgrp.html:15 winguhub/templates/pubrepo.html:16
+#: winguhub/templates/pubuser.html:15
+#: winguhub/templates/snippets/repo_share_form.html:7
+msgid "Groups"
+msgstr "群組"
+
+#: winguhub/auth/admin.py:114
+msgid "Password changed successfully."
+msgstr "密碼修改成功"
+
+#: winguhub/auth/admin.py:124
+#, python-format
+msgid "Change password: %s"
+msgstr "修改密碼：%s"
+
+#: winguhub/auth/forms.py:17 winguhub/base/accounts.py:376
+msgid "Username"
+msgstr "用戶名"
+
+#: winguhub/auth/forms.py:18 winguhub/auth/forms.py:154
+#: winguhub/base/accounts.py:380 winguhub/templates/registration/login.html:10
+#: winguhub/templates/registration/registration_form.html:13
+#: winguhub/templates/snippets/repo_create_form.html:20
+#: winguhub/templates/sysadmin/sys_useradmin.html:14
+msgid "Password"
+msgstr "密碼"
+
+#: winguhub/auth/forms.py:38
+msgid ""
+"Please enter a correct username and password. Note that both fields are case-"
+"sensitive."
+msgstr ""
+
+#: winguhub/auth/forms.py:40
+msgid "This account is inactive."
+msgstr ""
+
+#: winguhub/auth/forms.py:45
+msgid ""
+"Your Web browser doesn't appear to have cookies enabled. Cookies are "
+"required for logging in."
+msgstr ""
+
+#: winguhub/auth/forms.py:58
+msgid "E-mail"
+msgstr "郵箱"
+
+#: winguhub/auth/forms.py:65
+msgid ""
+"Failed to send email, email service is not properly configured, please "
+"contact administrator."
+msgstr ""
+
+#: winguhub/auth/forms.py:73
+msgid ""
+"That e-mail address doesn't have an associated user account. Are you sure "
+"you've registered?"
+msgstr ""
+
+#: winguhub/auth/forms.py:103
+#, python-format
+msgid "Password reset on %s"
+msgstr "密碼重置：%s"
+
+#: winguhub/auth/forms.py:111
+msgid "New password"
+msgstr "新密碼"
+
+#: winguhub/auth/forms.py:112
+msgid "New password confirmation"
+msgstr "新密碼確認"
+
+#: winguhub/auth/forms.py:138
+msgid "Old password"
+msgstr "舊密碼"
+
+#: winguhub/auth/forms.py:146
+msgid "Your old password was entered incorrectly. Please enter it again."
+msgstr ""
+
+#: winguhub/auth/forms.py:155 winguhub/base/accounts.py:382
+msgid "Password (again)"
+msgstr "請再次輸入密碼"
+
+#: winguhub/auth/views.py:90
+msgid "Logged out"
+msgstr "退出"
+
+#: winguhub/auth/views.py:138
+msgid "Failed to send email, please contact administrator."
+msgstr ""
+
+#: winguhub/auth/management/commands/createsuperuser.py:24
+#: winguhub/base/management/commands/createsuperuser.py:25
+msgid "Enter a valid e-mail address."
+msgstr ""
+
+#: winguhub/avatar/forms.py:34 winguhub/avatar/forms.py:57
+#, python-format
+msgid ""
+"%(ext)s is an invalid file extension. Authorized extensions are : "
+"%(valid_exts_list)s"
+msgstr ""
+
+#: winguhub/avatar/forms.py:38 winguhub/avatar/forms.py:61
+#, python-format
+msgid ""
+"Your file is too big (%(size)s), the maximum allowed size is "
+"%(max_valid_size)s"
+msgstr ""
+
+#: winguhub/avatar/forms.py:44
+#, python-format
+msgid ""
+"You already have %(nb_avatars)d avatars, and the maximum allowed is "
+"%(nb_max_avatars)d."
+msgstr ""
+
+#: winguhub/avatar/models.py:136 winguhub/avatar/models.py:161
+#, python-format
+msgid "Avatar for %s"
+msgstr ""
+
+#: winguhub/avatar/views.py:78
+msgid "Successfully uploaded a new avatar."
+msgstr "修改成功。"
+
+#: winguhub/avatar/views.py:128
+msgid "Successfully uploaded a new group avatar."
+msgstr "修改成功。"
+
+#: winguhub/avatar/views.py:166
+msgid "Successfully updated your avatar."
+msgstr "更新成功。"
+
+#: winguhub/avatar/views.py:208
+msgid "Successfully deleted the requested avatars."
+msgstr "刪除成功。"
+
+#: winguhub/avatar/templates/avatar/add.html:6
+msgid "Upload Avatar"
+msgstr "上傳頭像"
+
+#: winguhub/avatar/templates/avatar/add.html:7
+#: winguhub/avatar/templates/avatar/change.html:8
+msgid "Your current avatar: "
+msgstr "當前頭像："
+
+#: winguhub/avatar/templates/avatar/add.html:9
+#: winguhub/avatar/templates/avatar/set_avatar.html:12
+msgid "Upload New Avatar: "
+msgstr "上傳新頭像："
+
+#: winguhub/avatar/templates/avatar/add.html:13
+#: winguhub/avatar/templates/avatar/change.html:30
+msgid "Upload New Image"
+msgstr "提交"
+
+#: winguhub/avatar/templates/avatar/confirm_delete.html:6
+msgid "Please select the avatars that you would like to delete."
+msgstr "請選擇要刪除的頭像。"
+
+#: winguhub/avatar/templates/avatar/confirm_delete.html:11
+#, python-format
+msgid ""
+"You have no avatars to delete. Please <a href=\"%(avatar_change_url)s"
+"\">upload one</a> now."
+msgstr ""
+"你還沒有上傳自己的頭像。現在 <a href=\"%(avatar_change_url)s\">上傳一個</a>。"
+
+#: winguhub/avatar/templates/avatar/confirm_delete.html:18
+msgid "Delete These"
+msgstr "刪除"
+
+#: winguhub/avatar/templates/avatar/set_avatar.html:8
+msgid "Avatar Change"
+msgstr "頭像修改"
+
+#: winguhub/avatar/templates/avatar/set_avatar.html:9
+msgid "Current avatar: "
+msgstr "當前頭像："
+
+#: winguhub/avatar/templates/avatar/set_avatar.html:16
+#: winguhub/contacts/templates/contacts/contact_list.html:54
+#: winguhub/contacts/templates/contacts/contact_list.html:63
+#: winguhub/group/templates/group/discussion_list.html:42
+#: winguhub/group/templates/group/group_discuss.html:66
+#: winguhub/group/templates/group/group_discuss.html:148
+#: winguhub/group/templates/group/group_info.html:177
+#: winguhub/group/templates/group/group_pubinfo.html:24
+#: winguhub/group/templates/group/group_wiki.html:50
+#: winguhub/group/templates/group/group_wiki.html:82
+#: winguhub/group/templates/group/group_wiki_pages.html:54
+#: winguhub/group/templates/group/groups_right_panel.html:30
+#: winguhub/group/templates/group/grpmember_add_form.html:12
+#: winguhub/group/templates/group/grpmember_add_form.html:19
+#: winguhub/group/templates/group/new_msg_reply.html:65
+#: winguhub/message/templates/message/user_msg_list.html:43
+#: winguhub/notifications/templates/notifications/add_notification_form.html:11
+#: winguhub/profile/templates/profile/set_profile.html:29
+#: winguhub/profile/templates/profile/user_profile.html:38
+#: winguhub/templates/base.html:76 winguhub/templates/base.html.py:149
+#: winguhub/templates/decrypt_repo_form.html:14
+#: winguhub/templates/file_edit.html:97 winguhub/templates/file_edit.html:263
+#: winguhub/templates/repo.html:126 winguhub/templates/repo.html.py:136
+#: winguhub/templates/repo.html:160 winguhub/templates/repo.html.py:177
+#: winguhub/templates/repo.html:186 winguhub/templates/shared_file_view.html:50
+#: winguhub/templates/registration/login.html:18
+#: winguhub/templates/registration/password_change_form.html:18
+#: winguhub/templates/registration/password_reset_confirm.html:19
+#: winguhub/templates/registration/password_reset_form.html:13
+#: winguhub/templates/registration/registration_form.html:18
+#: winguhub/templates/snippets/add_to_contacts_form.html:9
+#: winguhub/templates/snippets/events.html:15
+#: winguhub/templates/snippets/file_share_popup.html:20
+#: winguhub/templates/snippets/file_share_popup.html:35
+#: winguhub/templates/snippets/group_recommend_form.html:19
+#: winguhub/templates/snippets/repo_create_form.html:26
+#: winguhub/templates/snippets/repo_share_form.html:52
+#: winguhub/templates/snippets/user_profile_html.html:34
+#: winguhub/templates/sysadmin/sys_useradmin.html:19
+#: winguhub/templates/sysadmin/userinfo.html:93
+#: winguhub/templates/wiki/personal_wiki.html:36
+#: winguhub/templates/wiki/personal_wiki.html:66
+#: winguhub/templates/wiki/personal_wiki_pages.html:42
+msgid "Submit"
+msgstr "提交"
+
+#: winguhub/avatar/templates/notification/avatar_friend_updated/notice.html:2
+#, python-format
+msgid ""
+"<a href=\"%(user_url)s\">%(avatar_creator)s</a> has updated their avatar <a "
+"href=\"%(avatar_url)s\">%(avatar)s</a>."
+msgstr ""
+
+#: winguhub/avatar/templates/notification/avatar_updated/notice.html:2
+#, python-format
+msgid "You have updated your avatar <a href=\"%(avatar_url)s\">%(avatar)s</a>."
+msgstr ""
+
+#: winguhub/avatar/templatetags/avatar_tags.py:46
+msgid "Default Avatar"
+msgstr ""
+
+#: winguhub/base/accounts.py:371
+msgid "Email address"
+msgstr "郵箱地址"
+
+#: winguhub/base/accounts.py:377
+msgid "This value must be of length 40"
+msgstr ""
+
+#: winguhub/base/accounts.py:394
+msgid "Invalid user id."
+msgstr "無效user id"
+
+#: winguhub/base/templatetags/winguhub_tags.py:82
+msgid "Added"
+msgstr "添加了"
+
+#: winguhub/base/templatetags/winguhub_tags.py:83
+msgid "Deleted"
+msgstr "刪除了"
+
+#: winguhub/base/templatetags/winguhub_tags.py:84
+msgid "Removed"
+msgstr "刪除了"
+
+#: winguhub/base/templatetags/winguhub_tags.py:85
+msgid "Modified"
+msgstr "修改了"
+
+#: winguhub/base/templatetags/winguhub_tags.py:86
+msgid "Renamed"
+msgstr "重命名或移動了"
+
+#: winguhub/base/templatetags/winguhub_tags.py:87
+msgid "Moved"
+msgstr "移動了"
+
+#: winguhub/base/templatetags/winguhub_tags.py:88
+msgid "Added directory"
+msgstr "新建了目錄"
+
+#: winguhub/base/templatetags/winguhub_tags.py:89
+msgid "Removed directory"
+msgstr "刪除了目錄"
+
+#: winguhub/base/templatetags/winguhub_tags.py:90
+msgid "Renamed directory"
+msgstr "重命名了目錄"
+
+#: winguhub/base/templatetags/winguhub_tags.py:91
+msgid "Moved directory"
+msgstr "移動了目錄"
+
+#: winguhub/base/templatetags/winguhub_tags.py:106
+msgid "Reverted library to status at"
+msgstr "資料庫內容還原到"
+
+#: winguhub/base/templatetags/winguhub_tags.py:109
+#, python-format
+msgid "Reverted file \"%(file)s\" to status at %(time)s."
+msgstr "文件\"%(file)s\"還原到%(time)s."
+
+#: winguhub/base/templatetags/winguhub_tags.py:113
+msgid "Recovered deleted directory"
+msgstr "還原已刪除的目錄"
+
+#: winguhub/base/templatetags/winguhub_tags.py:117
+msgid "Auto merge by wingufile system"
+msgstr "系統自動合並修改"
+
+#: winguhub/base/templatetags/winguhub_tags.py:174
+#: winguhub/base/templatetags/winguhub_tags.py:208 winguhub/templates/repo.html:911
+msgid "Just now"
+msgstr "剛才"
+
+#: winguhub/base/templatetags/winguhub_tags.py:183
+#, python-format
+msgid "%(days)d day ago"
+msgid_plural "%(days)d days ago"
+msgstr[0] "%(days)d 天前"
+
+#: winguhub/base/templatetags/winguhub_tags.py:190
+#, python-format
+msgid "%(hours)d hour ago"
+msgid_plural "%(hours)d hours ago"
+msgstr[0] "%(hours)d 小時前"
+
+#: winguhub/base/templatetags/winguhub_tags.py:197
+#, python-format
+msgid "%(minutes)d minute ago"
+msgid_plural "%(minutes)d minutes ago"
+msgstr[0] "%(minutes)d 分鐘前"
+
+#: winguhub/base/templatetags/winguhub_tags.py:203
+#, python-format
+msgid "%(seconds)d second ago"
+msgid_plural "%(seconds)d seconds ago"
+msgstr[0] "%(seconds)d 秒前"
+
+#: winguhub/base/templatetags/winguhub_tags.py:302
+#: winguhub/group/templates/group/group_info.html:89
+#: winguhub/group/templates/group/group_info_for_pub.html:56
+#: winguhub/share/views.py:353
+#: winguhub/share/templates/repo/share_out_repos.html:31
+#: winguhub/share/templates/repo/share_out_repos.html:44
+#: winguhub/share/templates/repo/user_share_list.html:42
+#: winguhub/templates/pubrepo.html:34
+#: winguhub/templates/snippets/my_owned_repos.html:28
+#: winguhub/templates/snippets/my_owned_repos.html:71
+#: winguhub/templates/snippets/my_owned_repos.html:118
+#: winguhub/templates/snippets/repo_create_form.html:11
+#: winguhub/templates/snippets/repo_share_form.html:47
+#: winguhub/templates/sysadmin/userinfo.html:51
+#: winguhub/templates/sysadmin/userinfo.html:76
+msgid "Read-Write"
+msgstr "可讀寫"
+
+#: winguhub/base/templatetags/winguhub_tags.py:304
+#: winguhub/group/templates/group/group_info.html:91
+#: winguhub/group/templates/group/group_info_for_pub.html:58
+#: winguhub/share/views.py:355
+#: winguhub/share/templates/repo/share_out_repos.html:42
+#: winguhub/share/templates/repo/user_share_list.html:44
+#: winguhub/templates/pubrepo.html:36 winguhub/templates/repo.html:19
+#: winguhub/templates/snippets/my_owned_repos.html:73
+#: winguhub/templates/snippets/my_owned_repos.html:120
+#: winguhub/templates/snippets/repo_create_form.html:12
+#: winguhub/templates/snippets/repo_share_form.html:48
+msgid "Read-Only"
+msgstr "只讀"
+
+#: winguhub/contacts/models.py:56
+#: winguhub/contacts/templates/contacts/contact_list.html:126
+msgid "Email is required."
+msgstr "郵箱為必填項。"
+
+#: winguhub/contacts/models.py:61
+#: winguhub/contacts/templates/contacts/contact_list.html:130
+msgid "You can't add yourself."
+msgstr "不能添加自己。"
+
+#: winguhub/contacts/models.py:64
+msgid "It is already your contact."
+msgstr "該郵箱已在列表中。"
+
+#: winguhub/contacts/views.py:67 winguhub/contacts/views.py:92
+#, python-format
+msgid "Successfully added %s to contacts."
+msgstr "你已成功添加 %s 為聯系人。"
+
+#: winguhub/contacts/views.py:94
+#, python-format
+msgid "Failed to add %s to contacts."
+msgstr "添加 %s 失敗。"
+
+#: winguhub/contacts/views.py:119
+#, python-format
+msgid "Successfully edited %s."
+msgstr "編輯 %s 成功。"
+
+#: winguhub/contacts/views.py:132
+#, python-format
+msgid "Successfully Deleted %s"
+msgstr "成功刪除 %s "
+
+#: winguhub/contacts/templates/contacts/contact_list.html:4
+#: winguhub/contacts/templates/contacts/contact_list.html:16
+#: winguhub/templates/myhome_base.html:17
+#: winguhub/templates/snippets/repo_share_form.html:8
+msgid "Contacts"
+msgstr "通訊錄"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:9
+#: winguhub/group/templates/group/groups_left_panel.html:3
+msgid "Tips"
+msgstr "小提示"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:10
+msgid ""
+"When you share libraries or file links to a friend, his/her email will be "
+"added to contacts."
+msgstr ""
+"在共享和發送外鏈的時候，系統會自動記錄下你用過的通訊地址，以方便下次使用。"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:17
+#: winguhub/contacts/templates/contacts/contact_list.html:48
+msgid "Add Contacts"
+msgstr "添加聯系人"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:22
+msgid "Email "
+msgstr "郵箱"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:23
+#: winguhub/group/templates/group/group_info.html:78
+#: winguhub/group/templates/group/group_info_for_pub.html:45
+#: winguhub/group/templates/group/group_wiki.html:45
+#: winguhub/group/templates/group/group_wiki.html:79
+#: winguhub/group/templates/group/group_wiki_pages.html:51
+#: winguhub/share/templates/repo/priv_shared_files.html:29
+#: winguhub/share/templates/repo/priv_shared_files.html:57
+#: winguhub/share/templates/repo/share_out_repos.html:23
+#: winguhub/share/templates/repo/shared_links.html:23
+#: winguhub/share/templates/repo/user_share_list.html:33
+#: winguhub/templates/pubrepo.html:24 winguhub/templates/repo.html:114
+#: winguhub/templates/repo_history_view.html:52
+#: winguhub/templates/repo_recycle_view.html:53
+#: winguhub/templates/view_shared_dir.html:32
+#: winguhub/templates/snippets/my_owned_repos.html:20
+#: winguhub/templates/snippets/my_owned_repos.html:62
+#: winguhub/templates/snippets/my_owned_repos.html:107
+#: winguhub/templates/snippets/repo_create_form.html:4
+#: winguhub/templates/snippets/repo_dir_data.html:32
+#: winguhub/templates/sysadmin/sys_group_admin.html:12
+#: winguhub/templates/sysadmin/sys_org_admin.html:11
+#: winguhub/templates/sysadmin/sys_publink_admin.html:10
+#: winguhub/templates/sysadmin/sys_repo_admin.html:10
+#: winguhub/templates/sysadmin/userinfo.html:44
+#: winguhub/templates/sysadmin/userinfo.html:69
+#: winguhub/templates/wiki/personal_wiki.html:31
+#: winguhub/templates/wiki/personal_wiki.html:63
+#: winguhub/templates/wiki/personal_wiki_pages.html:39
+msgid "Name"
+msgstr "名稱"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:24
+msgid "Note"
+msgstr "備註"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:25
+#: winguhub/group/templates/group/group_info.html:82
+#: winguhub/group/templates/group/group_info_for_pub.html:49
+#: winguhub/group/templates/group/group_manage.html:39
+#: winguhub/group/templates/group/group_manage.html:59
+#: winguhub/group/templates/group/group_manage.html:83
+#: winguhub/notifications/templates/notifications/notification_list.html:7
+#: winguhub/notifications/templates/notifications/notification_list.html:20
+#: winguhub/share/templates/repo/priv_shared_files.html:32
+#: winguhub/share/templates/repo/priv_shared_files.html:60
+#: winguhub/share/templates/repo/share_out_repos.html:27
+#: winguhub/share/templates/repo/shared_links.html:26
+#: winguhub/share/templates/repo/user_share_list.html:36
+#: winguhub/templates/client_mgmt.html:30
+#: winguhub/templates/file_revisions.html:28 winguhub/templates/pubrepo.html:28
+#: winguhub/templates/repo_recycle_view.html:56
+#: winguhub/templates/repo_view_snapshot.html:18
+#: winguhub/templates/view_shared_dir.html:34
+#: winguhub/templates/snippets/my_owned_repos.html:23
+#: winguhub/templates/snippets/my_owned_repos.html:65
+#: winguhub/templates/snippets/my_owned_repos.html:111
+#: winguhub/templates/snippets/repo_dir_data.html:35
+#: winguhub/templates/sysadmin/sys_group_admin.html:15
+#: winguhub/templates/sysadmin/sys_org_admin.html:15
+#: winguhub/templates/sysadmin/sys_publink_admin.html:14
+#: winguhub/templates/sysadmin/sys_repo_admin.html:14
+#: winguhub/templates/sysadmin/sys_useradmin.html:28
+#: winguhub/templates/sysadmin/userinfo.html:46
+msgid "Operations"
+msgstr "操作"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:34
+#: winguhub/share/templates/repo/share_out_repos.html:37
+#: winguhub/templates/file_edit.html:80
+#: winguhub/templates/view_file_markdown.html:13
+#: winguhub/templates/view_file_sf.html:8
+#: winguhub/templates/view_file_text.html:24
+msgid "Edit"
+msgstr "編輯"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:35
+#: winguhub/group/templates/group/group_discuss.html:83
+#: winguhub/group/templates/group/group_manage.html:68
+#: winguhub/group/templates/group/group_manage.html:92
+#: winguhub/notifications/templates/notifications/notification_list.html:32
+#: winguhub/templates/repo.html:238
+#: winguhub/templates/snippets/file_share_popup.html:28
+#: winguhub/templates/snippets/my_owned_repos.html:39
+#: winguhub/templates/snippets/my_owned_repos.html:88
+#: winguhub/templates/snippets/repo_dir_data.html:67
+#: winguhub/templates/snippets/repo_dir_data.html:113
+#: winguhub/templates/sysadmin/sys_group_admin.html:22
+#: winguhub/templates/sysadmin/sys_org_admin.html:23
+#: winguhub/templates/sysadmin/sys_repo_admin.html:22
+#: winguhub/templates/sysadmin/sys_useradmin.html:49
+#: winguhub/templates/sysadmin/userinfo.html:55
+msgid "Delete"
+msgstr "刪除"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:42
+msgid "You don't have any contacts"
+msgstr "你還沒有聯系人"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:43
+msgid ""
+"Add your contacts so you can quickly share libraries and send file shared "
+"link."
+msgstr "聯系人用來在共享資料庫和發送文件外鏈時的快速補全。"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:49
+#: winguhub/contacts/templates/contacts/contact_list.html:58
+#: winguhub/group/templates/group/group_manage.html:58
+#: winguhub/group/templates/group/group_manage.html:82
+#: winguhub/message/templates/message/all_msg_list.html:22
+#: winguhub/templates/registration/login.html:8
+#: winguhub/templates/registration/registration_form.html:11
+#: winguhub/templates/snippets/add_to_contacts_form.html:3
+#: winguhub/templates/snippets/user_profile_html.html:28
+#: winguhub/templates/sysadmin/sys_useradmin.html:12
+#: winguhub/templates/sysadmin/sys_useradmin.html:24
+msgid "Email"
+msgstr "郵箱"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:51
+#: winguhub/contacts/templates/contacts/contact_list.html:60
+#: winguhub/templates/snippets/add_to_contacts_form.html:5
+#: winguhub/templates/snippets/user_profile_html.html:30
+msgid "Name(optional)"
+msgstr "名字(可選)"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:52
+#: winguhub/contacts/templates/contacts/contact_list.html:61
+#: winguhub/templates/snippets/add_to_contacts_form.html:7
+#: winguhub/templates/snippets/user_profile_html.html:32
+msgid "Note(optional)"
+msgstr "備註(可選)"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:57
+msgid "Edit Contact"
+msgstr "編輯聯系人"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:116
+msgid "Delete Contact"
+msgstr "刪除聯系人"
+
+#: winguhub/contacts/templates/contacts/contact_list.html:116
+#: winguhub/notifications/templates/notifications/notification_list.html:72
+#: winguhub/templates/snippets/myhome_extra_script.html:52
+#: winguhub/templates/sysadmin/sys_group_admin.html:63
+#: winguhub/templates/sysadmin/sys_org_admin.html:63
+#: winguhub/templates/sysadmin/sys_repo_admin.html:63
+#: winguhub/templates/sysadmin/sys_useradmin.html:96
+#: winguhub/templates/sysadmin/userinfo.html:141
+#, python-format
+msgid "Are you sure you want to delete %s ?"
+msgstr "確定要刪除 %s 嗎？"
+
+#: winguhub/group/error_msg.py:7
+msgid "The group has already created"
+msgstr "名稱重復，請重新輸入。"
+
+#: winguhub/group/error_msg.py:8
+msgid "Failed to create group"
+msgstr "創建失敗"
+
+#: winguhub/group/error_msg.py:11
+msgid "The group has already created in this org."
+msgstr "群組在該團體內已經存在。"
+
+#: winguhub/group/error_msg.py:12
+msgid "Failed to create org group."
+msgstr "創建團體群組失敗。"
+
+#: winguhub/group/error_msg.py:15
+msgid "Permission error: only group staff can add member"
+msgstr "只有群組管理員可以添加成員。"
+
+#: winguhub/group/error_msg.py:16 winguhub/group/error_msg.py:22
+msgid "Group does not exist"
+msgstr "群組不存在。"
+
+#: winguhub/group/error_msg.py:17
+msgid "Group is full"
+msgstr "群組已滿，無法再添加成員。"
+
+#: winguhub/group/error_msg.py:18
+msgid "Failed to add member to group"
+msgstr "添加成員失敗。"
+
+#: winguhub/group/error_msg.py:21
+msgid "Only group staff can remove member"
+msgstr "只有群組管理員可以刪除成員。"
+
+#: winguhub/group/error_msg.py:23
+msgid "Can not remove myself"
+msgstr "無法刪除自己"
+
+#: winguhub/group/forms.py:30 winguhub/templates/snippets/group_add_js.html:8
+msgid "Group name can't be empty"
+msgstr "群組名稱不能為空"
+
+#: winguhub/group/forms.py:31
+msgid "Group name is too long (maximum is 255 characters)"
+msgstr "名稱太長（不超過255個漢字）"
+
+#: winguhub/group/forms.py:36
+msgid "Group name can only contain letters, numbers or underline"
+msgstr "群組名稱只能包含中英文字符，數字及下劃線。"
+
+#: winguhub/group/forms.py:46
+msgid "Verification message can't be empty"
+msgstr "驗證信息不能為空"
+
+#: winguhub/group/forms.py:47
+msgid "Verification message is too long (maximun is 255 characters)"
+msgstr "驗證信息太長，不超過255個字符"
+
+#: winguhub/group/forms.py:67 winguhub/wiki/forms.py:27
+#, python-format
+msgid "\"%s\" is not a valid name"
+msgstr "名稱 %s 含有無效字符"
+
+#: winguhub/group/views.py:138
+#, python-format
+msgid ""
+"You can only create %d groups.<a href=\"http://wingufile.com/\">Upgrade "
+"account.</a>"
+msgstr "你只能創建%d個群組。<a href=\"http://wingufile.com/\">升級帳號。</a>"
+
+#: winguhub/group/views.py:153
+msgid "There is already a group with that name."
+msgstr "已有同名群組"
+
+#: winguhub/group/views.py:251 winguhub/group/views.py:273
+msgid "Only administrators can make the group public"
+msgstr "只有管理員才能將群組公開。"
+
+#: winguhub/group/views.py:319
+msgid "The message doesn't exist"
+msgstr "該留言不存在"
+
+#: winguhub/group/views.py:329
+msgid "You don't have the permission."
+msgstr "你的權限不夠。"
+
+#: winguhub/group/views.py:540 winguhub/group/views.py:671
+#, python-format
+msgid ""
+"You can only invite %d members.<a href=\"http://wingufile.com/\">Upgrade "
+"account.</a>"
+msgstr "你只能邀請%d個成員。<a href=\"http://wingufile.com/\">升級帳號。</a>"
+
+#: winguhub/group/views.py:562
+msgid "Your friend added you to a group at Seafile."
+msgstr "你的朋友在 Seafile 上把你加入到了一個群組中。"
+
+#: winguhub/group/views.py:585
+#, python-format
+msgid "Failed to add, %s is not registerd."
+msgstr "添加失敗，%s 未註冊。"
+
+#: winguhub/group/views.py:599
+#, python-format
+msgid "Successfully added. An email has been sent."
+msgid_plural "Successfully added. %(count)s emails have been sent."
+msgstr[0] "添加群組成員成功，%(count)s 封邀請郵件已發送。"
+
+#: winguhub/group/views.py:607
+msgid "Successfully added."
+msgstr "添加成功。"
+
+#: winguhub/group/views.py:652
+#, python-format
+msgid "Failed to add, %s is not registrated."
+msgstr "添加失敗，%s 還沒註冊。"
+
+#: winguhub/group/views.py:684 winguhub/group/views.py:697
+#: winguhub/group/views.py:724
+msgid "Operation succeeded."
+msgstr "操作成功"
+
+#: winguhub/group/views.py:726
+#, python-format
+msgid "Failed：%s"
+msgstr "刪除失敗：%s"
+
+#: winguhub/group/views.py:751
+msgid "Failed to unshare: the group doesn't exist."
+msgstr "取消共享失敗，該群組不存在"
+
+#: winguhub/group/views.py:756
+msgid ""
+"Operation failed: only administrators and the owner of the library can "
+"unshare it."
+msgstr "操作失敗：只有管理員和資料庫擁有者才能取消共享。"
+
+#: winguhub/group/views.py:759
+msgid "Failed to unshare: internal error."
+msgstr "取消共享失敗：內部錯誤。"
+
+#: winguhub/group/views.py:788
+msgid "Error: wrong group id"
+msgstr "推薦失敗：群組id不正確"
+
+#: winguhub/group/views.py:793
+msgid "Error: the group does not exist."
+msgstr "錯誤：該群組不存在。"
+
+#: winguhub/group/views.py:825
+#, python-format
+msgid "Successfully posted to %(groups)s."
+msgstr "成功發送到 %(groups)s。"
+
+#: winguhub/group/views.py:828
+#, python-format
+msgid "Error: you are not in group %s."
+msgstr "推薦到 %s 失敗：你不在該群組中。"
+
+#: winguhub/group/views.py:840
+msgid "Error: the library does not exist."
+msgstr "錯誤：該資料庫不存在。"
+
+#: winguhub/group/views.py:843
+msgid "Error: no path."
+msgstr "錯誤：路徑不存在。"
+
+#: winguhub/group/views.py:881
+msgid "Failed to create: the group does not exist."
+msgstr "創建失敗：該群組不存在。"
+
+#: winguhub/group/views.py:885
+msgid "Failed to create: you are not in the group."
+msgstr "創建失敗：你不在該群組中。"
+
+#: winguhub/group/views.py:907 winguhub/group/views.py:930
+#: winguhub/group/views.py:1261 winguhub/views/wiki.py:124
+msgid "Failed to create"
+msgstr "創建失敗"
+
+#: winguhub/group/views.py:921 winguhub/group/views.py:943
+#: winguhub/group/views.py:1270
+msgid "Failed to create: internal error."
+msgstr "創建團體群組失敗。"
+
+#: winguhub/group/views.py:970
+msgid "You are already in the group."
+msgstr "你已在該群組中。"
+
+#: winguhub/group/views.py:989
+msgid "apply to join the group"
+msgstr "申請加入群組"
+
+#: winguhub/group/views.py:991
+msgid "Sent successfully, the group admin will handle it."
+msgstr "發送成功，請等候管理員處理。"
+
+#: winguhub/group/views.py:995
+msgid "Failed to send. You can try it again later."
+msgstr "發送失敗, 請稍侯再試。"
+
+#: winguhub/group/views.py:1185 winguhub/group/views.py:1308
+#: winguhub/views/wiki.py:53 winguhub/views/wiki.py:158
+msgid "Failed to create wiki page. Please retry later."
+msgstr "創建維基頁面失敗，請稍後再試"
+
+#: winguhub/group/views.py:1221 winguhub/views/__init__.py:441
+#: winguhub/views/wiki.py:87
+msgid "Internal Server Error"
+msgstr "服務器內部錯誤"
+
+#: winguhub/group/views.py:1223 winguhub/views/wiki.py:89
+msgid "Wiki does not exists."
+msgstr "Wiki不存在"
+
+#: winguhub/group/views.py:1277 winguhub/views/wiki.py:131
+msgid "Failed to create home page. Please retry later"
+msgstr "創建首頁失敗，請稍後再試"
+
+#: winguhub/group/views.py:1298 winguhub/group/views.py:1324
+#: winguhub/group/views.py:1342 winguhub/views/wiki.py:148
+#: winguhub/views/wiki.py:171 winguhub/views/wiki.py:186
+msgid "Wiki is not found."
+msgstr "Wiki未找到。"
+
+#: winguhub/group/views.py:1305 winguhub/views/wiki.py:155
+#, python-format
+msgid "Page \"%s\" already exists."
+msgstr "頁面 \"%s\" 已存在。"
+
+#: winguhub/group/templates/group/add_member_email.html:2
+#, python-format
+msgid ""
+"%(email)s invite you to join group %(group.group_name)s. Please go to the "
+"following page and sign up:"
+msgstr "%(email)s 邀請你加入到群組 %(group.group_name)s。請點擊以下鏈接註冊："
+
+#: winguhub/group/templates/group/add_member_email.html:5
+#: winguhub/group/templates/group/group_join_email.html:6
+#: winguhub/templates/shared_link_email.html:7
+#: winguhub/templates/registration/password_reset_email.html:10
+#: winguhub/templates/sysadmin/user_add_email.html:14
+#: winguhub/templates/sysadmin/user_reset_email.html:6
+msgid "Thanks for using our site!"
+msgstr "感謝使用！"
+
+#: winguhub/group/templates/group/add_member_email.html:7
+#: winguhub/group/templates/group/group_join_email.html:8
+#: winguhub/templates/shared_link_email.html:9
+#: winguhub/templates/registration/password_reset_email.html:12
+#: winguhub/templates/sysadmin/user_add_email.html:16
+#: winguhub/templates/sysadmin/user_reset_email.html:8
+#, python-format
+msgid "The %(site_name)s team"
+msgstr "%(site_name)s 團隊"
+
+#: winguhub/group/templates/group/discussion_list.html:18
+#: winguhub/group/templates/group/group_discuss.html:122
+#: winguhub/group/templates/group/new_msg_reply.html:46
+msgid "Hide replies"
+msgstr "收起回復"
+
+#: winguhub/group/templates/group/discussion_list.html:31
+#: winguhub/group/templates/group/group_discuss.html:136
+#: winguhub/group/templates/group/group_reply_list.html:11
+#: winguhub/group/templates/group/new_msg_reply.html:56
+msgid "Reply"
+msgstr "回復"
+
+#: winguhub/group/templates/group/discussion_list.html:40
+#: winguhub/group/templates/group/group_discuss.html:146
+#: winguhub/group/templates/group/new_msg_reply.html:63
+msgid "Add a reply..."
+msgstr "添加回復..."
+
+#: winguhub/group/templates/group/discussion_list.html:41
+#: winguhub/group/templates/group/group_discuss.html:147
+#: winguhub/group/templates/group/new_msg_reply.html:64
+#, fuzzy
+msgid "It can not be blank and should be no more than 2048 characters."
+msgstr "輸入不能為空且應少於150個字符。"
+
+#: winguhub/group/templates/group/discussion_list.html:43
+#: winguhub/group/templates/group/group_discuss.html:67
+#: winguhub/group/templates/group/group_discuss.html:149
+#: winguhub/group/templates/group/group_info.html:178
+#: winguhub/group/templates/group/new_msg_reply.html:66
+#: winguhub/message/templates/message/user_msg_list.html:44
+#: winguhub/templates/base.html:77 winguhub/templates/file_edit.html:98
+#: winguhub/templates/file_edit.html:264 winguhub/templates/repo.html:127
+#: winguhub/templates/repo.html.py:137 winguhub/templates/repo.html:161
+#: winguhub/templates/repo.html.py:178 winguhub/templates/repo.html:187
+#: winguhub/templates/repo.html.py:237 winguhub/templates/shared_file_view.html:51
+#: winguhub/templates/snippets/events.html:16
+#: winguhub/templates/snippets/file_share_popup.html:36
+msgid "Cancel"
+msgstr "取消"
+
+#: winguhub/group/templates/group/group_discuss.html:15
+#: winguhub/group/templates/group/group_info.html:16
+#: winguhub/group/templates/group/group_info.html:68
+#: winguhub/group/templates/group/group_info_for_pub.html:16
+#: winguhub/group/templates/group/group_manage.html:14
+#: winguhub/group/templates/group/group_members.html:16
+#: winguhub/group/templates/group/group_wiki.html:16
+#: winguhub/group/templates/group/group_wiki_pages.html:15
+#: winguhub/share/templates/repo/priv_shared_files.html:11
+#: winguhub/share/templates/repo/share_out_repos.html:11
+#: winguhub/share/templates/repo/shared_links.html:11
+#: winguhub/templates/admin_base.html:8 winguhub/templates/client_mgmt.html:13
+#: winguhub/templates/myhome.html:13 winguhub/templates/org_admin_base.html:11
+#: winguhub/templates/pubgrp.html:14 winguhub/templates/pubrepo.html:15
+#: winguhub/templates/pubuser.html:14
+#: winguhub/templates/wiki/personal_wiki.html:13
+#: winguhub/templates/wiki/personal_wiki_pages.html:13
+msgid "Libraries"
+msgstr "資料庫"
+
+#: winguhub/group/templates/group/group_discuss.html:17
+#: winguhub/group/templates/group/group_info.html:18
+#: winguhub/group/templates/group/group_info_for_pub.html:18
+#: winguhub/group/templates/group/group_manage.html:16
+#: winguhub/group/templates/group/group_members.html:18
+#: winguhub/group/templates/group/group_wiki.html:18
+#: winguhub/group/templates/group/group_wiki_pages.html:17
+msgid "Wiki"
+msgstr "維基"
+
+#: winguhub/group/templates/group/group_discuss.html:19
+#: winguhub/group/templates/group/group_info.html:20
+#: winguhub/group/templates/group/group_info_for_pub.html:20
+#: winguhub/group/templates/group/group_manage.html:18
+#: winguhub/group/templates/group/group_members.html:20
+#: winguhub/group/templates/group/group_wiki.html:20
+#: winguhub/group/templates/group/group_wiki_pages.html:19
+msgid "Files"
+msgstr "文件"
+
+#: winguhub/group/templates/group/group_discuss.html:22
+#: winguhub/group/templates/group/group_discuss.html:33
+#: winguhub/group/templates/group/group_info.html:22
+#: winguhub/group/templates/group/group_info.html:46
+#: winguhub/group/templates/group/group_manage.html:20
+#: winguhub/group/templates/group/group_manage.html:52
+#: winguhub/group/templates/group/group_members.html:22
+#: winguhub/group/templates/group/group_wiki.html:23
+#: winguhub/group/templates/group/group_wiki_pages.html:22
+msgid "Members"
+msgstr "成員"
+
+#: winguhub/group/templates/group/group_discuss.html:25
+#: winguhub/group/templates/group/group_info.html:24
+#: winguhub/group/templates/group/group_manage.html:21
+#: winguhub/group/templates/group/group_members.html:24
+#: winguhub/group/templates/group/group_wiki.html:26
+#: winguhub/group/templates/group/group_wiki_pages.html:25
+msgid "Admin"
+msgstr "管理"
+
+#: winguhub/group/templates/group/group_discuss.html:48
+msgid "No members"
+msgstr "暫無成員"
+
+#: winguhub/group/templates/group/group_discuss.html:62
+msgid "Add a discussion..."
+msgstr "添加一個討論..."
+
+#: winguhub/group/templates/group/group_discuss.html:71
+#: winguhub/message/templates/message/user_msg_list.html:108
+msgid "After login, you can post discussions and add replies."
+msgstr "登錄之後，你就可以發起討論和回復。"
+
+#: winguhub/group/templates/group/group_discuss.html:162
+#: winguhub/message/templates/message/user_msg_list.html:88
+#: winguhub/templates/pubuser.html:38 winguhub/templates/repo_history.html:52
+#: winguhub/templates/repo_view_snapshot.html:50
+#: winguhub/templates/view_file_pdf.html:30
+#: winguhub/templates/snippets/file_content_js.html:62
+#: winguhub/templates/sysadmin/sys_group_admin.html:29
+#: winguhub/templates/sysadmin/sys_publink_admin.html:30
+#: winguhub/templates/sysadmin/sys_repo_admin.html:29
+#: winguhub/templates/sysadmin/sys_useradmin.html:64
+msgid "Previous"
+msgstr "前一頁"
+
+#: winguhub/group/templates/group/group_discuss.html:172
+#: winguhub/message/templates/message/user_msg_list.html:98
+#: winguhub/templates/pubuser.html:48 winguhub/templates/repo_history.html:55
+#: winguhub/templates/repo_view_snapshot.html:53
+#: winguhub/templates/view_file_pdf.html:30
+#: winguhub/templates/snippets/file_content_js.html:62
+#: winguhub/templates/sysadmin/sys_group_admin.html:32
+#: winguhub/templates/sysadmin/sys_publink_admin.html:33
+#: winguhub/templates/sysadmin/sys_repo_admin.html:32
+#: winguhub/templates/sysadmin/sys_useradmin.html:67
+msgid "Next"
+msgstr "下一頁"
+
+#: winguhub/group/templates/group/group_discuss.html:178
+#: winguhub/message/templates/message/user_msg_list.html:104
+msgid "↑Top"
+msgstr ""
+
+#: winguhub/group/templates/group/group_discuss.html:229
+msgid "Really want to delete this discussion?"
+msgstr "確定要刪除這條討論？"
+
+#: winguhub/group/templates/group/group_discuss.html:229
+#: winguhub/templates/base.html:180
+msgid "Yes"
+msgstr "確定"
+
+#: winguhub/group/templates/group/group_discuss.html:229
+#: winguhub/templates/base.html:181
+msgid "No"
+msgstr "取消"
+
+#: winguhub/group/templates/group/group_discuss.html:244
+msgid "Successfully deleted"
+msgstr "刪除成功。"
+
+#: winguhub/group/templates/group/group_discuss.html:246
+msgid "Failed to delete: "
+msgstr "刪除失敗："
+
+#: winguhub/group/templates/group/group_discuss.html:250
+msgid "Failed."
+msgstr "操作失敗"
+
+#: winguhub/group/templates/group/group_info.html:33
+#: winguhub/group/templates/group/group_info_for_pub.html:29
+#: winguhub/message/templates/message/user_msg_list.html:8
+#: winguhub/share/templates/repo/user_share_list.html:8
+#: winguhub/templates/org_admin_base.html:8
+msgid "Basic Info"
+msgstr "基本信息"
+
+#: winguhub/group/templates/group/group_info.html:33
+#: winguhub/group/templates/group/group_info_for_pub.html:29
+msgid "This group is public."
+msgstr "當前群組為公開群組。"
+
+#: winguhub/group/templates/group/group_info.html:37
+#: winguhub/group/templates/group/group_info_for_pub.html:33
+msgid "created at"
+msgstr "創建於"
+
+#: winguhub/group/templates/group/group_info.html:39
+#: winguhub/group/templates/group/group_info.html:191
+msgid "Quit Group"
+msgstr "退出群組"
+
+#: winguhub/group/templates/group/group_info.html:69
+msgid "Recent Changes"
+msgstr "最近修改"
+
+#: winguhub/group/templates/group/group_info.html:71
+#: winguhub/templates/pubrepo.html:13
+#: winguhub/templates/snippets/my_owned_repos.html:13
+#: winguhub/templates/snippets/repo_create_form.html:3
+msgid "New Library"
+msgstr "新建資料庫"
+
+#: winguhub/group/templates/group/group_info.html:79
+#: winguhub/group/templates/group/group_info.html:128
+#: winguhub/group/templates/group/group_info_for_pub.html:46
+#: winguhub/group/templates/group/group_wiki.html:47
+#: winguhub/share/templates/repo/share_out_repos.html:26
+#: winguhub/share/templates/repo/user_share_list.html:34
+#: winguhub/templates/pubrepo.html:25 winguhub/templates/repo.html:116
+#: winguhub/templates/repo_history.html:23
+#: winguhub/templates/snippets/my_owned_repos.html:21
+#: winguhub/templates/snippets/my_owned_repos.html:108
+#: winguhub/templates/snippets/repo_create_form.html:6
+#: winguhub/templates/sysadmin/sys_repo_admin.html:13
+#: winguhub/templates/sysadmin/userinfo.html:45
+#: winguhub/templates/sysadmin/userinfo.html:71
+#: winguhub/templates/wiki/personal_wiki.html:33
+msgid "Description"
+msgstr "描述"
+
+#: winguhub/group/templates/group/group_info.html:80
+#: winguhub/group/templates/group/group_info_for_pub.html:47
+#: winguhub/share/templates/repo/user_share_list.html:35
+#: winguhub/templates/pubrepo.html:26
+#: winguhub/templates/snippets/my_owned_repos.html:22
+#: winguhub/templates/snippets/my_owned_repos.html:64
+#: winguhub/templates/snippets/my_owned_repos.html:109
+#: winguhub/templates/snippets/my_owned_repos.html:155
+#: winguhub/templates/snippets/repo_dir_data.html:34
+msgid "Last Update"
+msgstr "更新時間"
+
+#: winguhub/group/templates/group/group_info.html:81
+#: winguhub/group/templates/group/group_info_for_pub.html:48
+#: winguhub/templates/snippets/my_owned_repos.html:110
+msgid "Shared By"
+msgstr "共享來源"
+
+#: winguhub/group/templates/group/group_info.html:89
+#: winguhub/group/templates/group/group_info.html:91
+#: winguhub/group/templates/group/group_info_for_pub.html:56
+#: winguhub/group/templates/group/group_info_for_pub.html:58
+#: winguhub/share/templates/repo/share_out_repos.html:31
+#: winguhub/share/templates/repo/user_share_list.html:42
+#: winguhub/share/templates/repo/user_share_list.html:44
+#: winguhub/templates/snippets/my_owned_repos.html:28
+#: winguhub/templates/snippets/my_owned_repos.html:71
+#: winguhub/templates/snippets/my_owned_repos.html:73
+#: winguhub/templates/snippets/my_owned_repos.html:118
+#: winguhub/templates/snippets/my_owned_repos.html:120
+#: winguhub/templates/sysadmin/userinfo.html:51
+msgid "directory icon"
+msgstr "目錄圖標"
+
+#: winguhub/group/templates/group/group_info.html:105
+#: winguhub/share/templates/repo/user_share_list.html:55
+#: winguhub/templates/pubrepo.html:44
+#: winguhub/templates/snippets/my_owned_repos.html:37
+#: winguhub/templates/snippets/my_owned_repos.html:84
+#: winguhub/templates/snippets/my_owned_repos.html:132
+msgid "Download and Sync"
+msgstr "下載和同步"
+
+#: winguhub/group/templates/group/group_info.html:107
+#: winguhub/share/templates/repo/share_out_repos.html:51
+#: winguhub/share/templates/repo/share_out_repos.html:54
+#: winguhub/share/templates/repo/share_out_repos.html:58
+#: winguhub/share/templates/repo/share_out_repos.html:60
+#: winguhub/share/templates/repo/user_share_list.html:59
+msgid "Unshare"
+msgstr "取消共享"
+
+#: winguhub/group/templates/group/group_info.html:115
+msgid "No library is sharing to this group"
+msgstr "還沒有資料庫共享到當前群組"
+
+#: winguhub/group/templates/group/group_info.html:116
+msgid ""
+"You can share libraries by clicking the \"New Library\" button above or the "
+"\"Share\" icon on your libraries list."
+msgstr ""
+"你可以通過點擊上方的“新建資料庫”按鈕或資料庫列表裏的“共享”圖標來共享資料庫。"
+
+#: winguhub/group/templates/group/group_info.html:117
+msgid ""
+"Libraries shared as writable can be downloaded and synced by other group "
+"members. Read only libraries can only be downloaded, updates by others will "
+"not be uploaded."
+msgstr ""
+"以可讀寫方式共享的資料庫可以被其他群組成員下載和同步，而以只讀方式共享的資料"
+"庫只能被下載，其他人的修改將不會被上傳。"
+
+#: winguhub/group/templates/group/group_info.html:127
+#: winguhub/group/templates/group/group_info.html:171
+#: winguhub/share/templates/repo/priv_shared_files.html:30
+#: winguhub/share/templates/repo/priv_shared_files.html:58
+#: winguhub/share/templates/repo/shared_links.html:24
+#: winguhub/templates/client_mgmt.html:26 winguhub/templates/file_edit.html:258
+#: winguhub/templates/snippets/events.html:9
+#: winguhub/templates/snippets/my_owned_repos.html:154
+msgid "Library"
+msgstr "資料庫"
+
+#: winguhub/group/templates/group/group_info.html:129
+msgid "Modified at"
+msgstr "修改於"
+
+#: winguhub/group/templates/group/group_info.html:130
+#: winguhub/templates/repo_history.html:22
+msgid "Modifier"
+msgstr "修改者"
+
+#: winguhub/group/templates/group/group_info.html:150
+#: winguhub/group/templates/group/group_info.html:152
+#: winguhub/templates/repo.html:146 winguhub/templates/repo.html.py:148
+#: winguhub/templates/repo.html:152 winguhub/templates/repo.html.py:154
+#: winguhub/templates/repo_history.html:44
+#: winguhub/templates/repo_view_snapshot.html:38
+#: winguhub/templates/snippets/current_commit.html:4
+#: winguhub/templates/snippets/events_body.html:18
+#: winguhub/templates/snippets/events_body.html:20
+msgid "Details"
+msgstr "詳情"
+
+#: winguhub/group/templates/group/group_info.html:159
+#: winguhub/group/templates/group/new_msg_reply.html:74
+#: winguhub/templates/pubuser.html:53 winguhub/templates/repo_history.html:35
+#: winguhub/templates/repo_view_snapshot.html:29
+msgid "None"
+msgstr "無"
+
+#: winguhub/group/templates/group/group_info.html:164
+#: winguhub/templates/client_mgmt.html:39 winguhub/templates/client_mgmt.html:46
+#: winguhub/templates/client_mgmt.html:53 winguhub/templates/client_mgmt.html:56
+#: winguhub/templates/file_revisions.html:45
+#: winguhub/templates/repo_history.html:38
+#: winguhub/templates/repo_history_view.html:21
+#: winguhub/templates/repo_view_snapshot.html:32
+#: winguhub/templates/snippets/current_commit.html:15
+msgid "Unknown"
+msgstr "未知"
+
+#: winguhub/group/templates/group/group_info.html:171
+#: winguhub/templates/file_edit.html:258 winguhub/templates/snippets/events.html:9
+msgid "is encrypted"
+msgstr "已加密"
+
+#: winguhub/group/templates/group/group_info.html:173
+#: winguhub/templates/file_edit.html:259
+#: winguhub/templates/snippets/events.html:11
+msgid "Password："
+msgstr "密碼："
+
+#: winguhub/group/templates/group/group_info.html:175
+#: winguhub/templates/file_edit.html:261
+#: winguhub/templates/snippets/events.html:13
+msgid "The password will be kept in the server for only 1 hour."
+msgstr "密碼將在服務器上保存一小時。"
+
+#: winguhub/group/templates/group/group_info.html:192
+msgid "Are you sure you want to quit this group?"
+msgstr "確定要退出該群組嗎？"
+
+#: winguhub/group/templates/group/group_info.html:195
+msgid "Unshare Library"
+msgstr "取消共享資料庫"
+
+#: winguhub/group/templates/group/group_info.html:196
+#, python-format
+msgid "Are you sure you want to unshare %s ?"
+msgstr "確定要取消共享 %s 嗎？"
+
+#: winguhub/group/templates/group/group_info_for_pub.html:78
+msgid "No public library is in this group"
+msgstr "當前群組沒有公開的資料庫"
+
+#: winguhub/group/templates/group/group_info_for_pub.html:79
+msgid "A library can be made public in its settings page.(Not implemented yet)"
+msgstr "一個資料庫可以在設置頁面設為公開。（未實現）"
+
+#: winguhub/group/templates/group/group_join_email.html:2
+#, python-format
+msgid ""
+"%(user)s want to join to Group \"%(group_name)s\", here is the verification "
+"message: "
+msgstr "%(user)s 申請加入到群組 “%(group_name)s”, 驗證信息如下："
+
+#: winguhub/group/templates/group/group_manage.html:28
+msgid "Group Avatar"
+msgstr "群組頭像"
+
+#: winguhub/group/templates/group/group_manage.html:32
+#: winguhub/profile/templates/profile/set_profile.html:12
+msgid "Change"
+msgstr "修改"
+
+#: winguhub/group/templates/group/group_manage.html:41
+msgid "Dismiss"
+msgstr "解散"
+
+#: winguhub/group/templates/group/group_manage.html:43
+msgid "Revoke Public"
+msgstr "取消公開"
+
+#: winguhub/group/templates/group/group_manage.html:45
+msgid "Make Public"
+msgstr "設為公開"
+
+#: winguhub/group/templates/group/group_manage.html:53
+msgid "Add Members"
+msgstr "添加成員"
+
+#: winguhub/group/templates/group/group_manage.html:76
+msgid "Administrators"
+msgstr "管理員"
+
+#: winguhub/group/templates/group/group_manage.html:77
+msgid "Add Administrators"
+msgstr "添加管理員"
+
+#: winguhub/group/templates/group/group_manage.html:109
+msgid "Dismiss Group"
+msgstr "解散群組"
+
+#: winguhub/group/templates/group/group_manage.html:110
+msgid "Really want to dismiss this group?"
+msgstr "確定要解散該群組嗎？"
+
+#: winguhub/group/templates/group/group_manage.html:113
+msgid "Delete Member"
+msgstr "刪除成員"
+
+#: winguhub/group/templates/group/group_manage.html:114
+#, python-format
+msgid "Really want to delete %s ?"
+msgstr "確定要刪除 %s 嗎？"
+
+#: winguhub/group/templates/group/group_members.html:44
+#: winguhub/templates/pubuser.html:29
+msgid "Add to Contacts"
+msgstr "加到通訊錄"
+
+#: winguhub/group/templates/group/group_pubinfo.html:9
+msgid "Join Group"
+msgstr "申請加入"
+
+#: winguhub/group/templates/group/group_pubinfo.html:13
+msgid "Name: "
+msgstr "名字："
+
+#: winguhub/group/templates/group/group_pubinfo.html:14
+#: winguhub/group/templates/group/groups_right_panel.html:13
+#: winguhub/templates/pubgrp.html:26
+msgid "Creator: "
+msgstr "創建者："
+
+#: winguhub/group/templates/group/group_pubinfo.html:15
+msgid "Create at: "
+msgstr "創建於："
+
+#: winguhub/group/templates/group/group_pubinfo.html:16
+msgid "Members: "
+msgstr "成員數："
+
+#: winguhub/group/templates/group/group_pubinfo.html:21
+msgid "Verification Message"
+msgstr "驗證消息"
+
+#: winguhub/group/templates/group/group_wiki.html:37
+msgid "This group currently has no wiki"
+msgstr "該群組目前還沒創建Wiki"
+
+#: winguhub/group/templates/group/group_wiki.html:38
+#: winguhub/templates/wiki/personal_wiki.html:26
+msgid ""
+"Seafile Wiki enables you to organize your knowledge in a simple way. The "
+"contents of wiki is stored in a normal library with pre-defined file/folder "
+"structure. This enables you to edit your wiki in your desktop and then sync "
+"back to the server."
+msgstr ""
+"Seafile Wiki 能讓你以一種非常簡單的方式管理你的知識。Wiki 的內容以預定義的文"
+"件/目錄結構存儲在一個普通的資料庫中，這樣便可以在本地編輯，然後同步回服務器。"
+
+#: winguhub/group/templates/group/group_wiki.html:40
+#: winguhub/templates/wiki/personal_wiki.html:27
+msgid "Create Wiki Now"
+msgstr "現在創建Wiki"
+
+#: winguhub/group/templates/group/group_wiki.html:44
+#: winguhub/templates/wiki/personal_wiki.html:30
+msgid "Create Wiki"
+msgstr "創建Wiki"
+
+#: winguhub/group/templates/group/group_wiki.html:48
+msgid "Wiki Pages"
+msgstr "Wiki 頁面"
+
+#: winguhub/group/templates/group/group_wiki.html:56
+#: winguhub/group/templates/group/group_wiki_pages.html:32
+#: winguhub/templates/wiki/personal_wiki.html:42
+#: winguhub/templates/wiki/personal_wiki_pages.html:24
+msgid "Home"
+msgstr "首頁"
+
+#: winguhub/group/templates/group/group_wiki.html:57
+#: winguhub/group/templates/group/group_wiki_pages.html:33
+#: winguhub/templates/wiki/personal_wiki.html:43
+#: winguhub/templates/wiki/personal_wiki_pages.html:25
+msgid "Pages"
+msgstr "頁面"
+
+#: winguhub/group/templates/group/group_wiki.html:59
+#: winguhub/group/templates/group/group_wiki_pages.html:35
+#: winguhub/templates/wiki/personal_wiki.html:45
+#: winguhub/templates/wiki/personal_wiki_pages.html:26
+msgid "Wiki History"
+msgstr "Wiki歷史"
+
+#: winguhub/group/templates/group/group_wiki.html:64
+#: winguhub/group/templates/group/group_wiki.html:78
+#: winguhub/group/templates/group/group_wiki_pages.html:39
+#: winguhub/group/templates/group/group_wiki_pages.html:50
+#: winguhub/templates/wiki/personal_wiki.html:49
+#: winguhub/templates/wiki/personal_wiki.html:62
+#: winguhub/templates/wiki/personal_wiki_pages.html:28
+#: winguhub/templates/wiki/personal_wiki_pages.html:38
+msgid "New Page"
+msgstr "新建頁面"
+
+#: winguhub/group/templates/group/group_wiki.html:65
+#: winguhub/templates/wiki/personal_wiki.html:50
+msgid "Delete Page"
+msgstr "刪除頁面"
+
+#: winguhub/group/templates/group/group_wiki.html:66
+#: winguhub/templates/wiki/personal_wiki.html:51
+msgid "Edit Page"
+msgstr "編輯頁面"
+
+#: winguhub/group/templates/group/group_wiki.html:67
+#: winguhub/templates/wiki/personal_wiki.html:52
+msgid "Page History"
+msgstr "頁面歷史"
+
+#: winguhub/group/templates/group/group_wiki.html:74
+#: winguhub/templates/wiki/personal_wiki.html:58
+#, python-format
+msgid "Last modified by %(modifier)s, %(modify_time)s"
+msgstr "最近修改：%(modifier)s, %(modify_time)s"
+
+#: winguhub/group/templates/group/group_wiki.html:131
+#: winguhub/templates/wiki/personal_wiki.html:115
+msgid "Name and description can not be blank."
+msgstr "名稱和描述不能為空"
+
+#: winguhub/group/templates/group/groups_left_panel.html:5
+msgid ""
+"After creating a group, you can add members and share libraries into it."
+msgstr "群組創建後，就可以添加成員，共享資料。"
+
+#: winguhub/group/templates/group/groups_left_panel.html:7
+msgid "You can also share libraries into groups that you're not in."
+msgstr "你也可以將資料庫共享到你沒有參加的群組。"
+
+#: winguhub/group/templates/group/groups_right_panel.html:4
+#: winguhub/templates/snippets/my_groups.html:4
+msgid "My Groups"
+msgstr "我的群組"
+
+#: winguhub/group/templates/group/groups_right_panel.html:5
+#: winguhub/group/templates/group/groups_right_panel.html:26
+msgid "New Group"
+msgstr "新建群組"
+
+#: winguhub/group/templates/group/groups_right_panel.html:14
+#: winguhub/templates/pubgrp.html:27
+msgid "Time: "
+msgstr "時間："
+
+#: winguhub/group/templates/group/groups_right_panel.html:21
+msgid "You are not in any groups"
+msgstr "你還沒有創建或參加群組"
+
+#: winguhub/group/templates/group/groups_right_panel.html:22
+msgid ""
+"You can create a group by clicking \"New Group\" button. Group is a place "
+"for you and your friends leaving messages and collaborating on libraries."
+msgstr ""
+"你可以點擊“新建群組”按鈕來創建群組。在群組裏，你可以和你的朋友交流，協同維護"
+"資料庫。"
+
+#: winguhub/group/templates/group/groups_right_panel.html:27
+msgid "Group Name"
+msgstr "群組名稱"
+
+#: winguhub/group/templates/group/grpadmin_add_js.html:19
+#: winguhub/group/templates/group/grpmember_add_js.html:19
+msgid "It can not be blank."
+msgstr "輸入不能為空。"
+
+#: winguhub/group/templates/group/grpmember_add_form.html:3
+msgid "Add members"
+msgstr "添加成員"
+
+#: winguhub/group/templates/group/grpmember_add_form.html:4
+msgid "emails, separated by ','"
+msgstr "輸入郵箱，多個以,分隔"
+
+#: winguhub/group/templates/group/grpmember_add_form.html:7
+msgid "Tip: an invitation will be sent if the email is not registered."
+msgstr "提示：如果該郵箱未註冊，我們將向其發送邀請。"
+
+#: winguhub/group/templates/group/grpmember_add_form.html:9
+msgid "Tip: the emails should be already registered."
+msgstr "提示：必須是已註冊的郵箱。"
+
+#: winguhub/group/templates/group/grpmember_add_form.html:15
+msgid "Add administrators"
+msgstr "添加管理員"
+
+#: winguhub/group/templates/group/grpmember_add_form.html:16
+msgid "emails, separated by ',' "
+msgstr "輸入郵箱，多個以,分隔"
+
+#: winguhub/group/templates/group/new_msg_reply.html:18
+msgid "Group: "
+msgstr "所在群組："
+
+#: winguhub/message/models.py:103
+#, python-format
+msgid ""
+"(System) %(user)s have shared a library <a href='%(href)s'>%(repo_name)s</a> "
+"to you."
+msgstr "（系統）%(user)s 共享了資料庫<a href='%(href)s'>%(repo_name)s</a>給你"
+
+#: winguhub/message/models.py:117
+#, fuzzy, python-format
+msgid ""
+"(System) %(user)s have shared a file <a href='%(href)s'>%(file_name)s</a> to "
+"you."
+msgstr "（系統）%(user)s 共享了資料庫<a href='%(href)s'>%(repo_name)s</a>給你"
+
+#: winguhub/message/views.py:127 winguhub/templates/base.html:363
+msgid "message is required"
+msgstr "消息是必填項"
+
+#: winguhub/message/views.py:130 winguhub/templates/base.html:367
+msgid "contact is required"
+msgstr "聯系人是必填項"
+
+#: winguhub/message/views.py:150
+msgid "You can not send message to yourself."
+msgstr "你不能發消息給自己。"
+
+#: winguhub/message/views.py:154
+#, python-format
+msgid "Failed to send message to %s, user not found."
+msgstr "發送消息失敗，%s 未找到。"
+
+#: winguhub/message/views.py:169
+msgid "Message sent successfully."
+msgstr "消息發送成功。"
+
+#: winguhub/message/templates/message/all_msg_list.html:4
+#: winguhub/message/templates/message/all_msg_list.html:10
+#: winguhub/message/templates/message/user_msg_list.html:4
+#: winguhub/message/templates/message/user_msg_list.html:27
+#: winguhub/share/templates/repo/user_share_list.html:24
+msgid "Messages"
+msgstr "消息"
+
+#: winguhub/message/templates/message/all_msg_list.html:23
+msgid "Message"
+msgstr "消息"
+
+#: winguhub/message/templates/message/all_msg_list.html:24
+#: winguhub/templates/file_revisions.html:25
+#: winguhub/templates/repo_history.html:21
+msgid "Time"
+msgstr "時間"
+
+#: winguhub/message/templates/message/user_msg_list.html:12
+#: winguhub/share/templates/repo/user_share_list.html:12
+#: winguhub/templates/myhome.html:28
+msgid "No Nickname"
+msgstr "暫無昵稱"
+
+#: winguhub/message/templates/message/user_msg_list.html:14
+#: winguhub/profile/templates/profile/user_profile.html:14
+#: winguhub/share/templates/repo/user_share_list.html:14
+#: winguhub/templates/snippets/user_profile_html.html:21
+msgid "Add to contacts"
+msgstr "加為聯系人"
+
+#: winguhub/message/templates/message/user_msg_list.html:28
+#: winguhub/share/templates/repo/user_share_list.html:4
+#: winguhub/share/templates/repo/user_share_list.html:25
+#: winguhub/templates/myhome_base.html:14
+msgid "Shares"
+msgstr "共享"
+
+#: winguhub/message/templates/message/user_msg_list.html:38
+msgid "Send a message..."
+msgstr "發送消息..."
+
+#: winguhub/notifications/templates/notifications/add_notification_form.html:3
+#: winguhub/notifications/templates/notifications/add_notification_form.html:7
+#: winguhub/notifications/templates/notifications/notification_list.html:9
+msgid "Add new notification"
+msgstr "添加新通知"
+
+#: winguhub/notifications/templates/notifications/add_notification_form.html:9
+msgid "Notification"
+msgstr "通知"
+
+#: winguhub/notifications/templates/notifications/notification_list.html:15
+msgid "All Notifications"
+msgstr "所有通知"
+
+#: winguhub/notifications/templates/notifications/notification_list.html:19
+msgid "Notification Detail"
+msgstr "通知內容"
+
+#: winguhub/notifications/templates/notifications/notification_list.html:26
+msgid "(current notification)"
+msgstr "（當前通知）"
+
+#: winguhub/notifications/templates/notifications/notification_list.html:30
+msgid "Set to current"
+msgstr "設為當前通知"
+
+#: winguhub/notifications/templates/notifications/notification_list.html:64
+#: winguhub/templates/sysadmin/sys_group_admin.html:55
+#: winguhub/templates/sysadmin/sys_org_admin.html:55
+#: winguhub/templates/sysadmin/sys_publink_admin.html:56
+#: winguhub/templates/sysadmin/sys_repo_admin.html:55
+#: winguhub/templates/sysadmin/userinfo.html:61
+#: winguhub/templates/sysadmin/userinfo.html:84
+msgid "Empty"
+msgstr "暫無"
+
+#: winguhub/notifications/templates/notifications/notification_list.html:71
+msgid "Delete Notification"
+msgstr "刪除通知"
+
+#: winguhub/profile/views.py:41
+msgid "Successfully edited profile."
+msgstr "修改成功"
+
+#: winguhub/profile/views.py:47
+msgid "Failed to edit profile"
+msgstr "修改失敗"
+
+#: winguhub/profile/views.py:94 winguhub/profile/views.py:125
+msgid "Has not accepted invitation yet"
+msgstr "還未接受邀請"
+
+#: winguhub/profile/templates/profile/profile_base.html:4
+#: winguhub/profile/templates/profile/set_profile.html:5
+#: winguhub/profile/templates/profile/set_profile.html:8
+#: winguhub/templates/base.html:45
+msgid "Profile Setting"
+msgstr "個人信息設置"
+
+#: winguhub/profile/templates/profile/set_profile.html:10
+msgid "Avatar:"
+msgstr "頭像："
+
+#: winguhub/profile/templates/profile/set_profile.html:18
+msgid "Password:"
+msgstr "密碼："
+
+#: winguhub/profile/templates/profile/set_profile.html:18
+#: winguhub/templates/snippets/repo_dir_data.html:104
+msgid "Update"
+msgstr "更新"
+
+#: winguhub/profile/templates/profile/set_profile.html:19
+msgid "Nickname:"
+msgstr "昵稱："
+
+#: winguhub/profile/templates/profile/set_profile.html:24
+msgid "About me:"
+msgstr "關於我："
+
+#: winguhub/profile/templates/profile/user_profile.html:32
+msgid "Email: "
+msgstr "郵箱："
+
+#: winguhub/profile/templates/profile/user_profile.html:34
+msgid "Name(optional): "
+msgstr "名字(可選)"
+
+#: winguhub/profile/templates/profile/user_profile.html:36
+msgid "Note(optional): "
+msgstr "備註(可選)"
+
+#: winguhub/share/forms.py:20
+msgid "Email is not longer than 512 characters"
+msgstr "郵箱不能超過512個字符"
+
+#: winguhub/share/views.py:58
+msgid "Failed to share to all members, please try again later."
+msgstr "共享到公共資料失敗，請稍後再試"
+
+#: winguhub/share/views.py:60
+#, python-format
+msgid ""
+"Shared to all members successfully, go check it at <a href=\"%s\">Shares</a>."
+msgstr "共享到公共資料成功，請前往 <a href=\"%s\">共享</a> 查看。"
+
+#: winguhub/share/views.py:72
+#, python-format
+msgid ""
+"\"%(repo)s\" is already in group %(group)s. <a href=\"%(href)s\">View</a>"
+msgstr "\"%(repo)s\"在群組 %(group)s 中已存在。<a href=\"%(href)s\">查看</a>"
+
+#: winguhub/share/views.py:82
+#, python-format
+msgid "Failed to share %(repo)s to %(group)s, please try again later."
+msgstr "共享 %(repo)s 到 %(group)s失敗，請稍後重試。"
+
+#: winguhub/share/views.py:86
+#, python-format
+msgid ""
+"Shared to %(group)s successfully，go check it at <a href=\"%(share)s"
+"\">Shares</a>."
+msgstr "共享到 %(group)s 成功， 請前往 <a href=\"%(share)s\">共享</a> 查看。"
+
+#: winguhub/share/views.py:96
+msgid "You can not share libray to yourself."
+msgstr "你無法共享資料庫給你自己。"
+
+#: winguhub/share/views.py:105
+#, python-format
+msgid "Failed to share to %s, please try again later."
+msgstr "共享給 %s 失敗，請稍後嘗試。"
+
+#: winguhub/share/views.py:112
+#, python-format
+msgid ""
+"Shared to %(email)s successfully，go check it at <a href=\"%(share)s"
+"\">Shares</a>."
+msgstr "共享給 %(email)s 成功，請前往 <a href=\"%(share)s\">共享</a> 查看。"
+
+#: winguhub/share/views.py:116
+#, python-format
+msgid "Failed to share to %s, as the email is not registered."
+msgstr "共享給 %s 失敗，該用戶尚未註冊。"
+
+#: winguhub/share/views.py:175
+msgid "Only the owner of the library has permission to share it."
+msgstr "只有資料庫擁有者才有共享權限。"
+
+#: winguhub/share/views.py:205
+#, python-format
+msgid ""
+"Failed to share \"%s\", no enough quota. <a href=\"http://wingufile.com/"
+"\">Upgrade account.</a>"
+msgstr ""
+"共享\"%s\"失敗，空間不足。<a href=\"http://wingufile.com/\">升級帳號。</a>"
+
+#: winguhub/share/views.py:236 winguhub/share/views.py:246
+msgid "Failed to remove share"
+msgstr "取消共享失敗"
+
+#: winguhub/share/views.py:242
+msgid "group id is not valid"
+msgstr "無效的group id"
+
+#: winguhub/share/views.py:255
+msgid "Successfully removed share"
+msgstr "取消共享成功"
+
+#: winguhub/share/views.py:347
+msgid "all members"
+msgstr "所有成員"
+
+#: winguhub/share/views.py:549 winguhub/views/__init__.py:642
+#: winguhub/views/__init__.py:1363 winguhub/views/__init__.py:1398
+#: winguhub/views/ajax.py:571 winguhub/views/ajax.py:588 winguhub/views/file.py:760
+msgid "Invalid arguments"
+msgstr "非法參數"
+
+#: winguhub/share/views.py:558
+msgid "You cannot share the library in this way."
+msgstr "不能以這種方式共享一個資料庫。"
+
+#: winguhub/share/views.py:583
+msgid "Failed to get the link, please retry later."
+msgstr "獲取分享鏈接失敗，請稍後重試。"
+
+#: winguhub/share/views.py:605
+msgid "Removed successfully"
+msgstr "刪除成功"
+
+#: winguhub/share/views.py:613 winguhub/views/ajax.py:254 winguhub/views/ajax.py:345
+#: winguhub/views/ajax.py:436 winguhub/views/ajax.py:665 winguhub/views/ajax.py:697
+msgid "Argument missing"
+msgstr ""
+
+#: winguhub/share/views.py:622
+#, fuzzy
+msgid "The link doesn't exist"
+msgstr "該群組不存在"
+
+#: winguhub/share/views.py:636
+msgid ""
+"Sending shared link failed. Email service is not properly configured, please "
+"contact administrator."
+msgstr "由於郵箱服務未正確配置，發送共享鏈接失敗，請聯系管理員。"
+
+#: winguhub/share/views.py:661
+msgid "Your friend shared a file to you on Seafile"
+msgstr "你的朋友在 Seafile 上共享了一個文件給你"
+
+#: winguhub/share/views.py:666
+msgid "Internal server error. Send failed."
+msgstr "服務器內部錯誤，發送失敗。"
+
+#: winguhub/share/views.py:669
+msgid "Successfully sent."
+msgstr "發送成功"
+
+#: winguhub/share/views.py:698 winguhub/share/views.py:792
+#, fuzzy
+msgid "Successfully saved."
+msgstr "添加成功。"
+
+#: winguhub/share/views.py:717
+#, fuzzy, python-format
+msgid "Failed to share to \"%s\", user not found."
+msgstr "發送消息失敗，%s 未找到。"
+
+#: winguhub/share/views.py:731
+#, fuzzy, python-format
+msgid "Successfully shared %s."
+msgstr "編輯 %s 成功。"
+
+#: winguhub/share/views.py:757
+#, fuzzy, python-format
+msgid "Successfully unshared \"%s\"."
+msgstr "編輯 %s 成功。"
+
+#: winguhub/share/views.py:759
+#, fuzzy, python-format
+msgid "You don't have permission to unshared %s."
+msgstr "你沒有權限訪問該資料庫。"
+
+#: winguhub/share/views.py:795
+#, fuzzy, python-format
+msgid "You don't have permission to save %s."
+msgstr "你沒有權限訪問該資料庫。"
+
+#: winguhub/share/templates/repo/priv_shared_files.html:5
+#: winguhub/share/templates/repo/share_out_repos.html:5
+#: winguhub/share/templates/repo/shared_links.html:5
+#: winguhub/templates/org_base.html:18 winguhub/templates/view_file_base.html:33
+#: winguhub/templates/snippets/file_share_popup.html:48
+#: winguhub/templates/snippets/my_owned_repos.html:38
+#: winguhub/templates/snippets/my_owned_repos.html:86
+#: winguhub/templates/snippets/repo_dir_data.html:22
+#: winguhub/templates/snippets/repo_dir_data.html:58
+#: winguhub/templates/snippets/repo_dir_data.html:106
+msgid "Share"
+msgstr "共享"
+
+#: winguhub/share/templates/repo/priv_shared_files.html:12
+#: winguhub/share/templates/repo/share_out_repos.html:12
+#: winguhub/share/templates/repo/shared_links.html:12
+#: winguhub/templates/admin_base.html:20
+#, fuzzy
+msgid "Links"
+msgstr "鏈接："
+
+#: winguhub/share/templates/repo/priv_shared_files.html:13
+#: winguhub/share/templates/repo/share_out_repos.html:13
+#: winguhub/share/templates/repo/shared_links.html:13
+#, fuzzy
+msgid "Private Shares"
+msgstr "退出共享"
+
+#: winguhub/share/templates/repo/priv_shared_files.html:22
+msgid "From Others"
+msgstr ""
+
+#: winguhub/share/templates/repo/priv_shared_files.html:23
+msgid "To Others"
+msgstr ""
+
+#: winguhub/share/templates/repo/priv_shared_files.html:31
+msgid "From"
+msgstr ""
+
+#: winguhub/share/templates/repo/priv_shared_files.html:59
+msgid "To"
+msgstr ""
+
+#: winguhub/share/templates/repo/priv_shared_files.html:83
+#, fuzzy
+msgid "You don't have any private shared files"
+msgstr "你還沒有星標文件"
+
+#: winguhub/share/templates/repo/priv_shared_files.html:84
+msgid ""
+"You can share a single file with a registered user if you don't want to "
+"share a whole library."
+msgstr ""
+
+#: winguhub/share/templates/repo/share_out_repos.html:24
+msgid "Share To"
+msgstr "共享給"
+
+#: winguhub/share/templates/repo/share_out_repos.html:25
+msgid "Permission"
+msgstr "讀寫權限"
+
+#: winguhub/share/templates/repo/share_out_repos.html:69
+msgid "You have not shared any library"
+msgstr "你還沒有共享任何資料庫"
+
+#: winguhub/share/templates/repo/share_out_repos.html:70
+msgid ""
+"You can share libraries to your friends and colleagues by clicking the share "
+"icon of your own libraries in your home page or creating a new library in "
+"groups you are in."
+msgstr ""
+"你可以通過在你的個人頁面點擊你自己的資料庫的共享圖標, 或是在你所在的小組裏創"
+"建一個新的資料庫來將你的資料庫共享給你的朋友和同事。"
+
+#: winguhub/share/templates/repo/share_out_repos.html:114
+msgid "Edit succeeded"
+msgstr "權限修改成功"
+
+#: winguhub/share/templates/repo/share_out_repos.html:121
+msgid "Edit failed."
+msgstr "權限修改失敗"
+
+#: winguhub/share/templates/repo/shared_links.html:25
+msgid "Visits"
+msgstr "訪問次數"
+
+#: winguhub/share/templates/repo/shared_links.html:40
+#: winguhub/templates/file_revisions.html:53
+#: winguhub/templates/repo_view_snapshot.html:42
+msgid "View"
+msgstr "查看"
+
+#: winguhub/share/templates/repo/shared_links.html:41
+#: winguhub/templates/sysadmin/sys_publink_admin.html:22
+msgid "Remove"
+msgstr "刪除"
+
+#: winguhub/share/templates/repo/shared_links.html:49
+msgid "You don't have any shared link"
+msgstr "你還沒有外鏈"
+
+#: winguhub/share/templates/repo/shared_links.html:50
+msgid ""
+"You can share a folder or a file when you view a library, or share a file "
+"when you view it."
+msgstr ""
+"你可以在查看一個資料庫時共享裏面的文件和目錄，或者查看文件時共享這個文件。"
+
+#: winguhub/share/templates/repo/user_share_list.html:57
+#: winguhub/templates/snippets/my_owned_repos.html:134
+msgid "Leave Share"
+msgstr "退出共享"
+
+#: winguhub/share/templates/repo/user_share_list.html:67
+#, python-format
+msgid "You have no library sharing with %(to_email)s."
+msgstr "你和 %(to_email)s 之間沒有共享的資料庫。"
+
+#: winguhub/templates/404.html:6
+msgid "Sorry, but the requested page could not be found."
+msgstr "對不起，你訪問的頁面不存在。"
+
+#: winguhub/templates/admin_base.html:11 winguhub/templates/pubgrp.html:16
+#: winguhub/templates/pubrepo.html:17 winguhub/templates/pubuser.html:16
+msgid "Users"
+msgstr "成員"
+
+#: winguhub/templates/admin_base.html:17
+msgid "Notifications"
+msgstr "通知"
+
+#: winguhub/templates/base.html:38
+msgid "System Admin"
+msgstr "系統管理"
+
+#: winguhub/templates/base.html:39
+msgid "Workspace"
+msgstr "個人工作臺"
+
+#: winguhub/templates/base.html:46
+msgid "send a message"
+msgstr "發送消息"
+
+#: winguhub/templates/base.html:47
+msgid "unread messages"
+msgstr "未讀消息"
+
+#: winguhub/templates/base.html:49 winguhub/templates/registration/login.html:3
+#: winguhub/templates/registration/login.html:6
+#: winguhub/templates/registration/password_reset_complete.html:8
+msgid "Log In"
+msgstr "登錄"
+
+#: winguhub/templates/base.html:51
+#: winguhub/templates/registration/registration_form.html:9
+msgid "Signup"
+msgstr "註冊"
+
+#: winguhub/templates/base.html:61
+msgid "Log out"
+msgstr "退出"
+
+#: winguhub/templates/base.html:68
+msgid "message..."
+msgstr "消息..."
+
+#: winguhub/templates/base.html:71
+msgid "Add files"
+msgstr "添加文件"
+
+#: winguhub/templates/base.html:96
+msgid "Search files in this wiki"
+msgstr "在當前維基搜索文件"
+
+#: winguhub/templates/base.html:96
+msgid "Search files in this library"
+msgstr "在當前資料庫搜索文件"
+
+#: winguhub/templates/base.html:99 winguhub/templates/base.html.py:105
+msgid "Search Files"
+msgstr "搜索文件"
+
+#: winguhub/templates/base.html:101
+msgid "advanced"
+msgstr "高級"
+
+#: winguhub/templates/base.html:109 winguhub/templates/base.html.py:113
+#: winguhub/templates/base.html:116
+msgid "In all libraries"
+msgstr "在所有資料庫"
+
+#: winguhub/templates/base.html:110
+msgid "In this wiki"
+msgstr "在當前維基"
+
+#: winguhub/templates/base.html:110
+msgid "In this library"
+msgstr "在當前資料庫"
+
+#: winguhub/templates/base.html:114
+#, python-format
+msgid "in %(name)s"
+msgstr "在 %(name)s"
+
+#: winguhub/templates/base.html:122 winguhub/templates/base.html.py:125
+msgid "All file types"
+msgstr "所有文件類型"
+
+#: winguhub/templates/base.html:123 winguhub/templates/base.html.py:126
+msgid "Custom file types"
+msgstr "自定義文件類型"
+
+#: winguhub/templates/base.html:135
+msgid "Text files"
+msgstr "文本文件"
+
+#: winguhub/templates/base.html:136 winguhub/templates/base.html.py:202
+msgid "Documents"
+msgstr "文檔"
+
+#: winguhub/templates/base.html:137
+msgid "Images"
+msgstr "圖片"
+
+#: winguhub/templates/base.html:138
+msgid "Video"
+msgstr "視頻"
+
+#: winguhub/templates/base.html:139
+msgid "Audio"
+msgstr "音頻"
+
+#: winguhub/templates/base.html:140
+msgid "svg"
+msgstr ""
+
+#: winguhub/templates/base.html:141
+msgid "pdf"
+msgstr ""
+
+#: winguhub/templates/base.html:142
+msgid "seaf"
+msgstr ""
+
+#: winguhub/templates/base.html:143
+msgid "markdown"
+msgstr ""
+
+#: winguhub/templates/base.html:145
+msgid "Input file extensions here, separate with ','"
+msgstr "輸入文件後綴，以','分隔"
+
+#: winguhub/templates/base.html:146
+msgid "Please select at least 1 file type or input at least 1 file extension"
+msgstr "請至少選擇一種文件類型或一種文件後綴"
+
+#: winguhub/templates/base.html:190
+msgid "Introduction"
+msgstr "介紹"
+
+#: winguhub/templates/base.html:192
+msgid "Forum"
+msgstr "論壇"
+
+#: winguhub/templates/base.html:196
+msgid "Client"
+msgstr "客戶端"
+
+#: winguhub/templates/base.html:198
+msgid "Seafile for Windows, Mac and Linux"
+msgstr "Windows, Mac and Linux"
+
+#: winguhub/templates/base.html:204
+msgid "Help"
+msgstr "使用幫助"
+
+#: winguhub/templates/base.html:209
+msgid "Server Version: "
+msgstr "服務器版本："
+
+#: winguhub/templates/base.html:210
+msgid "Seafile"
+msgstr "海文互知"
+
+#: winguhub/templates/base.html:211
+msgid "Contact Us"
+msgstr "聯系我們"
+
+#: winguhub/templates/base.html:298
+msgid "send to: click to select contacts"
+msgstr "發送給：點擊選擇聯系人"
+
+#: winguhub/templates/base.html:304
+msgid "please add contacts at first"
+msgstr "請先添加聯系人"
+
+#: winguhub/templates/base.html:308
+msgid "Failed to get your contacts for sending a message."
+msgstr "獲取聯系人失敗，無法發送消息。"
+
+#: winguhub/templates/base.html:340
+#, fuzzy
+msgid "You don't have any library at present"
+msgstr "你還沒有星標文件"
+
+#: winguhub/templates/client_mgmt.html:6 winguhub/templates/client_mgmt.html:15
+#: winguhub/templates/myhome.html:15 winguhub/templates/wiki/personal_wiki.html:15
+msgid "Clients"
+msgstr "客戶端"
+
+#: winguhub/templates/client_mgmt.html:14 winguhub/templates/myhome.html:14
+#: winguhub/templates/wiki/personal_wiki.html:6
+#: winguhub/templates/wiki/personal_wiki.html:14
+#: winguhub/templates/wiki/personal_wiki_pages.html:6
+#: winguhub/templates/wiki/personal_wiki_pages.html:14
+msgid "Personal Wiki"
+msgstr "個人維基"
+
+#: winguhub/templates/client_mgmt.html:27
+msgid "Client Name"
+msgstr "客戶端名稱"
+
+#: winguhub/templates/client_mgmt.html:28
+msgid "IP"
+msgstr ""
+
+#: winguhub/templates/client_mgmt.html:29
+msgid "Last Sync"
+msgstr "最後同步"
+
+#: winguhub/templates/client_mgmt.html:56
+msgid "Unsync"
+msgstr "取消同步"
+
+#: winguhub/templates/client_mgmt.html:62
+msgid "You do not have connected clients"
+msgstr "你還沒有連接的客戶端"
+
+#: winguhub/templates/client_mgmt.html:63
+msgid ""
+"The libraries synced to desktop clients are listed in this page. You can see "
+"the client's name and its IP address. You may unsync a client from a library "
+"if you no longer want to sync it."
+msgstr ""
+"這裏會列出所有通過桌面客戶端同步的資料庫。你可以查看客戶端的名稱和IP地址。你"
+"也可以斷開一個資料庫所連接的客戶端。"
+
+#: winguhub/templates/client_mgmt.html:72
+msgid "Unsync Client"
+msgstr "取消同步"
+
+#: winguhub/templates/client_mgmt.html:73
+#, python-format
+msgid "Are you sure to unsync client %s ?"
+msgstr "確定要取消同步 %s 嗎？"
+
+#: winguhub/templates/decrypt_repo_form.html:8
+msgid ""
+"This library is encrypted. Please input the password if you want to browse "
+"it online. And the password will be kept on the server for only 1 hour."
+msgstr ""
+"該資料庫已加密。如需在線查看裏面的內容，請輸入解密密碼。密碼只會在服務器上暫"
+"存1小時。"
+
+#: winguhub/templates/decrypt_repo_form.html:10
+msgid "Password: "
+msgstr "密碼："
+
+#: winguhub/templates/file_edit.html:83
+#: winguhub/templates/repo_history_view.html:38
+#: winguhub/templates/repo_recycle_view.html:16
+#: winguhub/templates/shared_file_view.html:17
+#: winguhub/templates/view_shared_dir.html:16
+#: winguhub/templates/snippets/repo_dir_data.html:4
+msgid "Current path: "
+msgstr "當前路徑："
+
+#: winguhub/templates/file_edit.html:94
+msgid "Continue editing"
+msgstr "繼續修改"
+
+#: winguhub/templates/file_edit.html:95
+msgid "Preview"
+msgstr "預覽"
+
+#: winguhub/templates/file_edit.html:121
+msgid "Standard Syntax"
+msgstr "標準語法"
+
+#: winguhub/templates/file_edit.html:125
+msgid "Enter this"
+msgstr "輸入"
+
+#: winguhub/templates/file_edit.html:126
+msgid "To see this"
+msgstr "所見"
+
+#: winguhub/templates/file_edit.html:129 winguhub/templates/file_edit.html:130
+msgid "bold"
+msgstr "加粗"
+
+#: winguhub/templates/file_edit.html:129 winguhub/templates/file_edit.html:130
+#: winguhub/templates/file_edit.html:133 winguhub/templates/file_edit.html:134
+msgid "text"
+msgstr "文本"
+
+#: winguhub/templates/file_edit.html:133 winguhub/templates/file_edit.html:134
+msgid "italics"
+msgstr "斜體"
+
+#: winguhub/templates/file_edit.html:137 winguhub/templates/file_edit.html:140
+msgid "Header"
+msgstr "標題"
+
+#: winguhub/templates/file_edit.html:144 winguhub/templates/file_edit.html:146
+msgid "Smaller header"
+msgstr "次級標題"
+
+#: winguhub/templates/file_edit.html:149 winguhub/templates/file_edit.html:150
+msgid "Link something"
+msgstr "鏈接"
+
+#: winguhub/templates/file_edit.html:153
+msgid "alt text"
+msgstr "替換文本"
+
+#: winguhub/templates/file_edit.html:157 winguhub/templates/file_edit.html:161
+msgid "unordered list"
+msgstr "無序列表"
+
+#: winguhub/templates/file_edit.html:158 winguhub/templates/file_edit.html:162
+msgid "leave empty lines around the list"
+msgstr "在列表周圍留出空行"
+
+#: winguhub/templates/file_edit.html:167 winguhub/templates/file_edit.html:171
+msgid "ordered list"
+msgstr "有序列表"
+
+#: winguhub/templates/file_edit.html:168 winguhub/templates/file_edit.html:172
+msgid "leave empty lines"
+msgstr "留出空行"
+
+#: winguhub/templates/file_edit.html:177
+msgid "Extended Syntax for Wiki"
+msgstr "Wiki 擴展語法"
+
+#: winguhub/templates/file_edit.html:179
+msgid "or"
+msgstr "或者"
+
+#: winguhub/templates/file_edit.html:179
+msgid "internal link to another wiki page."
+msgstr "鏈接到該資料庫內部的另一個 wiki 頁面"
+
+#: winguhub/templates/file_edit.html:180
+msgid "internal link to a picture at this-library/images/pic.jpg."
+msgstr "鏈接到該資料庫內部的 images/pic.jpg"
+
+#: winguhub/templates/file_edit.html:181
+msgid "internal link to a file at this-library/folder/file.doc."
+msgstr "鏈接到該資料庫內部的 folder/file.doc"
+
+#: winguhub/templates/file_edit.html:189
+msgid "Font"
+msgstr "字體"
+
+#: winguhub/templates/file_edit.html:193
+msgid "Font Size"
+msgstr "字號"
+
+#: winguhub/templates/file_edit.html:195
+msgid "Huge"
+msgstr "大"
+
+#: winguhub/templates/file_edit.html:196
+msgid "Normal"
+msgstr "一般"
+
+#: winguhub/templates/file_edit.html:197
+msgid "Small"
+msgstr "小"
+
+#: winguhub/templates/file_edit.html:201
+msgid "Font Color"
+msgstr "文字顏色"
+
+#: winguhub/templates/file_edit.html:203
+msgid "defaut color"
+msgstr "默認顏色"
+
+#: winguhub/templates/file_edit.html:215
+msgid "Bold (Ctrl/Cmd+B)"
+msgstr "加粗 (Ctrl/Cmd+B)"
+
+#: winguhub/templates/file_edit.html:216
+msgid "Italic (Ctrl/Cmd+I)"
+msgstr "斜體 (Ctrl/Cmd+I)"
+
+#: winguhub/templates/file_edit.html:217
+msgid "Strikethrough"
+msgstr "刪除線"
+
+#: winguhub/templates/file_edit.html:218
+msgid "Underline (Ctrl/Cmd+U)"
+msgstr "下劃線 (Ctrl/Cmd+U)"
+
+#: winguhub/templates/file_edit.html:221
+msgid "Bullet list"
+msgstr "無序列表"
+
+#: winguhub/templates/file_edit.html:222
+msgid "Number list"
+msgstr "有序列表"
+
+#: winguhub/templates/file_edit.html:223
+msgid "Reduce indent (Shift+Tab)"
+msgstr "減少縮進 (Shift+Tab)"
+
+#: winguhub/templates/file_edit.html:224
+msgid "Indent (Tab)"
+msgstr "增加縮進 (Tab)"
+
+#: winguhub/templates/file_edit.html:227
+msgid "Align Left (Ctrl/Cmd+L)"
+msgstr "左對齊 (Ctrl/Cmd+L)"
+
+#: winguhub/templates/file_edit.html:228
+msgid "Center (Ctrl/Cmd+E)"
+msgstr "居中對齊 (Ctrl/Cmd+E)"
+
+#: winguhub/templates/file_edit.html:229
+msgid "Align Right (Ctrl/Cmd+R)"
+msgstr "右對齊 (Ctrl/Cmd+R)"
+
+#: winguhub/templates/file_edit.html:230
+msgid "Justify (Ctrl/Cmd+J)"
+msgstr "兩邊對齊 (Ctrl/Cmd+J)"
+
+#: winguhub/templates/file_edit.html:233
+msgid "Hyperlink"
+msgstr "超鏈接"
+
+#: winguhub/templates/file_edit.html:236
+msgid "Add"
+msgstr "添加"
+
+#: winguhub/templates/file_edit.html:238
+msgid "Remove Hyperlink"
+msgstr "刪除超鏈接"
+
+#: winguhub/templates/file_edit.html:242
+msgid "Insert picture (or just drag & drop)"
+msgstr "插入圖片（或者直接拖放）"
+
+#: winguhub/templates/file_edit.html:245
+msgid "Undo (Ctrl/Cmd+Z)"
+msgstr "撤銷 (Ctrl/Cmd+Z)"
+
+#: winguhub/templates/file_edit.html:246
+msgid "Redo (Ctrl/Cmd+Y)"
+msgstr "重做 (Ctrl/Cmd+Y)"
+
+#: winguhub/templates/file_edit.html:346
+msgid "Strong <strong> Ctrl+B"
+msgstr "加強 <strong> Ctrl+B"
+
+#: winguhub/templates/file_edit.html:347
+msgid "strong text"
+msgstr "加強文本"
+
+#: winguhub/templates/file_edit.html:349
+msgid "Emphasis <em> Ctrl+I"
+msgstr "強調 <em> Ctrl+I"
+
+#: winguhub/templates/file_edit.html:350
+msgid "emphasized text"
+msgstr "強調文本"
+
+#: winguhub/templates/file_edit.html:352
+msgid "Hyperlink <a> Ctrl+L"
+msgstr "超鏈接 <a> Ctrl+L"
+
+#: winguhub/templates/file_edit.html:353
+msgid "enter link description here"
+msgstr "在這裏輸入鏈接描述"
+
+#: winguhub/templates/file_edit.html:354
+msgid "Insert Hyperlink"
+msgstr "插入超鏈接"
+
+#: winguhub/templates/file_edit.html:354 winguhub/templates/file_edit.html:364
+msgid "optional title"
+msgstr "可選的提示文本"
+
+#: winguhub/templates/file_edit.html:356
+msgid "Blockquote <blockquote> Ctrl+Q"
+msgstr "塊引用 <blockquote> Ctrl+Q"
+
+#: winguhub/templates/file_edit.html:357
+msgid "Blockquote"
+msgstr "塊引用"
+
+#: winguhub/templates/file_edit.html:359
+msgid "Code Sample <pre><code> Ctrl+K"
+msgstr "代碼樣例 <pre><code> Ctrl+K"
+
+#: winguhub/templates/file_edit.html:360
+msgid "enter code here"
+msgstr "在此輸入代碼"
+
+#: winguhub/templates/file_edit.html:362
+msgid "Image <img> Ctrl+G"
+msgstr "圖片 <img> Ctrl+G"
+
+#: winguhub/templates/file_edit.html:363
+msgid "enter image description here"
+msgstr "在此輸入圖片描述"
+
+#: winguhub/templates/file_edit.html:364
+msgid "Insert Image"
+msgstr "插入圖片"
+
+#: winguhub/templates/file_edit.html:366
+msgid "Numbered List <ol> Ctrl+O"
+msgstr "有序列表 <ol> Ctrl+O"
+
+#: winguhub/templates/file_edit.html:367
+msgid "Bulleted List <ul> Ctrl+U"
+msgstr "無序列表 <ul> Ctrl+U"
+
+#: winguhub/templates/file_edit.html:368
+msgid "List item"
+msgstr "列表項"
+
+#: winguhub/templates/file_edit.html:370
+msgid "Heading <h1>/<h2> Ctrl+H"
+msgstr "標題 <h1>/<h2> Ctrl+H"
+
+#: winguhub/templates/file_edit.html:371
+msgid "Heading"
+msgstr "標題"
+
+#: winguhub/templates/file_edit.html:373
+msgid "Horizontal Rule <hr> Ctrl+R"
+msgstr "水平線 <hr> Ctrl+R"
+
+#: winguhub/templates/file_edit.html:374
+msgid "Undo - Ctrl+Z"
+msgstr "撤銷 - Ctrl+Z"
+
+#: winguhub/templates/file_edit.html:375
+msgid "Redo - Ctrl+Y"
+msgstr "重做 - Ctrl+Y"
+
+#: winguhub/templates/file_edit.html:376
+msgid "Redo - Ctrl+Shift+Z"
+msgstr "重做 - Ctrl+Shift+Z"
+
+#: winguhub/templates/file_edit.html:378
+msgid "Editing Help"
+msgstr "編輯幫助"
+
+#: winguhub/templates/file_edit.html:466
+msgid "Submit failed. Please check the network."
+msgstr "提交失敗。請檢查網絡是否已連接。"
+
+#: winguhub/templates/file_edit.html:484
+#: winguhub/templates/snippets/repo_decrypt_js.html:11
+msgid "Password is required."
+msgstr "密碼為必填項"
+
+#: winguhub/templates/file_edit.html:486
+msgid "Password should be 3 to 30 characters."
+msgstr "密碼為3到30個字符"
+
+#: winguhub/templates/file_revisions.html:5 winguhub/templates/repo.html:120
+#: winguhub/templates/repo_history.html:5
+#: winguhub/templates/view_file_base.html:66
+#: winguhub/templates/snippets/current_commit.html:19
+#: winguhub/templates/snippets/repo_dir_data.html:117
+msgid "History"
+msgstr "歷史"
+
+#: winguhub/templates/file_revisions.html:8
+msgid "'s Version History"
+msgstr " 版本歷史"
+
+#: winguhub/templates/file_revisions.html:9
+msgid ""
+"Tip:a new version will be generated after each modification, and you can "
+"restore the file to a previous version."
+msgstr ""
+"Tip：每次修改後都會生成一個新的版本, 你可以將當前文件恢復到之前的某個版本。"
+
+#: winguhub/templates/file_revisions.html:12 winguhub/templates/text_diff.html:10
+msgid "Current Path:"
+msgstr "當前路徑："
+
+#: winguhub/templates/file_revisions.html:26
+#: winguhub/templates/repo_view_snapshot.html:16
+msgid "Last Modifier"
+msgstr "最後修改者"
+
+#: winguhub/templates/file_revisions.html:27
+#: winguhub/templates/repo_history_view.html:53
+#: winguhub/templates/repo_recycle_view.html:55
+#: winguhub/templates/view_shared_dir.html:33
+#: winguhub/templates/snippets/repo_dir_data.html:33
+msgid "Size"
+msgstr "大小"
+
+#: winguhub/templates/file_revisions.html:35
+msgid "(current version)"
+msgstr "(當前版本)"
+
+#: winguhub/templates/file_revisions.html:50
+#: winguhub/templates/repo_recycle_view.html:66
+#: winguhub/templates/repo_recycle_view.html:83
+#: winguhub/templates/repo_view_snapshot.html:43
+msgid "Restore"
+msgstr "還原"
+
+#: winguhub/templates/file_revisions.html:52
+#: winguhub/templates/history_file_view.html:63 winguhub/templates/repo.html:21
+#: winguhub/templates/shared_file_view.html:35
+#: winguhub/templates/view_file_base.html:78
+#: winguhub/templates/view_history_file.html:34
+#: winguhub/templates/view_shared_dir.html:48
+#: winguhub/templates/view_shared_dir.html:66
+#: winguhub/templates/snippets/repo_dir_data.html:56
+#: winguhub/templates/snippets/repo_dir_data.html:102
+msgid "Download"
+msgstr "下載"
+
+#: winguhub/templates/file_revisions.html:55
+msgid "Diff"
+msgstr ""
+
+#: winguhub/templates/history_file_view.html:16
+#: winguhub/templates/repo_view_snapshot.html:7
+#: winguhub/templates/view_snapshot_file.html:7
+msgid "snapshots"
+msgstr "鏡像"
+
+#: winguhub/templates/history_file_view.html:23
+#: winguhub/templates/view_history_file.html:16
+msgid "history"
+msgstr "歷史"
+
+#: winguhub/templates/history_file_view.html:26
+#: winguhub/templates/text_diff.html:7
+#: winguhub/templates/view_history_file.html:19
+msgid "Back to file versions"
+msgstr "返回文件版本列表"
+
+#: winguhub/templates/history_file_view.html:30
+#: winguhub/templates/history_file_view.html:41
+#: winguhub/templates/repo_recycle_view.html:8
+#: winguhub/templates/repo_recycle_view.html:17
+#: winguhub/templates/view_trash_file.html:6
+msgid "'s trash"
+msgstr "文件回收站"
+
+#: winguhub/templates/history_file_view.html:31
+#: winguhub/templates/repo_history.html:10
+#: winguhub/templates/repo_recycle_view.html:9
+#: winguhub/templates/view_trash_file.html:7
+msgid "Back to Library"
+msgstr "返回資料庫"
+
+#: winguhub/templates/history_file_view.html:38
+#: winguhub/templates/view_file_base.html:21
+#: winguhub/templates/view_history_file.html:27
+#: winguhub/templates/view_snapshot_file.html:13
+#: winguhub/templates/view_trash_file.html:11
+msgid "Current Path: "
+msgstr "當前路徑："
+
+#: winguhub/templates/myhome.html:5 winguhub/templates/myhome_base.html:8
+msgid "My Home"
+msgstr "我的頁面"
+
+#: winguhub/templates/myhome.html:24
+msgid "Account"
+msgstr "個人基本信息"
+
+#: winguhub/templates/myhome.html:26 winguhub/templates/myhome.html.py:29
+#: winguhub/templates/sysadmin/userinfo.html:9
+msgid "Profile"
+msgstr "設置"
+
+#: winguhub/templates/myhome.html:31
+msgid "Payment"
+msgstr "支付"
+
+#: winguhub/templates/myhome.html:39
+msgid "Reminding..."
+msgstr "提醒..."
+
+#: winguhub/templates/myhome.html:44
+msgid ""
+"\n"
+"        has new discussion\n"
+"        "
+msgid_plural ""
+"\n"
+"        have new discussions\n"
+"        "
+msgstr[0] ""
+"\n"
+"        有新討論\n"
+"        "
+
+#: winguhub/templates/myhome.html:53
+#, python-format
+msgid ""
+"\n"
+"        one group discussion has new reply\n"
+"        "
+msgid_plural ""
+"\n"
+"        %(counter)s group discussions have new replies\n"
+"        "
+msgstr[0] ""
+"\n"
+"        %(counter)s 條群組討論有新回復\n"
+"        "
+
+#: winguhub/templates/myhome.html:65
+msgid "Space/Traffic Usage"
+msgstr "空間/流量使用"
+
+#: winguhub/templates/myhome.html:68 winguhub/templates/sysadmin/userinfo.html:26
+msgid "Total"
+msgstr "總空間"
+
+#: winguhub/templates/myhome.html:70 winguhub/templates/myhome.html.py:72
+msgid "Self"
+msgstr "個人"
+
+#: winguhub/templates/myhome.html:70 winguhub/templates/myhome.html.py:72
+#: winguhub/templates/sysadmin/userinfo.html:28
+msgid "Sharing"
+msgstr "共享"
+
+#: winguhub/templates/myhome.html:81
+msgid "Traffic this month:"
+msgstr "本月已用流量："
+
+#: winguhub/templates/myhome_base.html:21
+msgid "Organization"
+msgstr "機構"
+
+#: winguhub/templates/org_base.html:7
+msgid ""
+"Organization will be removed in next version, data will be merged into your "
+"current account."
+msgstr "團體將在下個版本移除，相關數據會遷移到你當前的帳號下。"
+
+#: winguhub/templates/org_base.html:12
+msgid "Personal"
+msgstr "個人頁面"
+
+#: winguhub/templates/org_base.html:21
+msgid "Public Library"
+msgstr "公共資料"
+
+#: winguhub/templates/org_base.html:24
+msgid "Public Info"
+msgstr "公共信息"
+
+#: winguhub/templates/pubgrp.html:34
+msgid "No one has created any groups yet"
+msgstr "還沒有群組被創建"
+
+#: winguhub/templates/pubgrp.html:35
+msgid ""
+"You can click \"Add Group\" button under \"Group\" label to create a group. "
+msgstr "你可以到“群組”頁面點擊“新建群組”按鈕創建一個群組。"
+
+#: winguhub/templates/pubrepo.html:27 winguhub/templates/sysadmin/userinfo.html:70
+msgid "Share From"
+msgstr "共享來源"
+
+#: winguhub/templates/pubrepo.html:51
+msgid "No public library"
+msgstr "當前沒有公共資料"
+
+#: winguhub/templates/pubrepo.html:52
+msgid ""
+"You can create a public library by clicking \"New Library\" button, others "
+"can view and download this library."
+msgstr ""
+"你可以點擊“新建資料庫”按鈕創建一個公開的資料庫，網站內的其他人都可以查看下載"
+"這個資料庫。"
+
+#: winguhub/templates/repo.html:23
+msgid "Settings"
+msgstr "設置"
+
+#: winguhub/templates/repo.html:26
+msgid "Trash"
+msgstr "回收站"
+
+#: winguhub/templates/repo.html:33
+msgid "Size: "
+msgstr "大小："
+
+#: winguhub/templates/repo.html:48
+msgid "Upload Files"
+msgstr "上傳文件"
+
+#: winguhub/templates/repo.html:50 winguhub/templates/repo.html.py:89
+msgid "The owner of this library has ran out of space."
+msgstr "該資料庫擁有者的空間已用完。"
+
+#: winguhub/templates/repo.html:58
+#, fuzzy
+msgid "Add Files"
+msgstr "添加文件"
+
+#: winguhub/templates/repo.html:63
+#, fuzzy
+msgid "Start All"
+msgstr "添加星標"
+
+#: winguhub/templates/repo.html:67
+#, fuzzy
+msgid "Cancel All"
+msgstr "取消"
+
+#: winguhub/templates/repo.html:71
+msgid ""
+"Drag & Drop is supported for Chrome, Safari 5.0+, Firefox 4.0+, IE 10.0+"
+msgstr ""
+
+#: winguhub/templates/repo.html:72
+#, python-format
+msgid "Total size should be smaller than %(max_file_size)s"
+msgstr ""
+
+#: winguhub/templates/repo.html:87
+#, fuzzy, python-format
+msgid "Update %(file_name)s"
+msgstr "更新文件 "
+
+#: winguhub/templates/repo.html:95
+#, fuzzy
+msgid "Choose a file"
+msgstr "海文互知"
+
+#: winguhub/templates/repo.html:98
+#, python-format
+msgid "Smaller than %(max_file_size)s"
+msgstr ""
+
+#: winguhub/templates/repo.html:113
+msgid "Library Settings"
+msgstr "資料庫設置"
+
+#: winguhub/templates/repo.html:121
+msgid "Keep full history"
+msgstr "保留所有歷史"
+
+#: winguhub/templates/repo.html:122
+msgid "Don't keep history"
+msgstr "不保留歷史"
+
+#: winguhub/templates/repo.html:123
+msgid "Only keep a period of history:"
+msgstr "僅保留一段時間的歷史:"
+
+#: winguhub/templates/repo.html:123
+msgid "days"
+msgstr "天"
+
+#: winguhub/templates/repo.html:132
+#: winguhub/templates/snippets/repo_dir_data.html:16
+msgid "New Directory"
+msgstr "新建目錄"
+
+#: winguhub/templates/repo.html:133
+msgid "Directory Name"
+msgstr "目錄名"
+
+#: winguhub/templates/repo.html:141
+#: winguhub/templates/snippets/repo_dir_data.html:17
+msgid "New File"
+msgstr "新建文件"
+
+#: winguhub/templates/repo.html:143
+msgid "Featured File Type"
+msgstr "特色文件類型"
+
+#: winguhub/templates/repo.html:144 winguhub/templates/repo.html.py:150
+msgid "Click to choose"
+msgstr "點擊選擇"
+
+#: winguhub/templates/repo.html:144
+msgid "online Rich Text format."
+msgstr "在線富文本格式"
+
+#: winguhub/templates/repo.html:150
+msgid "simple markup format."
+msgstr "簡單的標記格式"
+
+#: winguhub/templates/repo.html:157
+#: winguhub/templates/snippets/my_owned_repos.html:153
+msgid "File Name"
+msgstr "文件名稱"
+
+#: winguhub/templates/repo.html:166
+msgid "Current Library"
+msgstr "當前資料庫"
+
+#: winguhub/templates/repo.html:168
+msgid "Other Libraries"
+msgstr "其他資料庫"
+
+#: winguhub/templates/repo.html:176 winguhub/templates/shared_file_view.html:49
+msgid "Please click and choose a directory."
+msgstr "請點擊選擇目標目錄。"
+
+#: winguhub/templates/repo.html:182
+#, fuzzy, python-format
+msgid "Rename %(name)s as:"
+msgstr "在 %(name)s"
+
+#: winguhub/templates/repo.html:198
+#, fuzzy, python-format
+msgid "Sync %(dir_name)s"
+msgstr "在 %(name)s"
+
+#: winguhub/templates/repo.html:199
+msgid "You need to create a sub-library from this directory to sync it."
+msgstr ""
+
+#: winguhub/templates/repo.html:200
+#: winguhub/templates/snippets/file_share_popup.html:45
+#, fuzzy
+msgid "Create"
+msgstr "創建時間"
+
+#: winguhub/templates/repo.html:202
+msgid "The sub-library used to sync this directory already exists."
+msgstr ""
+
+#: winguhub/templates/repo.html:203
+#: winguhub/templates/snippets/repo_dir_data.html:61
+#, fuzzy
+msgid "Sync"
+msgstr "最後同步"
+
+#: winguhub/templates/repo.html:204
+#: winguhub/templates/snippets/file_share_popup.html:49
+msgid ""
+"A sub-library can be created from any folder. It can be independently synced "
+"and shared. Files in the sub-library will be automatically kept in sync with "
+"those in the directory of the origin library."
+msgstr ""
+
+#: winguhub/templates/repo.html:228
+#, fuzzy
+msgid "File is too big"
+msgstr "文件名過長"
+
+#: winguhub/templates/repo.html:229
+#, fuzzy
+msgid "File is too small"
+msgstr "文件名過長"
+
+#: winguhub/templates/repo.html:230
+msgid "Filetype not allowed"
+msgstr ""
+
+#: winguhub/templates/repo.html:231
+msgid "Max number of files exceeded"
+msgstr ""
+
+#: winguhub/templates/repo.html:232
+msgid "Uploaded bytes exceed file size"
+msgstr ""
+
+#: winguhub/templates/repo.html:233
+msgid "Empty file upload result"
+msgstr ""
+
+#: winguhub/templates/repo.html:235
+#, fuzzy
+msgid "Error"
+msgstr "失敗："
+
+#: winguhub/templates/repo.html:236
+#, fuzzy
+msgid "Start"
+msgstr "添加星標"
+
+#: winguhub/templates/repo.html:616
+#, fuzzy, python-format
+msgid "Successfully deleted %(name)s"
+msgstr "%s 刪除成功。"
+
+#: winguhub/templates/repo.html:644
+#, fuzzy
+msgid "Rename File"
+msgstr "重命名"
+
+#: winguhub/templates/repo.html:646
+#, fuzzy
+msgid "Rename Directory"
+msgstr "重命名了目錄"
+
+#: winguhub/templates/repo.html:664
+#, fuzzy
+msgid "Copy File"
+msgstr "復制"
+
+#: winguhub/templates/repo.html:666
+#, fuzzy
+msgid "Move File"
+msgstr "移動"
+
+#: winguhub/templates/repo.html:668
+#, fuzzy
+msgid "Copy Directory"
+msgstr "目錄"
+
+#: winguhub/templates/repo.html:670
+#, fuzzy
+msgid "Move Directory"
+msgstr "移動了目錄"
+
+#: winguhub/templates/repo.html:675
+#, fuzzy, python-format
+msgid "Copy %(name)s to:"
+msgstr "在 %(name)s"
+
+#: winguhub/templates/repo.html:678
+#, fuzzy, python-format
+msgid "Move %(name)s to:"
+msgstr "在 %(name)s"
+
+#: winguhub/templates/repo.html:763 winguhub/templates/repo.html.py:917
+#: winguhub/templates/snippets/repo_dir_data.html:83
+msgid "unstarred"
+msgstr "未加星標"
+
+#: winguhub/templates/repo.html:765
+#: winguhub/templates/snippets/repo_dir_data.html:81
+msgid "starred"
+msgstr "已加星標"
+
+#: winguhub/templates/repo.html:849 winguhub/templates/repo.html.py:890
+#, fuzzy
+msgid "It is required."
+msgstr "郵箱為必填項。"
+
+#: winguhub/templates/repo.html:855
+msgid "Only an extension there, please input a name."
+msgstr "請輸入完整的文件名。"
+
+#: winguhub/templates/repo.html:865
+#, fuzzy
+msgid "Creating..."
+msgstr "獲取中...請稍侯"
+
+#: winguhub/templates/repo.html:894
+#, fuzzy
+msgid "You have not renamed it."
+msgstr "你還未下載"
+
+#: winguhub/templates/repo.html:925
+#, fuzzy, python-format
+msgid "Successfully renamed %(old_name)s to %(new_name)s"
+msgstr "%(old)s 已重命名為 %(new)s"
+
+#: winguhub/templates/repo.html:941
+#, fuzzy
+msgid "Invalid destination path"
+msgstr "服務器設置錯誤"
+
+#: winguhub/templates/repo.html:1018
+#, fuzzy
+msgid "Contacts is required."
+msgstr "聯系人是必填項"
+
+#: winguhub/templates/repo.html:1066
+#, fuzzy
+msgid "Creating sub-library..."
+msgstr "創建了資料庫"
+
+#: winguhub/templates/repo.html:1080
+#, fuzzy
+msgid "Sub-library is created."
+msgstr "該資料庫已加密"
+
+#: winguhub/templates/repo.html:1099
+#, fuzzy
+msgid "Please select at least 1 group or 1 contact."
+msgstr "請至少選擇一個群組。"
+
+#: winguhub/templates/repo_access_deny.html:8
+msgid "You can't access this library."
+msgstr "無法在線查看該資料庫。"
+
+#: winguhub/templates/repo_history.html:9
+msgid "modification history"
+msgstr "修改歷史"
+
+#: winguhub/templates/repo_history.html:14
+msgid ""
+"Tip: A snapshot will be generated after modification, which records the "
+"library state before this modification."
+msgstr "Tip：在每次修改後會生成一個鏡像，記錄修改之前的目錄狀態。"
+
+#: winguhub/templates/repo_history.html:14
+msgid "View Snapshot"
+msgstr "查看鏡像"
+
+#: winguhub/templates/repo_history.html:60
+#: winguhub/templates/repo_view_snapshot.html:58
+#: winguhub/templates/sysadmin/sys_group_admin.html:37
+#: winguhub/templates/sysadmin/sys_publink_admin.html:38
+#: winguhub/templates/sysadmin/sys_repo_admin.html:37
+#: winguhub/templates/sysadmin/sys_useradmin.html:72
+msgid "Per page: "
+msgstr "每頁："
+
+#: winguhub/templates/repo_history_view.html:8
+msgid "snapshot"
+msgstr "鏡像"
+
+#: winguhub/templates/repo_history_view.html:9
+msgid "Back to snapshots"
+msgstr "返回鏡像列表"
+
+#: winguhub/templates/repo_history_view.html:33
+msgid "Can't view this library"
+msgstr "無法在線查看該資料庫。"
+
+#: winguhub/templates/repo_history_view.html:58
+#: winguhub/templates/repo_recycle_view.html:61
+msgid "Directory"
+msgstr "目錄"
+
+#: winguhub/templates/repo_recycle_view.html:32
+#: winguhub/templates/repo_recycle_view.html:34
+msgid "a week"
+msgstr "一周內"
+
+#: winguhub/templates/repo_recycle_view.html:37
+#: winguhub/templates/repo_recycle_view.html:39
+msgid "a month"
+msgstr "一個月內"
+
+#: winguhub/templates/repo_recycle_view.html:42
+#: winguhub/templates/repo_recycle_view.html:44
+msgid "all"
+msgstr "全部"
+
+#: winguhub/templates/repo_recycle_view.html:54
+msgid "Delete Time"
+msgstr "刪除時間"
+
+#: winguhub/templates/repo_view_snapshot.html:8
+msgid "Back to modification history"
+msgstr "返回修改歷史"
+
+#: winguhub/templates/repo_view_snapshot.html:15
+msgid "Create Time"
+msgstr "生成時間"
+
+#: winguhub/templates/repo_view_snapshot.html:17
+#: winguhub/templates/view_file_markdown.html:7
+#: winguhub/templates/view_file_text.html:18
+msgid "Detail"
+msgstr "修改內容"
+
+#: winguhub/templates/repo_view_snapshot.html:86
+msgid "Restore Library"
+msgstr "還原資料庫"
+
+#: winguhub/templates/repo_view_snapshot.html:87
+msgid "Are you sure you want to restore this library?"
+msgstr "確定要還原該資料庫？"
+
+#: winguhub/templates/wingufile_access_check.html:6
+msgid "Preparing, please wait..."
+msgstr "處理中，請稍候..."
+
+#: winguhub/templates/wingufile_access_check.html:7
+msgid ""
+"No running Seafile client is detected. If you're sure Seafile client is "
+"running, click the following link to continue downloading:"
+msgstr ""
+"沒有檢測到運行中的 Seafile 客戶端。如果您確定它在運行，請點擊下面的鏈接以完成"
+"下載："
+
+#: winguhub/templates/wingufile_access_check.html:8
+msgid "Your Seafile client is out of date, please upgrade to latest version."
+msgstr "你的 Seafile 客戶端版本太舊，請升級到最新版本。"
+
+#: winguhub/templates/wingufile_access_check.html:8
+msgid "Click to download."
+msgstr "點此下載"
+
+#: winguhub/templates/shared_file_view.html:26
+#: winguhub/templates/view_shared_dir.html:9
+msgid "Shared by: "
+msgstr "共享來源："
+
+#: winguhub/templates/shared_file_view.html:32
+msgid "Save to..."
+msgstr ""
+
+#: winguhub/templates/shared_file_view.html:42
+#, fuzzy
+msgid "Save To:"
+msgstr "共享給"
+
+#: winguhub/templates/shared_link_email.html:2
+#, python-format
+msgid ""
+"You're receiving this e-mail because %(email)s is sharing a file to you on "
+"%(site_name)s."
+msgstr "你收到這封郵件是因為 %(email)s 在 %(site_name)s 上共享了一個文件給你。"
+
+#: winguhub/templates/shared_link_email.html:4
+msgid "Please go to the following page and view the file:"
+msgstr "請點擊以下鏈接查看："
+
+#: winguhub/templates/text_diff.html:6
+msgid "modification details"
+msgstr "修改詳情"
+
+#: winguhub/templates/text_diff.html:22
+msgid "It's a newly-created blank file."
+msgstr "該文件為新建空白文件。"
+
+#: winguhub/templates/text_diff.html:29
+msgid "before modification"
+msgstr "修改前"
+
+#: winguhub/templates/text_diff.html:31
+msgid "after modification"
+msgstr "修改後"
+
+#: winguhub/templates/update_file_error.html:6
+msgid "Update file "
+msgstr "更新文件 "
+
+#: winguhub/templates/update_file_error.html:14
+#: winguhub/templates/upload_file_error.html:10
+msgid "error: "
+msgstr "失敗："
+
+#: winguhub/templates/upload_file_error.html:6
+msgid "Upload file"
+msgstr "上傳文件"
+
+#: winguhub/templates/upload_file_error.html:6
+msgid "to"
+msgstr "到"
+
+#: winguhub/templates/user_404.html:6
+msgid "Sorry, this user is not registered yet."
+msgstr "抱歉，該用戶還未註冊。"
+
+#: winguhub/templates/view_file_base.html:36
+#: winguhub/templates/view_file_base.html:157
+msgid "Unstar"
+msgstr "取消星標"
+
+#: winguhub/templates/view_file_base.html:38
+#: winguhub/templates/view_file_base.html:153
+msgid "Star"
+msgstr "添加星標"
+
+#: winguhub/templates/view_file_base.html:55
+#: winguhub/templates/view_file_markdown.html:7
+#: winguhub/templates/view_file_text.html:18
+msgid "updated this file"
+msgstr "更新了該文件"
+
+#: winguhub/templates/view_file_base.html:59
+#, python-format
+msgid "one contributor"
+msgid_plural " %(counter)s contributors "
+msgstr[0] " %(counter)s 個貢獻者 "
+
+#: winguhub/templates/view_file_base.html:71
+msgid "Open local file"
+msgstr "打開本地文件"
+
+#: winguhub/templates/view_file_base.html:93
+msgid "Processing..."
+msgstr "處理中..."
+
+#: winguhub/templates/view_file_base.html:96
+msgid "You have not downloaded "
+msgstr "你還未下載"
+
+#: winguhub/templates/view_file_base.html:96
+msgid "."
+msgstr "。"
+
+#: winguhub/templates/view_file_base.html:97
+msgid "Click to download"
+msgstr "點此下載"
+
+#: winguhub/templates/view_file_base.html:151
+msgid "Unstarred successfully"
+msgstr "星標取消成功"
+
+#: winguhub/templates/view_file_base.html:155
+msgid "Starred successfully"
+msgstr "星標添加成功"
+
+#: winguhub/templates/view_file_base.html:196
+msgid ""
+"Failed to find an application to open the file. Seafile will open the folder."
+msgstr "找不到打開該類型文件的程序。Seafile 將為你打開該文件所在目錄"
+
+#: winguhub/templates/view_file_base.html:200
+msgid "The file is not synchronized, you can synchronize it manually."
+msgstr "本地文件尚未與服務器同步。請打開本地目錄的自動同步，或者手動進行同步"
+
+#: winguhub/templates/view_file_base.html:202
+msgid "The file is not synchronized, please retry later."
+msgstr "本地文件尚未與服務器同步，請稍後再試"
+
+#: winguhub/templates/view_file_base.html:206
+msgid "An error occurred when open the local file."
+msgstr "打開本地文件時出錯"
+
+#: winguhub/templates/view_file_base.html:234
+msgid ""
+"You are running an old version of Seafile client, please <a target=\"_blank"
+"\">upgrade</a> it."
+msgstr "您的 Seafile 客戶端版本太低， 請先 <a target=\"_blank\">升級</a>。"
+
+#: winguhub/templates/view_file_base.html:248
+msgid ""
+"No running Seafile client is detected. If you are sure Seafile client is "
+"running, click the following link to open the local file:"
+msgstr ""
+"沒有檢測到運行中的 Seafile 客戶端。如果您確定它在運行，請點擊下面的鏈接來打開"
+"本地文件："
+
+#: winguhub/templates/view_file_image.html:15
+#: winguhub/templates/snippets/file_content_html.html:31
+msgid "you can also press ← "
+msgstr "可用方向鍵 ← "
+
+#: winguhub/templates/view_file_image.html:15
+#: winguhub/templates/snippets/file_content_html.html:31
+msgid "prev"
+msgstr "上一張"
+
+#: winguhub/templates/view_file_image.html:21
+#: winguhub/templates/snippets/file_content_html.html:37
+msgid "you can also press → "
+msgstr "可用方向鍵 → "
+
+#: winguhub/templates/view_file_image.html:21
+#: winguhub/templates/snippets/file_content_html.html:37
+msgid "next"
+msgstr "下一張"
+
+#: winguhub/templates/view_file_markdown.html:20
+#: winguhub/templates/view_file_sf.html:15
+#: winguhub/templates/view_file_text.html:31
+#: winguhub/templates/snippets/file_encoding.html:5
+msgid "Encoding:"
+msgstr "文件編碼："
+
+#: winguhub/templates/view_file_markdown.html:23
+#: winguhub/templates/view_file_sf.html:18
+#: winguhub/templates/view_file_text.html:34
+#: winguhub/templates/snippets/file_encoding.html:8
+msgid "auto detect"
+msgstr "自動檢測"
+
+#: winguhub/templates/view_file_pdf.html:30
+#: winguhub/templates/snippets/file_content_js.html:62
+msgid ""
+"<span id=\"pdf-page\"><label for=\"page-number\">Page</label> <input type="
+"\"number\" id=\"page-number\" value=\"1\" min=\"1\"></input> / <span id="
+"\"page-nums\"></span></span>"
+msgstr ""
+"<span id=\"pdf-page\"><label for=\"page-number\">第</label> <input type="
+"\"number\" id=\"page-number\" value=\"1\" min=\"1\"></input> / <span id="
+"\"page-nums\"></span> 頁</span>"
+
+#: winguhub/templates/view_file_pdf.html:30
+#: winguhub/templates/snippets/file_content_js.html:62
+msgid "Full Screen"
+msgstr "全屏"
+
+#: winguhub/templates/view_file_pdf.html:30
+#: winguhub/templates/snippets/file_content_js.html:62
+msgid "loading..."
+msgstr "加載中..."
+
+#: winguhub/templates/view_file_pdf.html:77
+#: winguhub/templates/snippets/file_content_js.html:109
+msgid ""
+"You can use IE 10 or other browsers, for example, firefox, to view it online."
+msgstr "如果您想在線查看該文件，您可以使用 IE 10 或其他瀏覽器比如 firefox 。"
+
+#: winguhub/templates/view_file_svg.html:7
+#: winguhub/templates/snippets/file_content_js.html:41
+msgid "To view it online, you can use firefox, chrome or IE 9."
+msgstr "在線查看：請使用 firefox, chrome 或 IE 9。"
+
+#: winguhub/templates/view_file_unknown.html:6
+#: winguhub/templates/snippets/file_content_js.html:123
+msgid "This type of file cannot be viewed online."
+msgstr "該類型文件無法在線查看。"
+
+#: winguhub/templates/view_shared_dir.html:26
+msgid "ZIP"
+msgstr ""
+
+#: winguhub/templates/registration/login.html:14
+msgid "Incorrect email or password"
+msgstr "你輸入的郵箱或密碼不正確"
+
+#: winguhub/templates/registration/login.html:19
+msgid "Forgot password?"
+msgstr "忘記密碼？"
+
+#: winguhub/templates/registration/login.html:28
+#: winguhub/templates/registration/registration_form.html:32
+#: winguhub/templates/sysadmin/sys_useradmin.html:123
+msgid "Email cannot be blank"
+msgstr "郵箱不能為空"
+
+#: winguhub/templates/registration/login.html:32
+#: winguhub/templates/registration/registration_form.html:36
+#: winguhub/templates/sysadmin/sys_useradmin.html:127
+msgid "Password cannot be blank"
+msgstr "密碼不能為空"
+
+#: winguhub/templates/registration/logout.html:4
+msgid "Log Out"
+msgstr "退出"
+
+#: winguhub/templates/registration/logout.html:8
+msgid "Thanks for your participation! "
+msgstr "感謝參與！"
+
+#: winguhub/templates/registration/logout.html:8
+msgid "Log in again"
+msgstr "重新登錄"
+
+#: winguhub/templates/registration/password_change_done.html:4
+msgid "Password Change Successfully"
+msgstr "密碼修改成功"
+
+#: winguhub/templates/registration/password_change_done.html:9
+msgid "Your password has been changed successfully."
+msgstr "密碼修改成功"
+
+#: winguhub/templates/registration/password_change_form.html:3
+#: winguhub/templates/registration/password_change_form.html:7
+msgid "Password Modification"
+msgstr "密碼修改"
+
+#: winguhub/templates/registration/password_change_form.html:9
+msgid "Current Password: "
+msgstr "當前密碼："
+
+#: winguhub/templates/registration/password_change_form.html:11
+#: winguhub/templates/registration/password_reset_confirm.html:13
+msgid "New Password: "
+msgstr "新密碼："
+
+#: winguhub/templates/registration/password_change_form.html:13
+#: winguhub/templates/registration/password_reset_confirm.html:16
+msgid "Confirm Password: "
+msgstr "確認密碼"
+
+#: winguhub/templates/registration/password_reset_complete.html:4
+msgid "Successfully reset password"
+msgstr "密碼重置成功"
+
+#: winguhub/templates/registration/password_reset_complete.html:8
+msgid "Successfully reset password."
+msgstr "密碼重置成功。"
+
+#: winguhub/templates/registration/password_reset_confirm.html:4
+#: winguhub/templates/registration/password_reset_form.html:4
+#: winguhub/templates/registration/password_reset_form.html:7
+#: winguhub/templates/sysadmin/sys_useradmin.html:99
+#: winguhub/views/sysadmin.py:250
+msgid "Password Reset"
+msgstr "密碼重置"
+
+#: winguhub/templates/registration/password_reset_confirm.html:11
+msgid "Input new password"
+msgstr "輸入新密碼"
+
+#: winguhub/templates/registration/password_reset_confirm.html:26
+msgid "Failed to reset password: this link is no longer available."
+msgstr "密碼重置失敗：重置鏈接失效。請重新重置。"
+
+#: winguhub/templates/registration/password_reset_done.html:4
+msgid "Password Reset Successfully"
+msgstr "密碼重置成功"
+
+#: winguhub/templates/registration/password_reset_done.html:8
+msgid "We've send a password reset email to your email."
+msgstr "我們已經把密碼重置說明發往你提交的郵箱裏，請查收。"
+
+#: winguhub/templates/registration/password_reset_email.html:2
+#, python-format
+msgid ""
+"You're receiving this e-mail because you requested a password reset for your "
+"user account at %(site_name)s. "
+msgstr "你收到這封郵件是因為你請求給你在 %(site_name)s 的賬號重置密碼。"
+
+#: winguhub/templates/registration/password_reset_email.html:4
+msgid "Please go to the following page and choose a new password:"
+msgstr "請點擊以下鏈接更新密碼："
+
+#: winguhub/templates/registration/password_reset_email.html:8
+msgid "Your username, in case you've forgotten:"
+msgstr "你的用戶名:"
+
+#: winguhub/templates/registration/password_reset_form.html:9
+msgid "Your email used in login: "
+msgstr "你註冊的郵箱賬號："
+
+#: winguhub/templates/registration/password_reset_form.html:12
+msgid "We will send you an email to set new password"
+msgstr "我們會把新密碼設置說明通過郵件發送給你"
+
+#: winguhub/templates/registration/registration_complete.html:4
+#, fuzzy
+msgid "Registration complete"
+msgstr "Seafile註冊信息"
+
+#: winguhub/templates/registration/registration_complete.html:9
+msgid ""
+"An activation email has been sent. Please check your email and click on the "
+"link to activate your account."
+msgstr ""
+
+#: winguhub/templates/registration/registration_complete.html:11
+msgid ""
+"Registration complete, please wait for administrator to activate your "
+"account."
+msgstr ""
+
+#: winguhub/templates/registration/registration_form.html:3
+msgid "Register"
+msgstr "註冊"
+
+#: winguhub/templates/registration/registration_form.html:7
+msgid "Welcome back, you are already signed in."
+msgstr "歡迎回來，你已登錄。"
+
+#: winguhub/templates/registration/registration_form.html:15
+#: winguhub/templates/sysadmin/sys_useradmin.html:16
+msgid "Confirm Password"
+msgstr "確認密碼"
+
+#: winguhub/templates/registration/registration_form.html:40
+#: winguhub/templates/snippets/repo_create_js.html:49
+#: winguhub/templates/sysadmin/sys_useradmin.html:131
+msgid "Please enter the password again"
+msgstr "請再次輸入密碼"
+
+#: winguhub/templates/snippets/avatar_upload_js.html:40
+msgid " is not supported. Please choose an image file."
+msgstr " 不是被支持的文件格式。請選擇圖片文件。"
+
+#: winguhub/templates/snippets/avatar_upload_js.html:45
+msgid " is not supported. File extensions can only be "
+msgstr " 不是被支持的文件格式。文件擴展名只能是 "
+
+#: winguhub/templates/snippets/avatar_upload_js.html:52
+msgid " is too large. Allowed maximum size is 1MB."
+msgstr " 太大。不得超過 1MB。"
+
+#: winguhub/templates/snippets/bottom_bar.html:3
+msgid "Discuss"
+msgstr "討論"
+
+#: winguhub/templates/snippets/bottom_bar.html:3
+msgid "Group"
+msgstr "群組"
+
+#: winguhub/templates/snippets/bottom_bar.html:66
+msgid "Please select at least 1 group."
+msgstr "請至少選擇一個群組。"
+
+#: winguhub/templates/snippets/bottom_bar.html:71
+msgid "Please input a discussion."
+msgstr "請輸入一個討論。"
+
+#: winguhub/templates/snippets/current_commit.html:12
+msgid "Generated by system"
+msgstr "系統自動生成"
+
+#: winguhub/templates/snippets/events.html:3
+msgid "File Activities"
+msgstr "文件活動"
+
+#: winguhub/templates/snippets/events.html:6
+msgid "More"
+msgstr "更多"
+
+#: winguhub/templates/snippets/file_share_popup.html:3
+#, fuzzy, python-format
+msgid "Share %(name)s"
+msgstr "在 %(name)s"
+
+#: winguhub/templates/snippets/file_share_popup.html:6
+#, fuzzy
+msgid "Private Share"
+msgstr "退出共享"
+
+#: winguhub/templates/snippets/file_share_popup.html:7
+#, fuzzy
+msgid "Share Link"
+msgstr "我的共享外鏈"
+
+#: winguhub/templates/snippets/file_share_popup.html:9
+#, fuzzy
+msgid "Syncable Share"
+msgstr "退出共享"
+
+#: winguhub/templates/snippets/file_share_popup.html:24
+msgid "Generate"
+msgstr ""
+
+#: winguhub/templates/snippets/file_share_popup.html:26
+msgid "Link: "
+msgstr "鏈接："
+
+#: winguhub/templates/snippets/file_share_popup.html:27
+msgid "Send"
+msgstr "發送"
+
+#: winguhub/templates/snippets/file_share_popup.html:31
+msgid "Send to:"
+msgstr "發送到："
+
+#: winguhub/templates/snippets/file_share_popup.html:32
+msgid "Emails, Seperated by ','"
+msgstr "輸入郵箱，多個以,分隔"
+
+#: winguhub/templates/snippets/file_share_popup.html:37
+msgid "Sending..."
+msgstr "發送中..."
+
+#: winguhub/templates/snippets/file_share_popup.html:44
+msgid ""
+"You need to create a sub-library from this directory to let others sync it."
+msgstr ""
+
+#: winguhub/templates/snippets/file_share_popup.html:47
+msgid "The sub-library used to share this directory already exists."
+msgstr ""
+
+#: winguhub/templates/snippets/group_recommend_form.html:5
+msgid "Post a discussion to group"
+msgstr "發起一個討論到小組"
+
+#: winguhub/templates/snippets/group_recommend_form.html:14
+msgid "discussion"
+msgstr "討論"
+
+#: winguhub/templates/snippets/list_commit_detail.html:11
+msgid "Modification Details"
+msgstr "修改詳情"
+
+#: winguhub/templates/snippets/list_commit_detail.html:24
+msgid "New files"
+msgstr "新文件"
+
+#: winguhub/templates/snippets/list_commit_detail.html:25
+msgid "Deleted files"
+msgstr "刪除的文件"
+
+#: winguhub/templates/snippets/list_commit_detail.html:26
+msgid "Renamed or Moved files"
+msgstr "重命名或移動的文件"
+
+#: winguhub/templates/snippets/list_commit_detail.html:27
+msgid "Modified files"
+msgstr "修改了的文件"
+
+#: winguhub/templates/snippets/list_commit_detail.html:28
+msgid "New directories"
+msgstr "新目錄"
+
+#: winguhub/templates/snippets/list_commit_detail.html:29
+msgid "Deleted directories"
+msgstr "刪除的目錄"
+
+#: winguhub/templates/snippets/list_commit_detail.html:39
+msgid "Unknown error."
+msgstr "未知錯誤"
+
+#: winguhub/templates/snippets/my_groups.html:22
+msgid "Create a group now"
+msgstr "立即創建群組"
+
+#: winguhub/templates/snippets/my_owned_repos.html:6
+msgid "Mine"
+msgstr "我擁有的"
+
+#: winguhub/templates/snippets/my_owned_repos.html:8
+#, fuzzy
+msgid "Sub-libraries"
+msgstr "資料庫"
+
+#: winguhub/templates/snippets/my_owned_repos.html:10
+#: winguhub/templates/sysadmin/userinfo.html:64
+msgid "Shared"
+msgstr "共享給我的"
+
+#: winguhub/templates/snippets/my_owned_repos.html:11
+msgid "Starred"
+msgstr "星標文件"
+
+#: winguhub/templates/snippets/my_owned_repos.html:47
+msgid "You have not created any libraries"
+msgstr "你還未創建資料庫"
+
+#: winguhub/templates/snippets/my_owned_repos.html:48
+msgid ""
+"You can create a library to organize your files. For example, you can create "
+"one for each of your projects. Each library can be synchronized and shared "
+"separately."
+msgstr ""
+"你可以新建一個資料庫來組織你的文件資料，比如為每個項目創建一個資料庫，每個資"
+"料庫可以單獨地同步和共享。"
+
+#: winguhub/templates/snippets/my_owned_repos.html:49
+msgid "Synchronize libraries with PC client"
+msgstr "與Seafile客戶端同步"
+
+#: winguhub/templates/snippets/my_owned_repos.html:50
+msgid "1. Download the library (make sure PC client is running)."
+msgstr "1. 下載這個資料庫（請確認Seafile客戶端已啟動）。"
+
+#: winguhub/templates/snippets/my_owned_repos.html:51
+msgid "2. Add files to the folder and they will be uploaded automatically."
+msgstr "2. 把文件拷貝到下載下來的目錄中，它們會自動同步到服務器上。"
+
+#: winguhub/templates/snippets/my_owned_repos.html:63
+msgid "Origin"
+msgstr ""
+
+#: winguhub/templates/snippets/my_owned_repos.html:95
+#, fuzzy
+msgid "You have not created any sub-libraries"
+msgstr "你還未創建資料庫"
+
+#: winguhub/templates/snippets/my_owned_repos.html:96
+msgid ""
+"You can create a sub-library from a directory inside a library. A sub-"
+"library can be independently synced and shared. Files in the sub-library "
+"will be automatically kept in sync with those in the directory of the origin "
+"library."
+msgstr ""
+
+#: winguhub/templates/snippets/my_owned_repos.html:142
+msgid "No library is shared to you"
+msgstr "還沒有資料庫共享給你"
+
+#: winguhub/templates/snippets/my_owned_repos.html:143
+msgid ""
+"Libraries shared to you or shared to groups you joined will be listed here. "
+"Libraries shared as writable can be downloaded and synced. Read only "
+"libraries can only be downloaded, updates on local files will not be "
+"uploaded."
+msgstr ""
+"這裏會顯示共享給你的資料庫。你可以下載和同步以可讀寫方式共享給你的資料庫。而"
+"對於以只讀方式共享給你的資料庫，你只能下載，對本地文件所做的修改將不會被上"
+"傳。"
+
+#: winguhub/templates/snippets/my_owned_repos.html:159
+msgid "icon"
+msgstr "圖標"
+
+#: winguhub/templates/snippets/my_owned_repos.html:170
+msgid "You don't have any starred files yet"
+msgstr "你還沒有星標文件"
+
+#: winguhub/templates/snippets/my_owned_repos.html:171
+msgid ""
+"You can star important files by clicking the \"Star\" button on file viewing "
+"page, and they will be listed here."
+msgstr ""
+"你可以在文件瀏覽頁面點擊“添加星標”按鈕給重要的文件加上星標，這些文件會顯示在"
+"這裏。"
+
+#: winguhub/templates/snippets/myhome_extra_script.html:40
+msgid "Please enter emails or groups or select some at first."
+msgstr "請輸入郵箱或群組或選擇一些。"
+
+#: winguhub/templates/snippets/myhome_extra_script.html:51
+#: winguhub/templates/sysadmin/sys_repo_admin.html:62
+#: winguhub/templates/sysadmin/userinfo.html:140
+msgid "Delete Library"
+msgstr "刪除資料庫"
+
+#: winguhub/templates/snippets/office_convert_html.html:4
+msgid "The file is being processed, please wait..."
+msgstr "文件正在處理，請稍後..."
+
+#: winguhub/templates/snippets/office_convert_js.html:39
+msgid "hide outline"
+msgstr "隱藏提綱"
+
+#: winguhub/templates/snippets/office_convert_js.html:40
+msgid "show outline"
+msgstr "顯示提綱"
+
+#: winguhub/templates/snippets/office_convert_js.html:163
+#: winguhub/templates/snippets/office_convert_js.html:170
+#: winguhub/templates/snippets/office_convert_js.html:195
+msgid "Document convertion failed."
+msgstr "文檔轉換失敗。"
+
+#: winguhub/templates/snippets/pubinfo.html:3
+msgid "Organization Info"
+msgstr "機構信息"
+
+#: winguhub/templates/snippets/pubinfo.html:5
+msgid "<span class=\"obj\">Library"
+msgid_plural "<span class=\"obj\">Libraries"
+msgstr[0] "<span class=\"obj\">資料庫"
+
+#: winguhub/templates/snippets/pubinfo.html:7
+msgid "<span class=\"obj\">Group"
+msgid_plural "<span class=\"obj\">Groups"
+msgstr[0] "<span class=\"obj\">群組"
+
+#: winguhub/templates/snippets/pubinfo.html:9
+msgid "User"
+msgid_plural "Users"
+msgstr[0] "成員"
+
+#: winguhub/templates/snippets/repo_create_form.html:9
+msgid "Share Permission"
+msgstr "共享權限"
+
+#: winguhub/templates/snippets/repo_create_form.html:18
+msgid "Encrypt"
+msgstr "加密"
+
+#: winguhub/templates/snippets/repo_create_form.html:20
+msgid "(at least 3 characters)"
+msgstr "(至少3個字符)"
+
+#: winguhub/templates/snippets/repo_create_form.html:22
+msgid "Password again"
+msgstr "請再次輸入密碼"
+
+#: winguhub/templates/snippets/repo_create_js.html:37
+msgid "Please enter password"
+msgstr "請輸入密碼"
+
+#: winguhub/templates/snippets/repo_dir_data.html:15
+msgid "Upload"
+msgstr "上傳"
+
+#: winguhub/templates/snippets/repo_dir_data.html:50
+#: winguhub/templates/snippets/repo_dir_data.html:96
+msgid "Fetch failed"
+msgstr "獲取失敗"
+
+#: winguhub/templates/snippets/repo_dir_data.html:65
+msgid "More operations"
+msgstr "更多操作"
+
+#: winguhub/templates/snippets/repo_dir_data.html:68
+#: winguhub/templates/snippets/repo_dir_data.html:114
+msgid "Rename"
+msgstr "重命名"
+
+#: winguhub/templates/snippets/repo_dir_data.html:69
+#: winguhub/templates/snippets/repo_dir_data.html:115
+msgid "Move"
+msgstr "移動"
+
+#: winguhub/templates/snippets/repo_dir_data.html:70
+#: winguhub/templates/snippets/repo_dir_data.html:116
+msgid "Copy"
+msgstr "復制"
+
+#: winguhub/templates/snippets/repo_dir_data.html:111
+msgid "More Operations"
+msgstr "更多操作"
+
+#: winguhub/templates/snippets/repo_share_form.html:3
+#, fuzzy
+msgid "Share <span class=\"op-target\"></span> "
+msgstr "將 <span id=\"rename-obj\" class=\"op-target\"></span> 共享給："
+
+#: winguhub/templates/snippets/repo_share_form.html:6
+msgid "Enter"
+msgstr "直接輸入"
+
+#: winguhub/templates/snippets/repo_share_form.html:11
+msgid "Emails or Groups, Seperated by ','"
+msgstr "輸入郵箱或群組，多個以,分隔"
+
+#: winguhub/templates/snippets/repo_share_form.html:14
+msgid ""
+"Tip: must be organization members or organization groups, enter \"all\" to "
+"share to public library."
+msgstr "Tip：必須是團體內成員或群組，輸入 all 共享到公共資料。"
+
+#: winguhub/templates/snippets/repo_share_form.html:17
+msgid "Tip: enter \"all\" to share to public library."
+msgstr "Tip：輸入 all 共享到公共資料"
+
+#: winguhub/templates/snippets/shared_link_js.html:95
+#, fuzzy
+msgid "Select contacts"
+msgstr "刪除聯系人"
+
+#: winguhub/templates/snippets/shared_link_js.html:125
+msgid "Please input at least an email."
+msgstr "請輸入至少一個郵箱。"
+
+#: winguhub/templates/sysadmin/sys_group_admin.html:8
+msgid "All Groups"
+msgstr "所有群組"
+
+#: winguhub/templates/sysadmin/sys_group_admin.html:13
+#: winguhub/templates/sysadmin/sys_org_admin.html:13
+msgid "Creator"
+msgstr "創建者"
+
+#: winguhub/templates/sysadmin/sys_group_admin.html:14
+#: winguhub/templates/sysadmin/sys_org_admin.html:14
+#: winguhub/templates/sysadmin/sys_publink_admin.html:12
+#: winguhub/templates/sysadmin/sys_useradmin.html:27
+msgid "Create At"
+msgstr "創建時間"
+
+#: winguhub/templates/sysadmin/sys_group_admin.html:62
+msgid "Delete Group"
+msgstr "刪除群組"
+
+#: winguhub/templates/sysadmin/sys_org_admin.html:7
+msgid "All Organizations"
+msgstr "所有團體"
+
+#: winguhub/templates/sysadmin/sys_org_admin.html:12
+msgid "Url Prefix"
+msgstr "個性域名"
+
+#: winguhub/templates/sysadmin/sys_org_admin.html:62
+msgid "Delete Organization"
+msgstr "刪除團體"
+
+#: winguhub/templates/sysadmin/sys_publink_admin.html:6
+#, fuzzy
+msgid "All Public Links"
+msgstr "公共資料"
+
+#: winguhub/templates/sysadmin/sys_publink_admin.html:11
+#: winguhub/templates/sysadmin/sys_repo_admin.html:12
+msgid "Owner"
+msgstr "擁有者"
+
+#: winguhub/templates/sysadmin/sys_publink_admin.html:13
+#, fuzzy
+msgid "Count"
+msgstr "個人基本信息"
+
+#: winguhub/templates/sysadmin/sys_repo_admin.html:6
+msgid "All Libraries"
+msgstr "所有資料庫"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:8
+msgid "All Members"
+msgstr "所有用戶"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:9
+#: winguhub/templates/sysadmin/sys_useradmin.html:11
+msgid "Add new user"
+msgstr "添加新用戶"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:25
+msgid "Status"
+msgstr "狀態"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:26
+#: winguhub/templates/sysadmin/userinfo.html:22
+msgid "Space Used"
+msgstr "已用空間"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:35
+msgid "Activated"
+msgstr "已激活"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:37
+msgid "Active"
+msgstr "激活"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:50
+msgid "ResetPwd"
+msgstr "重置密碼"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:52
+#: winguhub/templates/sysadmin/sys_useradmin.html:103
+msgid "Revoke Admin"
+msgstr "取消管理員"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:54
+#: winguhub/templates/sysadmin/sys_useradmin.html:107
+msgid "Set Admin"
+msgstr "設為管理員"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:95
+msgid "Delete User"
+msgstr "刪除用戶"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:100
+#, python-format
+msgid "Are you sure you want to reset the password of %s ?"
+msgstr "確定要重置 %s 的密碼嗎？"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:104
+#, python-format
+msgid "Are you sure you want to revoke the admin permission of %s ?"
+msgstr "確定要取消 %s 的管理權限嗎？"
+
+#: winguhub/templates/sysadmin/sys_useradmin.html:108
+#, python-format
+msgid "Are you sure you want to set %s as admin?"
+msgstr "確定要設置 %s 為管理員嗎？"
+
+#: winguhub/templates/sysadmin/user_add_email.html:3
+#, python-format
+msgid ""
+"You're receiving this e-mail because %(user)s added you to organization "
+"\"%(org.org_name)s\" on %(site_name)s."
+msgstr ""
+"你收到這封郵件是因為 %(user)s 在 %(site_name)s 上將你加入"
+"到“%(org.org_name)s”團體。"
+
+#: winguhub/templates/sysadmin/user_add_email.html:5
+#, python-format
+msgid ""
+"You're receiving this e-mail because %(user)s added you to %(site_name)s."
+msgstr "你收到這封郵件是因為 %(user)s 將你加入到 %(site_name)s。"
+
+#: winguhub/templates/sysadmin/user_add_email.html:7
+msgid "Following is your account information:"
+msgstr "以下是您的登錄信息："
+
+#: winguhub/templates/sysadmin/user_add_email.html:8
+#, python-format
+msgid "Email: %(email)s"
+msgstr "郵箱：%(email)s"
+
+#: winguhub/templates/sysadmin/user_add_email.html:9
+#, python-format
+msgid "Password:  %(password)s"
+msgstr "密碼：%(password)s"
+
+#: winguhub/templates/sysadmin/user_add_email.html:11
+msgid "Please go to the following page and log in:"
+msgstr "請點擊以下鏈接登錄："
+
+#: winguhub/templates/sysadmin/user_reset_email.html:2
+#, python-format
+msgid ""
+"You're receiving this e-mail because staff has reset your password at "
+"%(site_name)s. "
+msgstr "你收到這封郵件是因為你在 %(site_name)s 的賬號密碼已經被管理員重置。"
+
+#: winguhub/templates/sysadmin/user_reset_email.html:4
+#, python-format
+msgid ""
+"Your new password is %(password)s, please modify your password as soon as "
+"possible."
+msgstr "你的新密碼是 %(password)s, 請盡快修改。"
+
+#: winguhub/templates/sysadmin/userinfo.html:27
+msgid "Used"
+msgstr "我使用的"
+
+#: winguhub/templates/sysadmin/userinfo.html:32
+msgid "Set Quota"
+msgstr "設置容量"
+
+#: winguhub/templates/sysadmin/userinfo.html:39
+msgid "Owned"
+msgstr "我擁有的"
+
+#: winguhub/templates/sysadmin/userinfo.html:88
+msgid "Set user storage limit"
+msgstr "設置該用戶的存儲容量上限"
+
+#: winguhub/templates/sysadmin/userinfo.html:91
+msgid "Tip: 0 means default limit"
+msgstr "Tip: 設置為0表示重置為默認上限"
+
+#: winguhub/templates/wiki/personal_wiki.html:25
+msgid "You do not have personal wiki"
+msgstr "你還未創建個人維基"
+
+#: winguhub/templates/wiki/personal_wiki.html:32
+msgid "personal-wiki"
+msgstr "個人維基"
+
+#: winguhub/templates/wiki/personal_wiki.html:34
+msgid "Personal Wiki Pages"
+msgstr "個人維基頁面"
+
+#: winguhub/utils/__init__.py:95
+msgid "permission error"
+msgstr "權限錯誤"
+
+#: winguhub/utils/__init__.py:110 winguhub/utils/__init__.py:1089
+msgid "Internal error"
+msgstr "內部錯誤"
+
+#: winguhub/views/__init__.py:379
+msgid "Unable to view recycle page"
+msgstr "無法查看文件回收站"
+
+#: winguhub/views/__init__.py:404 winguhub/views/ajax.py:172
+#: winguhub/views/ajax.py:231 winguhub/views/ajax.py:318 winguhub/views/ajax.py:375
+#: winguhub/views/ajax.py:417 winguhub/views/ajax.py:621
+msgid "Library does not exist."
+msgstr "資料庫不存在"
+
+#: winguhub/views/__init__.py:415
+msgid "You do not have permission to perform this action."
+msgstr "你沒有權限進行該操作"
+
+#: winguhub/views/__init__.py:422
+msgid "Failed to edit library information."
+msgstr "資料庫信息編輯失敗。"
+
+#: winguhub/views/__init__.py:430
+msgid "Failed to save settings on server"
+msgstr "設置失敗"
+
+#: winguhub/views/__init__.py:433
+msgid "Settings saved."
+msgstr "設置已保存。"
+
+#: winguhub/views/__init__.py:443
+msgid "Filename contains invalid character"
+msgstr "上傳的文件名包含非法字符"
+
+#: winguhub/views/__init__.py:445
+msgid "Duplicated filename"
+msgstr "已存在同名的文件"
+
+#: winguhub/views/__init__.py:449
+msgid "File size surpasses the limit"
+msgstr "文件大小超過限制"
+
+#: winguhub/views/__init__.py:451
+msgid "The space of owner is used up, upload failed"
+msgstr "該資料庫所有者的空間已用完，無法上傳"
+
+#: winguhub/views/__init__.py:453
+msgid "An error occurs during file transfer"
+msgstr "文件傳輸出錯"
+
+#: winguhub/views/__init__.py:465 winguhub/views/__init__.py:487
+msgid "Invalid url"
+msgstr "非法鏈接"
+
+#: winguhub/views/__init__.py:507
+msgid "Unable to view library modification"
+msgstr "無法瀏覽該資料庫修改歷史"
+
+#: winguhub/views/__init__.py:563
+msgid "Unable to view library snapshots"
+msgstr "無法查看該資料庫鏡像"
+
+#: winguhub/views/__init__.py:620
+msgid "You have no permission to restore library"
+msgstr "你沒有權限進行還原操作"
+
+#: winguhub/views/__init__.py:636
+msgid "Please specify history ID"
+msgstr "請指定歷史記錄ID"
+
+#: winguhub/views/__init__.py:646
+msgid "History you specified does not exist"
+msgstr "指定的歷史記錄不存在"
+
+#: winguhub/views/__init__.py:648
+msgid "Unknown error"
+msgstr "未知錯誤"
+
+#: winguhub/views/__init__.py:757 winguhub/views/__init__.py:774
+msgid ""
+"Failed to remove library. Only staff or owner can perform this operation."
+msgstr "刪除資料庫失敗, 只有團體管理員或資料庫創建者有權刪除資料庫。"
+
+#: winguhub/views/__init__.py:772
+#, python-format
+msgid "Successfully deleted library \"%s\"."
+msgstr "成功刪除資料庫 \"%s\"。"
+
+#: winguhub/views/__init__.py:934
+#, python-format
+msgid "Successfully unsync client %s"
+msgstr "取消同步 %s 成功"
+
+#: winguhub/views/__init__.py:936
+msgid "Successfully unsync client"
+msgstr "成功取消同步"
+
+#: winguhub/views/__init__.py:939
+#, python-format
+msgid "Failed to unsync client %s"
+msgstr "取消同步 %s 失敗"
+
+#: winguhub/views/__init__.py:941
+msgid "Failed to unsync client"
+msgstr "取消同步失敗"
+
+#: winguhub/views/__init__.py:1019 winguhub/views/__init__.py:1277
+msgid "Failed to create library"
+msgstr "創建資料庫失敗"
+
+#: winguhub/views/__init__.py:1037
+msgid "Failed to unshare the library, as it does not exist."
+msgstr "取消共享失敗，該資料庫不存在"
+
+#: winguhub/views/__init__.py:1042
+#, python-format
+msgid "Unshare \"%s\" successfully."
+msgstr "\"%s\" 取消共享成功"
+
+#: winguhub/views/__init__.py:1044
+#, python-format
+msgid "Failed to unshare \"%s\"."
+msgstr "\"%s\" 取消共享失敗"
+
+#: winguhub/views/__init__.py:1074
+msgid "Failed to delete file."
+msgstr "刪除文件出錯。"
+
+#: winguhub/views/__init__.py:1081
+#, python-format
+msgid "%s successfully deleted."
+msgstr "%s 刪除成功。"
+
+#: winguhub/views/__init__.py:1083 winguhub/views/ajax.py:401
+#, python-format
+msgid "Internal error. Failed to delete %s."
+msgstr "內部錯誤。刪除 %s 失敗。"
+
+#: winguhub/views/__init__.py:1129
+msgid "Unable to access file"
+msgstr "無法訪問文件"
+
+#: winguhub/views/__init__.py:1155
+msgid "Failed to download library, unable to find server"
+msgstr "下載失敗：找不到服務器"
+
+#: winguhub/views/__init__.py:1166
+msgid "Invalid server setting"
+msgstr "服務器設置錯誤"
+
+#: winguhub/views/__init__.py:1384
+#, python-format
+msgid ""
+"Successfully revert %(path)s to <a href=\"%(root)s\">root directory.</a>"
+msgstr "成功還原 %(path)s 到<a href=\"%(root)s\">根目錄。</a>"
+
+#: winguhub/views/__init__.py:1388 winguhub/views/__init__.py:1414
+#, python-format
+msgid "Successfully revert <a href=\"%(url)s\">%(path)s</a>"
+msgstr "成功還原 <a href=\"%(url)s\">%(path)s</a>"
+
+#: winguhub/views/__init__.py:1410
+#, python-format
+msgid "Successfully revert %(path)s to <a href=\"%(url)s\">root directory.</a>"
+msgstr "成功還原 %(path)s 到<a href=\"%(url)s\">根目錄。</a>"
+
+#: winguhub/views/__init__.py:1674 winguhub/views/file.py:738
+msgid "Internal Error"
+msgstr "內部錯誤"
+
+#: winguhub/views/__init__.py:1677
+#, python-format
+msgid "Unable to download directory \"%s\": size is too large."
+msgstr "無法下載 \"%s\"：目錄大小超過限制。"
+
+#: winguhub/views/__init__.py:1692
+#, python-format
+msgid "Unable to download \"%s\""
+msgstr "無法下載 \"%s\""
+
+#: winguhub/views/ajax.py:62
+msgid "You don't have permission to access the library."
+msgstr "你沒有權限訪問該資料庫。"
+
+#: winguhub/views/ajax.py:69
+msgid "No path."
+msgstr "路徑不存在"
+
+#: winguhub/views/ajax.py:125
+msgid "The group doesn't exist"
+msgstr "該群組不存在"
+
+#: winguhub/views/ajax.py:179 winguhub/views/ajax.py:382 winguhub/views/ajax.py:628
+#, fuzzy
+msgid "Permission denied."
+msgstr "共享權限"
+
+#: winguhub/views/ajax.py:184 winguhub/views/ajax.py:633
+#, fuzzy
+msgid "Library is encrypted."
+msgstr "該資料庫已加密"
+
+#: winguhub/views/ajax.py:190 winguhub/views/ajax.py:639
+#, fuzzy
+msgid "Error: no head commit id"
+msgstr "錯誤：路徑不存在。"
+
+#: winguhub/views/ajax.py:390
+msgid "Argument missing."
+msgstr ""
+
+#: winguhub/views/ajax.py:442
+msgid "Destination path is too long."
+msgstr "目標路徑過長"
+
+#: winguhub/views/ajax.py:471 winguhub/views/ajax.py:523
+#, fuzzy, python-format
+msgid "Successfully moved %(name)s <a href=\"%(url)s\">view</a>"
+msgstr "移動 %(name)s 成功：<a href=\"%(url)s\">查看</a>"
+
+#: winguhub/views/ajax.py:493 winguhub/views/ajax.py:552
+#, fuzzy, python-format
+msgid "Successfully copied %(name)s <a href=\"%(url)s\">view</a>"
+msgstr "移動 %(name)s 成功：<a href=\"%(url)s\">查看</a>"
+
+#: winguhub/views/ajax.py:511
+#, fuzzy, python-format
+msgid "Can not move directory %(src)s to its subdirectory %(des)s"
+msgstr "不能把目錄 %(src)s %(op)s到它的子目錄 %(des)s中"
+
+#: winguhub/views/ajax.py:541
+#, fuzzy, python-format
+msgid "Can not copy directory %(src)s to its subdirectory %(des)s"
+msgstr "不能把目錄 %(src)s %(op)s到它的子目錄 %(des)s中"
+
+#: winguhub/views/file.py:115
+msgid "HTTPError: failed to open file online"
+msgstr "HTTPError: 無法在線打開該文件"
+
+#: winguhub/views/file.py:119
+msgid "URLError: failed to open file online"
+msgstr "URLError: 無法在線打開該文件"
+
+#: winguhub/views/file.py:126
+msgid "The encoding you chose is not proper."
+msgstr "文件編碼不合適"
+
+#: winguhub/views/file.py:143 winguhub/views/file.py:146
+msgid "Unknown file encoding"
+msgstr "文件編碼無法識別"
+
+#: winguhub/views/file.py:267 winguhub/views/file.py:274 winguhub/views/file.py:486
+#: winguhub/views/file.py:491
+#, python-format
+msgid "File size surpasses %s, can not be opened online."
+msgstr "文件大小超過 %s，無法在線查看。"
+
+#: winguhub/views/file.py:313 winguhub/views/file.py:524 winguhub/views/file.py:539
+#: winguhub/views/file.py:561
+msgid "Unable to view file"
+msgstr "無法查看該文件"
+
+#: winguhub/views/file.py:749
+msgid "The library does not exist."
+msgstr "資料庫不存在"
+
+#: winguhub/views/file.py:753
+msgid "The library is encrypted."
+msgstr "該資料庫已加密"
+
+#: winguhub/views/file.py:821
+msgid "Unable to edit file"
+msgstr "無法編輯該文件"
+
+#: winguhub/views/file.py:833
+msgid "The file does not exist."
+msgstr "該文件不存在"
+
+#: winguhub/views/file.py:861
+msgid "Edit online is not offered for this type of file."
+msgstr "該類型文件不能在線編輯。"
+
+#: winguhub/views/sysadmin.py:130
+msgid "Failed to set quota: internal error"
+msgstr "內部錯誤，設置失敗"
+
+#: winguhub/views/sysadmin.py:188
+#, python-format
+msgid "Successfully deleted %s"
+msgstr "%s 刪除成功。"
+
+#: winguhub/views/sysadmin.py:190
+msgid "Failed to delete: the user does not exist"
+msgstr "刪除失敗：該用戶不存在"
+
+#: winguhub/views/sysadmin.py:202
+#, python-format
+msgid "Successfully set %s as admin"
+msgstr "成功設置 %s 為管理員"
+
+#: winguhub/views/sysadmin.py:204
+msgid "Failed to set admin: the user does not exist"
+msgstr "設置管理員失敗：該用戶不存在"
+
+#: winguhub/views/sysadmin.py:216
+#, python-format
+msgid "Successfully revoke the admin permission of %s"
+msgstr "成功取消 %s 的管理權限"
+
+#: winguhub/views/sysadmin.py:218
+msgid "Failed to revoke admin: the user does not exist"
+msgstr "取消管理員權限失敗：該用戶不存在"
+
+#: winguhub/views/sysadmin.py:229
+#, fuzzy, python-format
+msgid "Successfully activated \"%s\"."
+msgstr "編輯 %s 成功。"
+
+#: winguhub/views/sysadmin.py:231
+#, fuzzy
+msgid "Failed to activate: user does not exist."
+msgstr "創建失敗：該群組不存在。"
+
+#: winguhub/views/sysadmin.py:270
+#, python-format
+msgid ""
+"Successfully reset password to %(passwd)s, an email has been sent to "
+"%(user)s."
+msgstr "成功將重置密碼為 %(passwd)s, 一封通知郵件已經發送給 %(user)s。"
+
+#: winguhub/views/sysadmin.py:275
+#, python-format
+msgid ""
+"Successfully reset password to %(passwd)s, but failed to send email to "
+"%(user)s, please check your email configuration."
+msgstr ""
+"成功將用戶密碼重置為 %(passwd)s, 但發送通知郵件到 %(user)s 失敗，請檢查你的郵"
+"件配置。"
+
+#: winguhub/views/sysadmin.py:279
+#, python-format
+msgid "Successfully reset password to %(passwd)s for user %(user)s."
+msgstr "成功將用戶 %(user)s 的密碼重置為 %(passwd)s。"
+
+#: winguhub/views/sysadmin.py:282
+#, python-format
+msgid ""
+"Successfully reset password to %(passwd)s for user %(user)s. But email "
+"notification can not be sent, because Email service is not properly "
+"configured."
+msgstr ""
+"成功將用戶 %(user)s 的密碼重置為 %(passwd)s, 但是由於郵箱服務未正確配置，通知"
+"郵件無法發送。"
+
+#: winguhub/views/sysadmin.py:285
+msgid "Failed to reset password: user does not exist"
+msgstr "密碼重置失敗：用戶不存在"
+
+#: winguhub/views/sysadmin.py:306
+msgid "Seafile Registration Information"
+msgstr "Seafile註冊信息"
+
+#: winguhub/views/sysadmin.py:341
+#, python-format
+msgid "Successfully added user %s. An email notification has been sent."
+msgstr "成功添加用戶 %s。一封通知郵件已發送。"
+
+#: winguhub/views/sysadmin.py:344
+#, python-format
+msgid ""
+"Successfully added user %s. An error accurs when sending email notification, "
+"please check your email configuration."
+msgstr "成功添加用戶 %s。但發送通知郵件出錯，請檢查郵箱配置。"
+
+#: winguhub/views/sysadmin.py:346
+#, python-format
+msgid "Successfully added user %s."
+msgstr "成功添加用戶 %s。"
+
+#: winguhub/views/sysadmin.py:348
+#, python-format
+msgid ""
+"Successfully added user %s. But email notification can not be sent, because "
+"Email service is not properly configured."
+msgstr "成功添加用戶 %s。 但由於郵件服務未正確配置，通知郵件無法發送。"
+
+#~ msgid "Parent dir is required"
+#~ msgstr "parent dir 為必填項"
+
+#~ msgid "File name can't be empty"
+#~ msgstr "文件名不能為空"
+
+#~ msgid "File name \"%s\" is not valid"
+#~ msgstr "文件名 %s 含有無效字符"
+
+#~ msgid "Directory name is too long"
+#~ msgstr "目錄名過長"
+
+#~ msgid "Directory name can't be empty"
+#~ msgstr "目錄名不能為空"
+
+#~ msgid "Directory name \"%s\" is not valid"
+#~ msgstr "目錄名 %s 含有無效字符"
+
+#~ msgid "Days can't be empty"
+#~ msgstr "天數不能為空"
+
+#~ msgid "Deleted successfully"
+#~ msgstr "刪除成功"
+
+#~ msgid ""
+#~ "If you don't want others to change the contents of your shared libraries, "
+#~ "you can set the share permission to \"read-only\" when sharing them."
+#~ msgstr ""
+#~ "如果你不希望別人修改你共享給他們的資料庫，你可以在共享的時候把權限設置"
+#~ "成“只讀”。"
+
+#~ msgid "Shared Libraries"
+#~ msgstr "我共享的資料庫"
+
+#~ msgid "File or Folder"
+#~ msgstr "文件或文件夾"
+
+#~ msgid ""
+#~ "This page will be invalid shortly, you can join <a href=\"http://wingufile."
+#~ "com/\" target=\"_blank\">Seafile</a> to experience more."
+#~ msgstr ""
+#~ "當前鏈接會在短期內失效，歡迎你 <a href=\"http://wingufile.com/\" target="
+#~ "\"_blank\">加入Seafile </a>體驗更多功能。"
+
+#~ msgid "Share link"
+#~ msgstr "獲取共享鏈接"
+
+#~ msgid ""
+#~ "This library is read-only, you can not modify the contents of this "
+#~ "library."
+#~ msgstr "這個資料庫設置了只讀共享，你無法修改此資料庫的內容。"
+
+#~ msgid "smaller than"
+#~ msgstr "文件總大小小於"
+
+#~ msgid "Uploaded:"
+#~ msgstr "上傳進度："
+
+#~ msgid "Fetching ..."
+#~ msgstr "獲取中...請稍侯"
+
+#~ msgid "Update File"
+#~ msgstr "更新文件 "
+
+#~ msgid "Smaller than"
+#~ msgstr "文件總大小小於"
+
+#~ msgid "Rename <span id=\"rename-type\"></span>"
+#~ msgstr "重命名<span id=\"rename-type\"></span>"
+
+#~ msgid "Rename <span id=\"rename-obj\" class=\"op-target\"></span> as: "
+#~ msgstr "將 <span id=\"rename-obj\" class=\"op-target\"></span> 重命名為："
+
+#~ msgid "Click to remove"
+#~ msgstr "點擊刪除"
+
+#~ msgid "This file has already been selected:\\n$file!"
+#~ msgstr "這個文件已經被添加：\\n$file!"
+
+#~ msgid "to:"
+#~ msgstr "到："
+
+#~ msgid "It can't be blank."
+#~ msgstr "輸入不能為空。"
+
+#~ msgid "Send Link"
+#~ msgstr "發送鏈接"
+
+#~ msgid "Please choose a file at first."
+#~ msgstr "請先選擇一個文件。"
+
+#~ msgid "File size surpasses the limit."
+#~ msgstr "文件大小超過限制, 無法上傳。"
+
+#~ msgid "Share Library"
+#~ msgstr "共享資料庫"
+
+#~ msgid "File size surpasses 10M, can not be previewed online."
+#~ msgstr "文件超過10M，無法在線查看。"
+
+#~ msgid "You can not modify that library."
+#~ msgstr "你無法修改該資料庫。"
+
+#~ msgid "copy"
+#~ msgstr "復制"
+
+#~ msgid "move"
+#~ msgstr "移動"
+
+#~ msgid "Successfully copying %(name)s：<a href=\"%(url)s\">view</a>"
+#~ msgstr "復制 %(name)s 成功：<a href=\"%(url)s\">查看</a>"

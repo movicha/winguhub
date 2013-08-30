@@ -1,0 +1,495 @@
+{% load winguhub_tags avatar_tags i18n %}
+{% load url from future %}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{% block sub_title %}{% endblock %}{{ site_title }}</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="{% trans "File Collaboration Team Organization" %}" />
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/ui-lightness/jquery-ui-1.8.16.custom.css" />
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/font-awesome.css" />
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/winguhub.css?t=1375754100" />
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/select2.css?t=1375754100" />
+<link rel="icon" type="image/x-icon" href="{{ MEDIA_URL }}img/favicon.ico?t=1375754100" />
+<!--[if IE]>
+<link rel="shortcut icon" href="{{ MEDIA_URL }}img/favicon.ico?t=1375754100"/>
+<![endif]-->
+{% block extra_style %}{% endblock %}
+{% if branding_css != '' %}<style>{{branding_css}}</style>{% endif %}
+</head>
+
+<body>
+    <div id="wrapper" class="{{ LANGUAGE_CODE }}">
+        {% block info_bar_message %}
+        {% if request.user.is_authenticated and request.cur_note %}
+        <div id="info-bar">
+            <p id="info-bar-info">{{ request.cur_note.message|urlize|url_target_blank }}</p>
+            <img src="{{ MEDIA_URL }}img/close-16.png" class="close" data="{{ request.cur_note.id }}" />
+        </div>
+        {% endif %}
+        {% endblock info_bar_message %}
+
+        <div id="top-bar">
+            <div class="top-bar-inner">
+                <div class="top-bar-con">
+                    <div class="manage fleft">
+                        {% if request.user.is_staff %}
+                        <a href="{{ SITE_ROOT }}sys/useradmin/"{% block top_bar_sys_manager_class %} class="top-link"{% endblock %}>{% trans "System Admin" %}</a>
+                        <a href="{{ SITE_ROOT }}home/my/"{% block top_bar_myaccount_class %} class="top-link"{% endblock %}>{% trans "Workspace" %}</a>
+                        {% endif %}
+                    </div>
+
+                    <div class="account">
+                        {% if request.user.is_authenticated %}
+                        <a href="{% url 'edit_profile' %}" class="top-link avatar-link" title="{% trans 'Profile Setting' %}">{% avatar request.user 16 %}</a> <span class="my-info">{{ request.user }}</span>
+                        <button class="icon-envelope btn" id="add-msg" title="{% trans "send a message" %}"></button>
+                        <button class="btn" data-url="{% url 'message_list' %}" id="msg-count" title="{% trans "unread messages" %}">0</button>
+                        {% else %}
+                        <a href="{{ SITE_ROOT }}accounts/login/" class="top-link">{% trans "Log In" %}</a>
+                            {% if enable_signup %}
+                        <a href="{{ SITE_ROOT }}accounts/register/" class="top-link">{% trans "Signup" %}</a>
+                            {% endif %}
+                        {% endif %}
+                        <a href="#" id="lang-context" data="no-popup" data-lang="{{ LANGUAGE_CODE }}" class="top-link">{{ LANGUAGE_CODE|language_name_local }} <span class="tri-bg tri-down-bg"></span></a>
+                        <ul class="hide" id="lang-context-selector">
+                            {% for LANG in LANGUAGES %}
+                            <li><a href="{% url 'i18n' %}?lang={{ LANG.0 }}">{{ LANG.1 }}</a></li>
+                            {% endfor %}
+                        </ul>
+                        {% if request.user.is_authenticated %}
+                        <a href="{{ SITE_ROOT }}accounts/logout/" class="icon-signout top-link" title="{% trans "Log out" %}"></a>
+                        {% endif %}
+                    </div>
+
+                    <div id="send-msg-popup" class="hide">
+                        <img src="{{MEDIA_URL}}img/loading-icon.gif" class="loading-tip" />
+                        <form id="send-msg-form" action="{% url 'message_send' %}" method="post" name="send-msg-form" class="hide">{% csrf_token %}
+                            <textarea id="mass-msg" name="mass_msg" placeholder="{% trans "message..." %}"></textarea><br/>
+                            <select id="mass-email" name="mass_email" multiple="multiple"></select><br/>
+                            <div id="msg-file-share">
+                                <button type="button" id="msg-file-share-btn"><span class="icon-plus-sign-alt"></span> {% trans "Add files" %}</button>
+                                <div id="msg-file-tree" class="hide"></div>
+                                <span class="icon-remove hide"></span>
+                            </div>
+                            <p class="error hide"></p>
+                            <input type="submit" value="{% trans "Submit"%}" />
+                            <input type="button" value="{% trans "Cancel"%}" class="cancel" />
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="header">
+            <div id="header-inner">
+                {% block notice_panel %}{% endblock %}
+                <a href="{{logo_url}}" id="logo" class="fleft">
+                    <img src="{{ MEDIA_URL }}{{ logo_path }}" title="Seafile" alt="Seafile logo" />
+                </a>
+                {% block nav %}{% endblock %}
+
+                {% if has_file_search and request.user.is_authenticated %}
+                <form id="top-search-form" method="get" action="{% url 'search' %}" class="search-form fright">
+                    {% if search_repo_id %}
+                    <input class="search-input" name="q" placeholder="{% if search_wiki %}{% trans "Search files in this wiki" %}{% else %}{% trans "Search files in this library" %}{% endif %}" value="{{ keyword }}" />
+                    <input type="hidden" name="search_repo" value="{{ search_repo_id }}" />
+                    {% else %}
+                    <input class="search-input" name="q" placeholder="{% trans 'Search Files' %}" value="{{ keyword }}" />
+                    {% endif %}
+                    <span class="icon-caret-down" title="{% trans "advanced" %}"></span><button type="submit" class="search-submit"><span class="icon-search"></span></button>
+                </form>
+
+                <form id="advanced-search-form" method="get" action="{% url 'search' %}" class="search-form hide">
+                    <input class="search-input" name="q" placeholder="{% trans 'Search Files' %}" value="{{ keyword }}" />
+                    <div class="search-scales">
+                        <div class="search-repos">
+                            {% if search_repo_id %}
+                            <label class="item"><input type="radio" name="search_repo" value="all" class="vam" /> <span class="vam">{% trans "In all libraries" %}</span></label>
+                            <label class="item"><input type="radio" name="search_repo" checked="checked" value="{{ search_repo_id }}" class="vam" /> <span class="vam">{% if search_wiki %}{% trans "In this wiki" %}{% else %}{% trans "In this library" %}{% endif %}</span></label>
+                            {% else %}
+                                    {% if search_repo and repo %}
+                            <label class="item"><input type="radio" name="search_repo" value="all" class="vam" /> <span class="vam">{% trans "In all libraries" %}</span></label>
+                            <label class="item"><input type="radio" name="search_repo" value="{{repo.id}}" checked="checked" class="vam" /> <span class="vam">{% blocktrans with name=repo.name %}in {{name }}{% endblocktrans %}</span></label>
+                                    {% else %}
+                            <label class="item"><input type="radio" name="search_repo" value="all" checked="checked" class="vam" /> <span class="vam">{% trans "In all libraries" %}</span></label>
+                                    {% endif %}
+                            {% endif %}
+                        </div>
+                        <div class="search-filetypes">
+                            {% if search_ftypes != 'custom' %}
+                            <label class="item"><input type="radio" name="search_ftypes" value="all" checked="checked" class="vam" /> <span class="vam">{% trans "All file types" %}</span></label>
+                            <label class="item"><input type="radio" name="search_ftypes" value="custom" class="vam" id="custom-search-ftypes" /> <span class="vam">{% trans "Custom file types" %}</span></label>
+                            {% else %}
+                            <label class="item"><input type="radio" name="search_ftypes" value="all" class="vam" /> <span class="vam">{% trans "All file types" %}</span></label>
+                            <label class="item"><input type="radio" name="search_ftypes" value="custom" checked="checked" class="vam" id="custom-search-ftypes" /> <span class="vam">{% trans "Custom file types" %}</span></label>
+                            {% endif %}
+                        </div>
+                        {% if search_ftypes != 'custom' %}
+                        <div class="custom-ftype-options hide">
+                        {% else %}
+                        <div class="custom-ftype-options">
+                        {% endif %}
+                            {# ftype value should be the same with utils/file_types.py #}
+                            <label class="checkbox-label"><span class="checkbox"><input type="checkbox" name="ftype" value="Text" class="checkbox-orig" /></span><span class="checkbox-option">{% trans "Text files" %}</span></label>
+                            <label class="checkbox-label"><span class="checkbox"><input type="checkbox" name="ftype" value="Document" class="checkbox-orig" /></span><span class="checkbox-option">{% trans "Documents" %}</span></label>
+                            <label class="checkbox-label"><span class="checkbox"><input type="checkbox" name="ftype" value="Image" class="checkbox-orig" /></span><span class="checkbox-option">{% trans "Images" %}</span></label>
+                            <label class="checkbox-label"><span class="checkbox"><input type="checkbox" name="ftype" value="Video" class="checkbox-orig" /></span><span class="checkbox-option">{% trans "Video" %}</span></label>
+                            <label class="checkbox-label"><span class="checkbox"><input type="checkbox" name="ftype" value="Audio" class="checkbox-orig" /></span><span class="checkbox-option">{% trans "Audio" %}</span></label>
+                            <label class="checkbox-label"><span class="checkbox"><input type="checkbox" name="ftype" value="SVG" class="checkbox-orig" /></span><span class="checkbox-option">{% trans "svg" %}</span></label>
+                            <label class="checkbox-label"><span class="checkbox"><input type="checkbox" name="ftype" value="PDF" class="checkbox-orig" /></span><span class="checkbox-option">{% trans "pdf" %}</span></label>
+                            <label class="checkbox-label"><span class="checkbox"><input type="checkbox" name="ftype" value="Sf" class="checkbox-orig" /></span><span class="checkbox-option">{% trans "seaf" %}</span></label>
+                            <label class="checkbox-label"><span class="checkbox"><input type="checkbox" name="ftype" value="Markdown" class="checkbox-orig" /></span><span class="checkbox-option">{% trans "markdown" %}</span></label>
+                            <br/>
+                            <input type="text" value="{{ input_fileexts }}" name="input_fexts" placeholder="{% trans "Input file extensions here, separate with ','" %}" class="fileext-input" />
+                            <p class="error hide">{% trans "Please select at least 1 file type or input at least 1 file extension" %}</p>
+                        </div>
+                    </div>
+                    <input type="submit" value="{% trans "Submit" %}" class="submit" />
+                </form>
+                {% endif %}
+            </div>
+        </div>
+
+        <div id="main" class="clear">
+            <div id="title-panel" class="w100 ovhd">
+                {% block title_panel %}{% endblock %}
+            </div>
+            <div id="left-panel">
+                {% block left_panel %}{% endblock %}
+            </div>
+            <div id="right-panel">
+                {% block right_panel %}{% endblock %}
+            </div>
+            <div id="main-panel" class="clear w100 ovhd">
+                {% if messages %}
+                {% autoescape off %}
+                <ul class="messages hide">
+                    {% for message in messages %}
+                    <li class="{{ message.tags }}">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+                {% endautoescape %}
+                {% endif %}
+
+                {% block main_panel %} {% endblock %}
+            </div>
+            <div id="confirm-popup" class="hide">
+                <div id="confirm-con"></div>
+                <button id="confirm-yes">{% trans "Yes"%}</button>
+                <button class="simplemodal-close">{% trans "No"%}</button>
+            </div>
+        </div>
+
+        <div id="footer" class="ovhd">
+            <div class="items fleft">
+                <div class="item">
+                    <h4>Seafile</h4>
+                    <ul>
+                        <li><a href="http://wingufile.com/{% if LANGUAGE_CODE != 'zh-cn' %}en/{% endif %}home/" target="_blank">{% trans "Introduction" %}</a></li>
+                        <li><a href="https://github.com/haiwen/wingufile/wiki{% if LANGUAGE_CODE == 'zh-cn' %}/Seafile-服务器手册中文版{% endif %}" target="_blank">Wiki</a></li>
+                        {% if LANGUAGE_CODE == 'zh-cn' %}<li><a href="http://bbs.wingufile.com/" target="_blank"> {% else %}<li><a href="https://groups.google.com/forum/#!forum/wingufile" target="_blank"> {% endif %}{% trans "Forum" %}</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h4>{% trans "Client" %}</h4>
+                    <ul>
+                        <li><a href="http://www.wingufile.com/{% if LANGUAGE_CODE != 'zh-cn' %}en/{% endif %}download/">{% trans "Seafile for Windows, Mac and Linux" %}</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h4>{% trans "Documents" %}</h4>
+                    <ul>
+                        <li><a href="http://www.wingufile.com/{% if LANGUAGE_CODE != 'zh-cn' %}en/{% endif %}help/" target="_blank">{% trans "Help" %}</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="other-info fright">
+                <p>{% trans "Server Version: " %}{{ wingufile_version }}</p>
+                <p>© 2013 {% trans "Seafile" %}</p>
+                <p><a href="http://wingufile.com/{% if LANGUAGE_CODE != 'zh-cn' %}en/{% endif %}contact/" target="_blank">{% trans "Contact Us" %}</a></p>
+            </div>
+        </div>
+</div><!-- wrapper -->
+
+<script type="text/javascript" src="{{ MEDIA_URL }}js/jq.min.js?t=1375754100"></script>
+<script type="text/javascript" src="{{ MEDIA_URL }}jstree_pre1.0_stable/jquery.jstree.js"></script>
+<script type="text/javascript" src="{{ MEDIA_URL }}js/base.js?t=1375754100"></script>
+<script type="text/javascript" src="{{ MEDIA_URL }}js/select2.min.js?t=1375754100"></script>
+<script type="text/javascript">
+function ajaxErrorHandler(xhr, textStatus, errorThrown) {
+    if (xhr.responseText) {
+        feedback(jQuery.parseJSON(xhr.responseText).error, 'error');
+    } else {
+        feedback("{% trans "Failed. Please check the network." %}", 'error');
+    }    
+}
+{% if request.user.is_authenticated %}
+{% if request.cur_note %}
+$('#info-bar .close').click(function() {
+    $('#info-bar').addClass('hide');
+    if (navigator.cookieEnabled) {
+        var date = new Date(),
+            cookies = document.cookie.split('; '),
+            info_id_exist = false,
+            new_info_id = $(this).attr('data') + '_';
+        date.setTime(date.getTime() + 14*24*60*60*1000);
+        new_info_id += '; expires=' + date.toGMTString() + '; path=' + '{{ SITE_ROOT }}';
+        for (var i = 0, len = cookies.length; i < len; i++) {
+            if (cookies[i].split('=')[0] == 'info_id') {
+                info_id_exist = true;
+                document.cookie = 'info_id=' + cookies[i].split('=')[1] + new_info_id;
+                break;
+            }
+        }
+        if (!info_id_exist) {
+            document.cookie = 'info_id=' + new_info_id;
+        }
+    }
+});
+{% endif %}
+
+$(document).ready(function(){
+    $.ajax({
+        url: '{% url 'msg_count' %}',
+        dataType: 'json',
+        cache: false,
+        success: function(data) {
+            if (data['count'] > 0) {
+                $("#msg-count").html(data['count']).addClass('msg-count');
+            }
+        }
+    });
+});
+
+$('#add-msg').click(function() {
+    var add_msg_btn = $('#add-msg'),
+        popup = $('#send-msg-popup');
+
+    if (!popup.hasClass('hide')) {
+        popup.addClass('hide');
+        add_msg_btn.removeClass('add-msg-hl');
+        return;
+    }
+
+    popup.removeClass('hide');
+    add_msg_btn.addClass('add-msg-hl');
+    $.ajax({
+        url:'{% url 'get_contacts' %}',
+        cache: false,
+        dataType: 'json',
+        success: function(data) {
+            var contacts = data['contacts'],
+                opts = '',
+                email;
+            if (contacts.length > 0) {
+                popup.find('.loading-tip').remove();
+                $('#send-msg-form').removeClass('hide');
+
+                for(var i = 0, len = contacts.length; i < len; i++) {
+                    email = contacts[i].email;
+                    opts += '<option value="' + email + '" data-index="' + i + '">' + email + '</option>';
+                }
+                var format = function(item) {
+                    return contacts[$(item.element).data('index')].avatar + '<span class="vam">' + item.text + '</span>';
+                }
+                $('#mass-email').html(opts).select2({
+                    placeholder: "{% trans "send to: click to select contacts" %}",
+                    formatResult: format,
+                    formatSelection: format,
+                    escapeMarkup: function(m) { return m; }
+                });
+            } else {
+                popup.html('<p>' + "{% trans "please add contacts at first" %}" + '</p>');
+            }
+        },
+        error: function() {
+            popup.html('<p class="error">' + "{% trans "Failed to get your contacts for sending a message." %}" + '</p>');
+        }
+    });
+});
+$(document).click(function(e) {
+    if (e.eventPhase == 2) { // for ff
+        return;
+    }
+    var target = e.target || event.srcElement,
+        popup = $('#send-msg-popup'),
+        popup_switch = $('#add-msg');
+    if (!popup.hasClass('hide') && !popup.is(target) && !popup.find('*').is(target) && !popup_switch.is(target)) {
+        popup.addClass('hide');
+        $('#add-msg').removeClass('add-msg-hl');
+    }    
+});
+$('#msg-file-share-btn').click(function() {
+    var msg_file_share = $('#msg-file-share'),
+        btn = $(this);
+    $.ajax({
+        'url': '{% url 'get_my_unenc_repos' %}',
+        'cache': false,
+        'dataType': 'json',
+        'success': function(data) {
+            btn.addClass('hide');
+            var file_tree = new FileTree();
+            var repos = file_tree.format_repo_data(data);
+            if (repos.length > 0) {
+                file_tree.renderFileTree($('#msg-file-tree').css({'max-height':$(window).height() - $('#top-bar').height() - $('#send-msg-popup').outerHeight(), 'overflow':'auto'}).data('site_root', '{{SITE_ROOT}}'), repos, {'two_state': true});
+                $('#msg-file-tree').fadeIn(600);
+                msg_file_share.find('.icon-remove').removeClass('hide');
+            } else {
+                msg_file_share.html('<p class="error">' + "{% trans "You don't have any library at present" %}" + '</p>'); 
+            }
+        },
+        'error': function(jqXHR, textStatus, errorThrown) {
+            if (!jqXHR.responseText) {
+                msg_file_share.html('<p class="error">' + "{% trans "Failed. Please check the network." %}" + '</p>'); 
+            }
+        }
+    });
+});
+$('#msg-file-share .icon-remove').click(function() {
+        $(this).addClass('hide');
+        $('#msg-file-tree').fadeOut(200);
+        $('#msg-file-share-btn').removeClass('hide');
+});
+$('#send-msg-form .cancel').click(function() {
+        $('#send-msg-popup').addClass('hide');
+        $('#add-msg').removeClass('add-msg-hl');
+});
+
+$('#send-msg-form').submit(function() {
+    var form_id = $(this).attr('id');
+    if (!$('#mass-msg').val()) {
+        apply_form_error(form_id, "{% trans "message is required" %}");
+        return false;
+    }
+    if (!$('#mass-email').val()) { // val is null or ['xx',...]
+        apply_form_error(form_id, "{% trans "contact is required" %}");
+        return false;
+    }
+});
+
+$('#msg-count').click(function() {
+    location.href = $(this).data('url');
+});
+
+{% if has_file_search %}
+// search-form: top-search-form, advanced-search-form, search-form in search result page
+$('.search-form').submit(function() {
+    if (!$.trim($(this).find('.search-input').val())) {
+        return false;
+    }
+});
+$('#top-search-form .icon-caret-down').click(function() {
+    var form = $(this).parent(),
+        q = form.find('[name="q"]').val(),
+        advanced_form = $('#advanced-search-form');
+    $('#header-inner').css({'position':'relative'});
+    advanced_form.css({'right': 0, 'top':form.outerHeight(true)}).toggleClass('hide');
+    if (!advanced_form.hasClass('hide') && q) {
+        advanced_form.find('.search-input').val(q);
+    }
+});
+$('.search-filetypes .item:first-child').click(function() {
+    $(this).parents('.search-form').find('.custom-ftype-options').addClass('hide');
+});
+$('.search-filetypes .item:last-child').click(function() {
+    $(this).parents('.search-form').find('.custom-ftype-options').removeClass('hide');
+});
+$('#advanced-search-form').submit(function() {
+    if ($('#custom-search-ftypes').attr('checked') &&
+        $('.custom-ftype-options .checkbox-checked').length == 0 &&
+        !$.trim($('.custom-ftype-options .fileext-input').val())) {
+        $(this).find('.error').removeClass('hide');
+        return false;
+    }
+});
+$(document).click(function(e) {
+    var target = e.target || event.srcElement,
+        popup = $('#advanced-search-form'),
+        popup_switch = $('#top-search-form .icon-caret-down');
+    if (!popup.hasClass('hide') && !popup.is(target) && !popup.find('*').is(target) && !popup_switch.is(target)) {
+        popup.addClass('hide');
+    }    
+});
+{% endif %}
+
+{% endif %}
+</script>
+{% block extra_script %}{% endblock %}
+<script type="text/javascript">
+//font icons: for browsers that don't support ':before'
+    var sf_icons = [{'name':'share', 'con':'e001'}];
+    var fa_icons = [ 
+        {'name':'trash', 'con':'f014'},
+        {'name':'cog', 'con':'f013'},
+        {'name':'cloud-download', 'con':'f0ed'},
+        {'name':'search', 'con':'f002'},
+        {'name':'minus', 'con':'f068'},
+        {'name':'plus', 'con':'f067'},
+        {'name':'pencil', 'con':'f040'},
+        {'name':'globe', 'con':'f0ac'},
+        {'name':'comment-alt', 'con':'f0e5'},
+        {'name':'double-angle-right', 'con':'f101'},
+        {'name':'font', 'con':'f031'},
+        {'name':'text-height', 'con':'f034'},
+        {'name':'tint', 'con':'f043'},
+        {'name':'bold', 'con':'f032'},
+        {'name':'italic', 'con':'f033'},
+        {'name':'strikethrough', 'con':'f0cc'},
+        {'name':'underline', 'con':'f0cd'},
+        {'name':'list-ul', 'con':'f0ca'},
+        {'name':'list-ol', 'con':'f0cb'},
+        {'name':'indent-left', 'con':'f03b'},
+        {'name':'indent-right', 'con':'f03c'},
+        {'name':'align-left', 'con':'f036'},
+        {'name':'align-center', 'con':'f037'},
+        {'name':'align-right', 'con':'f038'},
+        {'name':'align-justify', 'con':'f039'},
+        {'name':'link', 'con':'f0c1'},
+        {'name':'cut', 'con':'f0c4'},
+        {'name':'picture', 'con':'f03e'},
+        {'name':'undo', 'con':'f0e2'},
+        {'name':'repeat', 'con':'f01e'},
+        {'name':'envelope', 'con':'f003'},
+        {'name':'star', 'con':'f005'},
+        {'name':'star-empty', 'con':'f006'},
+        {'name':'caret-down', 'con':'f0d7'},
+        {'name':'ok', 'con':'f00c'},
+        {'name':'double-angle-left', 'con':'f100'},
+        {'name':'double-angle-right', 'con':'f101'},
+        {'name':'double-angle-up', 'con':'f102'},
+        {'name':'double-angle-down', 'con':'f103'},
+        {'name':'zoom-in', 'con':'f00e'},
+        {'name':'zoom-out', 'con':'f010'},
+        {'name':'signout', 'con':'f08b'},
+        {'name':'plus-sign-alt', 'con':'f0fe'},
+        {'name':'upload', 'con':'f01b'},
+        {'name':'ban-circle', 'con':'f05e'},
+        {'name':'move', 'con':'f047'},
+        {'name':'copy', 'con':'f0c5'},
+        {'name':'upload-alt', 'con':'f093'}
+    ];  
+    function setCon(icon, icon_class_prefix, icon_list) {
+            for (var i = 0, len = icon_list.length; i < len; i++) {
+                if (icon.hasClass(icon_class_prefix + icon_list[i].name)) {
+                    icon.html('&#x' + icon_list[i].con + ';');
+                    break;
+                }
+            }
+    }
+    var pseudo_support = true;
+    var pseudo_test = $('body').append('<span class="sf-icon-share pseudo-test" style="color:#fff;position:fixed;left:0;bottom:0;"></span>').children('.pseudo-test');
+    if (pseudo_test.width() == 0) {
+        pseudo_support = false;
+        $('[class^="sf-icon-"]').each(function() {
+            setCon($(this), 'sf-icon-', sf_icons);
+        }); 
+        $('[class^="icon-"], [class$=" icon-"]').each(function() {
+            setCon($(this), 'icon-', fa_icons);
+        }); 
+    }
+    pseudo_test.remove();
+</script>
+</body>
+</html>

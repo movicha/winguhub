@@ -1,0 +1,23 @@
+{% extends "myhome_base.html" %}
+{% load winguhub_tags avatar_tags i18n %}
+{% load url from future %}
+
+{% block sub_title %}{% trans "Groups" %} - {% endblock %}
+{% block nav_group_class %}class="cur"{% endblock %}
+
+{% block left_panel %}
+{% include "group/groups_left_panel.html" %}
+{% endblock %}
+
+{% block right_panel %}
+{% include "group/groups_right_panel.html" %}
+{% endblock %}
+
+{% block extra_script %}
+<script type="text/javascript">
+{% url 'group_list' as group_add_url %}
+{% with post_url=group_add_url %}
+{% include "snippets/group_add_js.html" %}
+{% endwith %}
+</script>
+{% endblock %}

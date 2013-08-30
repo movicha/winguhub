@@ -1,0 +1,229 @@
+{% load i18n avatar_tags %}
+{% load url from future %}
+
+var share_list = [];    
+{% for contact in contacts %}
+share_list.push({value:'{{ contact.contact_email }}', label:'{{ contact.contact_email }}'});
+{% endfor %}
+
+function showSharePopup(op, name, aj_url, type, cur_path) {
+    var path;
+    if (op.attr('id') == 'share-cur-dir') {
+        path = cur_path.substr(0, cur_path.length - 1); // rm the last '/' as wingufile_api treats '/xx' and '/xx/' as different
+    } else {
+        path = cur_path + name;
+    }
+    $('#file-share').modal({appendTo: "#main",'focus':false, containerCss:{"padding":"10px 0 0"}});
+
+    $("#private-share-form input[name=s_type]").val(type);
+    $("#private-share-form input[name=path]").val(path);
+    var contacts = [];
+    {% for contact in contacts %}
+    contact_email = '{{ contact.contact_email }}';
+    contact_avatar = '{% avatar contact.contact_email 16 %}';
+    contacts.push({value:contact_email, avatar:contact_avatar});
+    {% endfor %}
+
+    var opts = '', email, avatar;
+    for (var i = 0, len = contacts.length; i < len; i++) {
+        email = contacts[i].value;
+        avatar = contacts[i].avatar;
+        opts += '<option value="' + email + '" data-index="' + i + '">' + email + '</option>';
+    }
+    var format = function(item) {
+        return contacts[$(item.element).data('index')].avatar + '<span class="vam">' + item.text + '</span>';
+    }
+
+   if (op.data('link')) {
+        $('#gen-link-btn').addClass('hide');
+        $('#share-link-body').removeClass('hide');
+        var link = op.data('link');
+        $('#shared-link-text, #link-send-form input[name="file_shared_link"]').val(link);
+        $('#main').append('<p id="linkwidth" class="hide">' + link + '</p>');
+        $('#shared-link-text').css({'width':$('#linkwidth').width() + 25});
+        $('#linkwidth').remove();
+    } else {
+        $('#gen-link-btn').removeClass('hide');
+        $('#share-link-body').addClass('hide');
+    }
+    $('#gen-link-btn').data('url', aj_url).data('obj', op);
+    $('#rm-shared-link').data('obj', op);
+
+    var hd = $('#file-share .hd');
+    hd.html(hd.html().replace('%(name)s', '<span class="op-target">' + trimFilename(name, 30) + '</span>'));
+
+    if (type == 'd') {
+        $('#private-share-tab, #private-share').remove();
+    } else {
+        $('#syncable-share-tab, #syncable-share').remove();
+    }
+    $("#file-share-tabs").tabs();
+
+    if ($('#syncable-share').length == 1) {
+        $.ajax({
+            url: '{% url 'check_sub_repo' repo.id %}?p=' + e(path),
+            dataType: 'json',
+            success: function(data) {
+                var context = $('#syncable-share');
+                if (data['exist']) {
+                    $('.sub-repo-exist-tip, #share-sub-repo', context).removeClass('hide');
+                    $('#share-sub-repo').data('sub_repo_id', data['sub_repo_id']);
+                } else {
+                    $('.sub-repo-create-tip, .create-sub-repo', context).removeClass('hide'); 
+                    $('.create-sub-repo', context).click(createSubRepo).data('dir_name', name).data('path', path).data('context', context);
+                }
+                $('#share-sub-repo').data('sub_repo_name', name).click(function() {
+                    // get id & name before popup close
+                    var sub_repo_id = $(this).data("sub_repo_id"),
+                        sub_repo_name = $(this).data("sub_repo_name");
+                    $.modal.close();
+                    setTimeout(function() {
+                        $("#repo-share-form").modal({appendTo: "#main", focus:false, containerCss:{"padding":"10px 0 0"}});
+                        $('#simplemodal-container').css({'height':'auto'});
+                        $("#repo_id").val(sub_repo_id);
+                        $("#repo-share-form .op-target").html(sub_repo_name);
+                        $('#share-enter-tab, #share-enter').remove();
+                        $("#repo-share-tabs").tabs();
+                    }, 10);
+                });
+            },
+            error: function(xhr, textStatus, errorThrown) {
+                var err;
+                if (xhr.responseText) {
+                    err = jQuery.parseJSON(xhr.responseText).error;
+                } else {
+                    err = "{% trans "Failed. Please check the network." %}";
+                } 
+                $('#syncable-share').append('<p class="error">' + err + '</p>');
+            }
+        });
+    }
+
+    $('#private-share [name="emails"]').html(opts).select2({
+        placeholder: "{% trans "Select contacts" %}",
+        formatResult: format,
+        formatSelection: format,
+        escapeMarkup: function(m) { return m; }
+    });
+
+    $('#simplemodal-container').css({'height':'auto', 'width':'auto'});
+    $(window).resize();
+}
+
+$('#send-link').click(function() {
+    $(this).addClass('hide');
+    $('#rm-shared-link').addClass('hide');
+    var input = $('#link-send-input');
+    input.css({'width': $('#link-share').width() - parseInt(input.css('padding-left')) - parseInt(input.css('padding-right')) - parseInt(input.css('border-left-width')) - parseInt(input.css('border-right-width'))});
+    $('#link-send-form').removeClass('hide');
+    addAutocomplete('#link-send-input', '#link-send-form', share_list);
+});
+
+$("#link-send-form .cancel").click(function() {
+    $('#link-send-form, #send-link, #rm-shared-link').toggleClass('hide');
+});
+
+$("#link-send-form").submit(function(event) {
+    var form = $(this), 
+        file_shared_link = form.children('input[name="file_shared_link"]').val(),
+        email = $.trim(form.children('textarea[name="email"]').val()),
+        submit_btn = form.children('input[type="submit"]');
+    
+    if (!email) {
+        apply_form_error('link-send-form', '{% trans "Please input at least an email." %}');
+        return false;
+    }
+
+    disable(submit_btn);
+    $('#link-send-form .error').addClass('hide');
+    $('#sending').removeClass('hide');
+
+    $.ajax({
+        type: "POST",
+        url: "{% url 'send_shared_link' %}",
+        dataType: 'json',
+        cache: false,
+        beforeSend: prepareCSRFToken,
+        data: {file_shared_link: file_shared_link, email: email},
+        success: function(data) {
+            $.modal.close();
+            feedback(data['msg'], "success");
+        },
+        error: function(xhr, textStatus, errorThrown) {
+            $('#sending').addClass('hide');
+            enable(submit_btn);
+            var err_str = '';
+            if (xhr.responseText) {
+                var err = jQuery.parseJSON(xhr.responseText);
+                if (err.error) {
+                    err_str = err.error;
+                } else {
+                    for (var i in err) {
+                        err_str += err[i];
+                    }
+                }
+            } else {
+                err_str = '{% trans "Failed. Please check the network." %}';
+            }
+            apply_form_error('link-send-form', err_str);
+        }
+    });
+   return false;
+});
+
+$('#shared-link-text').click(function() {
+    $(this).select();
+});
+
+$('#gen-link-btn').click(function() {
+    var gen_link_btn = $(this),
+        obj = gen_link_btn.data('obj');
+
+    $.ajax({
+            url: gen_link_btn.data('url'),
+            dataType: 'json',
+            cache: false,
+            success: function(data) {
+                var link = data['shared_link'];
+                // hide gen-link button, and show link
+                gen_link_btn.addClass('hide');
+                $('#shared-link-text, #link-send-form input[name="file_shared_link"]').val(link);
+                $('#main').append('<p id="linkwidth" class="hide">' + link + '</p>');
+                $('#shared-link-text').css({'width':$('#linkwidth').width() + 25});
+                $('#linkwidth').remove();
+                $('#share-link-body').removeClass('hide');
+                obj.data('link', link).data('token', data['token']);
+            },
+            error: function(xhr, textStatus, errorThrown) {
+                if (xhr.responseText) {
+                    feedback(jQuery.parseJSON(xhr.responseText).error, 'error');
+                } else {
+                    feedback("{% trans "Failed. Please check the network." %}", 'error');
+                }   
+            }
+    });
+    return false;
+});
+
+$('#rm-shared-link').click(function() {
+    var obj = $(this).data('obj'),
+        token = obj.data('token');
+
+    $.ajax({
+        url: '{% url 'remove_shared_link' %}?t=' + token,
+        dataType: 'json',
+        cache: false,
+        success: function(data) {
+            $('#share-link-body').addClass('hide');
+            $('#gen-link-btn').removeClass('hide');
+            obj.data('link', '').data('token', '');
+        },
+        error: function(xhr, textStatus, errorThrown) {
+            if (xhr.responseText) {
+                feedback(jQuery.parseJSON(xhr.responseText).error, 'error');
+            } else {
+                feedback("{% trans "Failed. Please check the network." %}", 'error');
+            }   
+        }
+    });
+});
